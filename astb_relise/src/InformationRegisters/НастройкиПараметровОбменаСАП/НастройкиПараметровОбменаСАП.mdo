@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e68a3056-d9b0-46ce-b405-51732c169263">
+  <producedTypes>
+    <selectionType typeId="6d2d5c84-0a6d-4f5e-9a8a-74bdd4e51bde" valueTypeId="4c3e915a-5ced-4ce4-9dc0-fd5e9e6f0283"/>
+    <listType typeId="c3ece0a7-e7a5-4ff7-9df9-ba2614275d0f" valueTypeId="e265d9d1-8f6e-4306-acdf-3ad04d1174df"/>
+    <managerType typeId="f2c41a21-885c-4fbf-8e0d-62c254139521" valueTypeId="da1b9378-8146-4264-ae29-056139e097f9"/>
+    <recordSetType typeId="e6a1faf7-97f1-4b75-8ca5-552a28c48fde" valueTypeId="403602ae-a5bd-4609-8626-549a91e751cc"/>
+    <recordKeyType typeId="8646079c-2647-4da4-bbb7-7a582c477bc4" valueTypeId="5869cc7c-ad6a-4872-8ea0-2be877b12480"/>
+    <recordType typeId="9d054d42-0fb3-4d1a-86f5-f03cb212644e" valueTypeId="0fe5f8da-ea7a-4495-8c2c-eb19d50547e6"/>
+    <recordManagerType typeId="1b746ad6-9702-40dc-a9bb-cfa372a3cfab" valueTypeId="8ab6a175-66d3-4c44-aa9a-256294cb2feb"/>
+  </producedTypes>
+  <name>НастройкиПараметровОбменаСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки параметров обмена САП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиПараметровОбменаСАП.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиПараметровОбменаСАП.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a4e0f5fc-748a-4cfb-a0a7-aa8f2fe304e7">
+    <name>DSTNM_Получателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>DSTNM получателя</value>
+    </synonym>
+    <comment>Идентификатор узла получателя (отправителя) документа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b5cc94c3-d8cf-4ac0-8e92-47b9ae6eb38c">
+    <name>PSIZE</name>
+    <synonym>
+      <key>ru</key>
+      <value>PSIZE Число документов в отборе</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7fcb456e-ca31-4ce8-ae8d-2993a815ba58">
+    <name>REQUID</name>
+    <synonym>
+      <key>ru</key>
+      <value>REQUID</value>
+    </synonym>
+    <comment>не используется! Номер запроса с которого начинается отбор</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bff24784-08e5-4b51-bfcb-9a566fd35ff2">
+    <name>ВыводитьИнтерактивныеСообщенияОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить интерактивные сообщения обмена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="31ac45f9-09e8-4d8f-a293-c890562e8141">
+    <name>ВыводитьСообщенияПоВыбраннымСобытиям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить сообщения по выбранным событиям</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9fefd870-e976-4c61-88f6-4ce20a1add2f">
+    <name>ЗагужатьТолькоНовыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загужать только новые документы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если значение установлено в Истина будут загружаться только новые документы, если Ложь - будут выполняться попытки повторно загрузить докумены, ранее вызвавшие ошибки при загрузке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </resources>
+  <resources uuid="f08112dd-d95b-45f7-a605-796a11a8f8fd">
+    <name>WSАдресДляППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-адрес для ППС</value>
+    </synonym>
+    <comment>Адрес WEB-сервиса SAP для выгрузки документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес WEB-сервиса SAP для выгрузки документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="252d4299-83b1-4882-b96f-f1cb51ab697a">
+    <name>WSЛогинДляППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-логин для ППС</value>
+    </synonym>
+    <comment>Логин WEB-сервиса SAP для выгрузки документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Логин для подключения к WEB-сервису SAP для выгрузки документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d84c1957-1ee9-405a-8458-1e17d840c547">
+    <name>WSПарольДляППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-пароль для ППС</value>
+    </synonym>
+    <comment>Пароль WEB-сервиса SAP для выгрузки документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для подключения к WEB-сервису SAP для выгрузки документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="60437c24-eaa3-4921-97ac-677e143f04c2">
+    <name>WSАдресДляКомплектовИзППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-адрес для комплектов из ППС</value>
+    </synonym>
+    <comment>Адрес WEB-сервиса SAP для выгрузки комплектов из документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес WEB-сервиса SAP для выгрузки комплектов из документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="4bd0577d-c478-40d3-9c1c-fa6f38ca96f7">
+    <name>WSЛогинДляКомплектовИзППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-логин для комплектов из ППС</value>
+    </synonym>
+    <comment>Логин WEB-сервиса SAP для выгрузки комплектов из документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Логин для подключения к WEB-сервису SAP для выгрузки комплектов из документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="9a5554dc-c0e5-4d56-9ad9-8a4c4277f3df">
+    <name>WSПарольДляКомплектовИзППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS-пароль для комплектов из ППС</value>
+    </synonym>
+    <comment>Пароль WEB-сервиса SAP для выгрузки комплектов из документов перехода права собственности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для подключения к WEB-сервису SAP для выгрузки комлпектов из документов перехода права собственности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="aa139b12-c9e4-45c2-8b47-2e85fd6a2bf3">
+    <name>WSАдресОпросОчереди</name>
+    <synonym>
+      <key>ru</key>
+      <value>WSАдрес опрос очереди</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="7199b7c4-bcc0-4518-946c-3b3f543f3307">
+    <name>WSАдресЗагрузкаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>WSАдрес загрузка документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="8a693d81-dea8-4710-80f2-25342a4d5c6b">
+    <name>WSАдресУстановкаСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>WSАдрес установка статуса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b2e96056-efc8-4d80-83a3-bf3205f2e1a7">
+    <name>WSЛогинЗагрузкаСАП</name>
+    <synonym>
+      <key>ru</key>
+      <value>WSЛогин загрузка САП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="8c37957e-dc36-4043-bd22-3f65783e0756">
+    <name>WSПарольЗагрузкаСАП</name>
+    <synonym>
+      <key>ru</key>
+      <value>WSПароль загрузка САП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="4899ffd5-3dad-4c70-b039-71f812bd8fcb">
+    <name>ЗагружатьПоступленияИзСАП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать поступления из САП через веб сервис</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1e0c8dcf-ca29-4903-a267-91e8be871346">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="746fb652-d2df-47c3-a6c3-026d8f575cc1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96663327-1453-4edd-82d5-8b3e1a8a9102">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a87c862f-38b4-4498-9ee3-38c1eb12c17b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

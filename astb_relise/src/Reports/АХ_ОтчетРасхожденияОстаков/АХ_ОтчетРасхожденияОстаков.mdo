@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de162654-d9d5-4510-8ab0-4a3e99db911e">
+  <producedTypes>
+    <objectType typeId="8114a9df-47da-45f7-a34c-9ccc69f7e1f0" valueTypeId="b13e7a28-3cac-4c9b-979e-3a70b01adc76"/>
+    <managerType typeId="d5373e5f-b9f5-47e2-860b-4a1e6473862a" valueTypeId="82660d30-161f-47ff-b9e1-ff32a6e86264"/>
+  </producedTypes>
+  <name>АХ_ОтчетРасхожденияОстаков</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) Отчет расхождения остаков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АХ_ОтчетРасхожденияОстаков.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АХ_ОтчетРасхожденияОстаков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <forms uuid="f9fc1991-196e-4c48-9a1f-5a189b299603">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="601854b4-1495-46e5-ae3a-caa08dda5059">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1112588b-3531-4309-bfd3-4f7fae9c3d55">
+  <producedTypes>
+    <selectionType typeId="142766ed-23de-4cd1-ac95-c3b42e62711a" valueTypeId="292ea348-3ea7-4e51-b35b-5dc02f33f9de"/>
+    <listType typeId="96ec8ee6-d00e-4150-a7df-519e97cdb178" valueTypeId="8dde6d63-9909-49e3-8584-234ce888076e"/>
+    <managerType typeId="45376891-1ef6-453b-9c3a-93b8e3b1929e" valueTypeId="1eb251ea-1916-40f4-bac4-fd68f1a12e65"/>
+    <recordSetType typeId="a61c4536-1cad-464c-8927-72010b93ffdb" valueTypeId="0b8b48ea-cabf-41bb-ab16-99079ce3e21c"/>
+    <recordKeyType typeId="fc043dac-b552-43d7-8a2c-924c1ae6ece5" valueTypeId="90e06521-3fe1-4fa2-9dde-255940133d42"/>
+    <recordType typeId="73ffd852-43da-40c4-9a19-21657f330122" valueTypeId="9b4855f5-652a-456c-a35e-0a818feeb992"/>
+    <recordManagerType typeId="ac1db3bc-f2bf-4035-804e-ca236686542f" valueTypeId="44184276-997f-47a3-805d-514f38cc1574"/>
+  </producedTypes>
+  <name>ОценкиСервисногоОбслуживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки сервисного обслуживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b25f993b-f452-48ab-814a-b1fe8c306864">
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УровниСервисногоОбслуживания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="98709dbc-6cf4-4775-96c4-39bd8a1434f7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1544103f-149b-4e28-99f3-98b471ed7520">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="33bb65a0-6798-40aa-8058-4a12b2002109">
+    <name>ДатаОценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата оценки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

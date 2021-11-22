@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7aa2b72b-5ccf-46a7-9357-5b2279bf37dc">
+  <producedTypes>
+    <selectionType typeId="98e4f6a9-7f58-41d2-9971-0000717c0cb2" valueTypeId="fca24e15-fbd5-43c5-bf34-e68fbf0d518b"/>
+    <listType typeId="86c0f8ea-d917-4a15-a076-90af6742c392" valueTypeId="c5fc6bf6-fb98-42ad-81a5-885c009cd5d5"/>
+    <managerType typeId="2bfce1cf-92ff-472e-99ff-46cc48166a45" valueTypeId="8590c8ee-5b9f-43db-8135-9bffea28d662"/>
+    <recordSetType typeId="acd96533-092d-462d-b691-cda330ada44e" valueTypeId="a306b95a-9898-4dc7-9737-2d850d0c29cd"/>
+    <recordKeyType typeId="21290b22-6b71-480d-b1e8-cc5616094b69" valueTypeId="d007b092-efe7-40a1-9e71-aa2797d8f0a8"/>
+    <recordType typeId="5346e3fa-782b-4195-a9f0-369b7e574933" valueTypeId="54be6c23-05e0-46d9-9e06-e0765c73340a"/>
+    <recordManagerType typeId="c645d687-6aa1-40e2-9e97-dfa31a141e02" valueTypeId="1977e0e2-6b6b-4faa-8a83-3d94b4127183"/>
+  </producedTypes>
+  <name>ТочкиОбслуживанияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки обслуживания сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ТочкиОбслуживанияСотрудников.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ТочкиОбслуживанияСотрудников.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bbc0a02c-842d-4cf6-b364-81568755d88b">
+    <name>ПринятВРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принят в работу</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b8cc9f4a-5dde-4cb6-811f-61e1b357f325">
+    <name>ПереданНаСборку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передан на сборку</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2609aa1e-71a6-42fe-a7c9-afd19998a463">
+    <name>ПереданВПримерку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передан в примерку</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e495a0be-26dd-4dce-a1cb-4d310a83b399">
+    <name>ОбслуживаниеЗавершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживание завершено</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0974b4f6-3e45-4deb-9381-94c170e76119">
+    <name>ДокументВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ выдачи</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыдачаСредствЗащитыСотруднику</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ec36328d-c42e-4626-b8bf-cfadd16647e5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6ac00933-74cc-497e-aec1-05cf29bc322b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

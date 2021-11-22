@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spisanie_export name="Уточненные причины списания">
+	<spisanie_group_1 name="Дефекты обувных изделий">
+		<spisanie_group_2 name="Дефекты деталей верха обуви">
+			<spisanie_item name="вылегание подноска/задника"></spisanie_item>
+			<spisanie_item name="деформация подноска"></spisanie_item>
+			<spisanie_item name="деформация союзки"></spisanie_item>
+			<spisanie_item name="деформация задника"></spisanie_item>
+			<spisanie_item name="перекос деталей в паре"></spisanie_item>
+			<spisanie_item name="перекос деталей в полупаре"></spisanie_item>
+			<spisanie_item name="перекос носочной части"></spisanie_item>
+			<spisanie_item name="перекос пяточной части"></spisanie_item>
+			<spisanie_item name="механическое повреждение матариала верха"></spisanie_item>
+			<spisanie_item name="разномерийность одноименных деталей в паре"></spisanie_item>
+			<spisanie_item name="разномерийность одноименных деталей в полупаре"></spisanie_item>
+			<spisanie_item name="разнотон одноименных деталей в паре и полупаре"></spisanie_item>
+			<spisanie_item name="разрыв/обрыв/отрыв деталей верха"></spisanie_item>
+			<spisanie_item name="складки на материале верха"></spisanie_item>
+			<spisanie_item name="отдушка материала верха"></spisanie_item>
+			<spisanie_item name="заломы материала верха"></spisanie_item>
+			<spisanie_item name="отсутствие подкладки"></spisanie_item>
+			<spisanie_item name="отставание/не приклеена подкладка"></spisanie_item>
+			<spisanie_item name="отсутствие мет. подноска"></spisanie_item>
+			<spisanie_item name="подкладка не попала под строчку"></spisanie_item>
+			<spisanie_item name="складки на подкладке"></spisanie_item>
+			<spisanie_item name="разрыв/механические повреждения подкладки"></spisanie_item>
+			<spisanie_item name="кривая строчка"></spisanie_item>
+			<spisanie_item name="отсечка"></spisanie_item>
+			<spisanie_item name="пропуск стежков"></spisanie_item>
+			<spisanie_item name="проколы от иглы на материале верха"></spisanie_item>
+			<spisanie_item name="роспуск ниточного шва"></spisanie_item>
+			<spisanie_item name="разрыв шва"></spisanie_item>
+			<spisanie_item name="сваливание строчки с края детали"></spisanie_item>
+			<spisanie_item name="совпадение смежных строчек"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефекты деталей низа обуви">
+			<spisanie_item name="впадины и выпуклости на поверхности стелек"></spisanie_item>
+			<spisanie_item name="размер стельки не соответствует размеру обуви"></spisanie_item>
+			<spisanie_item name="складки на лицевой поверхности стелек"></spisanie_item>
+			<spisanie_item name="стелька не приклеена/отрывается"></spisanie_item>
+			<spisanie_item name="цвет стельки должны быть в цвет подкладки"></spisanie_item>
+			<spisanie_item name="деформация (выхваты) подошвы"></spisanie_item>
+			<spisanie_item name="недоливы подошвы общей площадью более 1,5 см2"></spisanie_item>
+			<spisanie_item name="отставание, отслоение верхнего слоя подошвы"></spisanie_item>
+			<spisanie_item name="разный протектор подошвы в паре"></spisanie_item>
+			<spisanie_item name="раковины, пузыри на подошве общей площадью более 2 см2"></spisanie_item>
+			<spisanie_item name="расщелины между деталями низа обуви"></spisanie_item>
+			<spisanie_item name="трещины в подошве, лопнула подошва"></spisanie_item>
+			<spisanie_item name="пропускают воду"></spisanie_item>			
+		</spisanie_group_2>
+		<spisanie_group_2 name="Нарушение маркировки/упаковки">
+			<spisanie_item name="дата изготовления не корректная"></spisanie_item>
+			<spisanie_item name="дата изготовления отсутствует"></spisanie_item>
+			<spisanie_item name="маркировка написана неграмотно"></spisanie_item>
+			<spisanie_item name="маркировка на изделии не четкая и не трудноудаляемая"></spisanie_item>
+			<spisanie_item name="маркировка на упаковке не соответствует регламенту ТР ТС"></spisanie_item>
+			<spisanie_item name="маркировка на обуви не соответствует регламенту ТР ТС"></spisanie_item>
+			<spisanie_item name="маркировка на изделии не соответствует маркировки на упаковке"></spisanie_item>
+			<spisanie_item name="руководство по эксплуатации отсутствует"></spisanie_item>
+			<spisanie_item name="деформация упаковки (индивидуальных коробов/гофрокоробов)"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие ТО">
+			<spisanie_item name="не соответствует образцу, размеру"></spisanie_item>
+			<spisanie_item name="обувь на одну ногу"></spisanie_item>
+			<spisanie_item name="отсутствие чулка, крепления манжеты"></spisanie_item>
+			<spisanie_item name="отсутствие или несоответствие фурнитуры"></spisanie_item>
+			<spisanie_item name="отсутствие штампа контролера"></spisanie_item>
+			<spisanie_item name="пересортица по размеру"></spisanie_item>
+			<spisanie_item name="пересортица по фасону"></spisanie_item>
+			<spisanie_item name="разнопарки"></spisanie_item>
+			<spisanie_item name="отсутствие или другой размер стелек"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие линейных измерений">
+			<spisanie_item name="несоответствие линейных измерений"></spisanie_item>
+			<spisanie_item name="разная длина одноименных деталей в полупаре"></spisanie_item>
+			<spisanie_item name="разная высота одноименных деталей в полупаре"></spisanie_item>
+			<spisanie_item name="разная длина одноименных деталей в паре"></spisanie_item>
+			<spisanie_item name="разная высота одноименных деталей в паре"></spisanie_item>
+			<spisanie_item name="разница в высоте более 5мм (если ботинки)"></spisanie_item>
+			<spisanie_item name="разница в высоте более 8мм (если сапоги)"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект материала">
+			<spisanie_item name="сырьевые пороки на материале верха"></spisanie_item>
+			<spisanie_item name="сырьевые пороки на материале подкладки"></spisanie_item>
+			<spisanie_item name="некачественный войлок"></spisanie_item>
+			<spisanie_item name="нестойкость крашения"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Разнотон">
+			<spisanie_item name="разнотон верха"></spisanie_item>
+			<spisanie_item name="разнотон подошвы"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект фурнитуры">
+			<spisanie_item name="некачественная фурнитура"></spisanie_item>
+			<spisanie_item name="отсутствие товарного вида фурнитуры"></spisanie_item>
+			<spisanie_item name="отсутствие фурнитуры"></spisanie_item>
+			<spisanie_item name="слабое крепление фурнитуры"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Отсутствие товарного вида">
+			<spisanie_item name="грязь на деталях верха обуви"></spisanie_item>
+			<spisanie_item name="недостаточное формование"></spisanie_item>
+			<spisanie_item name="некачественная обрезка облоя"></spisanie_item>
+			<spisanie_item name="некачественная окраска обуви"></spisanie_item>
+			<spisanie_item name="некачественная заделка дефектов"></spisanie_item>
+			<spisanie_item name="не смыта чертежка на деталях верха обуви"></spisanie_item>
+			<spisanie_item name="отсутствует товарный вид"></spisanie_item>
+			<spisanie_item name="пятна на подошве"></spisanie_item>
+			<spisanie_item name="следы плесени"></spisanie_item>
+			<spisanie_item name="пятна от коррозии"></spisanie_item>
+			<spisanie_item name="повреждение от насекомых/грызунов"></spisanie_item>
+			<spisanie_item name="осыпание красителя"></spisanie_item>
+			<spisanie_item name="выступающие элементы внутри или снаружи обуви"></spisanie_item>
+			<spisanie_item name="пятна и разводы на материале верха"></spisanie_item>
+			<spisanie_item name="перешершовка материала верха"></spisanie_item>
+			<spisanie_item name="механическое повреждение материала в случае акта от клиента"></spisanie_item>
+			<spisanie_item name="подошва с желтыми разводами"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие по сроку годности">
+			<spisanie_item name="срок годности просрочен"></spisanie_item>
+			<spisanie_item name="истек срок хранения"></spisanie_item>
+			<spisanie_item name="срок годности меньше 2/3"></spisanie_item>
+			<spisanie_item name="диэлектрические боты без поверки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие сертификата">
+			<spisanie_item name="несоответствие сертификата"></spisanie_item>
+			<spisanie_item name="сертификат отсутствует"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Претензия к конструкции при эксплуатации">
+			<spisanie_item name="неудобная в чем-то конкретно"></spisanie_item>
+			<spisanie_item name="натирает ноги (указать место)"></spisanie_item>
+			<spisanie_item name="мерзнут ноги (при каких условиях)"></spisanie_item>
+			<spisanie_item name="скользкая подошва"></spisanie_item>
+		</spisanie_group_2>
+	</spisanie_group_1>
+	<spisanie_group_1 name="Дефекты СИЗ">
+		<spisanie_group_2 name="Некачественный пошив">
+			<spisanie_item name="неровные строчки"></spisanie_item>
+			<spisanie_item name="пропуск/слеты строчек, неравномерные расстояния"></spisanie_item>
+			<spisanie_item name="швы расходятся (натяжение)"></spisanie_item>
+			<spisanie_item name="стачивание одной челночной строчкой, где это недопустимо"></spisanie_item>
+			<spisanie_item name="количество стежков в 1 см меньше трех"></spisanie_item>
+			<spisanie_item name="отсутствие необходимых закрепляющих строчек или закрепок"></spisanie_item>
+			<spisanie_item name="неравномерное расположение наполнителя"></spisanie_item>
+			<spisanie_item name="дефекты вязаных изделий"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект изделия">
+			<spisanie_item name="сломан дозатор"></spisanie_item>
+			<spisanie_item name="аккумуляторная батарея не заряжается"></spisanie_item>
+			<spisanie_item name="нарушение герметичности упаковки кремов"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Нарушение маркировки/упаковки">
+			<spisanie_item name="не совпадение информации на маркировке/упаковке"></spisanie_item>
+			<spisanie_item name="некорректное заполнение маркировки"></spisanie_item>
+			<spisanie_item name="отсутствие маркировки"></spisanie_item>
+			<spisanie_item name="несоответствие маркировки размеру изделия"></spisanie_item>
+			<spisanie_item name="скотч/упаковка не соответствует установленным стандартам"></spisanie_item>
+			<spisanie_item name="деформация упаковки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие ТО">
+			<spisanie_item name="несоответствие эскизу/образцу"></spisanie_item>
+			<spisanie_item name="отстутствие или несоответствие фурнитуры"></spisanie_item>
+			<spisanie_item name="несоответствие цвета отделочной строчки"></spisanie_item>
+			<spisanie_item name="некомплектность (отсутствие или несоответствие)"></spisanie_item>
+			<spisanie_item name="не обработаны тальком"></spisanie_item>
+			<spisanie_item name="нарушение технологии нанесения полимерного покрытия"></spisanie_item>
+			<spisanie_item name="несоответствие внутреннего объема жидкости заявленному"></spisanie_item>
+			<spisanie_item name="несоответствие оголовья"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие линейных измерений">
+			<spisanie_item name="несоответствие линейных измерений ГОСТ, ТУ и т.п."></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект материала">
+			<spisanie_item name="дыры, заломы, пятна от крашения"></spisanie_item>
+			<spisanie_item name="нестойкость крашения"></spisanie_item>
+			<spisanie_item name="уплотнения или утонения"></spisanie_item>
+			<spisanie_item name="несоответствие заявленных св-в материала"></spisanie_item>
+			<spisanie_item name="несоответствие по плотности ткани"></spisanie_item>
+			<spisanie_item name="мушковатость"></spisanie_item>
+			<spisanie_item name="усадка после стирки"></spisanie_item>
+			<spisanie_item name="необработанный мех"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Разнотон">
+			<spisanie_item name="разнотон материала"></spisanie_item>
+			<spisanie_item name="разнотон деталей кроя"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект фурнитуры">
+			<spisanie_item name="сломанная фурнитура"></spisanie_item>
+			<spisanie_item name="некачественная установка фурнитуры"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Отсутствие товарного вида">
+			<spisanie_item name="грязь на изделии"></spisanie_item>
+			<spisanie_item name="производственный мусор"></spisanie_item>
+			<spisanie_item name="необрезанные концы ниток"></spisanie_item>
+			<spisanie_item name="меловые отметки"></spisanie_item>
+			<spisanie_item name="пятна от плесени"></spisanie_item>
+			<spisanie_item name="пятна неизвестного происхождения, посторонний запах"></spisanie_item>
+			<spisanie_item name="въевшаяся ржавчина"></spisanie_item>
+			<spisanie_item name="механическое повреждение"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие по сроку годности">
+			<spisanie_item name="срок годности просрочен"></spisanie_item>
+			<spisanie_item name="срок годности меньше 2/3"></spisanie_item>
+			<spisanie_item name="истек срок хранения"></spisanie_item>
+			<spisanie_item name="диэлектрика без поверки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие сертификата">
+			<spisanie_item name="несоответствие сертификата"></spisanie_item>
+			<spisanie_item name="отсутствие сертификата"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Претензия к конструкции">
+			<spisanie_item name="нарушены антропометрические признаки типовой фигуры"></spisanie_item>
+			<spisanie_item name="некомфортная в чем-то конкретно"></spisanie_item>
+			<spisanie_item name="претензия к дизайну"></spisanie_item>
+		</spisanie_group_2>
+	</spisanie_group_1>
+	<spisanie_group_1 name="Дефекты швейных изделий">
+		<spisanie_group_2 name="Некачественный пошив">
+			<spisanie_item name="неровные строчки"></spisanie_item>
+			<spisanie_item name="пропуски/слеты  неравномерное расстояние (в т.ч. между строчками в стеганых деталях изделия)"></spisanie_item>
+			<spisanie_item name="защипы при стачивании"></spisanie_item>
+			<spisanie_item name="стачивание одной челночной строчкой, где это недопустимо"></spisanie_item>
+			<spisanie_item name="количество стежков в 1 см меньше трех"></spisanie_item>
+			<spisanie_item name="разная ширина шва"></spisanie_item>
+			<spisanie_item name="подпалина, отклеивание швов"></spisanie_item>
+			<spisanie_item name="швы расходятся (натяжение)"></spisanie_item>
+			<spisanie_item name="излишняя посадка"></spisanie_item>
+			<spisanie_item name="проколы, прорубы иглой"></spisanie_item>
+			<spisanie_item name="несоответствие размера петли размеру пуговицы, необметанные петли"></spisanie_item>
+			<spisanie_item name="отсутствие необходимых закрепляющих строчек или закрепок"></spisanie_item>
+			<spisanie_item name="неправильное соединение подкладки с верхом (наплывы ткани, утеплителя)"></spisanie_item>
+			<spisanie_item name="навал швов"></spisanie_item>
+			<spisanie_item name="асимметрия деталей"></spisanie_item>
+			<spisanie_item name="дефекты вязаных изделий (спущены петли)"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Нарушение маркировки/упаковки">
+			<spisanie_item name="не совпадение информации на маркировке/упаковке"></spisanie_item>
+			<spisanie_item name="некорректное заполнение маркировки"></spisanie_item>
+			<spisanie_item name="отсутствие маркировки"></spisanie_item>
+			<spisanie_item name="несоответствие маркировки размеру изделия"></spisanie_item>
+			<spisanie_item name="отсутствие зиплока/запасной фурнитуры"></spisanie_item>
+			<spisanie_item name="скотч/упаковка не соответствует установленным стандартам"></spisanie_item>
+			<spisanie_item name="деформация упаковки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие ТО">
+			<spisanie_item name="несоответствие эскизу/образцу"></spisanie_item>
+			<spisanie_item name="нарушение пакета утеплителя"></spisanie_item>
+			<spisanie_item name="некомплектность изделия"></spisanie_item>
+			<spisanie_item name="несоответствие цвета отделочной строчки"></spisanie_item>
+			<spisanie_item name="отсутствие или несоответствие фурнитуры"></spisanie_item>
+			<spisanie_item name="перепутан верх-низ при настрачивании липучки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие линейных измерений">
+			<spisanie_item name="несоответствие линейных измерений ГОСТ, ТУ и т.п."></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект материала">
+			<spisanie_item name="дыры, заломы, пятна от крашения"></spisanie_item>
+			<spisanie_item name="нестойкость крашения"></spisanie_item>
+			<spisanie_item name="уплотнения или утонения"></spisanie_item>
+			<spisanie_item name="несоответствие заявленных св-в материала"></spisanie_item>
+			<spisanie_item name="разряженность ткани"></spisanie_item>
+			<spisanie_item name="мушковатость"></spisanie_item>
+			<spisanie_item name="усадка после стирки"></spisanie_item>
+			<spisanie_item name="необработанный мех"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Разнотон">
+			<spisanie_item name="разнотон материала"></spisanie_item>
+			<spisanie_item name="разнотон деталей кроя"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Дефект фурнитуры">
+			<spisanie_item name="сломанная фурнитура"></spisanie_item>
+			<spisanie_item name="высыпание текстильной вставки"></spisanie_item>
+			<spisanie_item name="некачественная установка фурнитуры"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Отсутствие товарного вида">
+			<spisanie_item name="грязь на изделии"></spisanie_item>
+			<spisanie_item name="производственный мусор"></spisanie_item>
+			<spisanie_item name="необрезанные концы ниток"></spisanie_item>
+			<spisanie_item name="меловые отметки"></spisanie_item>
+			<spisanie_item name="пятна от плесени"></spisanie_item>
+			<spisanie_item name="пятна неизвестного происхождения, посторонний запах"></spisanie_item>
+			<spisanie_item name="механическое повреждение"></spisanie_item>
+			<spisanie_item name="забивание утеплителя в текстильные застежки"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие по сроку годности">
+			<spisanie_item name="срок годности просрочен"></spisanie_item>
+			<spisanie_item name="срок годности меньше 2/3"></spisanie_item>
+			<spisanie_item name="истек срок хранения"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Несоответствие сертификата">
+			<spisanie_item name="несоответствие сертификата"></spisanie_item>
+			<spisanie_item name="отсутствие сертификата"></spisanie_item>
+		</spisanie_group_2>
+		<spisanie_group_2 name="Претензия к конструкции(при правильном подборе размера )">
+			<spisanie_item name="нарушены антропометрические признаки типовой фигуры"></spisanie_item>
+			<spisanie_item name="некомфортная в чем-то конкретно"></spisanie_item>
+			<spisanie_item name="претензия к дизайну"></spisanie_item>
+		</spisanie_group_2>
+	</spisanie_group_1>
+</spisanie_export>

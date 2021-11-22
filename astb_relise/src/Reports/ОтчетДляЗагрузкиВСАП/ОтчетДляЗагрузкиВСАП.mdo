@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec88ceb3-2417-4ef6-84e7-6236e2ca4e8a">
+  <producedTypes>
+    <objectType typeId="69b26e64-7a06-44c8-a05d-9775e2187e91" valueTypeId="6d8b01c7-4583-4eb7-b74d-4ac83618909f"/>
+    <managerType typeId="b56beeae-a273-47d2-82cf-113dc960d665" valueTypeId="c1e4b1e5-c0cf-4de9-919b-bb93e9b7b297"/>
+  </producedTypes>
+  <name>ОтчетДляЗагрузкиВСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет для загрузки ВСАП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетДляЗагрузкиВСАП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="aee7ec44-c7f6-4f4e-a845-7a3f3a136d75">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfa79229-5d42-480a-a797-d5412019492f">
+  <producedTypes>
+    <refType typeId="151f0249-dbe9-4447-bee7-fc38a30ca91b" valueTypeId="c1fbae91-6b44-4ee0-9710-5dbae730356c"/>
+    <listType typeId="b21028fc-6749-40a9-b640-70ac2f26e7e2" valueTypeId="1963526b-995d-400b-a83a-ab46ca6b5155"/>
+    <managerType typeId="7a58d8c8-ca25-426b-9c77-1936d7a3a59a" valueTypeId="6cc40629-450a-43fb-a478-6e2b842f06f8"/>
+  </producedTypes>
+  <name>ТипыПодключаемогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подключаемого оборудования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1d0d00cd-d43f-4cd7-84ef-ac4f4d48ecfe">
+    <name>СканерШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканеры штрихкода</value>
+    </synonym>
+    <comment>Scanner</comment>
+  </enumValues>
+  <enumValues uuid="5c0e60f7-f8c7-4c02-907b-7c8e566849ab">
+    <name>ТерминалСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминалы сбора данных</value>
+    </synonym>
+    <comment>DataCollectionTerminal</comment>
+  </enumValues>
+  <enumValues uuid="21fe09c9-29a9-4aed-988a-103a1f6e2573">
+    <name>СчитывательМагнитныхКарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Считыватели магнитных карт</value>
+    </synonym>
+    <comment>MSR</comment>
+  </enumValues>
+  <enumValues uuid="bc118c21-c121-4818-b33a-f9861d29bd1b">
+    <name>ПринтерЭтикеток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принтеры этикеток</value>
+    </synonym>
+    <comment>LabelPrinter</comment>
+  </enumValues>
+  <enumValues uuid="0baf5f34-e11b-4085-adfe-106697f21106">
+    <name>СчитывательRFID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Считыватели RFID</value>
+    </synonym>
+    <comment>RFID</comment>
+  </enumValues>
+</mdclass:Enum>

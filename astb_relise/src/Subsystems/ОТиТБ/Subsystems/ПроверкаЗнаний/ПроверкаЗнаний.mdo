@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c404a58-d665-4bde-9378-1059adede8af">
+  <name>ПроверкаЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка знаний</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВопросыДляТестов</content>
+  <content>Catalog.Тесты</content>
+  <content>Catalog.Ответы</content>
+  <content>Document.ПроверкаЗнанийСотрудника</content>
+  <content>Document.ПриказНаПроведениеПроверкиЗнаний</content>
+  <content>DataProcessor.ЗагрузкаТестовДляПроверкиЗнаний</content>
+  <parentSubsystem>Subsystem.ОТиТБ</parentSubsystem>
+</mdclass:Subsystem>

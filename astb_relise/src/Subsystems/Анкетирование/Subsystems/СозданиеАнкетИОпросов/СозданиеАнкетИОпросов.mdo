@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f15b4ff6-3c29-497c-96de-70266a84c593">
+  <name>СозданиеАнкетИОпросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание анкет и опросов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>SessionParameter.ТекущийПользователь</content>
+  <content>Catalog.ВариантыОтветовАнкет</content>
+  <content>Catalog.ВопросыШаблонаАнкеты</content>
+  <content>Catalog.ШаблоныАнкет</content>
+  <content>Document.НазначениеОпросов</content>
+  <content>ChartOfCharacteristicTypes.ВопросыДляАнкетирования</content>
+  <parentSubsystem>Subsystem.Анкетирование</parentSubsystem>
+</mdclass:Subsystem>

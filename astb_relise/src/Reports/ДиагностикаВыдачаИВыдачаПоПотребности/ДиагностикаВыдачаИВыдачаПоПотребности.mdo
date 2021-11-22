@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d71ea430-bf45-44b7-af78-6b2d08bb2464">
+  <producedTypes>
+    <objectType typeId="eff9ea63-9767-470a-bdc4-0d69ee10cbf9" valueTypeId="d3ec2be8-5378-40b0-8194-12ce55acd3d2"/>
+    <managerType typeId="bab8fe74-4914-4a53-8c0b-6e9a4b67d79b" valueTypeId="628c0785-c197-4fc5-a07a-9fcff1ef157b"/>
+  </producedTypes>
+  <name>ДиагностикаВыдачаИВыдачаПоПотребности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: выдача и выдача по потребности (превышение остатков по ВПП)</value>
+  </synonym>
+  <comment>Сравнение остатков по выдаче и выдаче по потребности.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаВыдачаИВыдачаПоПотребности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сравнение остатков по выдаче и выдаче по потребности (на превышение по ВПП).</value>
+  </explanation>
+  <templates uuid="87715747-2220-4721-bd6a-f7d0e7da1df5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

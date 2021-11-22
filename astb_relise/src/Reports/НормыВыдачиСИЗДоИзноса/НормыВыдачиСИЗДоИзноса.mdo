@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f3eff08-26bd-44c1-9e4d-18697bd72381">
+  <producedTypes>
+    <objectType typeId="f113875e-81f3-40fa-ac49-235224a6d389" valueTypeId="172c00a2-d39b-41df-a385-164cdc3157a3"/>
+    <managerType typeId="c82d5e93-bcf1-4d59-9498-3a6c19dc65a3" valueTypeId="55660d97-dc52-4b6c-a3f3-20bb9e588e68"/>
+  </producedTypes>
+  <name>НормыВыдачиСИЗДоИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы выдачи СИЗ до износа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НормыВыдачиСИЗДоИзноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="eb14c4c3-1012-4dca-aad6-e4e17b6d968d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

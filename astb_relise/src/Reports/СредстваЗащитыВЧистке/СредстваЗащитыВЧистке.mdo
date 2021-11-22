@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83290206-10dd-423e-9073-8caa49576b89">
+  <producedTypes>
+    <objectType typeId="933c0039-7d68-4f0a-b5f4-c243139ac65d" valueTypeId="efa1c43e-af56-48ea-92a2-f122b4bd9b48"/>
+    <managerType typeId="c97a2772-eb26-4615-aea4-687194603c7e" valueTypeId="181f90dc-0066-4f8e-b2c5-65a190a80ae0"/>
+  </producedTypes>
+  <name>СредстваЗащитыВЧистке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по СИЗ в чистке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СредстваЗащитыВЧистке.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="57d996ec-5434-44cb-bcff-aa8090efa98b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

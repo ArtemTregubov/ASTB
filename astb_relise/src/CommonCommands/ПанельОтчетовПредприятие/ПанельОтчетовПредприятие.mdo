@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63947d0f-f46e-4b85-bf76-218157bc6879">
+  <name>ПанельОтчетовПредприятие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель отчетов по предприятию</value>
+  </synonym>
+  <group>NavigationPanelImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

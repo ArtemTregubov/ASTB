@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08ce3d4e-7ab8-49ec-bf83-7d84be8cf556">
+  <name>ИспользоватьСинхронизациюДанныхСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать синхронизацию данных САП</value>
+  </synonym>
+  <location>Constant.ИспользоватьСинхронизациюДанныхСАП</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.НастройкаТиповОповещенияОбОбмене</content>
+  <content>Catalog.Склады.Attribute.LGNUM_LGTYP</content>
+  <content>InformationRegister.ОбменДаннымиСАП</content>
+  <content>InformationRegister.СообщенияПользователей</content>
+  <content>Constant.ЛогинПользователяСАП</content>
+  <content>Subsystem.АсТБ.Subsystem.ОбеспечениеОбменаСАП</content>
+  <content>DataProcessor.ВыгрузкаДокументовППСвСАП</content>
+</mdclass:FunctionalOption>

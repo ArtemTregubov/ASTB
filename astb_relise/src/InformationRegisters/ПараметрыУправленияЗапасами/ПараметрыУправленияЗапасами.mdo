@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5525923b-3d46-4a0d-99af-a9ac43b703dd">
+  <producedTypes>
+    <selectionType typeId="b3ad1dca-bdb0-4ec9-a783-d371510422d1" valueTypeId="89db2919-54a1-44e5-8367-554684beadc5"/>
+    <listType typeId="6b64b518-98a1-479f-82c7-f7e25ccf01ee" valueTypeId="f8536557-f3b0-4e27-996e-413c44f40382"/>
+    <managerType typeId="b6a4aeba-51f0-4336-855e-4bf5b991fd46" valueTypeId="ac5e0edb-2d8e-4232-a036-f5fe7ab463ee"/>
+    <recordSetType typeId="3683ea54-a1bb-4a05-aebe-c1cce404c903" valueTypeId="7a9b671f-ab33-41ea-9e7e-5f20e5f51eca"/>
+    <recordKeyType typeId="0c96eaee-3909-4b6c-9fe4-4d3c9860a224" valueTypeId="889159b9-7742-4832-a612-8f77a2d9eb7d"/>
+    <recordType typeId="c7de94c5-e900-4017-930f-6f3572b16bb3" valueTypeId="ed4d04ab-e81b-4f57-a6c2-63a8d19230e0"/>
+    <recordManagerType typeId="8c6bc18b-6f25-45e3-b28a-f19e4b4d65da" valueTypeId="8549f874-af58-49de-b1e7-41b8430b0fdc"/>
+  </producedTypes>
+  <name>ПараметрыУправленияЗапасами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры управления запасами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыУправленияЗапасами.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыУправленияЗапасами.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="efbc479d-0968-43e0-9221-449962f9e6bd">
+    <name>МинимальноеКоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальное количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>365</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>60</value>
+    </fillValue>
+  </resources>
+  <resources uuid="da613fae-3196-4600-804d-4935c0c7b4ba">
+    <name>МаксимальноеКоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>365</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>90</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="762c2e28-ebb4-4a9c-9868-dbc3ff84f915">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="96dd3262-1305-4a47-99a5-b52612e38fdb">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5a64103f-c569-467c-9eb5-6cc1fa9de1b2">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ПараметрыУправленияЗапасами.Dimension.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2a52f61f-e983-441e-bc3c-2d63e470af90">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="edf5f192-83c4-449a-8e66-a47c413141b8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28047e11-0917-4208-8b7b-d0cd35e73498">
+  <producedTypes>
+    <objectType typeId="0ca8bffc-6491-4b4b-95ae-8bc132e1543c" valueTypeId="531b8cf5-42eb-4e1f-8a59-78242fa58841"/>
+    <managerType typeId="e5a9a9ba-a1f1-4fe6-a1e8-90704563dbd4" valueTypeId="f56ee592-e8d4-41b2-914d-80ea49471aff"/>
+  </producedTypes>
+  <name>ОбеспеченностьСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обеспеченность сотрудника</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОбеспеченностьСотрудника.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОбеспеченностьСотрудника.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="d28d254a-d59c-43b1-b6bb-67775da09bd2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="551d6e60-1530-4c19-a5bf-d4a7357abc14">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="104c9f8c-3f30-4123-824b-3c34226ebb22">
+    <name>ОбеспеченностьСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обеспеченность</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

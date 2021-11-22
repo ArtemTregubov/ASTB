@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.19572"></meta></head><body>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<h4><font face="Calibri" size="3">Формирование заказов поставщику</font></h4>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"><br></font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Обработка предназначена для формирования заказов на поставку спецодежды и СИЗ, на основании потребности сотрудников и остатков на складах.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Внимание! Использование обработки требует дополнительной проверки оператором после формирования заказа.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/1.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.1</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Вводим первоначальные данные (Рис.1)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">1.<span class="Apple-tab-span" style="white-space:pre">	</span>Выбираем организацию</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">2.<span class="Apple-tab-span" style="white-space:pre">	</span>Указываем, какую информацию потребуется видеть на вспомогательных отчетах при формировании заказа (код синхронизации, артикул, номенклатурный номер или код товара, сформированный в 1С)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">3.<span class="Apple-tab-span" style="white-space:pre">	</span>Задаем период, на который хотим осуществить заказ</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">4.<span class="Apple-tab-span" style="white-space:pre">	</span>Выбираем склады, остатки которых хотим учитывать при заказе.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Задав нужные параметры, необходимо выполнить предварительный анализ для расчета количества номенклатуры к заказу.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">В нижней части обработки задаются фильтры.  Обратите внимание, что обработка анализирует очень большой объем данных, в связи с этим процедуры выполняются долгое (в случае, если база большая – очень долгое) время. Рекомендуется выполнять анализ по частям (не на все данные сразу). Для этого предусмотрены фильтры по виду выдачи, по подразделениям, по МВЗ, по сотрудникам и по номенклатурам нормы. После установки фильтров нажимаем "Выполнить предварительный анализ" (Рис.2):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/2.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.2</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Фильтры нужно устанавливать слева направо, потому как в зависимости от установленных фильтров, набор значений в таблицах, стоящих справа, изменяется. </font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Например, если в таблице "Сотрудники" оставить только одного сотрудника, то в таблице, находящейся справа от нее (Номенклатуры нормы), останутся только те номенклатуры нормы, которые есть у выбранного сотрудника в установленных нормах.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Аналогично, если выбрать в столбце "Подразделения" ряд подразделений, то в таблицах справа останутся только те сотрудники, которые в этом подразделении устроены, те МВЗ, которые относятся к выбранным подразделениям и сотрудникам, те номенклатуры нормы, которые есть в установленных нормах для этих сотрудников.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">У таблиц есть пиктограмма со стрелочками: <img src="_files/3.png"></img> , которая позволяет перемещать таблицы влево-вправо, тем самым упрощая процесс установки отборов</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">После нажатия на кнопку "Выполнить предварительный анализ" начнется процесс формирования заказа.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">В результате в обработке появятся следующие вкладки (Рис.4):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/4.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.4</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">1.<span class="Apple-tab-span" style="white-space:pre">	</span>Подобрано.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Сюда попадут те номенклатуры, которые есть в потребности у выбранных сотрудников в заданном периоде, и которые есть на остатках на складе (В заказ поставщику не попадут)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">2.<span class="Apple-tab-span" style="white-space:pre">	</span>Не подобрано.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Сюда попадут те номенклатуры, которые есть в потребности у выбранных сотрудников в заданном периоде, и которых нет на остатках на складе (Попадут в заказ поставщику).</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">При необходимости можно вывести получившуюся таблицу для дальнейшего сохранения ее в Excel (Рис.5):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/5.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.5</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">3.<span class="Apple-tab-span" style="white-space:pre">	</span>Не может быть подобрано.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Сюда попадут те нормы, по которым не может подобраться номенклатура выдачи.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Причины, по которым товар не может быть подобран:</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">А. На номенклатуру нормы не установлен маппинг.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Б. В существующем маппинге нет номенклатуры с подходящим полом.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">В. У сотрудника нет антропометрии, при этом в номенклатуре выдачи, положенной сотруднику, есть размерный ряд</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Г. У сотрудника установлена нестандартная антропометрия, которая не подходит ни для одной характеристики товара, установленного в соответствие маппингом</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Чтобы заказ был корректным, необходимо избавиться от записей в таблице "Не может быть подобрано". То есть привести данные к такому виду, чтобы программа могла понять, какой товар какому сотруднику положен.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Из этого раздела можно создать документ «Установка соответствия номенклатуры выдачи» (Рис.6): </font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"><br></font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"></p>
+<p><font face="Calibri" size="3"><img src="_files/6.png"></img></font></p>
+<p></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.6</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">4.<span class="Apple-tab-span" style="white-space:pre">	</span>Доступность СИЗ.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Содержит справочную информацию о доступности СИЗ в графическом и табличном виде </font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">5.<span class="Apple-tab-span" style="white-space:pre">	</span>Остатки после подбора.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Содержит информацию о количестве товара, которое останется на складах после обеспечения сотрудников товаром из графы "Подобрано" (вкладка 1).</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">6.<span class="Apple-tab-span" style="white-space:pre">	</span>Не задано МВЗ.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Содержит справочную информацию о сотрудниках, у которых не задано МВЗ.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">При необходимости, можно перейти из вкладки в документ "Установка МВЗ подразделений" и установить МВЗ на нужные подразделения (Рис.7):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/7.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.7</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"><br></font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">В случае если какие-то изменения были внесены в базу после анализа вышеописанных шести вкладок, требуется выполнить предварительный анализ повторно.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">После этого можно переходить к формированию заказа. Для этого переходим на вкладку "Формирование заказов поставщику"(Рис.8):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/8.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.8</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Заполнится табличная часть (Рис.9)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">1.<span class="Apple-tab-span" style="white-space:pre">	</span>Указываем склад, на который будет осуществляться поступление</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">2.<span class="Apple-tab-span" style="white-space:pre">	</span>Указываем поставщиков, номенклатуры которых требуется заказать. </font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Внимание! Вместо товаров от "выключенного" поставщика не будет подобран товар поставщика, который остался в списке. Просто закажется меньше товаров.</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/9.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.9</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">После этого нажимаем "Выполнить анализ для формирования заказов":</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">1.<span class="Apple-tab-span" style="white-space:pre">	</span>"Заказано" – количество этого товара, заказанного на тот же самый (или пересекающийся) период </font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">2.<span class="Apple-tab-span" style="white-space:pre">	</span>"Красная линия" – количество, указанное в разделе "Красная линия" для этого товара (количество, которое обязательно должно быть на остатках)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">3.<span class="Apple-tab-span" style="white-space:pre">	</span>"Требуется" – количество, которое должно быть заказано без учета красной линии и ранее заказнного</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">4.<span class="Apple-tab-span" style="white-space:pre">	</span>"Заказано" – количество, которое будет добавлено в документ "Заказ поставщику" с учетом уже заказанного товара и красной линии (Рис.10)</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/10.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.10</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Есть возможность распечатать уже существующие на текущий момент заказы и заказы, которые сформируются из обработки нажатием на "Печать заказов" (Рис.11):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/11.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.11</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">И, наконец, сформировать заказы поставщику нажатием на "Сформировать заказы" (Рис.12):</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3"> <img src="_files/12.png"></img></font></p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 10pt;"><font face="Calibri" size="3">Рис.12</font></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><font face="Calibri" size="3">Сформируются заказы поставщику с разбиением по месяцам и по поставщикам</font></p></blockquote>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt"><br></p></body></html>

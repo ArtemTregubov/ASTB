@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48a29134-c943-47c1-9ee6-492ddfb388f5">
+  <producedTypes>
+    <managerType typeId="7e127c4a-122d-4ba7-8764-76f883f32163" valueTypeId="cbac1669-9e93-40b0-b3de-50eb9475872b"/>
+    <valueManagerType typeId="2153eae4-5095-436d-b43d-5e0ad214b983" valueTypeId="c44f93c3-c18d-4f27-ad4b-8840e7e7ec9d"/>
+    <valueKeyType typeId="9eb70a92-22fe-4939-9db5-085352c8e2b4" valueTypeId="6d761a3d-1914-40fe-95d4-5b42b21cc330"/>
+  </producedTypes>
+  <name>АХ_ВнешнийПользователь</name>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

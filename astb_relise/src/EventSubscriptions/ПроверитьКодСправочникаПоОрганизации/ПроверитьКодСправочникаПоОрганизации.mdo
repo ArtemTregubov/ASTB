@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6889d082-6fd2-4f13-b9f0-b933654fb185">
+  <name>ПроверитьКодСправочникаПоОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить код справочника по организации</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.НормыВыдачиСИЗ</types>
+    <types>CatalogObject.РабочиеМестаАСТБ</types>
+    <types>CatalogObject.Подразделения</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.НоменклатураНормОрганизации</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрефиксацияОбъектовСобытия.ПроверитьКодСправочникаПоОрганизации</handler>
+</mdclass:EventSubscription>

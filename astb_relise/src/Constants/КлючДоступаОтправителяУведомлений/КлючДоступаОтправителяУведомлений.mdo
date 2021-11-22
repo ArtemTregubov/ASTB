@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72b09a03-6ff6-4eca-b600-9619601498a3">
+  <producedTypes>
+    <managerType typeId="196455fb-b71c-44d8-a5b5-c34ef24a52cf" valueTypeId="67851767-fb88-4f3d-8259-4071af5ae978"/>
+    <valueManagerType typeId="e90def73-b582-4f36-b2af-55c456025a86" valueTypeId="70ae0fe7-cec9-4a96-b77d-a7ada34c230e"/>
+    <valueKeyType typeId="53b81526-7af1-501b-bf12-3ac1a7bab562" valueTypeId="e9eb9e58-431b-5f37-a423-33845ae288c5"/>
+  </producedTypes>
+  <name>КлючДоступаОтправителяУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключ доступа отправителя PUSH-уведомлений</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>54</length>
+      <fixed>true</fixed>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

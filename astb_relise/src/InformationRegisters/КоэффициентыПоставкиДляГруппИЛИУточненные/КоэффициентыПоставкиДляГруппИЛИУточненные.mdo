@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee168b94-aee6-4bd3-aa6d-79b049b3f093">
+  <producedTypes>
+    <selectionType typeId="fea9dd4f-5cb4-44b7-8a04-e08363d510d1" valueTypeId="e4719e8a-d614-47e7-ba24-bb4861471616"/>
+    <listType typeId="82ab1b45-8d2e-49c7-88d8-e46f28b098a4" valueTypeId="70d82934-6555-4454-ae74-c6cd36704168"/>
+    <managerType typeId="9215da39-35c2-4e11-b786-941bde953c4e" valueTypeId="ed6175cb-cfe5-414c-8876-c4187a0ce0ba"/>
+    <recordSetType typeId="f5d79f74-90ca-4bd8-bdfa-06c10cc520e9" valueTypeId="a7b95e33-6875-4547-b6f5-594023f6800b"/>
+    <recordKeyType typeId="e5ff8260-b525-4c8b-8c9a-177c07a3fa4b" valueTypeId="ed3efc6e-e3bc-4046-ae13-366948aec56b"/>
+    <recordType typeId="a1fa7a7b-482c-4345-aaee-d7c328bb767a" valueTypeId="ef2306b3-f5e8-46d3-bc63-ba2c20bdce55"/>
+    <recordManagerType typeId="6175a1a7-4ab0-47ae-94c9-4a55d1483082" valueTypeId="02a0b74e-20ff-4562-ace9-5241c98d9451"/>
+  </producedTypes>
+  <name>КоэффициентыПоставкиДляГруппИЛИУточненные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты поставки для групп ИЛИ уточненные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="95e95d37-34b9-46dd-8110-5aefc7118dc1">
+    <name>ПроцентПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент поставки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8dd32d57-dadc-4654-99a8-4c462d8479fd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="18dc9658-6e8b-4014-9e26-b5426de6da2e">
+    <name>НормаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НормыВыдачиСИЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.КоэффициентыПоставкиДляГруппИЛИУточненные.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

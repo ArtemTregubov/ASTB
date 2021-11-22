@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерГоловногоУбора</dataPath>
+			<field>РазмерГоловногоУбора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер головного убора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОдежды</dataPath>
+			<field>РазмерОдежды</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер одежды</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОбуви</dataPath>
+			<field>РазмерОбуви</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер обуви</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерРукавиц</dataPath>
+			<field>РазмерРукавиц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер рукавиц</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерПротивогаза</dataPath>
+			<field>РазмерПротивогаза</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер противогаза</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерПерчаток</dataPath>
+			<field>РазмерПерчаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер перчаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерРеспиратора</dataPath>
+			<field>РазмерРеспиратора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер респиратора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерРубашки</dataPath>
+			<field>РазмерРубашки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер рубашки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Рост</dataPath>
+			<field>Рост</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рост</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Телефон</dataPath>
+			<field>Телефон</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Адрес</dataPath>
+			<field>Адрес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Почта</dataPath>
+			<field>Почта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Почта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗначенияАнтропометрическихСвойств.Сотрудник КАК Сотрудник,
+	ЗначенияАнтропометрическихСвойств.ВидСвойства КАК ВидСвойства,
+	ЗначенияАнтропометрическихСвойств.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_ЗначенияАнтропометрии
+ИЗ
+	РегистрСведений.ЗначенияАнтропометрическихСвойств КАК ЗначенияАнтропометрическихСвойств
+ГДЕ
+	ЗначенияАнтропометрическихСвойств.Сотрудник.Владелец = &amp;Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерГоловногоУбора
+ПОМЕСТИТЬ ВТ_РазмерГоловногоУбораСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерГоловногоУбора)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерОбуви
+ПОМЕСТИТЬ ВТ_РазмерОбувиСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОбуви)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерОдежды
+ПОМЕСТИТЬ ВТ_РазмерОдеждыСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОдежды)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерПерчаток
+ПОМЕСТИТЬ ВТ_РазмерПерчатокСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерПерчаток)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерПротивогаза
+ПОМЕСТИТЬ ВТ_РазмерПротивогазаСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерПротивогаза)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерРеспиратора
+ПОМЕСТИТЬ ВТ_РазмерРеспиратораСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерРеспиратора)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерРубашки
+ПОМЕСТИТЬ ВТ_РазмерРубашкиСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерРубашки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК РазмерРукавиц
+ПОМЕСТИТЬ ВТ_РазмерРукавицСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерРукавиц)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияАнтропометрии.Сотрудник КАК Сотрудник,
+	ВТ_ЗначенияАнтропометрии.ЗначениеСвойства КАК Рост
+ПОМЕСТИТЬ ВТ_РостСотрудников
+ИЗ
+	ВТ_ЗначенияАнтропометрии КАК ВТ_ЗначенияАнтропометрии
+ГДЕ
+	ВТ_ЗначенияАнтропометрии.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.Рост)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ФизическиеЛицаКонтактнаяИнформация.Ссылка КАК ФизЛицо,
+	ФизическиеЛицаКонтактнаяИнформация.Представление КАК Телефон
+ПОМЕСТИТЬ ВТ_НомерМобильногоТелефона
+ИЗ
+	Справочник.ФизическиеЛица.КонтактнаяИнформация КАК ФизическиеЛицаКонтактнаяИнформация
+ГДЕ
+	ФизическиеЛицаКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.Телефон)
+	И ФизическиеЛицаКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ТелефонФизическиеЛица)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ФизическиеЛицаКонтактнаяИнформация.Ссылка КАК ФизЛицо,
+	ФизическиеЛицаКонтактнаяИнформация.Представление КАК Почта
+ПОМЕСТИТЬ ВТ_Почта
+ИЗ
+	Справочник.ФизическиеЛица.КонтактнаяИнформация КАК ФизическиеЛицаКонтактнаяИнформация
+ГДЕ
+	ФизическиеЛицаКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.АдресЭлектроннойПочты)
+	И ФизическиеЛицаКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.EmailФизическиеЛица)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ФизическиеЛицаКонтактнаяИнформация.Представление КАК Адрес,
+	ФизическиеЛицаКонтактнаяИнформация.Ссылка КАК ФизЛицо
+ПОМЕСТИТЬ ВТ_Адрес
+ИЗ
+	Справочник.ФизическиеЛица.КонтактнаяИнформация КАК ФизическиеЛицаКонтактнаяИнформация
+ГДЕ
+	ФизическиеЛицаКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.Адрес)
+	И ФизическиеЛицаКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.АдресФизическиеЛица)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Сотрудники.Ссылка КАК Сотрудник,
+	ЕСТЬNULL(ВТ_РазмерГоловногоУбораСотрудников.РазмерГоловногоУбора, 0) КАК РазмерГоловногоУбора,
+	ЕСТЬNULL(ВТ_РазмерОбувиСотрудников.РазмерОбуви, 0) КАК РазмерОбуви,
+	ЕСТЬNULL(ВТ_РазмерОдеждыСотрудников.РазмерОдежды, 0) КАК РазмерОдежды,
+	ЕСТЬNULL(ВТ_РазмерПерчатокСотрудников.РазмерПерчаток, 0) КАК РазмерПерчаток,
+	ЕСТЬNULL(ВТ_РазмерПротивогазаСотрудников.РазмерПротивогаза, 0) КАК РазмерПротивогаза,
+	ЕСТЬNULL(ВТ_РазмерРеспиратораСотрудников.РазмерРеспиратора, 0) КАК РазмерРеспиратора,
+	ЕСТЬNULL(ВТ_РазмерРубашкиСотрудников.РазмерРубашки, 0) КАК РазмерРубашки,
+	ЕСТЬNULL(ВТ_РазмерРукавицСотрудников.РазмерРукавиц, 0) КАК РазмерРукавиц,
+	ЕСТЬNULL(ВТ_РостСотрудников.Рост, 0) КАК Рост,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Подразделение КАК Подразделение,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Должность КАК Должность,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.РабочееМесто КАК РабочееМесто,
+	ВТ_Адрес.Адрес КАК Адрес,
+	ВТ_НомерМобильногоТелефона.Телефон КАК Телефон,
+	ВТ_Почта.Почта КАК Почта
+ИЗ
+	Справочник.Сотрудники КАК Сотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерГоловногоУбораСотрудников КАК ВТ_РазмерГоловногоУбораСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерГоловногоУбораСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОбувиСотрудников КАК ВТ_РазмерОбувиСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерОбувиСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОдеждыСотрудников КАК ВТ_РазмерОдеждыСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерОдеждыСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерПерчатокСотрудников КАК ВТ_РазмерПерчатокСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерПерчатокСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерПротивогазаСотрудников КАК ВТ_РазмерПротивогазаСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерПротивогазаСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерРеспиратораСотрудников КАК ВТ_РазмерРеспиратораСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерРеспиратораСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерРубашкиСотрудников КАК ВТ_РазмерРубашкиСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерРубашкиСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерРукавицСотрудников КАК ВТ_РазмерРукавицСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РазмерРукавицСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РостСотрудников КАК ВТ_РостСотрудников
+		ПО Сотрудники.Ссылка = ВТ_РостСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОсновноеМестоРаботыСотрудника.СрезПоследних КАК ОсновноеМестоРаботыСотрудникаСрезПоследних
+		ПО Сотрудники.Ссылка = ОсновноеМестоРаботыСотрудникаСрезПоследних.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_НомерМобильногоТелефона КАК ВТ_НомерМобильногоТелефона
+		ПО Сотрудники.ФизическоеЛицо = ВТ_НомерМобильногоТелефона.ФизЛицо
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Почта КАК ВТ_Почта
+		ПО Сотрудники.ФизическоеЛицо = ВТ_Почта.ФизЛицо
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Адрес КАК ВТ_Адрес
+		ПО Сотрудники.ФизическоеЛицо = ВТ_Адрес.ФизЛицо
+ГДЕ
+	Сотрудники.Владелец = &amp;Организация</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ДанныеПоСотрудникамПоПодразделениям</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Данные по сотрудникам по поразделениям</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только работающие сотрудники</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:userSettingID>71d3f35e-0d23-435b-9e53-207fe9fcb2d4</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>eec35ae9-2194-4c92-a07b-5427af8b083a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>0db585c0-7ff2-4677-9f67-16bb731362ef</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>1677ee20-76f4-49d7-b131-ea5a68f55e7e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>5b4ca368-da1a-40c3-b301-b5b2e17dc117</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные по сотрудникам по поразделениям</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Должность</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Телефон</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Почта</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Адрес</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ДанныеПоСотрудникамСписком</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Данные по сотрудникам списком</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Телефон</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Почта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Адрес</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только работающие сотрудники</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:userSettingID>71d3f35e-0d23-435b-9e53-207fe9fcb2d4</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>eec35ae9-2194-4c92-a07b-5427af8b083a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>0db585c0-7ff2-4677-9f67-16bb731362ef</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>1677ee20-76f4-49d7-b131-ea5a68f55e7e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>5b4ca368-da1a-40c3-b301-b5b2e17dc117</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные по сотрудникам списком</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	НоменклатураНормОрганизации.Ссылка
+ПОМЕСТИТЬ ВТ_НоменклатураНорм
+ИЗ
+	Справочник.НоменклатураНормОрганизации КАК НоменклатураНормОрганизации
+ГДЕ
+	НоменклатураНормОрганизации.Владелец = &amp;Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СоответствияНоменклатурыВыдачиСрезПоследних.НоменклатураНормыОрганизации
+ПОМЕСТИТЬ ВТ_СоответствияНоменклатурыВыдачи
+ИЗ
+	РегистрСведений.СоответствияНоменклатурыВыдачи.СрезПоследних КАК СоответствияНоменклатурыВыдачиСрезПоследних
+ГДЕ
+	СоответствияНоменклатурыВыдачиСрезПоследних.НоменклатураНормыОрганизации.Владелец = &amp;Организация
+	И СоответствияНоменклатурыВыдачиСрезПоследних.Использовать
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УстановленныеНормыВыдачиСИЗ.НормаВыдачи,
+	МАКСИМУМ(УстановленныеНормыВыдачиСИЗ.Период) КАК Период,
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы
+ПОМЕСТИТЬ ВТ_МаксимальныйПериод
+ИЗ
+	РегистрСведений.УстановленныеНормыВыдачиСИЗ КАК УстановленныеНормыВыдачиСИЗ
+ГДЕ
+	УстановленныеНормыВыдачиСИЗ.Организация = &amp;Организация
+
+СГРУППИРОВАТЬ ПО
+	УстановленныеНормыВыдачиСИЗ.НормаВыдачи,
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_МаксимальныйПериод.НормаВыдачи
+ПОМЕСТИТЬ ВТ_УстановленныеНормыВыдачи
+ИЗ
+	ВТ_МаксимальныйПериод КАК ВТ_МаксимальныйПериод
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УстановленныеНормыВыдачиСИЗ.СрезПоследних(, Организация = &amp;Организация) КАК УстановленныеНормыВыдачиСИЗСрезПоследних
+		ПО ВТ_МаксимальныйПериод.Период = УстановленныеНормыВыдачиСИЗСрезПоследних.Период
+			И ВТ_МаксимальныйПериод.НормаВыдачи = УстановленныеНормыВыдачиСИЗСрезПоследних.НормаВыдачи
+			И ВТ_МаксимальныйПериод.Подразделение = УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение
+			И ВТ_МаксимальныйПериод.Должность = УстановленныеНормыВыдачиСИЗСрезПоследних.Должность
+			И ВТ_МаксимальныйПериод.РабочееМесто = УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто
+			И ВТ_МаксимальныйПериод.УсловиеНормы = УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы
+ГДЕ
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Использовать
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	НормыВыдачиСИЗСоставНормы.НоменклатураНормы
+ПОМЕСТИТЬ ВТ_АктуальнаяНоменклатураНорм
+ИЗ
+	ВТ_УстановленныеНормыВыдачи КАК ВТ_УстановленныеНормыВыдачи
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.НормыВыдачиСИЗ.СоставНормы КАК НормыВыдачиСИЗСоставНормы
+		ПО ВТ_УстановленныеНормыВыдачи.НормаВыдачи = НормыВыдачиСИЗСоставНормы.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_НоменклатураНорм.Ссылка
+ИЗ
+	ВТ_НоменклатураНорм КАК ВТ_НоменклатураНорм
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СоответствияНоменклатурыВыдачи КАК ВТ_СоответствияНоменклатурыВыдачи
+		ПО ВТ_НоменклатураНорм.Ссылка = ВТ_СоответствияНоменклатурыВыдачи.НоменклатураНормыОрганизации
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_АктуальнаяНоменклатураНорм КАК ВТ_АктуальнаяНоменклатураНорм
+		ПО ВТ_НоменклатураНорм.Ссылка = ВТ_АктуальнаяНоменклатураНорм.НоменклатураНормы
+ГДЕ
+	ВТ_СоответствияНоменклатурыВыдачи.НоменклатураНормыОрганизации ЕСТЬ NULL 
+	И НЕ ВТ_АктуальнаяНоменклатураНорм.НоменклатураНормы ЕСТЬ NULL 
+
+УПОРЯДОЧИТЬ ПО
+	ВТ_НоменклатураНорм.Ссылка.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>НоменклатураНормОрганизацииСоответствия</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: номенклатура норм (соответствия)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>e29374dc-9146-4806-aee1-4d8d47e899d9</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>ea6b41b6-e7e1-4475-bd5c-56767446680b</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура норм (нет соответствия номенклатуре выдачи)</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Ссылка</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ссылка.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ссылка</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура нормы</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

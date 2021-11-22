@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c74ac5b-7188-4074-88fd-2df0bab97127">
+  <name>ЦенообразованиеСерверПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ценообразование сервер переопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

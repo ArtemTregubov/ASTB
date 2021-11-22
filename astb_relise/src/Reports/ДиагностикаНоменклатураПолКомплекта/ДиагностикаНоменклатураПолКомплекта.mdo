@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61f894de-4109-4482-8dcb-7a1c85625581">
+  <producedTypes>
+    <objectType typeId="e85936d6-ae7c-455b-ad5c-e037c413d915" valueTypeId="a6f24941-2447-427d-a3a8-fe681dea6e1d"/>
+    <managerType typeId="1f8fa5b0-3cd4-4871-9fe8-854836c4cc0c" valueTypeId="62641841-5159-476e-b1be-a329fe209111"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураПолКомплекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура (пол комплекта и комплектующих)</value>
+  </synonym>
+  <comment>Номенклатура (не совпадает пол комплекта и комплектующих)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураПолКомплекта.Template.НоменклатураПолКомплекта</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура (не совпадает пол комплекта и комплектующих)</value>
+  </explanation>
+  <templates uuid="5b6b0ffe-2e86-4ea7-b45f-f46e5dc00a47">
+    <name>НоменклатураПолКомплекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (пол комплекта и комплектующих)</value>
+    </synonym>
+    <comment>Номенклатура (не совпадает пол комплекта и комплектующих).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

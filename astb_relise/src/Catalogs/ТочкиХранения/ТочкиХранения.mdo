@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf6c584d-567a-4ab0-92f0-3d78b7c5b1b2">
+  <producedTypes>
+    <objectType typeId="df11769a-c74a-4f00-8381-550bdd44fe1f" valueTypeId="2ca28005-2a86-40fb-8077-ddb244b2096a"/>
+    <refType typeId="14921b53-7987-4707-83d9-08469e1b41c5" valueTypeId="9230e03e-fed9-41d9-85fb-13c3635f82c1"/>
+    <selectionType typeId="4f98ef27-5c12-4b34-8006-54fe8cb16cdc" valueTypeId="c5907bab-9de9-4fe3-b3ad-e6d1f93db586"/>
+    <listType typeId="091e0a24-59d8-47a3-84d9-e0b819cc6bca" valueTypeId="92134ac9-dbd9-4f0b-8f15-4a909480db3f"/>
+    <managerType typeId="d91fc8aa-c565-44b8-b9b4-493ec28f5f1f" valueTypeId="1c0d2983-b4ed-4081-81f6-7b6498f9f617"/>
+  </producedTypes>
+  <name>ТочкиХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки хранения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТочкиХранения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТочкиХранения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>2</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТочкиХранения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ТочкиХранения.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ТочкиХранения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТочкиХранения.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="eb9a099e-36e2-41b2-9642-cfaef8bf875e">
+    <name>ПолныйАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полный адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b2411c50-4cc3-4d90-804f-9735de5864a3">
+    <name>ДополнениеКНаименованию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнение к наименованию</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9c6d3e41-f10f-437e-8898-0041b42210a6">
+    <name>ВидТочкиХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид точки хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыТочекХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b707e38a-deb9-4f69-860b-bf71b78a9002">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolder</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="858876b5-fead-442a-9181-97e13bc3ca84">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="58755afa-a672-401f-b697-5f4aba2cece0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe7f2c58-12e2-40f4-8ade-dd40a8350769">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="61a7f208-4ebb-4979-b63b-38ff298fc786">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

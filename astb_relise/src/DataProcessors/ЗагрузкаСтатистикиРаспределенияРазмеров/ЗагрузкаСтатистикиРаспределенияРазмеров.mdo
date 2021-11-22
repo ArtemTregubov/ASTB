@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e564bc02-1668-4e80-9948-7451ef7c91e6">
+  <producedTypes>
+    <objectType typeId="c319d262-d234-4a24-955c-f776be3dc190" valueTypeId="c5fd22f6-945d-4746-a9e3-dbf348923f11"/>
+    <managerType typeId="29e5b08f-bf0c-478e-bc3c-5d67ef9ba4c1" valueTypeId="1306649d-cfe7-4055-bb8a-080a8b61feef"/>
+  </producedTypes>
+  <name>ЗагрузкаСтатистикиРаспределенияРазмеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка статистики распределения размеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаСтатистикиРаспределенияРазмеров.Form.Форма</defaultForm>
+  <forms uuid="c3456551-2c40-4ecf-802f-90d5f308eebc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="87efba88-c787-47f5-bc78-901ff4037712">
+    <name>ЗагрузкаСтатистикиРаспределенияРазмеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка статистики распределения размеров</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

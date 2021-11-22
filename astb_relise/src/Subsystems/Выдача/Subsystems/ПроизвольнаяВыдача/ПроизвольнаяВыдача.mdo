@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80c53d08-2d3e-4fae-9a7f-2c67ab1b3b73">
+  <name>ПроизвольнаяВыдача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Произвольная выдача</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ</content>
+  <parentSubsystem>Subsystem.Выдача</parentSubsystem>
+</mdclass:Subsystem>

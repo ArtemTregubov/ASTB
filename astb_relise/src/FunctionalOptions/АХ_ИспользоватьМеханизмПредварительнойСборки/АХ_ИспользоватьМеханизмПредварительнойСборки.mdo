@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b71ab43-3706-4f58-a06f-6a5fd08ce75c">
+  <name>АХ_ИспользоватьМеханизмПредварительнойСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>А х использовать механизм предварительной сборки</value>
+  </synonym>
+  <location>Constant.АХ_ИспользоватьМеханизмПредварительнойСборки</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

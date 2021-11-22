@@ -1,0 +1,108 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='catalog_group'>
+  <xsd:complexType>
+   <xsd:attribute name='group_name' type='xsd:string' use='required'/>
+   <xsd:attribute name='group_no' type='xsd:string' use='required'/>
+   <xsd:attribute name='owner_group' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='catalog_group_list'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='catalog_group'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='desc_full'>
+  <xsd:complexType>
+   <xsd:attribute name='desc_line' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='size_item'>
+  <xsd:complexType>
+   <xsd:attribute name='size_code' type='xsd:string' use='required'/>
+   <xsd:attribute name='size_name' type='xsd:string' use='required'/>
+   <xsd:attribute name='size_ora' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='c_val_list'>
+  <xsd:complexType>
+   <xsd:attribute name='char_val' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='char_item'>
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref='c_val_list'/>
+   </xsd:sequence>
+   <xsd:attribute name='c_name' type='xsd:string' use='required'/>
+   <xsd:attribute name='c_cod' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='char_list'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='char_item'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='size_list'>
+  <xsd:complexType>
+   <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xsd:element ref='size_item'/>
+   </xsd:sequence>
+   <xsd:attribute name='matrix_name' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='catalog_tov'>
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+     <xsd:element ref='desc_full'/>
+    </xsd:sequence>
+    <xsd:sequence minOccurs='0' maxOccurs='1'>
+     <xsd:element ref='char_list'/>
+    </xsd:sequence>
+    <xsd:element ref='size_list'/>
+   </xsd:sequence>
+   <xsd:attribute name='mtnr_id' type='xsd:string' use='required'/>
+   <xsd:attribute name='group_no' type='xsd:string' use='required'/>
+   <xsd:attribute name='tov_name40' type='xsd:string' use='required'/>
+   <xsd:attribute name='tov_name80' type='xsd:string' use='required'/>
+   <xsd:attribute name='catalog_cod' type='xsd:string' use='required'/>
+   <xsd:attribute name='okei_cod' type='xsd:string' use='required'/>
+   <xsd:attribute name='mass' type='xsd:string' use='required'/>
+   <xsd:attribute name='volume' type='xsd:string' use='required'/>
+   <xsd:attribute name='nds' type='xsd:string' use='required'/>
+   <xsd:attribute name='status_sap' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='catalog_tov_list'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='catalog_tov'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='tovar_export'>
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref='catalog_group_list'/>
+    <xsd:element ref='catalog_tov_list'/>
+   </xsd:sequence>
+   <xsd:attribute name='source_org' type='xsd:string' use='required'/>
+   <xsd:attribute name='tovar_range' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

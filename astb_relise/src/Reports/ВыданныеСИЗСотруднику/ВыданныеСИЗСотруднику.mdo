@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf09a230-3f99-4bdd-8291-effb6091d57e">
+  <producedTypes>
+    <objectType typeId="2815d40a-840b-4765-acd4-1b43f4438677" valueTypeId="1c608b17-aa69-489c-9a63-1454509b4b9c"/>
+    <managerType typeId="460cdd61-4066-4615-a3f3-9c97e84bd5a9" valueTypeId="db3b08b6-c878-4fcc-93de-27ddd0a02fc1"/>
+  </producedTypes>
+  <name>ВыданныеСИЗСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выданные СИЗ сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВыданныеСИЗСотруднику.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="6b3e3e63-4f29-421d-a2d1-987f6628baa6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="c706ade7-8cce-4da7-a807-ddada516b735">
+    <name>ВыданныеСИЗСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выданные СИЗ</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

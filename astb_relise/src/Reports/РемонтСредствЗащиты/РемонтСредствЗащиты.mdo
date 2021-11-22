@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="602c0510-4588-4ca1-a3c5-028884aa951b">
+  <producedTypes>
+    <objectType typeId="41e9a58a-d1e0-4509-94ec-30a86fa444b9" valueTypeId="67ac512c-99d5-4b9b-90b2-064441de863b"/>
+    <managerType typeId="c9fd5417-e726-48d9-9e41-f50b82a55844" valueTypeId="705cf58c-64d8-43a6-877a-d7aef0497f2e"/>
+  </producedTypes>
+  <name>РемонтСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонт средств защиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РемонтСредствЗащиты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="6214c231-5a29-4f2a-bad3-d736cb7efb34">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

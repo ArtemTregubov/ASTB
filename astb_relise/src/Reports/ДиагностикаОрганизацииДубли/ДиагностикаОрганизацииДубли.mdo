@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="184e12ec-f84e-4515-bf17-18f68acb2803">
+  <producedTypes>
+    <objectType typeId="451de29a-4471-4a3d-87e4-6ab3f8f4b232" valueTypeId="a0b57ac8-005c-43ba-a952-53eadb9b957b"/>
+    <managerType typeId="f8979cf7-27e8-484f-b917-dafdc1457e31" valueTypeId="c6799885-5627-4e59-9aca-dd897b243332"/>
+  </producedTypes>
+  <name>ДиагностикаОрганизацииДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: организации (дубли)</value>
+  </synonym>
+  <comment>Организации (дубли по ИНН/КПП)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаОрганизацииДубли.Template.ОрганизацииДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Организации (дубли по ИНН/КПП)</value>
+  </explanation>
+  <templates uuid="6f092bcf-354f-4751-b47d-87cb8057ccbc">
+    <name>ОрганизацииДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организации (дубли)</value>
+    </synonym>
+    <comment>Организации (дубли по ИНН/КПП)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

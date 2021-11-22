@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcd1bc1a-7c53-48e9-a4e9-4bbfe070a26d">
+  <producedTypes>
+    <objectType typeId="9e0e2027-428f-4ebd-bd20-af6693158728" valueTypeId="5eb504da-4d9e-437f-b900-d787ecd24320"/>
+    <managerType typeId="a23071d7-98a7-4c04-aa0f-723b9c7d42b7" valueTypeId="c8a4c05a-0945-4f71-94a4-4c1ef6448558"/>
+  </producedTypes>
+  <name>НеУволенныеВременноТрудоустроенныеСотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не уволенные временно трудоустроенные сотрудники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НеУволенныеВременноТрудоустроенныеСотрудники.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="97d64318-7a64-480e-9018-4626e5f52758">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

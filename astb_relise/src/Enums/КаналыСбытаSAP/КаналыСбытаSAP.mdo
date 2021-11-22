@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a6e8eea-7574-4a48-a9df-22b865133677">
+  <producedTypes>
+    <refType typeId="a0ce3b33-cf4f-4b05-81b9-14d677513557" valueTypeId="23e05a2e-8c4b-4a70-9d57-c75431843dbf"/>
+    <listType typeId="165211d0-acc4-40e4-8dcf-4d3de7389b23" valueTypeId="10cfd7ce-de22-4e13-af6b-39631a75708a"/>
+    <managerType typeId="099eb8e4-41bd-4372-9692-4a65bd339aed" valueTypeId="1666c706-9d1c-4ca3-b5a9-656ab4c623ae"/>
+  </producedTypes>
+  <name>КаналыСбытаSAP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каналы сбыта SAP</value>
+  </synonym>
+  <comment>Каналы сбыта SAP</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="12890a18-fbda-47e7-9628-9bcc43d63c32">
+    <name>КС_10</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 10</value>
+    </synonym>
+    <comment>Общий КС.</comment>
+  </enumValues>
+  <enumValues uuid="20066725-7dd5-4671-aaa0-da810fb701a8">
+    <name>КС_2A</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2A</value>
+    </synonym>
+    <comment>АП.Отд.Персп.Разр.</comment>
+  </enumValues>
+  <enumValues uuid="336d1a24-0d1e-48f1-8e94-625e62594199">
+    <name>КС_2B</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2B</value>
+    </synonym>
+    <comment>Проект ГА</comment>
+  </enumValues>
+  <enumValues uuid="8cc15da7-5e5a-428e-b002-a5f284422726">
+    <name>КС_2C</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2C</value>
+    </synonym>
+    <comment>АП.Ком.служба</comment>
+  </enumValues>
+  <enumValues uuid="f8d1db0f-686f-47af-9b0f-84c37988853a">
+    <name>КС_2E</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2E</value>
+    </synonym>
+    <comment>АП.Гипермаркеты</comment>
+  </enumValues>
+  <enumValues uuid="999db45d-a65c-40da-af0f-88f08e45ab23">
+    <name>КС_2F</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2F</value>
+    </synonym>
+    <comment>АП.ППТК</comment>
+  </enumValues>
+  <enumValues uuid="ac81aaaf-bb45-49a6-ba8e-278300e378b1">
+    <name>КС_2G</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2G</value>
+    </synonym>
+    <comment>АП.Акт. продаж</comment>
+  </enumValues>
+  <enumValues uuid="8b19fa24-58f7-496d-9fe6-7e77d83c6ce8">
+    <name>КС_2I</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2I</value>
+    </synonym>
+    <comment>АП.Корп.продаж</comment>
+  </enumValues>
+  <enumValues uuid="af64d083-2cad-494f-ba51-318e65424890">
+    <name>КС_2M</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2M</value>
+    </synonym>
+    <comment>АП.ОРК</comment>
+  </enumValues>
+  <enumValues uuid="a0a40c8d-39e6-4612-b5f2-6c162c68a26c">
+    <name>КС_2P</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2P</value>
+    </synonym>
+    <comment>АП.КПГ</comment>
+  </enumValues>
+  <enumValues uuid="c918cf5e-729b-48c3-aaef-c115205bf65e">
+    <name>КС_2S</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2S</value>
+    </synonym>
+    <comment>Отд. авар.снаряжения</comment>
+  </enumValues>
+  <enumValues uuid="f394ed16-1105-44a9-8b02-361dcb48e8e5">
+    <name>КС_2T</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2T</value>
+    </synonym>
+    <comment>АП.Энергетика</comment>
+  </enumValues>
+  <enumValues uuid="aaef8537-e9b8-43b6-b031-f091c7b9264c">
+    <name>КС_2U</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2U</value>
+    </synonym>
+    <comment>АП.Отд.Нов.Проектов</comment>
+  </enumValues>
+  <enumValues uuid="36b98dc1-4514-4d46-9ce5-07bcb9e3c619">
+    <name>КС_2V</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2 V</value>
+    </synonym>
+    <comment>АП. Проект.Гос.Корп</comment>
+  </enumValues>
+  <enumValues uuid="bddb97b9-7e48-4971-966d-8fa6a24e172d">
+    <name>КС_2W</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2W</value>
+    </synonym>
+    <comment>Резерв</comment>
+  </enumValues>
+  <enumValues uuid="4cf3492a-9347-4526-9c19-099729828b0f">
+    <name>КС_2X</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2X</value>
+    </synonym>
+    <comment>АП.Проект РЖД</comment>
+  </enumValues>
+  <enumValues uuid="709136aa-0c6a-45bf-b428-05f93ac8f1f4">
+    <name>КС_2Y</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2Y</value>
+    </synonym>
+    <comment>А.П.Отд.Компл.Реш.</comment>
+  </enumValues>
+  <enumValues uuid="90037426-f256-4cd1-b108-2e1666d8a127">
+    <name>КС_2Z</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 2Z</value>
+    </synonym>
+    <comment>Проект HoReCa</comment>
+  </enumValues>
+  <enumValues uuid="7e627376-b9bf-477e-8aed-e36aa0eab1c1">
+    <name>КС_3J</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 3J</value>
+    </synonym>
+    <comment>ПП.Сбыт №1</comment>
+  </enumValues>
+  <enumValues uuid="4ae1cde4-924d-42fe-a41c-e69605e86940">
+    <name>КС_4E</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 4E</value>
+    </synonym>
+    <comment>Economis</comment>
+  </enumValues>
+  <enumValues uuid="0097123e-623f-4d8c-9a9c-bd3d9adb1eba">
+    <name>КС_4N</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 4N</value>
+    </synonym>
+    <comment>ТЗ.Опт/розница</comment>
+  </enumValues>
+  <enumValues uuid="cd05cd81-aa06-4e47-9304-e3d645bf337a">
+    <name>КС_5K</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 5K</value>
+    </synonym>
+    <comment>Ф.Рег.управ.Клиенты</comment>
+  </enumValues>
+  <enumValues uuid="84f877d8-7332-4bba-a40f-348dcbb3bac1">
+    <name>КС_5L</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 5L</value>
+    </synonym>
+    <comment>Ф.РФ.Рег.управление</comment>
+  </enumValues>
+  <enumValues uuid="45ece292-8b04-488a-9bd9-cc1ed1502434">
+    <name>КС_5R</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 5R</value>
+    </synonym>
+    <comment>Ф.СНГ.Рег.управление</comment>
+  </enumValues>
+  <enumValues uuid="7ce63539-96e8-424f-a3c8-89346ce19f4f">
+    <name>КС_6Q</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал сбыта 6Q</value>
+    </synonym>
+    <comment>внутр перемещения</comment>
+  </enumValues>
+</mdclass:Enum>

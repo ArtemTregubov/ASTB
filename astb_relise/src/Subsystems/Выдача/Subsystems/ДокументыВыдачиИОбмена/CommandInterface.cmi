@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Document.ОбменСредствЗащитыСотрудника.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.ЗаявкаНаВыдачу.StandardCommand.OpenList</commands>
+      <commands>Document.ВыдачаДежурныхСредствЗащиты.StandardCommand.OpenList</commands>
+      <commands>Document.ВыдачаСредствЗащитыПоВедомости.StandardCommand.OpenList</commands>
+      <commands>Document.ВыдачаСредствЗащитыСотруднику.StandardCommand.OpenList</commands>
+      <commands>Document.ЗачетУпрощеннойВыдачи.StandardCommand.OpenList</commands>
+      <commands>Document.ОбменСредствЗащитыСотрудника.StandardCommand.OpenList</commands>
+      <commands>Document.УстановкаШтрихкодовНоменклатуры.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

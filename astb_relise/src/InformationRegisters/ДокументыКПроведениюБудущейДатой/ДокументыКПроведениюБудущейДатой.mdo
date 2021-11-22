@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a8ab98a-7918-4949-8312-e7f452fc318a">
+  <producedTypes>
+    <selectionType typeId="55a575f2-6284-4e8b-b091-06f8db6774c9" valueTypeId="6b5bf876-81e2-4a3a-8b81-1c7e06b439d6"/>
+    <listType typeId="5e0c60b5-d280-41fa-8582-8c05db814f8e" valueTypeId="77a3d20e-ada2-4e3f-ace0-e6b932da28eb"/>
+    <managerType typeId="d5c0b9e7-f3fa-4aaf-a96d-a8cc537e2e22" valueTypeId="35432ae6-8585-4355-944c-cc459c4603c3"/>
+    <recordSetType typeId="ea1933a7-c506-41d1-8252-ae456e4bd652" valueTypeId="fb060091-cce5-400b-9712-71a52e7b22e9"/>
+    <recordKeyType typeId="3ab65e9f-2035-466b-900c-e22b5ce0b743" valueTypeId="d4621843-bf3c-4d6c-8611-95ccb366ac03"/>
+    <recordType typeId="b4a79d4a-27d7-41df-b2bb-bdcc04c73d53" valueTypeId="ad0cd9b5-4283-46ee-8fb8-04a1569c6765"/>
+    <recordManagerType typeId="5e522380-e092-41eb-808c-e90c31c87b85" valueTypeId="7fc81a11-bae1-4dca-a3a4-5a1b6eafeaac"/>
+  </producedTypes>
+  <name>ДокументыКПроведениюБудущейДатой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы к проведению будущей датой</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="18ad149d-f7de-4bda-a7fd-34a8e62dc2f0">
+    <name>ДокументКПроведению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ к проведению</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Увольнение</types>
+      <types>DocumentRef.КадровоеПеремещение</types>
+      <types>DocumentRef.ОтсутствиеНаРабочемМесте</types>
+      <types>DocumentRef.ПриемНаРаботу</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

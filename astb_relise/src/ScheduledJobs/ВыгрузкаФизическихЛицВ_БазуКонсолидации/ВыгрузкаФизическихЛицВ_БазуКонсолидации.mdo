@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b0190ce-b263-458c-b7a2-bd6b1b0eda96">
+  <name>ВыгрузкаФизическихЛицВ_БазуКонсолидации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка физических лиц в базу консолидации</value>
+  </synonym>
+  <comment>33597</comment>
+  <methodName>CommonModule.КонсолидацияСервер.ВыгрузкаФизическихЛицВ_БазуКонсолидации</methodName>
+  <description>Выгрузка физических лиц в базу консолидации</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69b472a1-fc65-4e00-9991-576ed56a3a24">
+  <producedTypes>
+    <objectType typeId="94b54037-291f-4a3d-969d-214c6714b902" valueTypeId="da03eb44-a3ea-42cd-9696-0bc7d68251e1"/>
+    <managerType typeId="941b1cbf-5ec2-4dcf-9e36-9612c9f2504d" valueTypeId="faab317e-472b-45a5-aa4a-fc532a881722"/>
+  </producedTypes>
+  <name>СотрудникиПодразделения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники подразделения</value>
+  </synonym>
+  <defaultForm>DataProcessor.СотрудникиПодразделения.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="5eb397cb-36c3-4b6c-8fa2-01e06bb10cf5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="cfd4fcf8-eb35-40c8-9ec4-d783fea6a19d">
+    <name>СотрудникиПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники подразделения</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Подразделения</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbf82b3a-1483-4dd9-a2fd-448b0892add5">
+  <producedTypes>
+    <objectType typeId="146265e4-e326-4762-82f9-b3bde4c26f73" valueTypeId="930f32c6-a417-4e4c-8465-672e4fa4c969"/>
+    <managerType typeId="2e17dbe4-fdb1-42c2-8484-3d0313f72ffc" valueTypeId="c810bd7f-f11d-47d5-814d-dc104556c180"/>
+  </producedTypes>
+  <name>ДиагностикаФизическиеЛицаДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: физические лица (дубли)</value>
+  </synonym>
+  <comment>Физические лица (дубли по наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаФизическиеЛицаДубли.Template.ФизическиеЛицаДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Физические лица (дубли по наименованию)</value>
+  </explanation>
+  <templates uuid="25dd35e8-7763-4834-b045-c697cc1f4306">
+    <name>ФизическиеЛицаДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физические лица (дубли)</value>
+    </synonym>
+    <comment>Физические лица (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

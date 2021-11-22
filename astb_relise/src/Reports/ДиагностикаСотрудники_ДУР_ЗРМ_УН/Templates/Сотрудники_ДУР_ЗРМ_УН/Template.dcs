@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловиеНормы</dataPath>
+			<field>УсловиеНормы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	МАКСИМУМ(ДоступныеУсловияРаботыСотрудника.Период) КАК Период,
+	ДоступныеУсловияРаботыСотрудника.Сотрудник,
+	ДоступныеУсловияРаботыСотрудника.Подразделение,
+	ДоступныеУсловияРаботыСотрудника.Должность,
+	ДоступныеУсловияРаботыСотрудника.РабочееМесто,
+	ДоступныеУсловияРаботыСотрудника.Условие
+ПОМЕСТИТЬ ВТ_МаксимальныйПериодДУР
+ИЗ
+	РегистрСведений.ДоступныеУсловияРаботыСотрудника КАК ДоступныеУсловияРаботыСотрудника
+ГДЕ
+	ДоступныеУсловияРаботыСотрудника.Сотрудник.Владелец = &amp;Организация
+
+СГРУППИРОВАТЬ ПО
+	ДоступныеУсловияРаботыСотрудника.Сотрудник,
+	ДоступныеУсловияРаботыСотрудника.Подразделение,
+	ДоступныеУсловияРаботыСотрудника.Должность,
+	ДоступныеУсловияРаботыСотрудника.РабочееМесто,
+	ДоступныеУсловияРаботыСотрудника.Условие
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.Сотрудник,
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.Подразделение,
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.Должность,
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.РабочееМесто,
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.Условие
+ПОМЕСТИТЬ ВТ_ДУР
+ИЗ
+	ВТ_МаксимальныйПериодДУР КАК ВТ_МаксимальныйПериодДУР
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДоступныеУсловияРаботыСотрудника.СрезПоследних(, Сотрудник.Владелец = &amp;Организация) КАК ДоступныеУсловияРаботыСотрудникаСрезПоследних
+		ПО ВТ_МаксимальныйПериодДУР.Период = ДоступныеУсловияРаботыСотрудникаСрезПоследних.Период
+			И ВТ_МаксимальныйПериодДУР.Сотрудник = ДоступныеУсловияРаботыСотрудникаСрезПоследних.Сотрудник
+			И ВТ_МаксимальныйПериодДУР.Подразделение = ДоступныеУсловияРаботыСотрудникаСрезПоследних.Подразделение
+			И ВТ_МаксимальныйПериодДУР.Должность = ДоступныеУсловияРаботыСотрудникаСрезПоследних.Должность
+			И ВТ_МаксимальныйПериодДУР.РабочееМесто = ДоступныеУсловияРаботыСотрудникаСрезПоследних.РабочееМесто
+			И ВТ_МаксимальныйПериодДУР.Условие = ДоступныеУсловияРаботыСотрудникаСрезПоследних.Условие
+ГДЕ
+	ДоступныеУсловияРаботыСотрудникаСрезПоследних.Использовать
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗанятыеРабочиеМестаОстатки.Подразделение,
+	ЗанятыеРабочиеМестаОстатки.Должность,
+	ЗанятыеРабочиеМестаОстатки.РабочееМесто,
+	ЗанятыеРабочиеМестаОстатки.Сотрудник
+ПОМЕСТИТЬ ВТ_ЗРМ
+ИЗ
+	РегистрНакопления.ЗанятыеРабочиеМеста.Остатки(, Организация = &amp;Организация) КАК ЗанятыеРабочиеМестаОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(УстановленныеНормыВыдачиСИЗ.Период) КАК Период,
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы
+ПОМЕСТИТЬ ВТ_МаксимальныйПериодУН
+ИЗ
+	РегистрСведений.УстановленныеНормыВыдачиСИЗ КАК УстановленныеНормыВыдачиСИЗ
+ГДЕ
+	УстановленныеНормыВыдачиСИЗ.Организация = &amp;Организация
+
+СГРУППИРОВАТЬ ПО
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Должность,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы
+ПОМЕСТИТЬ ВТ_УН
+ИЗ
+	ВТ_МаксимальныйПериодУН КАК ВТ_МаксимальныйПериодУН
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УстановленныеНормыВыдачиСИЗ.СрезПоследних КАК УстановленныеНормыВыдачиСИЗСрезПоследних
+		ПО ВТ_МаксимальныйПериодУН.Период = УстановленныеНормыВыдачиСИЗСрезПоследних.Период
+			И ВТ_МаксимальныйПериодУН.Подразделение = УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение
+			И ВТ_МаксимальныйПериодУН.Должность = УстановленныеНормыВыдачиСИЗСрезПоследних.Должность
+			И ВТ_МаксимальныйПериодУН.РабочееМесто = УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто
+			И ВТ_МаксимальныйПериодУН.УсловиеНормы = УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы
+ГДЕ
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Использовать
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗРМ.Сотрудник,
+	ВТ_ЗРМ.Подразделение,
+	ВТ_ЗРМ.Должность,
+	ВТ_ЗРМ.РабочееМесто,
+	ВТ_УН.УсловиеНормы
+ПОМЕСТИТЬ ВТ_ЗРМ_УН
+ИЗ
+	ВТ_ЗРМ КАК ВТ_ЗРМ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УН КАК ВТ_УН
+		ПО ВТ_ЗРМ.Подразделение = ВТ_УН.Подразделение
+			И ВТ_ЗРМ.Должность = ВТ_УН.Должность
+			И ВТ_ЗРМ.РабочееМесто = ВТ_УН.РабочееМесто
+ГДЕ
+	НЕ ВТ_УН.УсловиеНормы ЕСТЬ NULL 
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗРМ_УН.Сотрудник,
+	ВТ_ЗРМ_УН.Подразделение,
+	ВТ_ЗРМ_УН.Должность,
+	ВТ_ЗРМ_УН.РабочееМесто,
+	ВТ_ЗРМ_УН.УсловиеНормы
+ИЗ
+	ВТ_ЗРМ_УН КАК ВТ_ЗРМ_УН
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДУР КАК ВТ_ДУР
+		ПО ВТ_ЗРМ_УН.Сотрудник = ВТ_ДУР.Сотрудник
+			И ВТ_ЗРМ_УН.Подразделение = ВТ_ДУР.Подразделение
+			И ВТ_ЗРМ_УН.Должность = ВТ_ДУР.Должность
+			И ВТ_ЗРМ_УН.РабочееМесто = ВТ_ДУР.РабочееМесто
+			И ВТ_ЗРМ_УН.УсловиеНормы = ВТ_ДУР.Условие
+ГДЕ
+	ВТ_ДУР.Условие ЕСТЬ NULL 
+
+УПОРЯДОЧИТЬ ПО
+	ВТ_ЗРМ_УН.Сотрудник.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Сотрудники_ДУР_ЗРМ_УН</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: сотрудники (ДУР по ЗРМ и УН)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>7b6a40f1-6548-47bc-b2f3-803216132694</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>8e11b5a4-9948-4957-94b0-7d7c60b764c6</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудники (недоступны условия работы)</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Табельный №</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Должность</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РабочееМесто</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>УсловиеНормы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

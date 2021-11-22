@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0509e388-bc5f-4075-aaf9-6701f139efb7">
+  <producedTypes>
+    <objectType typeId="6effc6d8-dd1c-4bda-ba77-49a3bd88532e" valueTypeId="0f0f93d1-3c22-4163-86f1-19e6ba6dc205"/>
+    <refType typeId="c22b8d60-a9e4-40d7-a055-1f2a90bbbc67" valueTypeId="3865b9f1-1d95-404b-94c3-05db52846e4b"/>
+    <selectionType typeId="8175475f-4b53-4770-8c8a-a9843de0c5f1" valueTypeId="297ef958-a0ad-4b4a-920e-f7dce188445d"/>
+    <listType typeId="1290e4a7-151f-4952-ba3a-28059d3b1d87" valueTypeId="76ee3d29-4cfb-4834-9a58-787b426ea222"/>
+    <managerType typeId="0065bb4d-ce36-4eff-97ce-1699b594dcf4" valueTypeId="bf37298d-12ea-4d93-9d55-ec0337996309"/>
+  </producedTypes>
+  <name>Тесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тесты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Тесты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Тесты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Тесты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.Тесты.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.Тесты.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Тесты.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="e7bc9c25-2fd3-4c63-a80d-c77c2250d57f">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4f9c743a-d3b5-44d7-a70b-d0bab0c79fb7">
+    <producedTypes>
+      <objectType typeId="ac8b52af-2009-4646-ad5a-d602eb4f5337" valueTypeId="987b116a-d97c-44f8-a9b3-148f31bb71d0"/>
+      <rowType typeId="7f4e2214-8c44-438d-88ea-0de68e0d9508" valueTypeId="c1f3d4e2-3a08-41c2-8860-f44a16864950"/>
+    </producedTypes>
+    <name>Вопросы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопросы</value>
+    </synonym>
+    <attributes uuid="19989f80-9e39-43d8-9c31-c0f62aaa2ec0">
+      <name>Вопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вопрос</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВопросыДляТестов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="dcf2e8e9-d9dd-49ef-bbce-1edcd152b092">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fbc65cec-0076-4908-aaf8-7ff5b431d66f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="47e171c3-f780-4522-ab8e-f80b8926f51e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="41bca94f-4f2d-487e-9ad4-d164059287b3">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

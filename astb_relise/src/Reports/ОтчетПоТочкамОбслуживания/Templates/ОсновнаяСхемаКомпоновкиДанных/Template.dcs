@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяСборки</dataPath>
+			<field>ВремяСборки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время сборки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОбслуживания</dataPath>
+			<field>ВремяОбслуживания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время обслуживания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПримерки</dataPath>
+			<field>ВремяПримерки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время примерки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяОбработкиДанных</dataPath>
+			<field>ВремяОбработкиДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время обработки данных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</title>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоздательДокумента</dataPath>
+			<field>СоздательДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создатель документа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееВремяОбработкиДанных</dataPath>
+			<field>СреднееВремяОбработкиДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее время обработки данных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееВремяСборки</dataPath>
+			<field>СреднееВремяСборки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее время сборки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееВремяОбслуживания</dataPath>
+			<field>СреднееВремяОбслуживания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее время обслуживания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееВремяПримерки</dataPath>
+			<field>СреднееВремяПримерки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее время примерки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ТочкиОбслуживанияСотрудников.ДокументВыдачи.Организация КАК Организация,
+	ТочкиОбслуживанияСотрудников.ДокументВыдачи.Склад КАК Склад,
+	ТочкиОбслуживанияСотрудников.ДокументВыдачи.Сотрудник КАК Сотрудник,
+	ТочкиОбслуживанияСотрудников.ДокументВыдачи.СоздательДокумента КАК СоздательДокумента,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА ВЫБОР
+					КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+						ТОГДА РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+					ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ПереданВПримерку, МИНУТА)
+				КОНЕЦ
+		ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ПереданНаСборку, МИНУТА)
+	КОНЕЦ КАК ВремяОбработкиДанных,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+					ТОГДА ВЫБОР
+							КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку &gt; ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено
+								ТОГДА 0
+							ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданНаСборку, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+						КОНЕЦ
+				ИНАЧЕ ВЫБОР
+						КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку &gt; ТочкиОбслуживанияСотрудников.ПереданВПримерку
+							ТОГДА 0
+						ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданНаСборку, ТочкиОбслуживанияСотрудников.ПереданВПримерку, МИНУТА)
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ КАК ВремяСборки,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку &gt; ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено
+					ТОГДА 0
+				ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданВПримерку, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+			КОНЕЦ
+	КОНЕЦ КАК ВремяПримерки,
+	РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА) КАК ВремяОбслуживания,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА ВЫБОР
+					КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+						ТОГДА РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+					ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ПереданВПримерку, МИНУТА)
+				КОНЕЦ
+		ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ПереданНаСборку, МИНУТА)
+	КОНЕЦ КАК СреднееВремяОбработкиДанных,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+					ТОГДА ВЫБОР
+							КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку &gt; ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено
+								ТОГДА 0
+							ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданНаСборку, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+						КОНЕЦ
+				ИНАЧЕ ВЫБОР
+						КОГДА ТочкиОбслуживанияСотрудников.ПереданНаСборку &gt; ТочкиОбслуживанияСотрудников.ПереданВПримерку
+							ТОГДА 0
+						ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданНаСборку, ТочкиОбслуживанияСотрудников.ПереданВПримерку, МИНУТА)
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ КАК СреднееВремяСборки,
+	ВЫБОР
+		КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА ТочкиОбслуживанияСотрудников.ПереданВПримерку &gt; ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено
+					ТОГДА 0
+				ИНАЧЕ РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПереданВПримерку, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА)
+			КОНЕЦ
+	КОНЕЦ КАК СреднееВремяПримерки,
+	РАЗНОСТЬДАТ(ТочкиОбслуживанияСотрудников.ПринятВРаботу, ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено, МИНУТА) КАК СреднееВремяОбслуживания
+ИЗ
+	РегистрСведений.ТочкиОбслуживанияСотрудников КАК ТочкиОбслуживанияСотрудников
+ГДЕ
+	ТочкиОбслуживанияСотрудников.ДокументВыдачи.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И НЕ ТочкиОбслуживанияСотрудников.ОбслуживаниеЗавершено = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ВремяОбработкиДанных</dataPath>
+		<expression>Сумма(ВремяОбработкиДанных)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяСборки</dataPath>
+		<expression>Сумма(ВремяСборки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяПримерки</dataPath>
+		<expression>Сумма(ВремяПримерки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяОбслуживания</dataPath>
+		<expression>Сумма(ВремяОбслуживания)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднееВремяОбработкиДанных</dataPath>
+		<expression>Среднее(СреднееВремяОбработкиДанных)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднееВремяСборки</dataPath>
+		<expression>Среднее(СреднееВремяСборки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднееВремяПримерки</dataPath>
+		<expression>Среднее(СреднееВремяПримерки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднееВремяОбслуживания</dataPath>
+		<expression>Среднее(СреднееВремяОбслуживания)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">LastMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоТочкамОбслуживания</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по точкам обслуживания</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяОбработкиДанных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяСборки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяПримерки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяОбслуживания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднееВремяОбработкиДанных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднееВремяСборки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднееВремяПримерки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднееВремяОбслуживания</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>78fc3ad0-e645-4292-90d7-d626671ca0a0</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>1ecdc883-596c-4914-97a2-13576579d33d</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>fa065ca2-8640-4631-8bdb-5a7b5147b2ae</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СоздательДокумента</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9f1a1115-0612-45d6-a18b-4839f74964ab</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">LastMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>c721da54-b0dc-479a-804f-2671d4c947c4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>СоздательДокумента</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Сотрудник</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

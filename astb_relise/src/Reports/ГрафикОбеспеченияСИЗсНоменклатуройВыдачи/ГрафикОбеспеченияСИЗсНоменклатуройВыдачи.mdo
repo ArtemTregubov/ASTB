@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365fe973-b144-4aae-90af-b916f94c14f5">
+  <producedTypes>
+    <objectType typeId="80947e59-97a0-4ab3-b7d1-cb4637c34cfd" valueTypeId="550863f5-95b7-402a-9196-909709dda054"/>
+    <managerType typeId="867a682b-873d-4c8e-9504-1de191b2f9a7" valueTypeId="5a16af3c-746b-4706-8165-156182cea0b8"/>
+  </producedTypes>
+  <name>ГрафикОбеспеченияСИЗсНоменклатуройВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>График обеспечения СИЗ с номенклатурой выдачи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикОбеспеченияСИЗсНоменклатуройВыдачи.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="604fb810-fdcc-475f-9b2a-86b46ab2e492">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

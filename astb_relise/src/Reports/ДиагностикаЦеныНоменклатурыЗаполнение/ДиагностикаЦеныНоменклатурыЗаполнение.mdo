@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f248b1ab-519d-4442-a185-2d360768f994">
+  <producedTypes>
+    <objectType typeId="879a31b0-84bf-4ce3-a340-fd415fe3150b" valueTypeId="d72c254b-e2c3-4db6-9db2-c84e4e2da793"/>
+    <managerType typeId="c768f488-0b05-4c95-b3c5-54785c5dd0bb" valueTypeId="10ac163c-d3ad-4068-9465-d847080db342"/>
+  </producedTypes>
+  <name>ДиагностикаЦеныНоменклатурыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: цены номенклатуры (заполнение)</value>
+  </synonym>
+  <comment>Заполнение цен номенклатуры выдачи</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаЦеныНоменклатурыЗаполнение.Template.ЦеныНоменклатурыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение цен номенклатуры выдачи</value>
+  </explanation>
+  <templates uuid="f1141a46-9269-42ae-8c8d-946eab76496c">
+    <name>ЦеныНоменклатурыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цены номенклатуры (заполнение)</value>
+    </synonym>
+    <comment>Заполнение цен номенклатуры выдачи</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

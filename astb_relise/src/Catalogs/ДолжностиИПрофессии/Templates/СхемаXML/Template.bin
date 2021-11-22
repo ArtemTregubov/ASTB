@@ -1,0 +1,26 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='profession_category'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='profession_list'/>
+   </xsd:sequence>
+   <xsd:attribute name='class' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='profession_list'>
+  <xsd:complexType>
+   <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xsd:element ref='profession_category'/>
+   </xsd:sequence>
+   <xsd:attribute name='code' type='xsd:string' default=''/>
+   <xsd:attribute name='kch' type='xsd:string' default=''/>
+   <xsd:attribute name='profession_name' type='xsd:string' default=''/>
+   <xsd:attribute name='razryad' type='xsd:string' default=''/>
+   <xsd:attribute name='code_etkc' type='xsd:string' default=''/>
+   <xsd:attribute name='code_category' type='xsd:string' default=''/>
+   <xsd:attribute name='code_okz' type='xsd:string' default=''/>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

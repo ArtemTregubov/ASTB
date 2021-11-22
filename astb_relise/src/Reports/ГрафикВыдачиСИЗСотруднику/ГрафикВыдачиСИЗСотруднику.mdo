@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab50a6f3-ebe5-4af5-8719-1ee2fb63c30c">
+  <producedTypes>
+    <objectType typeId="b7e3444f-3279-43f5-b3dd-c5030d67a905" valueTypeId="a4049d98-407d-4724-a1fa-e8b6b99e4d3e"/>
+    <managerType typeId="ad3b4f8f-1c3f-4d98-95ef-0b2ded2cc0e9" valueTypeId="3bfa4dce-4a0e-4194-a617-8e17a39b15be"/>
+  </producedTypes>
+  <name>ГрафикВыдачиСИЗСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>График выдачи СИЗ сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикВыдачиСИЗСотруднику.Template.ГрафикВыдачиСотруднику</mainDataCompositionSchema>
+  <attributes uuid="dc15b7a5-3d51-4b48-b311-c51079255418">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="8b64b01f-20fa-4e47-b108-f14bedf52706">
+    <name>ГрафикВыдачиСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>График выдачи сотруднику</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="5d30c456-f5a5-4122-8c85-0dd10b1d2916">
+    <name>ГрафикВыдачиСИЗСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>График выдачи СИЗ</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

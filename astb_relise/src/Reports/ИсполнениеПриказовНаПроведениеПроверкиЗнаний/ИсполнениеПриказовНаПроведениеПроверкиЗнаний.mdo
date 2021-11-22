@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06de7251-33c0-4ee4-b6f6-8c296859c6e1">
+  <producedTypes>
+    <objectType typeId="130a8a92-66e6-4b4b-ad6a-cc891c29170d" valueTypeId="019befc9-4b48-4c67-880b-78abff6a2041"/>
+    <managerType typeId="6d8b0bd6-626d-4161-8eab-df27cb6bfbc2" valueTypeId="1bab8a68-9c13-4fec-b8db-d735099c23ff"/>
+  </producedTypes>
+  <name>ИсполнениеПриказовНаПроведениеПроверкиЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнение приказов на проведение проверки знаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ИсполнениеПриказовНаПроведениеПроверкиЗнаний.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f176a40d-2aaa-4eaa-92e3-802fde9a392c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

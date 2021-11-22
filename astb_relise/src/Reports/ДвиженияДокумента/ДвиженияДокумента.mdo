@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8810b11-3f51-4f84-ab8d-906988288013">
+  <producedTypes>
+    <objectType typeId="44b8252c-d2c5-4a3b-ab63-95c7b8cfa44a" valueTypeId="78d71452-e40e-4573-987e-8e387ca1be1b"/>
+    <managerType typeId="3b26fd99-f539-4d33-ae64-04d31cc6ab7f" valueTypeId="891215a9-8105-43f2-8a23-a675b7d5e400"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <comment>Отчет по движениям документа</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияДокумента.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="0a82c796-759e-4114-9a12-c71e11cd9608">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, для которого формируется отчет.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="682dc66d-8607-480c-aa77-2d8f3492f8c6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="34ce0fc5-3e48-46aa-be3b-f7b027b7122f">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="dd7c012a-2e66-4aea-8ea7-212def453b28">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа</value>
+    </synonym>
+    <comment>Отчет по движениям документа</comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.ЦеновоеСоглашение</types>
+      <types>DocumentRef.ОприходованиеНоменклатуры</types>
+      <types>DocumentRef.ПередачаВЧистку</types>
+      <types>DocumentRef.Увольнение</types>
+      <types>DocumentRef.УстановкаСоответствийНоменклатурыВыдачи</types>
+      <types>DocumentRef.ЗаписьНаСклад</types>
+      <types>DocumentRef.ПриемСредствЗащитыНаХранение</types>
+      <types>DocumentRef.КадровоеПеремещение</types>
+      <types>DocumentRef.ПереходПраваСобственности</types>
+      <types>DocumentRef.ОтсутствиеНаРабочемМесте</types>
+      <types>DocumentRef.УстановкаОсновногоМестаРаботыСотрудника</types>
+      <types>DocumentRef.ОбращениеНаСклад</types>
+      <types>DocumentRef.РемонтСредствЗащиты</types>
+      <types>DocumentRef.ПереносЗимнейПотребности</types>
+      <types>DocumentRef.УстановкаФККОНоменклатуры</types>
+      <types>DocumentRef.ВыдачаДежурныхСредствЗащиты</types>
+      <types>DocumentRef.ПеремещениеНоменклатуры</types>
+      <types>DocumentRef.ПродлениеСрокаЭксплуатации</types>
+      <types>DocumentRef.ПриказНаПроведениеПроверкиЗнаний</types>
+      <types>DocumentRef.ПоступлениеНоменклатуры</types>
+      <types>DocumentRef.ЗаявкаНаВыдачу</types>
+      <types>DocumentRef.УстановкаПериодаЗимы</types>
+      <types>DocumentRef.УстановкаМВЗПодразделений</types>
+      <types>DocumentRef.ЗачетВыданныхСредствЗащиты</types>
+      <types>DocumentRef.ВыдачаСредствЗащитыСотруднику</types>
+      <types>DocumentRef.ЗакрытиеЗаказовПоставщику</types>
+      <types>DocumentRef.ПередачаСИЗвУтилизацию</types>
+      <types>DocumentRef.ПриемНаРаботу</types>
+      <types>DocumentRef.ПредварительныйПереходПраваСобственности</types>
+      <types>DocumentRef.МедицинскийОсмотр</types>
+      <types>DocumentRef.ПриказНаПроведениеИнструктажей</types>
+      <types>DocumentRef.СпециальнаяОценкаРабочихМест</types>
+      <types>DocumentRef.ПеремещениеСредствЗащитыНаХранении</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.УстановкаУсловийРаботыСотрудника</types>
+      <types>DocumentRef.ЦеновоеСоглашениеПоРемонту</types>
+      <types>DocumentRef.СписаниеНоменклатуры</types>
+      <types>DocumentRef.ВозвратСредствЗащитыСХранения</types>
+      <types>DocumentRef.ПриказНаПроведениеМедицинскихОсмотров</types>
+      <types>DocumentRef.КорректировкаРегистров</types>
+      <types>DocumentRef.СогласиеНаИнформирование</types>
+      <types>DocumentRef.ВозвратСредствЗащитыОтСотрудника</types>
+      <types>DocumentRef.ЗачетУпрощеннойВыдачи</types>
+      <types>DocumentRef.СписаниеСредствЗащитыСотрудника</types>
+      <types>DocumentRef.ПриказПоНормамВыдачиСИЗ</types>
+      <types>DocumentRef.ВозвратНоменклатурыПоставщику</types>
+      <types>DocumentRef.ВозвратИзЧистки</types>
+      <types>DocumentRef.УстановкаШтрихкодовНоменклатуры</types>
+      <types>DocumentRef.КомплектацияНоменклатуры</types>
+      <types>DocumentRef.ВыдачаСредствЗащитыПоВедомости</types>
+      <types>DocumentRef.ИнструктажСотрудников</types>
+      <types>DocumentRef.ОбменСредствЗащитыСотрудника</types>
+      <types>DocumentRef.ПроверкаЗнанийСотрудника</types>
+      <types>DocumentRef.УстановкаМВЗДолжностей</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+  </commands>
+</mdclass:Report>

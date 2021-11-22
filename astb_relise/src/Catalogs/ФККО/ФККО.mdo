@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaa6f42e-e7d2-4fce-87d1-fc930de8d44b">
+  <producedTypes>
+    <objectType typeId="f35d0e5c-dd59-4c55-a0e1-e0be573e4238" valueTypeId="9135abec-4948-49e0-acf2-67331d3a7fb3"/>
+    <refType typeId="034484a5-7f61-478a-82de-73f94ee68de1" valueTypeId="19c57709-b85b-4e84-9d5e-8add1cc7f203"/>
+    <selectionType typeId="b0975988-4dd9-4edf-bb96-1a77f1c53dc1" valueTypeId="8d29d256-d518-418f-b695-2efad50d5fbd"/>
+    <listType typeId="5c6e5da9-b2a3-4f3e-b85b-2cb94c71f7d5" valueTypeId="cd993759-2771-4578-bd28-c062f6c1f6a8"/>
+    <managerType typeId="220d0cc6-1a79-4923-9dbf-ac9eb4e00116" valueTypeId="d6e0f30a-9eb5-474c-b896-a5324d5ee549"/>
+  </producedTypes>
+  <name>ФККО</name>
+  <synonym>
+    <key>ru</key>
+    <value>ФККО</value>
+  </synonym>
+  <comment>Федеральный классификационный каталог отходов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ФККО.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ФККО.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ФККО.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ФККО.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ФККО.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="8015f2b4-a811-4e61-b7af-be125098d91a">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="234089f1-c1b5-4fb5-b2f8-4d25215c6f1f">
+    <name>АгрегатноеСостояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агрегатное состояние</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АгрегатныеСостояния</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26ad9061-ebe0-4c69-89e7-8554263fd025">
+    <name>КлассОпасности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс опасности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КлассыОпасности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f26bdf3d-c1d8-4ab8-8b95-6dac9bca06d1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ad337305-55ef-4ace-bab8-9b961ad19db6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e8d95b75-fd11-4cc7-9c5f-fc6a3723e2c2">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7d8f619d-a109-4bfc-889d-74db7392231f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1f18635a-2a06-4fcb-aa30-a787828ad199">
+    <name>Блок1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f9fef5ed-ca26-4d77-aaf2-fe533e7a6e5f">
+    <name>Блок2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок2</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="4bcc887c-3767-414b-89fa-51d3dfeba4c3">
+    <name>Блок3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок3</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="7d288e0b-1f00-4a1c-98bb-c0c1449e15bb">
+    <name>Блок4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок4</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="d19f591d-3e6a-4d0d-9ec6-695278c3d44f">
+    <name>Блок6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок6</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="5de28fec-bcd5-442e-9a5c-6d758c5684c3">
+    <name>Блок7</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок7</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9a6640d8-5969-4a3d-8605-72427c5b6a02">
+    <name>Блок8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок8</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e692a601-914c-4061-867b-28cad2324e44">
+    <name>Блок9</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок9</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f03fe47-06dd-4526-9cf8-3c703ab39002">
+  <name>ВендингЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вендинг зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.НоменклатураНормОрганизации</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменДаннымиВендинг.ВендингЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="679a0572-4485-435c-b5a9-5b072f1a0542">
+  <producedTypes>
+    <objectType typeId="5acb906a-de25-405c-b764-87d7b7365b48" valueTypeId="db549920-cf59-41ef-93da-348288de68a7"/>
+    <managerType typeId="a949b90e-8170-4d52-a304-39d0194caeb0" valueTypeId="6cdf38da-c126-4ff7-a2c3-76eec39b2ce7"/>
+  </producedTypes>
+  <name>ДиагностикаОстатковВППСНенулевымПроцентомИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: остатки ВПП с ненулевым процентом износа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаОстатковВППСНенулевымПроцентомИзноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Диагностика по ненулевым остаткам регистра ВПП на текущую дату</value>
+  </explanation>
+  <templates uuid="ad6fcfae-2d08-4fbd-8808-e4ef10cd86bc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

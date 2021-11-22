@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b998381-d31b-4a94-95d5-305e8c14972e">
+  <producedTypes>
+    <selectionType typeId="9785bf37-b35a-4355-a061-c7b297e49993" valueTypeId="f638fd0e-68b6-49b0-8bbd-c8876ca139d7"/>
+    <listType typeId="ab75384a-96d2-43c0-a12a-c5ccf02d3697" valueTypeId="c1b4e921-149d-45b9-8222-fcfbd7b54e6b"/>
+    <managerType typeId="ba6fa781-ecb7-42d3-bae3-c07a9c529e02" valueTypeId="02507cb0-eefa-4c16-8e15-97d37970e362"/>
+    <recordSetType typeId="f145d0ba-2e75-4784-9087-35f0f814bb44" valueTypeId="ea31b750-2a6a-481e-a77f-71f6884cd99b"/>
+    <recordKeyType typeId="3302cbc2-0482-450c-8490-d5ad024ff8dd" valueTypeId="d3bfd6ff-061c-447d-aa97-d675d97db712"/>
+    <recordType typeId="ad670bf8-c54d-41aa-a70f-c792f8a8f755" valueTypeId="9db18e01-94d5-4082-9329-891f6312f49b"/>
+    <recordManagerType typeId="ae5539ce-6c56-4eec-82f0-04b3265f7c5f" valueTypeId="fbede7f8-3099-43bb-bfcc-b9f5b858ae9d"/>
+  </producedTypes>
+  <name>ТочкиХраненияНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки хранения номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="39954fc6-ce66-4156-8df1-214753720969">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a027ed97-b30e-4a90-a76d-770054810b80">
+    <name>ТочкаХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

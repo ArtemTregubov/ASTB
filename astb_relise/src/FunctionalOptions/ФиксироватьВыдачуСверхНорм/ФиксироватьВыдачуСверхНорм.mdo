@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f55fb10a-3aff-4869-92ea-be233dd4298f">
+  <name>ФиксироватьВыдачуСверхНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксировать выдачу сверх норм</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.ФиксироватьВыдачуСверхНорм</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.TabularSection.Товары.Attribute.ВыдачаСверхНорм</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.Товары.Attribute.ВыдачаСверхНорм</content>
+</mdclass:FunctionalOption>

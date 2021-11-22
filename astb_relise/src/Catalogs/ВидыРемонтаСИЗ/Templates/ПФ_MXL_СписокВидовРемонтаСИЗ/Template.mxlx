@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>2</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<c>
+				<c>
+					<f>3</f>
+					<parameter>Наименование</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<indexTo>2</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<formatIndex>6</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>1</id>
+		<formatIndex>7</formatIndex>
+		<beginRow>0</beginRow>
+		<beginRowOffset>42</beginRowOffset>
+		<endRow>4</endRow>
+		<endRowOffset>15</endRowOffset>
+		<beginColumn>1</beginColumn>
+		<beginColumnOffset>12</beginColumnOffset>
+		<endColumn>1</endColumn>
+		<endColumnOffset>333</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>0</zOrder>
+		<pictureIndex>1</pictureIndex>
+	</drawing>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>8</defaultFormatIndex>
+	<height>7</height>
+	<vgRows>7</vgRows>
+	<merge>
+		<r>0</r>
+		<c>0</c>
+		<h>4</h>
+	</merge>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Разделитель</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>6</beginRow>
+			<endRow>6</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Строка</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>0</beginRow>
+			<endRow>4</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>Штрихкод</name>
+		<drawingID>1</drawingID>
+	</namedItem>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+	</line>
+	<font faceName="Arial" height="28" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>662</width>
+	</format>
+	<format>
+		<width>131</width>
+	</format>
+	<format>
+		<font>0</font>
+		<topBorder>0</topBorder>
+		<bottomBorder>0</bottomBorder>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<topBorder>0</topBorder>
+	</format>
+	<format>
+		<bottomBorder>0</bottomBorder>
+	</format>
+	<format>
+		<height>129</height>
+	</format>
+	<format>
+		<verticalAlignment>Top</verticalAlignment>
+		<backColor>style:FieldBackColor</backColor>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+	<picture>
+		<index>0</index>
+		<picture t="false">/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYE
+BAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQIC
+AgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+DAwMDAwMDAwMDAwMDAz/wAARCAA3AIEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEA
+AAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6
+Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZ
+mqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx
+8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hp
+anN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPE
+xcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9
+/KKKKAP5gf2qv+UWXir/ALJVo3/po+AtHw5/5VnvjJ/2SrwH/wCrY8Z0ftVf8osv
+FX/ZKtG/9NHwFo+HP/Ks98ZP+yVeA/8A1bHjOgD6A/4KH/8AJnn/AATq/wCzVfiV
+/wCqwt6+gP8AgpZ/ysIeHP8AslXw4/8AVzaFXz//AMFD/wDkzz/gnV/2ar8Sv/VY
+W9fQH/BSz/lYQ8Of9kq+HH/q5tCoA/P/AP4Jp/8AKvf4j/7Kr8R//VM67X0B4J/5
+PD/ZG/7NV+CH/qz/AAxXz/8A8E0/+Ve/xH/2VX4j/wDqmddr6A8E/wDJ4f7I3/Zq
+vwQ/9Wf4YoA+f/2N/wDk4r9rH/swCx/9QfwpX0B/wTw/5PD/AOCiv/Z1Xw1/9Wfc
+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
+qKKKACiiigD/2Q==</picture>
+	</picture>
+</document>

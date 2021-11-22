@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce22256f-d03f-4144-99c7-6a127c50a6b9">
+  <name>АХ_ИспользоватьАдресноеХранениеСкоробами</name>
+  <synonym>
+    <key>ru</key>
+    <value>А х использовать адресное хранение скоробами</value>
+  </synonym>
+  <location>Constant.АХ_ИспользоватьАдресноеХранениеСкоробами</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.Склады.Attribute.АХ_АббревиатураСклада</content>
+  <content>Catalog.Склады.Attribute.АХ_КодУзлаТочкиХранения</content>
+  <content>Catalog.Склады.Attribute.АХ_СлотовыйУчетПоСкладу</content>
+  <content>DataProcessor.АХ_ШтрихкодыНоменклатурыАдресногоХранения</content>
+  <content>DataProcessor.АХ_НачальнальноеЗаполнение</content>
+  <content>DataProcessor.АХ_КомплекснаяОбработкаДанных</content>
+  <content>DataProcessor.АХ_ШтрихкодыНоменклатурыАдресногоХранения.Command.ШтрихкодыНоменклатуры</content>
+  <content>DataProcessor.АХ_НачальнальноеЗаполнение.Command.НачальноеЗаполнение</content>
+  <content>Catalog.Склады.Attribute.АХ_СкладДоВыяснения</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.Attribute.АХ_ПеремещениеПоПредварительнойСборке</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.Attribute.АХ_СтатусСборки</content>
+  <content>DataProcessor.ПанельАдминистрированияАсТБ.Command.АХ_ИнструментыДляРаботы</content>
+  <content>Report.АХ_ОтчетРасхожденияОстаков</content>
+</mdclass:FunctionalOption>

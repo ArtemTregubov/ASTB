@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dcd4635-14e1-4289-bcb9-9c5f62ab1e6c">
+  <producedTypes>
+    <objectType typeId="4d85f7d5-74f6-48b6-b423-d9b585fe646a" valueTypeId="d731f8d9-0b05-4c22-ba89-bd4ec20ee17a"/>
+    <managerType typeId="c71f2b26-3f75-4020-93ad-3722c6639046" valueTypeId="e1f01d33-d02b-4f83-be60-480028b28ba0"/>
+  </producedTypes>
+  <name>ДиагностикаСрокиДоставкиСИЗЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сроки доставки СИЗ (заполнение)</value>
+  </synonym>
+  <comment>Заполнение сроков доставки СИЗ</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСрокиДоставкиСИЗЗаполнение.Template.СрокиДоставкиСИЗЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение сроков доставки СИЗ</value>
+  </explanation>
+  <templates uuid="4abea66d-7a24-4f7d-b30e-13a17eb3b59e">
+    <name>СрокиДоставкиСИЗЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сроки доставки СИЗ (заполнение)</value>
+    </synonym>
+    <comment>Заполнение сроков доставки СИЗ</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

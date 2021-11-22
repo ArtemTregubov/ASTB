@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f63586f5-c62d-4d2d-addb-914ea5cc7107">
+  <producedTypes>
+    <objectType typeId="77a2fdf1-314b-4c0d-b173-a1c6e78be1d3" valueTypeId="e4b74308-6211-40f9-8f9e-876f1779a1e5"/>
+    <managerType typeId="62623b41-49b3-47fc-bdaa-6cd25fb785a4" valueTypeId="09fa795f-ed3c-434b-85ab-409925857ca6"/>
+  </producedTypes>
+  <name>СпециальнаяОценкаРабочихМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Специальная оценка рабочих мест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СпециальнаяОценкаРабочихМест.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e795da3b-3586-489c-8c59-07e52971f142">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

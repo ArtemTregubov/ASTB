@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3129fd1-97a2-4b06-aee2-a12968dcd065">
+  <producedTypes>
+    <objectType typeId="6c9da304-43be-4636-8cce-7756cbf283d9" valueTypeId="6b259171-11ff-46ff-9cc2-4f037ce1bf33"/>
+    <managerType typeId="72ce548a-cfce-4e8b-9ee5-6b6607dbce20" valueTypeId="1c8cdc44-0f11-4381-8bce-d80293646ff9"/>
+  </producedTypes>
+  <name>ЗанятыеРабочиеМеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Занятые рабочие места</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗанятыеРабочиеМеста.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="9431e7aa-1337-4315-902b-fdb913467635">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

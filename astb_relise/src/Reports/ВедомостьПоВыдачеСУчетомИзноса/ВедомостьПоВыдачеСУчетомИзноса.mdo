@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d53e5ae-e238-4be3-9f16-39cd1a7be41e">
+  <producedTypes>
+    <objectType typeId="453a2075-b439-4260-a43b-e62d154ce1db" valueTypeId="f9dbab22-7e0d-4dc1-b70d-6fbe72fa2af9"/>
+    <managerType typeId="7202ad89-c724-4801-b138-47b55cfdd8ed" valueTypeId="8e532265-afa3-48bd-ad3c-1ec286aa6f8c"/>
+  </producedTypes>
+  <name>ВедомостьПоВыдачеСУчетомИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость по выдаче (с % износа)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВедомостьПоВыдачеСУчетомИзноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3776a49e-4f35-40ff-a756-e8adce8cf5a3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="f8445eef-beff-44c3-96ea-853c0a4d8545">
+    <name>ВедомостьПоВыдачеСИзносом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость по выдаче (с % износа)</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Организации</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

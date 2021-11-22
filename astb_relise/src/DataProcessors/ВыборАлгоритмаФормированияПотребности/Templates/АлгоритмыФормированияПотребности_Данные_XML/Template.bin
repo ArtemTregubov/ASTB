@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<algorithm_export name="Алгоритмы формирования потребности для АСТБ редакции 2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///d:/222.xsd">
+	<algorithm_list>
+		<algorithm_item algorithm_code="ИЛИ0ФСН0СП0ЧВ3" algorithm_name="Алгоритм_0_0_0_3" algorithm_abbreviation="0_0_0_3">
+			<algorithm_options group_or="0" fixing_wearing_period="0" folding_requirement="0" partial_distribution="3"></algorithm_options>
+			<algorithm_description>
+				<algorithm_description_item text="Норма выдачи содержит в составе только один элемент"></algorithm_description_item>
+				<algorithm_description_item text="При выдаче свертка выдаваемых СИЗ по номенклатуре нормы не производится"></algorithm_description_item>
+				<algorithm_description_item text="Потребность двигается по каждой норме выдачи отдельно"></algorithm_description_item>
+				<algorithm_description_item text="При неполной выдаче потребность двигается по количеству выданных СИЗ"></algorithm_description_item>
+				<algorithm_description_item text="При изменении срока использования СИЗ производится расчет процента износа, согласно старому сроку использования, и расчет даты потребности."></algorithm_description_item>
+			</algorithm_description>
+		</algorithm_item>
+		<algorithm_item algorithm_code="ИЛИ0ФСН0СП1ЧВ2" algorithm_name="Алгоритм_0_0_1_2" algorithm_abbreviation="0_0_1_2">
+			<algorithm_options group_or="0" fixing_wearing_period="0" folding_requirement="1" partial_distribution="2"></algorithm_options>
+			<algorithm_description>
+				<algorithm_description_item text="Норма выдачи содержит в составе только один элемент"></algorithm_description_item>
+				<algorithm_description_item text="При выдаче производится свертка выдаваемых СИЗ по номенклатуре нормы"></algorithm_description_item>
+				<algorithm_description_item text="Потребность двигается по всем нормам выдачи, содержащим одинаковую номенклатуру нормы"></algorithm_description_item>
+				<algorithm_description_item text="При неполной выдаче потребность двигается только в том случае, когда общее количество выданных СИЗ равно количеству по потребности"></algorithm_description_item>
+			</algorithm_description>
+		</algorithm_item>
+		<algorithm_item algorithm_code="ИЛИ0ФСН0СП0ЧВ4" algorithm_name="Алгоритм_0_0_0_4" algorithm_abbreviation="0_0_0_4">
+			<algorithm_options group_or="0" fixing_wearing_period="0" folding_requirement="0" partial_distribution="4"></algorithm_options>
+			<algorithm_description>
+				<algorithm_description_item text="Норма выдачи содержит в составе только один элемент"></algorithm_description_item>
+				<algorithm_description_item text="При выдаче свертка выдаваемых СИЗ по номенклатуре нормы не производится"></algorithm_description_item>
+				<algorithm_description_item text="Потребность двигается по каждой норме выдачи отдельно"></algorithm_description_item>
+				<algorithm_description_item text="При неполной выдаче потребность двигается по количеству выданных СИЗ"></algorithm_description_item>
+				<algorithm_description_item text="При изменении срока использования СИЗ производится определение даты потребности, согласно проценту износа СИЗ на момент выдачи."></algorithm_description_item>
+			</algorithm_description>
+		</algorithm_item>
+	</algorithm_list>
+</algorithm_export>

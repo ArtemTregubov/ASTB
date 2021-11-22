@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<ASTB_FKKO>
+	<fkko_list fkko_block="Блок 1">
+		<fkko_item fkko_code="10000000000" fkko_name="ОТХОДЫ СЕЛЬСКОГО, ЛЕСНОГО ХОЗЯЙСТВА, РЫБОВОДСТВА И РЫБОЛОВСТВА" fkko_group_code="" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11000000000" fkko_name="ОТХОДЫ СЕЛЬСКОГО ХОЗЯЙСТВА" fkko_group_code="10000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11100000000" fkko_name="Отходы растениеводства (включая деятельность по подготовке продукции к сбыту)" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101000000" fkko_name="Отходы от предпосевной подготовки семян" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101100000" fkko_name="Отходы от предпосевной подготовки семян зерновых культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101200000" fkko_name="Отходы от предпосевной подготовки семян зернобобовых культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101300000" fkko_name="Отходы от предпосевной подготовки семян масленичных культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101400000" fkko_name="Отходы от предпосевной подготовки семян овощных культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101500000" fkko_name="Отходы от предпосевной подготовки семян бахчевых культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11101600000" fkko_name="Отходы от предпосевной подготовки семян корнеплодных культур" fkko_group_code="11100000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11110000000" fkko_name="Отходы при выращивании зерновых и зернобобовых культур" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11111000000" fkko_name="Отходы при уборке урожая зерновых и зернобобовых культур" fkko_group_code="11110000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11111540000" fkko_name="Отходы при механической обработке кукурузных початков" fkko_group_code="11111000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11112000000" fkko_name="Отходы от механической очистки и сортировки зерна (зерновые отходы)" fkko_group_code="11110000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11113000000" fkko_name="Отходы механической очистки семян многолетних травянистых растений" fkko_group_code="11110000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11120000000" fkko_name="Отходы при выращивании овощей, бахчевых, корнеплодных и клубнеплодных культур" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11130000000" fkko_name="Отходы при выращивании прочих однолетних культур" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11131000000" fkko_name="Отходы при выращивании грибов" fkko_group_code="11130000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11140000000" fkko_name="Отходы при выращивании цветов в защищенном грунте" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11190000000" fkko_name="Прочие отходы растениеводства" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11191000000" fkko_name="Субстраты для тепличного растениеводства отработанные" fkko_group_code="11190000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11200000000" fkko_name="Отходы животноводства (включая деятельность по содержанию животных)" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11210000000" fkko_name="Отходы разведения крупного рогатого скота" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11211000000" fkko_name="Навоз крупного рогатого скота" fkko_group_code="11210000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11220000000" fkko_name="Отходы разведения лошадей и прочих животных семейства лошадиных отряда непарнокопытных" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11221000000" fkko_name="Навоз конский" fkko_group_code="11220000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11230000000" fkko_name="Отходы разведения верблюдов и прочих животных семейства верблюжьих" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11231000000" fkko_name="Навоз верблюжий" fkko_group_code="11230000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11240000000" fkko_name="Отходы разведения овец и коз" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11241000000" fkko_name="Навоз мелкого рогатого скота" fkko_group_code="11240000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11250000000" fkko_name="Отходы разведения свиней" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11251000000" fkko_name="Навоз свиней" fkko_group_code="11250000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11270000000" fkko_name="Отходы разведения сельскохозяйственной птицы" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11271000000" fkko_name="Помет птичий" fkko_group_code="11270000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11272000000" fkko_name="Отходы инкубаторов для птицеводства" fkko_group_code="11270000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11279000000" fkko_name="Прочие отходы разведения сельскохозяйственной птицы" fkko_group_code="11270000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11279800000" fkko_name="Отходы при очистке сточных вод на локальных очистных сооружениях при разведении сельскохозяйственной птицы" fkko_group_code="11270000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11290000000" fkko_name="Отходы разведения прочих животных" fkko_group_code="11200000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11291000000" fkko_name="Отходы разведения животных в звероводческих хозяйствах и питомниках" fkko_group_code="11290000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11291100000" fkko_name="Навоз пушных зверей" fkko_group_code="11291000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11297000000" fkko_name="Отходы разведения и содержания собак" fkko_group_code="11291000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11298000000" fkko_name="Отходы разведения сельскохозяйственных животных и птиц в смеси" fkko_group_code="11291000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11299000000" fkko_name="Отходы содержания диких животных в неволе" fkko_group_code="11291000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11400000000" fkko_name="Отходы при прочих работах и услугах в сельском хозяйстве" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11410000000" fkko_name="Отходы пестицидов и агрохимикатов" fkko_group_code="11400000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11411000000" fkko_name="Отходы минеральных удобрений, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11412000000" fkko_name="Отходы пестицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11412100000" fkko_name="Отходы гербицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11412200000" fkko_name="Отходы инсектицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11412300000" fkko_name="Отходы фунгицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11412400000" fkko_name="Отходы инсектофунгицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11413000000" fkko_name="Отходы гербицидов, утративших потребительские свойства" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11414000000" fkko_name="Прочие отходы средств ухода за растениями" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11414100000" fkko_name="Пестициды, запрещенные к использованию" fkko_group_code="11410000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11420000000" fkko_name="Корма для животных, утратившие потребительские свойства" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11421000000" fkko_name="Корма растительного происхождения, утратившие потребительские свойства" fkko_group_code="11420000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15000000000" fkko_name="ОТХОДЫ ПРИ ЛЕСОВОДСТВЕ И ЛЕСОЗАГОТОВКАХ" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15100000000" fkko_name="Отходы при лесоводстве" fkko_group_code="15000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15200000000" fkko_name="Отходы при лесозаготовках" fkko_group_code="15000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15210000000" fkko_name="Отходы производства круглых лесоматериалов" fkko_group_code="15000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15211000000" fkko_name="Отходы древесины от лесоразработок" fkko_group_code="15210000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="15410000000" fkko_name="Прочие отходы при лесоводстве и лесозаготовках" fkko_group_code="15000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="17000000000" fkko_name="ОТХОДЫ ПРИ РЫБОЛОВСТВЕ, РЫБОВОДСТВЕ" fkko_group_code="11000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="17110000000" fkko_name="Отходы при рыболовстве" fkko_group_code="17000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="17115000000" fkko_name="Отходы первичной обработки кораллов, раковин и панцирей моллюсков, ракообразных, иглокожих" fkko_group_code="17110000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="17900000000" fkko_name="Отходы прочих видов деятельности при рыболовстве и рыбоводстве" fkko_group_code="17000000000" fkko_aggregate_state="-" fkko_danger_class="-"/>
+		<fkko_item fkko_code="11111001235" fkko_name="мякина" fkko_group_code="11111000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11111002235" fkko_name="солома" fkko_group_code="11111000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11111003235" fkko_name="стебли подсолнечника" fkko_group_code="11111000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11111004235" fkko_name="стебли кукурузы" fkko_group_code="11111000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11111541235" fkko_name="обертка кукурузных початков" fkko_group_code="11111000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11121001235" fkko_name="ботва от корнеплодов, другие подобные растительные остатки при выращивании овощей" fkko_group_code="11120000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11121002235" fkko_name="ботва от корнеплодов, другие подобные растительные остатки при выращивании овощей, загрязненные землей" fkko_group_code="11120000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11131001235" fkko_name="отходы тростника при выращивании грибов" fkko_group_code="11131000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11141111235" fkko_name="растительные остатки при выращивании цветов, загрязненные землей" fkko_group_code="11140000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="15211003235" fkko_name="зелень древесная" fkko_group_code="15211000000" fkko_aggregate_state="Волокно" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11299211304" fkko_name="отходы подстилки из древесных опилок при содержании диких животных в неволе" fkko_group_code="11299000000" fkko_aggregate_state="Дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11412165313" fkko_name="гербицид на основе флурохлоридона, утративший потребительские свойства" fkko_group_code="11412100000" fkko_aggregate_state="Жидкое в жидком (эмульсия)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11191111615" fkko_name="субстраты минераловатные для тепличного растениеводства отработанные" fkko_group_code="11191000000" fkko_aggregate_state="Изделие из одного волокна" fkko_danger_class="V"/>
+		<fkko_item fkko_code="17935111614" fkko_name="отходы сетей и сетепошивочного материала из полиамидного волокна" fkko_group_code="17900000000" fkko_aggregate_state="Изделие из одного волокна" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="15211001215" fkko_name="отходы сучьев, ветвей, вершинок от лесоразработок" fkko_group_code="15211000000" fkko_aggregate_state="Кусковая форма" fkko_danger_class="V"/>
+		<fkko_item fkko_code="15211002215" fkko_name="отходы корчевания пней" fkko_group_code="15211000000" fkko_aggregate_state="Кусковая форма" fkko_danger_class="V"/>
+		<fkko_item fkko_code="15211004215" fkko_name="отходы раскряжевки" fkko_group_code="15211000000" fkko_aggregate_state="Кусковая форма" fkko_danger_class="V"/>
+		<fkko_item fkko_code="15411001215" fkko_name="отходы малоценной древесины (хворост, валежник, обломки стволов)" fkko_group_code="15410000000" fkko_aggregate_state="Кусковая форма" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11279611415" fkko_name="мука яичной скорлупы" fkko_group_code="11279000000" fkko_aggregate_state="Порошок" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11412311412" fkko_name="фундазол, утративший потребительские свойства" fkko_group_code="11412300000" fkko_aggregate_state="Порошок" fkko_danger_class="II"/>
+		<fkko_item fkko_code="11198111395" fkko_name="ил от зачистки оросительных каналов системы мелиорации земель" fkko_group_code="11191000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11252001394" fkko_name="отходы подстилки из древесных опилок при содержании свиней" fkko_group_code="11251000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11255112394" fkko_name="твердая фракция сепарации свиного навоза при самосплавной системе навозоудаления" fkko_group_code="11251000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11279102394" fkko_name="отходы подстилки из соломы при содержании птиц" fkko_group_code="11279000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11279891394" fkko_name="осадок механической очистки сточных вод, образующихся при разведении сельскохозяйственной птицы" fkko_group_code="11279800000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11279892394" fkko_name="смесь осадков биологической и флотационной очистки сточных вод, образующихся при разведении сельскохозяйственной птицы" fkko_group_code="11279800000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11421121395" fkko_name="отходы силоса" fkko_group_code="11421000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11421911395" fkko_name="остатки кормов с раздаточных столов коровников, утратившие потребительские свойства" fkko_group_code="11421000000" fkko_aggregate_state="Прочие дисперсные системы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11101011495" fkko_name="семена зерновых, зернобобовых, масличных, овощных, бахчевых, корнеплодных культур непротравленные с истекшим сроком годности" fkko_group_code="11101000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11101021492" fkko_name="семена зерновых, зернобобовых, масличных, овощных, бахчевых, корнеплодных культур, протравленные фунгицидами и/или инсектицидами, с истекшим сроком годности" fkko_group_code="11101000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="II"/>
+		<fkko_item fkko_code="11101301494" fkko_name="семена ярового рапса, протравленные инсектофунгицидами, отбракованные" fkko_group_code="11101300000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11101302494" fkko_name="семена озимого рапса, протравленные инсектофунгицидами, отбракованные" fkko_group_code="11101300000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11112001495" fkko_name="зерноотходы твердой пшеницы" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112002495" fkko_name="зерноотходы мягкой пшеницы" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112003495" fkko_name="зерноотходы меслина" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112004495" fkko_name="зерноотходы кукурузы" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112005495" fkko_name="зерноотходы ячменя" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112006495" fkko_name="зерноотходы ржи" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112007495" fkko_name="зерноотходы овса" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112008495" fkko_name="зерноотходы сорго" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112009495" fkko_name="зерноотходы проса" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112011495" fkko_name="зерноотходы гречихи" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112012495" fkko_name="зерноотходы тритикале" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112013495" fkko_name="зерноотходы чумизы" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112014495" fkko_name="зерноотходы прочих зерновых культур" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11112015495" fkko_name="зерноотходы прочих зернобобовых культур (овощей бобовых сушеных)" fkko_group_code="11112000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11113011495" fkko_name="отходы механической очистки семян многолетних бобовых трав" fkko_group_code="11113000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11411111494" fkko_name="удобрения минеральные азотные, утратившие потребительские свойства" fkko_group_code="11411000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11414111493" fkko_name="гербицид симазин, запрещенный к использованию" fkko_group_code="11414100000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11419111494" fkko_name="отходы грунта, загрязненные гербицидом 2 класса опасности (содержание гербицида менее 3%)" fkko_group_code="11414100000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11421111495" fkko_name="фуражное зерно, утратившее потребительские свойства" fkko_group_code="11421000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="17115811495" fkko_name="отходы переработки цист рачка артемии" fkko_group_code="17115000000" fkko_aggregate_state="Прочие сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11211002295" fkko_name="навоз крупного рогатого скота перепревший" fkko_group_code="11211000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11221002295" fkko_name="навоз конский перепревший" fkko_group_code="11221000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11231002295" fkko_name="навоз верблюжий перепревший" fkko_group_code="11231000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11241001294" fkko_name="навоз мелкого рогатого скота свежий" fkko_group_code="11241000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11241002295" fkko_name="навоз мелкого рогатого скота перепревший" fkko_group_code="11241000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11251002294" fkko_name="навоз свиней перепревший" fkko_group_code="11251000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11271102294" fkko_name="помет куриный перепревший" fkko_group_code="11271000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11271202294" fkko_name="помет утиный, гусиный перепревший" fkko_group_code="11271000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11271302294" fkko_name="помет прочих птиц перепревший" fkko_group_code="11271000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11272111294" fkko_name="скорлупа куриных яиц при инкубации цыплят бройлеров" fkko_group_code="11272000000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11291102295" fkko_name="навоз пушных зверей перепревший" fkko_group_code="11291100000" fkko_aggregate_state="Прочие формы твердых веществ" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11111542205" fkko_name="стержни кукурузных початков" fkko_group_code="11111000000" fkko_aggregate_state="Твердое" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11212111204" fkko_name="отходы подстилки из древесных опилок при содержании крупного рогатого скота" fkko_group_code="11211000000" fkko_aggregate_state="Твердое" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11297121204" fkko_name="отходы подстилки из сена при содержании собак" fkko_group_code="11297000000" fkko_aggregate_state="Твердое" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11421811205" fkko_name="смесь кормов растительного происхождения, утративших потребительские свойства" fkko_group_code="11421000000" fkko_aggregate_state="Твердое" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11211001334" fkko_name="навоз крупного рогатого скота свежий" fkko_group_code="11211000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11221001334" fkko_name="навоз конский свежий" fkko_group_code="11221000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11231001334" fkko_name="навоз верблюжий свежий" fkko_group_code="11231000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11251001333" fkko_name="навоз свиней свежий" fkko_group_code="11251000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11255311334" fkko_name="осадок навозных стоков от свинарников при отстаивании в навозонакопителях" fkko_group_code="11251000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11271101333" fkko_name="помет куриный свежий" fkko_group_code="11271000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11271201333" fkko_name="помет утиный, гусиный свежий" fkko_group_code="11271000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11271301333" fkko_name="помет прочих птиц свежий" fkko_group_code="11271000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11279101334" fkko_name="отходы подстилки из древесных опилок при содержании птиц" fkko_group_code="11279000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11291101334" fkko_name="навоз пушных зверей свежий" fkko_group_code="11291100000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11297101334" fkko_name="экскременты собак свежие" fkko_group_code="11297000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11298111334" fkko_name="смесь навоза сельскохозяйственных животных и птичьего помета свежих малоопасная" fkko_group_code="11298000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11299111334" fkko_name="навоз диких животных, содержащихся в неволе, свежий" fkko_group_code="11299000000" fkko_aggregate_state="Твердое в жидком (паста)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11255111324" fkko_name="жидкая фракция сепарации свиного навоза при самосплавной системе навозоудаления" fkko_group_code="11251000000" fkko_aggregate_state="Твердое в жидком (суспензия)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11255211324" fkko_name="навозосодержащие стоки при гидроудалении навоза свиней" fkko_group_code="11251000000" fkko_aggregate_state="Твердое в жидком (суспензия)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11255212323" fkko_name="стоки навозные при самосплавной системе навозоудаления свиней" fkko_group_code="11251000000" fkko_aggregate_state="Твердое в жидком (суспензия)" fkko_danger_class="III"/>
+		<fkko_item fkko_code="11297511324" fkko_name="жидкие отходы смыва нечистот при уборке вольеров" fkko_group_code="11297000000" fkko_aggregate_state="Твердое в жидком (суспензия)" fkko_danger_class="IV"/>
+		<fkko_item fkko_code="11197111405" fkko_name="отходы зачистки оборудования для хранения зерна и уборки просыпей зерна в смеси" fkko_group_code="11191000000" fkko_aggregate_state="Твердые сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11222111405" fkko_name="отходы подстилки из древесных опилок и стружки при содержании лошадей практически неопасные" fkko_group_code="11221000000" fkko_aggregate_state="Твердые сыпучие материалы" fkko_danger_class="V"/>
+		<fkko_item fkko_code="11297111404" fkko_name="отходы подстилки из древесных опилок при содержании собак" fkko_group_code="11297000000" fkko_aggregate_state="Твердые сыпучие материалы" fkko_danger_class="IV"/>
+	</fkko_list>
+</ASTB_FKKO>

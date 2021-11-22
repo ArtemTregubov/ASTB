@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e15f702-96c5-44b2-b34e-0d0f69f9b379">
+  <producedTypes>
+    <refType typeId="348c8f50-36f4-41d5-8ec9-b51d13acc4d2" valueTypeId="13fda816-930c-41ef-8754-b035fccf6e09"/>
+    <listType typeId="f60c6e36-ec99-4bdd-90f9-7fbac3f89b59" valueTypeId="c537610f-4fdb-44aa-9c7a-cdaa68d7d9c7"/>
+    <managerType typeId="6b405182-3860-4201-9e80-e369d6057cca" valueTypeId="e8a5c5b8-9ee7-4f33-ba6e-219f8f28b6b6"/>
+  </producedTypes>
+  <name>СтатусыСбыта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы сбыта</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="896d2838-779a-4793-b597-7c170451c707">
+    <name>Разработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>(21) Разработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d1c3d3ff-c6d0-449b-8cd7-8447974d0ccb">
+    <name>ОсновнаяПродукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>(22) Основная продукция</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5cfe9d81-cb84-4059-a824-6664e407aba0">
+    <name>ОсновнаяПродукцияПодЗаказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>(23) Основная продукция под заказ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="702c77d4-e6f9-4f0e-aede-c828b8d93d59">
+    <name>ОсновнаяПродукцияОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>(24) Основная продукция остатки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7d072538-f722-4763-b4b4-31c1d0e13293">
+    <name>ГотоваяПродукцияСнято</name>
+    <synonym>
+      <key>ru</key>
+      <value>(25) Готовая продукция снято</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="28e3a08c-d70c-4a13-8d11-1bd7e1067034">
+    <name>Спецзаказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(26) Спецзаказы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="63d97df0-d946-4e31-b4a5-5a020fb6e62d">
+    <name>СтраховыеЗапасы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(27) Страховые запасы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="777e16d7-2483-456f-9ad1-67aeeb8b295b">
+    <name>ДисконтРаспродажаОстаков</name>
+    <synonym>
+      <key>ru</key>
+      <value>(28) Дисконт распродажа остаков</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="613a9f11-c830-47ec-8c9b-64186e6b1ca3">
+    <name>Транзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>(29) Транзит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8d8d20b2-3064-48f5-a38f-d1bd9ce2d788">
+    <name>РекламнаяПродукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>(30) Рекламная продукция</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1249dff7-faec-456c-b49a-27294507f601">
+    <name>Образцы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(31) Образцы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a351ba7-151d-4929-8746-d9a96e3be832">
+    <name>Место</name>
+    <synonym>
+      <key>ru</key>
+      <value>(32) Место</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="60c1fb24-35e0-4855-b83b-61b5e977d0f2">
+    <name>РаспродажаMSA</name>
+    <synonym>
+      <key>ru</key>
+      <value>(33) Распродажа MSA</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0ae3891a-1c25-4837-9521-698e762ed626">
+    <name>ТоварыПартнеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>(34) Товары партнеров</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="36cd1973-3c50-4280-aca0-96865e7e8f3a">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>(35) Услуга</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="48e708fa-2071-40c2-a92a-700f6ba1705a">
+    <name>Комплекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>(40) Комплекты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f8b45df2-246a-4605-8559-97201f266646">
+    <name>РасходныеМатериалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(98) Расходные материалы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c5f331b-2028-4fb8-b5f3-9e0dd822167f">
+    <name>УдаленТехнически</name>
+    <synonym>
+      <key>ru</key>
+      <value>(99) Удален технически</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

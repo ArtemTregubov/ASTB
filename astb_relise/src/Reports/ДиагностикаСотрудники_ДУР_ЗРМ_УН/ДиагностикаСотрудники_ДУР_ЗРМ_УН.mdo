@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="caca1fcd-a38f-4be1-b558-00f9121fef22">
+  <producedTypes>
+    <objectType typeId="6d5ebb14-39f1-44d1-bb8b-f4e95475a7c2" valueTypeId="b4a88473-a61c-422b-8298-57d3c0c9b159"/>
+    <managerType typeId="559fb751-685e-4a20-ad28-52b0069ffb4b" valueTypeId="273793d7-b9b5-4610-89bc-63a27a9c813d"/>
+  </producedTypes>
+  <name>ДиагностикаСотрудники_ДУР_ЗРМ_УН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сотрудники (ДУР по ЗРМ и УН)</value>
+  </synonym>
+  <comment>Сотрудники (доступные условия работы по занятым рабочим местам и установленным нормам)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСотрудники_ДУР_ЗРМ_УН.Template.Сотрудники_ДУР_ЗРМ_УН</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сотрудники (доступные условия работы по занятым рабочим местам и установленным нормам)</value>
+  </explanation>
+  <templates uuid="8c0c339b-64af-4b4b-b15b-9da69ef4bacb">
+    <name>Сотрудники_ДУР_ЗРМ_УН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники (ДУР по ЗРМ и УН)</value>
+    </synonym>
+    <comment>Сотрудники (доступные условия работы по занятым рабочим местам и установленным нормам). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

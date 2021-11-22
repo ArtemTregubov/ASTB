@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7019444-6f20-4db0-927a-5e41b46a2610">
+  <name>ИспользоватьВендинговоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать вендинговое оборудование</value>
+  </synonym>
+  <location>Constant.ИспользоватьВендинговоеОборудование</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.Номенклатура.Attribute.ВозможнаАвтоматизированнаяВыдача</content>
+  <content>Catalog.Организации.Attribute.Проект</content>
+  <content>Catalog.Номенклатура.Attribute.АвтоматизированнаяВыдачаБезОшибок</content>
+</mdclass:FunctionalOption>

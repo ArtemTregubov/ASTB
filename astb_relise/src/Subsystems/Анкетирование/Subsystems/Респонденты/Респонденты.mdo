@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0c1e990-a249-496a-94fc-58e326ad5284">
+  <name>Респонденты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Респонденты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ФизическиеЛица</content>
+  <parentSubsystem>Subsystem.Анкетирование</parentSubsystem>
+</mdclass:Subsystem>

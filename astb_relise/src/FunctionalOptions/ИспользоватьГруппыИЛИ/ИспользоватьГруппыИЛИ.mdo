@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d40aa71f-2678-416c-9c9a-20f09a575c9e">
+  <name>ИспользоватьГруппыИЛИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать группы ИЛИ</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.ИспользоватьГруппыИЛИ</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.КоэффициентыПоставкиДляГруппИЛИПоУмолчанию</content>
+  <content>InformationRegister.КоэффициентыПоставкиДляГруппИЛИУточненные</content>
+</mdclass:FunctionalOption>

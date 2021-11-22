@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6080e22-6529-4ca8-b32c-4c345d9cabb7">
+  <producedTypes>
+    <objectType typeId="ec8e2c03-fd88-4b38-85ce-f30cb27a1751" valueTypeId="4fa01808-ba31-481a-954b-95693b14a25d"/>
+    <managerType typeId="7790fdd7-8a53-483d-af26-55d50ef0cd27" valueTypeId="d896b995-4b3e-4876-9ac4-a063c40f7d63"/>
+  </producedTypes>
+  <name>ЗаписьНаСкладыПоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись на склады по времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗаписьНаСкладыПоВремени.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="278d89c3-c9aa-4679-a11a-af7ba9187674">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

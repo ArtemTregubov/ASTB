@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54e0aba5-b75b-4efd-a7a5-ed7bb1a39cda">
+  <producedTypes>
+    <objectType typeId="4a9286d3-3d65-4a9a-85b7-ee9164593851" valueTypeId="1449c811-6bcd-4884-9fb6-edb78a384533"/>
+    <managerType typeId="b9f06ed8-8d64-451f-97fc-dc6444821d06" valueTypeId="340c7509-7176-451f-86ab-d250e7f5157b"/>
+  </producedTypes>
+  <name>ДиагностикаУсловияНормДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: условия норм (дубли)</value>
+  </synonym>
+  <comment>Условия норм выдачи (дубли по наименованию).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаУсловияНормДубли.Template.УсловияНормДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Условия норм выдачи (дубли по наименованию).</value>
+  </explanation>
+  <templates uuid="b1aaf7aa-a0e9-4039-8b4c-6a7d22a57a5f">
+    <name>УсловияНормДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия норм выдачи (дубли)</value>
+    </synonym>
+    <comment>Условия норм выдачи (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43079fd7-d23e-4a52-93f1-fffde73572a4">
+  <producedTypes>
+    <objectType typeId="ab5dabe9-61a3-4844-8079-62e904788d2c" valueTypeId="7797ff4e-963e-436f-b952-d403b06726c2"/>
+    <managerType typeId="3bfb26b4-df88-4c1c-924a-4e276b7e3217" valueTypeId="7a91fbe5-7778-4f5b-b16e-1efef4c1e530"/>
+  </producedTypes>
+  <name>ГрафикПрохожденияМедицинскихОсмотров</name>
+  <synonym>
+    <key>ru</key>
+    <value>График прохождения медицинских осмотров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикПрохожденияМедицинскихОсмотров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="53c6091c-f2f4-4136-8efb-b2eb933b0366">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

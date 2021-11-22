@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a959dad7-94c5-4299-9b88-93ba5cac9180">
+  <producedTypes>
+    <refType typeId="2d27b380-9603-4bc0-bc72-c6ba6a64879b" valueTypeId="2f1850c8-816a-4c71-8b1a-1cd2f309a610"/>
+    <listType typeId="4769cf2f-2328-4946-9298-33d731ceff28" valueTypeId="534db2bf-719a-4ae2-9585-e32651037f05"/>
+    <managerType typeId="7ffceec2-e398-4ccc-be47-88a06751ab61" valueTypeId="536aef59-5eeb-4895-969b-059bd21698b8"/>
+  </producedTypes>
+  <name>ВидыРасчетаНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды расчета норм</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="577bf90b-36d3-4808-998d-439d10e3a34d">
+    <name>ДоИзноса</name>
+    <synonym>
+      <key>ru</key>
+      <value>До износа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15ea8bd1-9656-4749-a8d0-959e2022ecf8">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ac2084df-383b-4e20-aad6-d6f3d4ce64af">
+    <name>Дежурный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дежурный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураСсылка</dataPath>
+			<field>НоменклатураСсылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура ссылка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураСсылкаНаименование</dataPath>
+			<field>НоменклатураСсылкаНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура ссылка наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СертификатВидСертификата</dataPath>
+			<field>СертификатВидСертификата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СертификатСсылка</dataPath>
+			<field>СертификатСсылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СертификатНомерСертификата</dataPath>
+			<field>СертификатНомерСертификата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СертификатОкончаниеСрокаДействия</dataPath>
+			<field>СертификатОкончаниеСрокаДействия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураСсылкаПоставщик</dataPath>
+			<field>НоменклатураСсылкаПоставщик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура ссылка поставщик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СертификатСтатус</dataPath>
+			<field>СертификатСтатус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификат статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВложенныйЗапрос.НоменклатураСсылка КАК НоменклатураСсылка,
+	ВложенныйЗапрос.СертификатСсылка КАК СертификатСсылка,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.СертификатОкончаниеСрокаДействия &lt; &amp;ТекДата
+			ТОГДА "Просрочен"
+		ИНАЧЕ ВЫБОР
+				КОГДА ВложенныйЗапрос.СертификатСсылка ЕСТЬ NULL
+					ТОГДА "Отсутствует"
+				ИНАЧЕ "Действует"
+			КОНЕЦ
+	КОНЕЦ КАК СертификатСтатус,
+	ВложенныйЗапрос.СертификатВидСертификата КАК СертификатВидСертификата,
+	ВложенныйЗапрос.СертификатНомерСертификата КАК СертификатНомерСертификата,
+	ВложенныйЗапрос.СертификатОкончаниеСрокаДействия КАК СертификатОкончаниеСрокаДействия,
+	ВложенныйЗапрос.НоменклатураСсылка.Поставщик КАК НоменклатураСсылкаПоставщик,
+	ВложенныйЗапрос.НоменклатураСсылка.Наименование КАК НоменклатураСсылкаНаименование
+ИЗ
+	(ВЫБРАТЬ
+		Номенклатура.Ссылка КАК НоменклатураСсылка,
+		НоменклатураСертификаты.Сертификат.Ссылка КАК СертификатСсылка,
+		НоменклатураСертификаты.Сертификат.ВидСертификата КАК СертификатВидСертификата,
+		НоменклатураСертификаты.Сертификат.НомерСертификата КАК СертификатНомерСертификата,
+		НоменклатураСертификаты.Сертификат.ОкончаниеСрокаДействия КАК СертификатОкончаниеСрокаДействия
+	ИЗ
+		Справочник.Номенклатура.Сертификаты КАК НоменклатураСертификаты
+			ПОЛНОЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК Номенклатура
+			ПО НоменклатураСертификаты.Ссылка = Номенклатура.Ссылка
+	ГДЕ
+		НЕ Номенклатура.ЭтоГруппа
+		И НЕ Номенклатура.ПометкаУдаления) КАК ВложенныйЗапрос
+
+УПОРЯДОЧИТЬ ПО
+	НоменклатураСсылкаНаименование</query>
+	</dataSet>
+	<parameter>
+		<name>ТекДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тек дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>СостояниеCертификатов</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние сертификатов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер в группировке</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураСсылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>НоменклатураСсылкаНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураСсылка.Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>НоменклатураСсылкаПоставщик</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:title>Сертификат</dcsset:title>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СертификатСсылка</dcsset:field>
+						<dcsset:title>Ссылка</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СертификатСтатус</dcsset:field>
+						<dcsset:title>Статус</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СертификатОкончаниеСрокаДействия</dcsset:field>
+						<dcsset:title>Срок действия, до</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СертификатВидСертификата</dcsset:field>
+						<dcsset:title>Вид</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СертификатНомерСертификата</dcsset:field>
+						<dcsset:title>Номер</dcsset:title>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemGroup">
+					<dcsset:groupType>OrGroup</dcsset:groupType>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Действует</dcsset:right>
+						<dcsset:presentation xsi:type="xs:string">Действующие</dcsset:presentation>
+						<dcsset:userSettingID>ee611747-3443-4105-82df-7097a331abd0</dcsset:userSettingID>
+						<dcsset:userSettingPresentation xsi:type="xs:string">Действующие</dcsset:userSettingPresentation>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Просрочен</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СертификатОкончаниеСрокаДействия</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:presentation xsi:type="xs:string">Просроченные</dcsset:presentation>
+						<dcsset:userSettingID>97d4c7c9-0c9b-4645-8d1e-cb8dc40f0e99</dcsset:userSettingID>
+						<dcsset:userSettingPresentation xsi:type="xs:string">Просроченные</dcsset:userSettingPresentation>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Отсутствует</dcsset:right>
+						<dcsset:presentation xsi:type="xs:string">Отсутствующие</dcsset:presentation>
+						<dcsset:userSettingID>304cb157-edbd-46d8-b836-130dcb91d4da</dcsset:userSettingID>
+						<dcsset:userSettingPresentation xsi:type="xs:string">Отсутствующие</dcsset:userSettingPresentation>
+					</dcsset:item>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">НоменклатураСсылка</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">3eaafa75-11c5-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:right xsi:type="xs:string">4a642263-1111-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:right xsi:type="xs:string">47b4b400-11c5-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:right xsi:type="xs:string">72c303d4-0b77-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:right xsi:type="xs:string">d7eb1c3d-0c47-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:right xsi:type="xs:string">f0aaaf67-0c45-11ea-bbb2-005056822555</dcsset:right>
+					<dcsset:userSettingID>d0cfbbf6-5b58-4632-80ea-9bc5b00aa945</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Номенклатура в группе из списка</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">НоменклатураСсылкаНаименование</dcsset:left>
+					<dcsset:comparisonType>Contains</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">перчатки</dcsset:right>
+					<dcsset:userSettingID>50e331fe-e209-411c-a589-d45d93ddfff8</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Наименование номенклатуры содержит</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НоменклатураСсылка</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СертификатОкончаниеСрокаДействия</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СертификатСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатВидСертификата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатНомерСертификата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатОкончаниеСрокаДействия</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатСсылка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:OEMFixedFont" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="xs:string">Сертификат</dcsset:presentation>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>e3851bdd-bfd8-4a98-b82f-9701044869cd</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Сертификат</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СертификатСсылка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатВидСертификата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатНомерСертификата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатОкончаниеСрокаДействия</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Действует</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:GreenYellow</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="xs:string">Статус:Действует</dcsset:presentation>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>a0aaa186-366e-4ad5-99ee-5d20a9a34b2d</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Статус:Действует</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СертификатСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СертификатОкончаниеСрокаДействия</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Просрочен</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ImportantColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="xs:string">Статус:Просрочен</dcsset:presentation>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>a00607e7-3c5d-4e3c-916f-fbe4a6b72169</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Статус:Просрочен</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СертификатСтатус</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СертификатСтатус</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">Отсутствует</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="xs:string">Статус:Отсутсвует</dcsset:presentation>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>4a352510-1d2f-4df3-aa9a-64962474c94a</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Статус:Отсутсвует</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НоменклатураСсылка</dcsset:field>
+						<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НоменклатураСсылка.Код</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:use>false</dcsset:use>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НоменклатураСсылка</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:additionalProperties>
+				<v8:Property name="ВариантНаименование">
+					<v8:Value xsi:type="xs:string">Основной - копия</v8:Value>
+				</v8:Property>
+				<v8:Property name="КлючВарианта">
+					<v8:Value xsi:type="xs:string">7ce0dbc3-f255-4a08-bee9-3a36890e3f45</v8:Value>
+				</v8:Property>
+			</dcsset:additionalProperties>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

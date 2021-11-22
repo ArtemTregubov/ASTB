@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e620df19-8f5a-4a26-a4f9-74e2deeb29b8">
+  <producedTypes>
+    <objectType typeId="03268bf4-7854-4869-9202-0068fd8e6795" valueTypeId="dddd8b9e-0a31-4e99-aadf-980370b43b9f"/>
+    <managerType typeId="f53d99fe-708d-43cf-b6c9-08fd231f149d" valueTypeId="40e1f57d-b07b-4a21-8a83-dbd69a0b81af"/>
+  </producedTypes>
+  <name>ВедомостьПоОстаткамПредварительногоППС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость по остаткам предварительного ППС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВедомостьПоОстаткамПредварительногоППС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e264593b-31d9-4ccf-901c-498b7d3b3968">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

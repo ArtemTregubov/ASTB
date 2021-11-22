@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="053b7c0f-2458-4cf3-bf2e-72f281426d7b">
+  <producedTypes>
+    <objectType typeId="26301dba-4b23-44bd-a0bf-37554ea47a97" valueTypeId="ad344cc8-f43d-4d87-8072-a52b779a364f"/>
+    <managerType typeId="b5b35d88-3b26-40e2-ad25-255b1faa028d" valueTypeId="25805457-4c6f-4713-b08c-40dd809d8566"/>
+  </producedTypes>
+  <name>НоменклатураСостоитВ_Комплекте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура состоит в комплекте</value>
+  </synonym>
+  <comment>49055</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НоменклатураСостоитВ_Комплекте.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="851f2997-bd74-4717-825c-7c46cca2204d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

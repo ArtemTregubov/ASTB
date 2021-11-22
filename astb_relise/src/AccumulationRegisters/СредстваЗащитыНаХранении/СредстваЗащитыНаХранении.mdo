@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51395e00-e63b-41bc-bb46-3865c5f4bc59">
+  <producedTypes>
+    <selectionType typeId="6a8f6c8f-5b03-44dd-811c-2b897387e7ca" valueTypeId="f167f827-4818-4f7e-9bc5-3f37def8727e"/>
+    <listType typeId="fad03cc2-3b51-4736-9e8a-9cddc56f16de" valueTypeId="c46f4fe6-6642-41bb-995c-f23cd8354bfe"/>
+    <managerType typeId="dd96764d-5eeb-4c01-bd12-9b299d3ddd4b" valueTypeId="eabd8a4e-b7bd-4f9f-96eb-9ff371ea839d"/>
+    <recordSetType typeId="34d34224-7327-40e1-a1f5-b47793daf45b" valueTypeId="008e261f-2492-4898-9a1b-3826c654c27e"/>
+    <recordKeyType typeId="919b53fd-ea2e-40c3-bcdb-374b523bb235" valueTypeId="4e6f9b8c-40f7-4a53-b9ae-7b9837c6b3cc"/>
+    <recordType typeId="c295fa21-1fd5-401d-8aec-30d534b20dbc" valueTypeId="7dc625cc-62b4-49b0-9387-10ecedad212a"/>
+  </producedTypes>
+  <name>СредстваЗащитыНаХранении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средства защиты на хранении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f7ff0142-c014-49e6-9e66-4fcd0d826311">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f7656078-f16f-4e84-9df4-a65cf834d188">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c5871a0e-8e56-4b93-b6c5-0872643d2ba3">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="31be8b2b-f9c6-4572-a1d0-210d785f9048">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>AccumulationRegister.СредстваЗащитыНаХранении.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="64bda296-f742-47b9-8417-81009e0925af">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="025bc8ab-6ca0-4416-8bb9-b2ff92702764">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>AccumulationRegister.СредстваЗащитыНаХранении.Dimension.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="08f92d77-ae91-4a6e-b0e1-5d05fa1c6730">
+    <name>ТочкаХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

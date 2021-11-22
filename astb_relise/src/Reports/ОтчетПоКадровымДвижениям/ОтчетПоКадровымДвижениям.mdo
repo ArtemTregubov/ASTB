@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="402f0f34-445b-44fd-9014-eff3c53816e4">
+  <producedTypes>
+    <objectType typeId="800ba2a4-ecdc-4c05-8394-288911c21774" valueTypeId="fad232ef-1e91-4099-8919-010c25e1753f"/>
+    <managerType typeId="f309e61c-4bc9-4b7e-b3c6-88e9908d08ec" valueTypeId="d54e5941-7ba5-4243-8b80-56a17abab1b7"/>
+  </producedTypes>
+  <name>ОтчетПоКадровымДвижениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по кадровым движениям</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоКадровымДвижениям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4c894719-7132-42e0-9300-9e44d94abd5b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

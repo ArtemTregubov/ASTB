@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69aeda4a-2cd1-45b9-9caf-9b2e32a9e756">
+  <producedTypes>
+    <managerType typeId="3e16fc30-8eb1-4b31-b4a1-c908430de715" valueTypeId="d96ba316-34c1-4238-844c-29120a8bef71"/>
+    <valueManagerType typeId="ea1ed8bc-b46f-4a32-9ddd-2fd17adf96da" valueTypeId="048e5fc5-fb7a-4172-89b4-600779be2c0b"/>
+    <valueKeyType typeId="92cd0b83-b61b-5365-906a-9b2cc661d866" valueTypeId="547fa271-8ebb-5f8a-9d6f-fd228cb38b69"/>
+  </producedTypes>
+  <name>НеВестиУчетОстатковНоменклатурыПоОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не вести учет остатков номенклатуры по организации</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93342300-fc2b-412b-a595-8b2aa7afe2a2">
+  <producedTypes>
+    <objectType typeId="722aee1f-c894-41ca-8971-9f45df4ae1b6" valueTypeId="b1b0058f-3ab8-4f7f-9b0a-c877f3eace63"/>
+    <managerType typeId="6e9c0ffb-9095-40ab-be6f-3ea446ecccec" valueTypeId="fc0517ce-9846-41f6-89bb-fba2aac947ba"/>
+  </producedTypes>
+  <name>УтилизированныеСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Утилизированные СИЗ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УтилизированныеСИЗ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="32180c9a-744a-409a-b785-f4ae5584a4fd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

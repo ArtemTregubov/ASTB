@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4266a93b-2c49-4f07-ad96-80142ab5c7f4">
+  <name>Склад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаСклад</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаСклад</content>
+  <content>CommonCommand.ПанельОтчетовСклад</content>
+  <content>Catalog.Склады</content>
+  <content>Report.ВедомостьПоОстаткамНоменклатуры</content>
+  <content>CommonCommand.ДополнительныеОбработкиСклад</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.ИсторияОбращенийНаСклад</content>
+  <content>Report.СредстваЗащитыНаХранении</content>
+  <content>Report.ВедомостьПоОстаткамНоменклатурыОрганизацииСУчетомИзноса</content>
+  <content>Report.АХ_ОтчетРасхожденияОстаков</content>
+  <content>Report.ОстаткиНоменклатурыСЦенами</content>
+  <content>Report.ЗаписьНаСкладыПоВремени</content>
+  <subsystems>ДокументыСкладскогоУчета</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

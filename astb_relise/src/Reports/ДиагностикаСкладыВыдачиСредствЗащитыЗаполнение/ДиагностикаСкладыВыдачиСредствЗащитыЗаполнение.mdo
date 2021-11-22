@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a573dd0-f5b0-4707-9458-693465643565">
+  <producedTypes>
+    <objectType typeId="8305f4ef-5c7a-4702-adc6-12b91df49c39" valueTypeId="333a46b1-5e5e-4fbe-bb23-3331039ddf35"/>
+    <managerType typeId="7353d4e9-62dc-4204-9588-c88b01b27029" valueTypeId="03858b7c-9ded-479e-9728-38b5b034bc5b"/>
+  </producedTypes>
+  <name>ДиагностикаСкладыВыдачиСредствЗащитыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: склады выдачи средств защиты (заполнение)</value>
+  </synonym>
+  <comment>Заполнение складов выдачи СИЗ</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСкладыВыдачиСредствЗащитыЗаполнение.Template.СкладыВыдачиСредствЗащитыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение складов выдачи СИЗ</value>
+  </explanation>
+  <templates uuid="e2d5fd83-eb75-4016-b503-29ae6253d547">
+    <name>СкладыВыдачиСредствЗащитыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склады выдачи СИЗ (заполнение)</value>
+    </synonym>
+    <comment>Заполнение складов выдачи СИЗ</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

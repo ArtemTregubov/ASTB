@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e332a4b9-310d-4fdd-b79f-42d154625e7c">
+  <producedTypes>
+    <objectType typeId="8717e13b-16a9-48f0-bf20-676c3734699c" valueTypeId="c0fc6957-ca6d-47bd-be07-d9a67c5cc090"/>
+    <managerType typeId="333bccfc-0186-4c16-a29d-0da5d880d0b8" valueTypeId="44c2658d-7e93-494a-bd76-b6466e617131"/>
+  </producedTypes>
+  <name>СкладыВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склады выдачи</value>
+  </synonym>
+  <defaultForm>DataProcessor.СкладыВыдачи.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="31de2dfd-711b-4bdb-9fd2-011d99fe8e1d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7c402e00-c1d7-4cfc-841b-db60b820f3f6">
+    <name>СкладыВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склады выдачи</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Подразделения</types>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

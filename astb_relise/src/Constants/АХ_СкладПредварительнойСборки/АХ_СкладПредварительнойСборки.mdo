@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcb402f8-12e2-4673-94b8-f0dc0139b102">
+  <producedTypes>
+    <managerType typeId="242d5cf1-ef78-45a4-a02b-2a32cb2161d9" valueTypeId="f43a3152-9a23-4040-a0f7-94883fd83dd6"/>
+    <valueManagerType typeId="d0bbb7b6-f007-4025-adc3-5be4412f2cf6" valueTypeId="0cbc18ac-52bd-46a6-b158-a6a39c9a5074"/>
+    <valueKeyType typeId="e0f1041f-86fc-4b23-b434-ac469d04a1bd" valueTypeId="c709f4f7-43a4-4fc2-8390-8b9f1abc0d7b"/>
+  </producedTypes>
+  <name>АХ_СкладПредварительнойСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад предварительной сборки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Склады</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

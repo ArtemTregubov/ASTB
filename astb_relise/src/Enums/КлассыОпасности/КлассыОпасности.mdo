@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49af9a47-6df9-4ba4-b7d9-e2877842c322">
+  <producedTypes>
+    <refType typeId="cd3448bb-a09b-42d8-af41-535daa6d38ed" valueTypeId="0fc9533c-fc1b-4edf-9467-612c17448c3f"/>
+    <listType typeId="da5c657b-b3f1-4b46-8ba4-03c3b7e04526" valueTypeId="80621d84-b060-4deb-8c40-63bc7ad2097e"/>
+    <managerType typeId="95293ee5-e341-4be4-8752-40117c68cca4" valueTypeId="7c5cc6a4-726a-43e2-870b-3c68d6e50f61"/>
+  </producedTypes>
+  <name>КлассыОпасности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классы опасности</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4ada0f13-b873-4e93-85df-243352724abb">
+    <name>I</name>
+    <synonym>
+      <key>ru</key>
+      <value>I</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9cc98352-4601-49a4-b1d0-cd0cdf9d63f8">
+    <name>II</name>
+    <synonym>
+      <key>ru</key>
+      <value>II</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc952544-8fb3-4fc0-b91e-52d3f4c98492">
+    <name>III</name>
+    <synonym>
+      <key>ru</key>
+      <value>III</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="05551048-211a-408a-a805-bc6dc99ee59d">
+    <name>IV</name>
+    <synonym>
+      <key>ru</key>
+      <value>IV</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="97ee6f32-6ef9-4970-8f87-a3c05700430e">
+    <name>V</name>
+    <synonym>
+      <key>ru</key>
+      <value>V</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

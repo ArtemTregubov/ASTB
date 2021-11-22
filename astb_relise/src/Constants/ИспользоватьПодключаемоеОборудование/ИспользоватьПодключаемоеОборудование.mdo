@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c4d1a8b-1f92-45ac-9ac9-0b182ed1b764">
+  <producedTypes>
+    <managerType typeId="3a83352f-5c65-4477-bcef-e2afcbadc82f" valueTypeId="335e3519-74d5-44a7-8f80-88e1dd288bb7"/>
+    <valueManagerType typeId="08b8b9f1-38e7-4015-b8cf-495e2a320b37" valueTypeId="656a071e-9484-424d-9bb1-23a83cdaf6b0"/>
+    <valueKeyType typeId="27063b6d-7917-59c5-b18d-e8864b27fc85" valueTypeId="0c3e4a0e-b094-5343-a291-a767a252f3fd"/>
+  </producedTypes>
+  <name>ИспользоватьПодключаемоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подключаемое оборудование</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

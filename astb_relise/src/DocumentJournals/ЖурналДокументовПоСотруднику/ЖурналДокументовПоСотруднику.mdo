@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ed265fb-adb5-4916-bf14-9a5943f5b016">
+  <producedTypes>
+    <selectionType typeId="58fdde2a-6007-4d41-a6c4-a9aafc0a1850" valueTypeId="c657208b-63a4-4945-acc7-5478ed4ccf1a"/>
+    <listType typeId="1e9532d9-a479-4c73-b287-cb88ee427261" valueTypeId="cfedb259-8fe7-46c8-a8ae-a07995d59e97"/>
+    <managerType typeId="bd2330f7-1d94-422d-9b1d-292ad373148c" valueTypeId="c2cf73ab-ab9a-4ec0-a138-706de2aa3287"/>
+  </producedTypes>
+  <name>ЖурналДокументовПоСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал документов по сотруднику</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЖурналДокументовПоСотруднику.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВозвратИзЧистки</registeredDocuments>
+  <registeredDocuments>Document.ВозвратСредствЗащитыОтСотрудника</registeredDocuments>
+  <registeredDocuments>Document.ВыдачаСредствЗащитыСотруднику</registeredDocuments>
+  <registeredDocuments>Document.ОбменСредствЗащитыСотрудника</registeredDocuments>
+  <registeredDocuments>Document.КадровоеПеремещение</registeredDocuments>
+  <registeredDocuments>Document.ИнструктажСотрудников</registeredDocuments>
+  <registeredDocuments>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ</registeredDocuments>
+  <registeredDocuments>Document.ОтсутствиеНаРабочемМесте</registeredDocuments>
+  <registeredDocuments>Document.ПередачаВЧистку</registeredDocuments>
+  <registeredDocuments>Document.ПриемНаРаботу</registeredDocuments>
+  <registeredDocuments>Document.СписаниеСредствЗащитыСотрудника</registeredDocuments>
+  <registeredDocuments>Document.Увольнение</registeredDocuments>
+  <registeredDocuments>Document.УстановкаУсловийРаботыСотрудника</registeredDocuments>
+  <registeredDocuments>Document.УстановкаОсновногоМестаРаботыСотрудника</registeredDocuments>
+  <registeredDocuments>Document.УстановкаСоответствийНоменклатурыВыдачи</registeredDocuments>
+  <registeredDocuments>Document.ВыдачаСредствЗащитыПоВедомости</registeredDocuments>
+  <registeredDocuments>Document.ВыдачаДежурныхСредствЗащиты</registeredDocuments>
+  <registeredDocuments>Document.ПродлениеСрокаЭксплуатации</registeredDocuments>
+  <registeredDocuments>Document.ПриемСредствЗащитыНаХранение</registeredDocuments>
+  <registeredDocuments>Document.ВозвратСредствЗащитыСХранения</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеСредствЗащитыНаХранении</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="42721cf8-c226-4133-8d6a-0accea0016fa">
+    <name>СоздательДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создатель документа</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.ВозвратИзЧистки.Attribute.СоздательДокумента</references>
+    <references>Document.ВозвратСредствЗащитыОтСотрудника.Attribute.СоздательДокумента</references>
+    <references>Document.ВыдачаСредствЗащитыСотруднику.Attribute.СоздательДокумента</references>
+    <references>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ.Attribute.СоздательДокумента</references>
+    <references>Document.ИнструктажСотрудников.Attribute.СоздательДокумента</references>
+    <references>Document.КадровоеПеремещение.Attribute.СоздательДокумента</references>
+    <references>Document.ОбменСредствЗащитыСотрудника.Attribute.СоздательДокумента</references>
+    <references>Document.ОтсутствиеНаРабочемМесте.Attribute.СоздательДокумента</references>
+    <references>Document.ПередачаВЧистку.Attribute.СоздательДокумента</references>
+    <references>Document.СписаниеСредствЗащитыСотрудника.Attribute.СоздательДокумента</references>
+    <references>Document.ПриемНаРаботу.Attribute.СоздательДокумента</references>
+    <references>Document.Увольнение.Attribute.СоздательДокумента</references>
+    <references>Document.УстановкаУсловийРаботыСотрудника.Attribute.СоздательДокумента</references>
+    <references>Document.УстановкаОсновногоМестаРаботыСотрудника.Attribute.СоздательДокумента</references>
+    <references>Document.УстановкаСоответствийНоменклатурыВыдачи.Attribute.СоздательДокумента</references>
+    <references>Document.ВыдачаСредствЗащитыПоВедомости.Attribute.СоздательДокумента</references>
+    <references>Document.ВыдачаДежурныхСредствЗащиты.Attribute.СоздательДокумента</references>
+    <references>Document.ПродлениеСрокаЭксплуатации.Attribute.СоздательДокумента</references>
+    <references>Document.ПриемСредствЗащитыНаХранение.Attribute.СоздательДокумента</references>
+    <references>Document.ВозвратСредствЗащитыСХранения.Attribute.СоздательДокумента</references>
+    <references>Document.ПеремещениеСредствЗащитыНаХранении.Attribute.СоздательДокумента</references>
+  </columns>
+  <columns uuid="9b6cc686-217d-446f-b513-d8089ef00906">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.ВозвратИзЧистки.Attribute.Ответственный</references>
+    <references>Document.ВозвратСредствЗащитыОтСотрудника.Attribute.Ответственный</references>
+    <references>Document.ВыдачаСредствЗащитыСотруднику.Attribute.Ответственный</references>
+    <references>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ.Attribute.Ответственный</references>
+    <references>Document.ИнструктажСотрудников.Attribute.Ответственный</references>
+    <references>Document.КадровоеПеремещение.Attribute.Ответственный</references>
+    <references>Document.ОбменСредствЗащитыСотрудника.Attribute.Ответственный</references>
+    <references>Document.ОтсутствиеНаРабочемМесте.Attribute.Ответственный</references>
+    <references>Document.ПередачаВЧистку.Attribute.Ответственный</references>
+    <references>Document.ПриемНаРаботу.Attribute.Ответственный</references>
+    <references>Document.СписаниеСредствЗащитыСотрудника.Attribute.Ответственный</references>
+    <references>Document.Увольнение.Attribute.Ответственный</references>
+    <references>Document.УстановкаУсловийРаботыСотрудника.Attribute.Ответственный</references>
+    <references>Document.УстановкаОсновногоМестаРаботыСотрудника.Attribute.Ответственный</references>
+    <references>Document.УстановкаСоответствийНоменклатурыВыдачи.Attribute.Ответственный</references>
+    <references>Document.ВыдачаСредствЗащитыПоВедомости.Attribute.Ответственный</references>
+    <references>Document.ВыдачаДежурныхСредствЗащиты.Attribute.Ответственный</references>
+    <references>Document.ПродлениеСрокаЭксплуатации.Attribute.Ответственный</references>
+    <references>Document.ПриемСредствЗащитыНаХранение.Attribute.Ответственный</references>
+    <references>Document.ВозвратСредствЗащитыСХранения.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеСредствЗащитыНаХранении.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="f412c391-6cf8-4cda-91d8-5042d0e9c246">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ВозвратИзЧистки.Attribute.Комментарий</references>
+    <references>Document.ВозвратСредствЗащитыОтСотрудника.Attribute.Комментарий</references>
+    <references>Document.ВыдачаСредствЗащитыСотруднику.Attribute.Комментарий</references>
+    <references>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ.Attribute.Комментарий</references>
+    <references>Document.ИнструктажСотрудников.Attribute.Комментарий</references>
+    <references>Document.КадровоеПеремещение.Attribute.Комментарий</references>
+    <references>Document.ОбменСредствЗащитыСотрудника.Attribute.Комментарий</references>
+    <references>Document.ОтсутствиеНаРабочемМесте.Attribute.Комментарий</references>
+    <references>Document.ПередачаВЧистку.Attribute.Комментарий</references>
+    <references>Document.ПриемНаРаботу.Attribute.Комментарий</references>
+    <references>Document.СписаниеСредствЗащитыСотрудника.Attribute.Комментарий</references>
+    <references>Document.Увольнение.Attribute.Комментарий</references>
+    <references>Document.УстановкаУсловийРаботыСотрудника.Attribute.Комментарий</references>
+    <references>Document.УстановкаОсновногоМестаРаботыСотрудника.Attribute.Комментарий</references>
+    <references>Document.УстановкаСоответствийНоменклатурыВыдачи.Attribute.Комментарий</references>
+    <references>Document.ВыдачаСредствЗащитыПоВедомости.Attribute.Комментарий</references>
+    <references>Document.ВыдачаДежурныхСредствЗащиты.Attribute.Комментарий</references>
+    <references>Document.ПродлениеСрокаЭксплуатации.Attribute.Комментарий</references>
+    <references>Document.ПриемСредствЗащитыНаХранение.Attribute.Комментарий</references>
+    <references>Document.ВозвратСредствЗащитыСХранения.Attribute.Комментарий</references>
+    <references>Document.ПеремещениеСредствЗащитыНаХранении.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="60487255-d147-4a15-a288-afd168b92fad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="40f54783-f3f1-4450-a0e6-c9e26442413d">
+    <name>ОткрытьЖурналДокументовПоСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал документов по сотруднику</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

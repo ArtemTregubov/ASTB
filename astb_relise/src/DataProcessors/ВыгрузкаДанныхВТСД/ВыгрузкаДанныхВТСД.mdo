@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ab91b8c-3c1f-48e5-95c4-93ca6f82e92e">
+  <producedTypes>
+    <objectType typeId="4a297b8b-5e88-4c2c-9432-d53c0f4265cc" valueTypeId="eab71de5-367e-4a4e-a424-436b569f7354"/>
+    <managerType typeId="d28a2df0-c16b-4373-8d9a-9fee91667dda" valueTypeId="9a1085bf-2372-43dd-bd1a-f25dceb78d77"/>
+  </producedTypes>
+  <name>ВыгрузкаДанныхВТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в ТСД</value>
+  </synonym>
+  <comment>Выгрузка данных в терминал сбора данных</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаДанныхВТСД.Form.Форма</defaultForm>
+  <forms uuid="1fd655ee-5465-4b71-9fa3-cf09c7da116a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="8c777bb1-466f-455a-a37d-1dd5c408babf">
+    <name>ВыгрузкаДанныхВТСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка данных в ТСД</value>
+    </synonym>
+    <comment>Выгрузка данных в терминал сбора данных</comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

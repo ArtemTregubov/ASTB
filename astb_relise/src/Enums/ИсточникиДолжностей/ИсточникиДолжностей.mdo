@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a48e31e5-07a8-4afd-9d36-20a8bd40a510">
+  <producedTypes>
+    <refType typeId="00caa543-968c-4dbf-b858-a74f7e7c449f" valueTypeId="1107a3f9-f198-4a59-96ab-498aff31c095"/>
+    <listType typeId="a18554fc-a717-4d52-b029-4926104c9a6f" valueTypeId="63a860cd-7527-4e89-8d50-ae7cbcbd51a1"/>
+    <managerType typeId="3b08459a-362e-4781-8adc-33e8e42a8a7c" valueTypeId="03373b82-58e7-4c5e-ae38-fc1ae3ddc051"/>
+  </producedTypes>
+  <name>ИсточникиДолжностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Источники должностей</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Источники должностей</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Источники должностей</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Источники должностей и профессий</value>
+  </explanation>
+  <enumValues uuid="7c6e3a73-9160-475d-a1df-6eea601403d3">
+    <name>ДолжностиСлужащих</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служащие (ИТР)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="114e11ad-1521-4bbf-b19f-0d30fcca4f6e">
+    <name>ПрофессииРабочих</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0098bc9c-0987-4b9b-8cd4-95aa10ffef0b">
+    <name>ВведеныВручную</name>
+    <synonym>
+      <key>ru</key>
+      <value>Введены вручную</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

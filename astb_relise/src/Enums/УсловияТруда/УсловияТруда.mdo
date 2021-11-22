@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f04a2a1d-2001-401f-a2cd-2ee611a258bc">
+  <producedTypes>
+    <refType typeId="77a04584-ef31-47cc-8d0e-bd05621db740" valueTypeId="97524ac5-400a-46df-b440-8a356f637ea6"/>
+    <listType typeId="be3191b9-2b37-4bee-8539-71ad71a15722" valueTypeId="717c276c-8660-4cd8-b81e-b69563c78389"/>
+    <managerType typeId="00ea1d6c-57ef-4a45-84ea-202cafb1a80e" valueTypeId="41095472-cf76-43ac-8296-838ac1c4fd72"/>
+  </producedTypes>
+  <name>УсловияТруда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия труда</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7279f2d0-fdf2-4188-bffd-c30a1bdb332b">
+    <name>ОптимальныеУсловияТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оптимальные условия труда (1 класс)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aed8b3e8-8c3e-46ae-bb6e-6926d7fca688">
+    <name>ДопустимыеУсловияТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимые условия труда (2 класс)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="62c06556-d8e6-4a99-95ac-ad6f36c156fa">
+    <name>ВредныеУсловияТрудаСтепень1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные условия труда (3 класс 1 степень)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="00ba9406-a52f-411e-8744-d787a5bb8fa5">
+    <name>ВредныеУсловияТрудаСтепень2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные условия труда (3 класс 2 степень)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b6f3f535-99ac-4707-99da-c7687398a85b">
+    <name>ВредныеУсловияТрудаСтепень3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные условия труда (3 класс 3 степень)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2ec0878e-c05b-4715-8078-2d1acc52e735">
+    <name>ВредныеУсловияТрудаСтепень4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные условия труда (3 класс 4 степень)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="850d08a1-bf3b-47a3-8a4a-3e6f038c7086">
+    <name>ОпасныеУсловияТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опасные условия труда (4 класс)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

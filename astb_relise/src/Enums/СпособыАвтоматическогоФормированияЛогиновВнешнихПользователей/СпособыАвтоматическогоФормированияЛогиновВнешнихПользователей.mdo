@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20ca0fcf-fc4b-4d0b-99cd-61fc7e5f358f">
+  <producedTypes>
+    <refType typeId="401dfcfc-9299-4602-88e3-77f88412fd7b" valueTypeId="ea14116a-e22b-4486-ad55-de612e78b9c7"/>
+    <listType typeId="15e91a93-6303-4e47-b095-f23337640835" valueTypeId="afc87f47-25fb-4cc8-ade1-c12f319f8004"/>
+    <managerType typeId="5caa1bb8-94b0-4a26-b120-b7db8029bac9" valueTypeId="b8eba74d-5a67-4b52-a634-e20ea0e571f1"/>
+  </producedTypes>
+  <name>СпособыАвтоматическогоФормированияЛогиновВнешнихПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы автоматического формирования логинов внешних пользователей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3d568e33-bf6e-4c6c-99cc-15a753c0ba24">
+    <name>ФамилияИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>[ФамилияИО]</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5dc6c79-9c8c-4a0b-a125-069827a73a55">
+    <name>ТабельныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>[ТабельныйНомер]</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3ad3c37-dbc4-4655-8cdf-e1af19f4244c">
+    <name>Префикс_ТабельныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>[Префикс]_[ТабельныйНомер]</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

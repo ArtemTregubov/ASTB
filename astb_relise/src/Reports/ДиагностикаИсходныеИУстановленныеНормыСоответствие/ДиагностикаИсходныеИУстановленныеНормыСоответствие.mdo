@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8b2284c-b2c0-4d36-9922-dd08588d6820">
+  <producedTypes>
+    <objectType typeId="811dfab8-8522-4a82-a05b-c681d6e8daf8" valueTypeId="6f028316-2df4-4692-800a-269ed8bdc75c"/>
+    <managerType typeId="05763216-4cbf-4a8b-a3c4-95d5c78a9c5c" valueTypeId="6bb68209-91d8-4563-8275-976ad57ee819"/>
+  </producedTypes>
+  <name>ДиагностикаИсходныеИУстановленныеНормыСоответствие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: исходные и установленные нормы (соответствие)</value>
+  </synonym>
+  <comment>Соответствие исходных и установленных норм</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаИсходныеИУстановленныеНормыСоответствие.Template.ИсходныеИУстановленныеНормыСоответствие</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствие исходных и установленных норм</value>
+  </explanation>
+  <templates uuid="12635442-04b4-448d-80fb-d83d85478144">
+    <name>ИсходныеИУстановленныеНормыСоответствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходные и установленные нормы (соответствие)</value>
+    </synonym>
+    <comment>Соответствие исходных и установленных норм. Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

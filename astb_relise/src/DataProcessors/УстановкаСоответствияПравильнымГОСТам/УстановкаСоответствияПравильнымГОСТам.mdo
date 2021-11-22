@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbe06fc4-5dea-48a9-adee-5d6670b56010">
+  <producedTypes>
+    <objectType typeId="4b1d0a27-62db-49c8-87dd-387daefa325b" valueTypeId="1a46bbf2-8d2c-4c44-ba20-68a230fd71d5"/>
+    <managerType typeId="f370ab74-1c6e-4751-aeb8-338cc02df87f" valueTypeId="6d272bd8-3a4f-4165-a70c-e31dc1f8781f"/>
+  </producedTypes>
+  <name>УстановкаСоответствияПравильнымГОСТам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка соответствия правильным ГОСТам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УстановкаСоответствияПравильнымГОСТам.Form.Форма</defaultForm>
+  <attributes uuid="a2d530d7-0ac9-42d5-a74e-777206b94ee5">
+    <name>ФайлЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл загрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="0213a68e-22f3-47b4-bb09-6513d075c30a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="860f7fef-dc37-4b1f-9406-52b1fc367f97">
+    <name>УстановкаСоответствияПравильнымГОСТам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка соответствия правильным ГОСТам</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5982bad-f512-41b7-8f2c-2f6b5400a459">
+  <producedTypes>
+    <managerType typeId="e8b047e7-56b1-4c42-9ed4-c33c9873c647" valueTypeId="d4e428bb-6c6b-4438-99d7-d21395796d27"/>
+    <valueManagerType typeId="eac7bee4-1525-48c3-b1fe-3e35693ad8a2" valueTypeId="7c02cef0-cc7d-4345-8c17-c192a3d17310"/>
+    <valueKeyType typeId="036afba0-d7d3-5540-aa67-4fb4df8ce67a" valueTypeId="0c3df747-adf1-53a5-af0d-21168b20a9a6"/>
+  </producedTypes>
+  <name>ИспользоватьПодситемуОТиТБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подситему &quot;ОТ и ТБ&quot;</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

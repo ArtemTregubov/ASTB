@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7cd8ff60-d840-4327-a3c0-2113486621a2">
+  <producedTypes>
+    <objectType typeId="825a367d-306e-4aaf-a5c5-56a1b02dddd2" valueTypeId="32bdbfd7-024c-4b67-9ac4-9047628d314a"/>
+    <managerType typeId="423c0758-c478-45f8-bead-5c453408364f" valueTypeId="8671e6e4-a1bc-4e0e-9a30-984587a8d8a4"/>
+  </producedTypes>
+  <name>СИЗПереданныеВСобственность</name>
+  <synonym>
+    <key>ru</key>
+    <value>СИЗ переданные в собственность</value>
+  </synonym>
+  <comment>СИЗ переданные в собственность организаций</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СИЗПереданныеВСобственность.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="375051a5-d5c6-47ec-bb61-f9b413aedd60">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Врачи.StandardCommand.OpenList</commands>
+      <commands>Catalog.ДополнительныеМедицинскиеПротивопоказания.StandardCommand.OpenList</commands>
+      <commands>Catalog.ЛабораторныеИФункциональныеИсследования.StandardCommand.OpenList</commands>
+      <commands>0:ec9714b6-dd33-4081-a72d-3dc8d864a060</commands>
+      <commands>Catalog.Контрагенты.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

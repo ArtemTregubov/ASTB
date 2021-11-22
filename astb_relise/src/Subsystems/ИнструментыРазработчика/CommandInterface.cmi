@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>0:8f78cf63-7c56-4fc0-8b2b-c4be69f6bf90</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ИнструментыРазработчикаПроверкаБСППередСборкой.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ИнструментыРазработчикаУправлениеДоступом.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <subsystemsOrder>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.БазоваяФункциональность</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.ВариантыОтчетов</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.ОбменДанными</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.ОбновлениеВерсииИБ</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.ПереходНаНовыеВерсии</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.ПоставляемыеДанные</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.РаботаСКонтрагентами</subsystems>
+    <subsystems>Subsystem.ИнструментыРазработчика.Subsystem.РезервноеКопированиеИБ</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

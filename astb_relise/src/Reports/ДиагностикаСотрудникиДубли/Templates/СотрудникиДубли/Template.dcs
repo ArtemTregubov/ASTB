@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДублейПоМестуХраненияСИЗ</dataPath>
+			<field>КоличествоДублейПоМестуХраненияСИЗ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дублей по месту хранения СИЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоХраненияСИЗ</dataPath>
+			<field>МестоХраненияСИЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДублейПоТабельномуНомеру</dataPath>
+			<field>КоличествоДублейПоТабельномуНомеру</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дублей по табельному номеру</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТабельныйНомер</dataPath>
+			<field>ТабельныйНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДублейПоНаименованиюИТабельномуНомеру</dataPath>
+			<field>КоличествоДублейПоНаименованиюИТабельномуНомеру</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дублей по наименованию и табельному номеру</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Сотрудники.Ссылка КАК Ссылка,
+	Сотрудники.ТабельныйНомер КАК ТабельныйНомер,
+	Сотрудники.МестоХраненияСИЗ КАК МестоХраненияСИЗ
+ПОМЕСТИТЬ ВТ_Сотрудники
+ИЗ
+	Справочник.Сотрудники КАК Сотрудники
+ГДЕ
+	Сотрудники.Владелец = &amp;Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сотрудники.ТабельныйНомер КАК ТабельныйНомер,
+	СУММА(1) КАК КоличествоДублейПоТабельномуНомеру
+ПОМЕСТИТЬ ВТ_ГруппировкаПоТабельномуНомеру
+ИЗ
+	ВТ_Сотрудники КАК ВТ_Сотрудники
+ГДЕ
+	НЕ ВТ_Сотрудники.ТабельныйНомер = ""
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Сотрудники.ТабельныйНомер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сотрудники.ТабельныйНомер КАК ТабельныйНомер,
+	СУММА(1) КАК КоличествоДублейПоНаименованиюИТабельномуНомеру,
+	ВТ_Сотрудники.Ссылка.Наименование КАК Наименование
+ПОМЕСТИТЬ ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру
+ИЗ
+	ВТ_Сотрудники КАК ВТ_Сотрудники
+ГДЕ
+	НЕ ВТ_Сотрудники.ТабельныйНомер = ""
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Сотрудники.ТабельныйНомер,
+	ВТ_Сотрудники.Ссылка.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сотрудники.МестоХраненияСИЗ КАК МестоХраненияСИЗ,
+	СУММА(1) КАК КоличествоДублейПоМестуХраненияСИЗ
+ПОМЕСТИТЬ ВТ_ГруппировкаПоМестуХраненияСИЗ
+ИЗ
+	ВТ_Сотрудники КАК ВТ_Сотрудники
+ГДЕ
+	НЕ ВТ_Сотрудники.МестоХраненияСИЗ = ЗНАЧЕНИЕ(Справочник.МестаХраненияСИЗСотрудников.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Сотрудники.МестоХраненияСИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ГруппировкаПоТабельномуНомеру.ТабельныйНомер КАК ТабельныйНомер,
+	ВТ_ГруппировкаПоТабельномуНомеру.КоличествоДублейПоТабельномуНомеру КАК КоличествоДублейПоТабельномуНомеру
+ПОМЕСТИТЬ ВТ_ДублиПоТабельномуНомеру
+ИЗ
+	ВТ_ГруппировкаПоТабельномуНомеру КАК ВТ_ГруппировкаПоТабельномуНомеру
+ГДЕ
+	ВТ_ГруппировкаПоТабельномуНомеру.КоличествоДублейПоТабельномуНомеру &gt; 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру.ТабельныйНомер КАК ТабельныйНомер,
+	ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру.КоличествоДублейПоНаименованиюИТабельномуНомеру КАК КоличествоДублейПоНаименованиюИТабельномуНомеру,
+	ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру.Наименование КАК Наименование
+ПОМЕСТИТЬ ВТ_ДублиПоНаименованиюИТабельномуНомеру
+ИЗ
+	ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру КАК ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру
+ГДЕ
+	ВТ_ГруппировкаПоНаименованиюИТабельномуНомеру.КоличествоДублейПоНаименованиюИТабельномуНомеру &gt; 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ГруппировкаПоМестуХраненияСИЗ.МестоХраненияСИЗ КАК МестоХраненияСИЗ,
+	ВТ_ГруппировкаПоМестуХраненияСИЗ.КоличествоДублейПоМестуХраненияСИЗ КАК КоличествоДублейПоМестуХраненияСИЗ
+ПОМЕСТИТЬ ВТ_ДублиПоМестуХраненияСИЗ
+ИЗ
+	ВТ_ГруппировкаПоМестуХраненияСИЗ КАК ВТ_ГруппировкаПоМестуХраненияСИЗ
+ГДЕ
+	ВТ_ГруппировкаПоМестуХраненияСИЗ.КоличествоДублейПоМестуХраненияСИЗ &gt; 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДублиПоТабельномуНомеру.ТабельныйНомер КАК ТабельныйНомер,
+	ВТ_ДублиПоТабельномуНомеру.КоличествоДублейПоТабельномуНомеру КАК КоличествоДублейПоТабельномуНомеру,
+	ВТ_Сотрудники.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_РезультатДублиПоТабельномуНомеру
+ИЗ
+	ВТ_ДублиПоТабельномуНомеру КАК ВТ_ДублиПоТабельномуНомеру
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сотрудники КАК ВТ_Сотрудники
+		ПО ВТ_ДублиПоТабельномуНомеру.ТабельныйНомер = ВТ_Сотрудники.ТабельныйНомер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДублиПоНаименованиюИТабельномуНомеру.ТабельныйНомер КАК ТабельныйНомер,
+	ВТ_Сотрудники.Ссылка КАК Ссылка,
+	ВТ_ДублиПоНаименованиюИТабельномуНомеру.КоличествоДублейПоНаименованиюИТабельномуНомеру КАК КоличествоДублейПоНаименованиюИТабельномуНомеру,
+	ВТ_ДублиПоНаименованиюИТабельномуНомеру.Наименование КАК Наименование
+ПОМЕСТИТЬ ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру
+ИЗ
+	ВТ_ДублиПоНаименованиюИТабельномуНомеру КАК ВТ_ДублиПоНаименованиюИТабельномуНомеру
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сотрудники КАК ВТ_Сотрудники
+		ПО ВТ_ДублиПоНаименованиюИТабельномуНомеру.ТабельныйНомер = ВТ_Сотрудники.ТабельныйНомер
+			И ВТ_ДублиПоНаименованиюИТабельномуНомеру.Наименование = ВТ_Сотрудники.Ссылка.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДублиПоМестуХраненияСИЗ.МестоХраненияСИЗ КАК МестоХраненияСИЗ,
+	ВТ_ДублиПоМестуХраненияСИЗ.КоличествоДублейПоМестуХраненияСИЗ КАК КоличествоДублейПоМестуХраненияСИЗ,
+	ВТ_Сотрудники.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_РезультатДублиПоМестуХраненияСИЗ
+ИЗ
+	ВТ_ДублиПоМестуХраненияСИЗ КАК ВТ_ДублиПоМестуХраненияСИЗ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сотрудники КАК ВТ_Сотрудники
+		ПО ВТ_ДублиПоМестуХраненияСИЗ.МестоХраненияСИЗ = ВТ_Сотрудники.МестоХраненияСИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_РезультатДублиПоТабельномуНомеру.ТабельныйНомер КАК ТабельныйНомер,
+	ЗНАЧЕНИЕ(Справочник.МестаХраненияСИЗСотрудников.ПустаяСсылка) КАК МестоХраненияСИЗ,
+	ВТ_РезультатДублиПоТабельномуНомеру.КоличествоДублейПоТабельномуНомеру КАК КоличествоДублейПоТабельномуНомеру,
+	0 КАК КоличествоДублейПоМестуХраненияСИЗ,
+	ВТ_РезультатДублиПоТабельномуНомеру.Ссылка КАК Ссылка,
+	0 КАК КоличествоДублейПоНаименованиюИТабельномуНомеру,
+	"" КАК Наименование
+ПОМЕСТИТЬ ВТ_Результат
+ИЗ
+	ВТ_РезультатДублиПоТабельномуНомеру КАК ВТ_РезультатДублиПоТабельномуНомеру
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"",
+	ВТ_РезультатДублиПоМестуХраненияСИЗ.МестоХраненияСИЗ,
+	0,
+	ВТ_РезультатДублиПоМестуХраненияСИЗ.КоличествоДублейПоМестуХраненияСИЗ,
+	ВТ_РезультатДублиПоМестуХраненияСИЗ.Ссылка,
+	0,
+	""
+ИЗ
+	ВТ_РезультатДублиПоМестуХраненияСИЗ КАК ВТ_РезультатДублиПоМестуХраненияСИЗ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру.ТабельныйНомер,
+	NULL,
+	NULL,
+	NULL,
+	ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру.Ссылка,
+	ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру.КоличествоДублейПоНаименованиюИТабельномуНомеру,
+	ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру.Наименование
+ИЗ
+	ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру КАК ВТ_РезультатДублиПоНаименованиюИТабельномуНомеру
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Результат.ТабельныйНомер КАК ТабельныйНомер,
+	ВТ_Результат.МестоХраненияСИЗ КАК МестоХраненияСИЗ,
+	ВТ_Результат.КоличествоДублейПоТабельномуНомеру КАК КоличествоДублейПоТабельномуНомеру,
+	ВТ_Результат.КоличествоДублейПоМестуХраненияСИЗ КАК КоличествоДублейПоМестуХраненияСИЗ,
+	ВТ_Результат.Ссылка КАК Ссылка,
+	ВТ_Результат.Наименование КАК Наименование,
+	ВТ_Результат.КоличествоДублейПоНаименованиюИТабельномуНомеру КАК КоличествоДублейПоНаименованиюИТабельномуНомеру
+ИЗ
+	ВТ_Результат КАК ВТ_Результат
+
+УПОРЯДОЧИТЬ ПО
+	ВТ_Результат.Ссылка.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>СотрудникиДубли</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: сотрудники (дубли)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>c365f1c6-9114-46cf-b3be-c5377e183526</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Сотрудники"</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТабельныйНомер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КоличествоДублейПоТабельномуНомеру</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КоличествоДублейПоТабельномуНомеру</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТабельныйНомер</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Табельный №</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоДублейПоТабельномуНомеру</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во дублей</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>дубли по табельному номеру</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка.Код</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>МестоХраненияСИЗ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КоличествоДублейПоМестуХраненияСИЗ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КоличествоДублейПоМестуХраненияСИЗ</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МестоХраненияСИЗ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоДублейПоМестуХраненияСИЗ</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во дублей</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>дубли по месту хранения СИЗ</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка.Код</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Наименование</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТабельныйНомер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КоличествоДублейПоНаименованиюИТабельномуНомеру</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КоличествоДублейПоНаименованиюИТабельномуНомеру</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Наименование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТабельныйНомер</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Табельный №</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоДублейПоНаименованиюИТабельномуНомеру</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во дублей</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>дубли по наименованию и табельному номеру</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка.Код</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

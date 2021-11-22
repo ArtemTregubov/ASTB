@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0602b4b0-91c6-45a3-855d-4ab8561b5756">
+  <producedTypes>
+    <objectType typeId="9ee89863-48ac-4aa6-a1cc-a41f27079450" valueTypeId="7f233bfa-4ab4-440a-8321-500aef0aea18"/>
+    <managerType typeId="4bb71e01-2a86-4881-ac05-3828375f1fa1" valueTypeId="14e99f16-5d1e-45bf-8fa1-6ae57e592b2a"/>
+  </producedTypes>
+  <name>ДиагностикаКраснаяЛинияЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: красная линия (заполнение)</value>
+  </synonym>
+  <comment>Заполнение данных по красной линии.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаКраснаяЛинияЗаполнение.Template.КраснаяЛинияЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение данных по красной линии.</value>
+  </explanation>
+  <templates uuid="4af263c4-6e51-4f21-a2c2-86f900145d09">
+    <name>КраснаяЛинияЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Красная линия (заполнение)</value>
+    </synonym>
+    <comment>Заполнение данных по красной линии.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

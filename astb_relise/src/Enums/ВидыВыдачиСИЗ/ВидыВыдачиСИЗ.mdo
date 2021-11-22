@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="843cea4a-f81b-4cea-bdfe-ff041a75d125">
+  <producedTypes>
+    <refType typeId="075a317a-1f67-4abc-82fd-ae178e5a25b6" valueTypeId="85617a47-2e52-4bcb-ab84-77799c3346ba"/>
+    <listType typeId="caae09ad-54c1-4243-9333-9c604562416f" valueTypeId="643e559d-b8b2-42c6-9ad4-18488eec6a4a"/>
+    <managerType typeId="cc371076-bb30-4190-8436-4b7396c94b2f" valueTypeId="d4e8b212-2f18-4be4-ad4c-b447589614b1"/>
+  </producedTypes>
+  <name>ВидыВыдачиСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды выдачи СИЗ</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="937c9599-d798-44f0-8a57-60b10fe38f40">
+    <name>КоллективнаяВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коллективная выдача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1fc17abe-f0e6-4c4d-a72f-762bbc26764f">
+    <name>ПерсональнаяВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Персональная выдача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ba288e8-5904-483c-bd6f-ee7603f39c6e">
+    <name>ПроизвольнаяВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольная выдача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="84c9d1aa-2ee4-4f75-8794-74c4c9724e3c">
+    <name>УпрощеннаяВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упрощенная выдача</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

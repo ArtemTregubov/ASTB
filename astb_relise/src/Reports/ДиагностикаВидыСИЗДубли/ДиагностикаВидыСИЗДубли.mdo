@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98af0b70-412f-40ba-b1a4-283d367e438f">
+  <producedTypes>
+    <objectType typeId="3d96f965-540a-4279-bb68-613be7c98d1d" valueTypeId="b4b72d2b-b55f-4716-9d60-5ba60faf639c"/>
+    <managerType typeId="3dc750c2-5886-42bd-a88e-ab69b49b804f" valueTypeId="c3d00ad4-8006-4706-a934-f3bfe6a7ed53"/>
+  </producedTypes>
+  <name>ДиагностикаВидыСИЗДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: виды СИЗ (дубли)</value>
+  </synonym>
+  <comment>Виды СИЗ (дубли по наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаВидыСИЗДубли.Template.ВидыСИЗДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Виды СИЗ (дубли по наименованию)</value>
+  </explanation>
+  <templates uuid="4006f8c5-89fb-4ccd-b33b-b17e7b33305c">
+    <name>ВидыСИЗДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды СИЗ (дубли)</value>
+    </synonym>
+    <comment>Виды СИЗ (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

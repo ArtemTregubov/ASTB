@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4983ba31-d5a2-452a-8e41-e0be45041a59">
+  <producedTypes>
+    <objectType typeId="65a26e46-0375-4b11-8c8f-6593610e2dad" valueTypeId="b2661408-7fe9-4502-9c45-8fb781e79b07"/>
+    <managerType typeId="50efe13f-66fe-4ede-8a2f-caeaaf224928" valueTypeId="631d975d-b6a3-4390-800d-315bf66f75ba"/>
+  </producedTypes>
+  <name>СостояниеCертификатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние cертификатов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СостояниеCертификатов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f798dd71-d54e-4c47-a1e5-2a2f2fe00ccd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

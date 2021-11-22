@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="453efe31-4d4a-44d2-8717-2c2b50dd7baf">
+  <producedTypes>
+    <objectType typeId="6535a381-b187-4d0e-ac2e-27b4c1434e49" valueTypeId="697023ad-f58e-4b9e-a034-6faabd4da868"/>
+    <managerType typeId="319646ea-1397-437e-a216-a96d54fcfab8" valueTypeId="b384e301-a0ee-42af-a038-0351df1bb399"/>
+  </producedTypes>
+  <name>ПодборПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор подразделений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Подбор подразделений организации</value>
+  </explanation>
+  <attributes uuid="8bbc6d1f-36b1-4731-bba6-1e685c6c2aa5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="146f36e0-ce40-46af-b880-34eed5ebf800">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

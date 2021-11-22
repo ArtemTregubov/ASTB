@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff07d559-d893-481a-a216-087fa2e0317d">
+  <producedTypes>
+    <selectionType typeId="96cac250-987b-402f-a336-97f758c483be" valueTypeId="1d8dde14-7da7-49cf-8917-f93cc1ffe673"/>
+    <listType typeId="4cf8112a-4208-4f72-a8a7-65627aa5ae87" valueTypeId="c20e5d47-2beb-4f1f-8742-14be575099ca"/>
+    <managerType typeId="90fa2803-90b7-40cf-b956-1d118e78ec4c" valueTypeId="96133603-a65d-41e5-80d0-56b2d01c6892"/>
+    <recordSetType typeId="e49b8c76-6700-4ba8-93cf-973fbc249ac2" valueTypeId="208b24e1-e5be-40a2-9885-ce3ce5035209"/>
+    <recordKeyType typeId="8199ceb5-8745-4cc8-afc8-25ba09fb746c" valueTypeId="0cdf9318-b8a4-4e18-a9af-3b3710a789b6"/>
+    <recordType typeId="dca53214-cfd4-406e-9b8c-8b42129a3a0f" valueTypeId="7fd319ca-d104-4c3d-a86c-990887e32477"/>
+    <recordManagerType typeId="ae5ff016-a4d9-44b4-9e62-0f6df9a044cd" valueTypeId="946dc8bb-c664-4aa9-b9f2-32b7f4634fef"/>
+  </producedTypes>
+  <name>ЗначенияЗащитныхСвойствРабочихМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения защитных свойств рабочих мест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b649c5b0-2616-4bb8-a7c1-f6bcecccf1e8">
+    <name>ЗначениеЗащитногоСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение защитного свойства</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b10731da-47dd-4be1-a85d-660d98b4b2b1">
+    <name>РабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РабочиеМестаАСТБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="93471f36-7169-42ad-8fdb-fd0ffa142185">
+    <name>ЗащитноеСвойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Защитное свойство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗащитныеСвойства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

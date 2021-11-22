@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d41d697b-1b4e-4b02-97bb-a4cfc572d7d2">
+  <producedTypes>
+    <managerType typeId="58afea1a-7960-4b75-b9a1-ccbe989da1d7" valueTypeId="38ddcb80-0fe4-4a77-9342-d2c2e4d3b628"/>
+    <valueManagerType typeId="24acb8c9-c169-4001-9d6f-5308226a8bbc" valueTypeId="cde695ab-88d0-4280-9ea6-096afaf4bd07"/>
+    <valueKeyType typeId="f64ae4cc-790b-5ae9-8943-172bf9cfe6c4" valueTypeId="2e3fccf1-fab3-5d0d-adfd-40a279e55aed"/>
+  </producedTypes>
+  <name>СтрокаСоединенияИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Строка соединения ИБ</value>
+  </synonym>
+  <comment>Служебная константа для алгоритма отключения регламентых заданий</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

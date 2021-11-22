@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1b69c81-c556-422a-988e-989cc3520051">
+  <producedTypes>
+    <managerType typeId="cc230be5-65d1-4ec0-8ee7-594e32e2571e" valueTypeId="611e5f85-7628-441d-9439-97b32031b53d"/>
+    <valueManagerType typeId="cd24f260-6430-473a-b386-34c5226b1dfa" valueTypeId="ea93a2b6-a28e-4397-b114-6e0f42f3278e"/>
+    <valueKeyType typeId="efeeb63a-67f2-5fce-81d4-328cab055f87" valueTypeId="b85ee22d-5cda-5472-a1a0-a7bd64aa8656"/>
+  </producedTypes>
+  <name>ИспользоватьВендинговоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать вендинговое оборудование</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

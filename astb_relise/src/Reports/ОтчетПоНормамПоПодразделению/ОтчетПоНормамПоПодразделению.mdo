@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a8f3bb1-e516-4c7e-83a2-234d49ca0fdb">
+  <producedTypes>
+    <objectType typeId="5eeff51b-1bf7-45f6-9352-b891621e2027" valueTypeId="5e910879-c2e6-457a-b539-fac4d42b711f"/>
+    <managerType typeId="81cfc4f1-50fe-410c-9303-4e3e0b67b7f1" valueTypeId="27c7e7d7-8461-4d12-acb0-4ed6840a7eae"/>
+  </producedTypes>
+  <name>ОтчетПоНормамПоПодразделению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по нормам по подразделению</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоНормамПоПодразделению.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="71e7400b-a85a-4cbf-b7eb-a85f6ab308ed">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

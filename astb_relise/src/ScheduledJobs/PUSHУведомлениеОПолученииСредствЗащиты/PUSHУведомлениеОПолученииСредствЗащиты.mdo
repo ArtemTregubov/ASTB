@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="722d1431-7f98-49d7-8679-35be018dc7f9">
+  <name>PUSHУведомлениеОПолученииСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>PUSH-уведомление о получении средств защиты</value>
+  </synonym>
+  <methodName>CommonModule.ПроцедурыРаботыСНормамиСервер.УведомлениеОПолученииСредствзащиты</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

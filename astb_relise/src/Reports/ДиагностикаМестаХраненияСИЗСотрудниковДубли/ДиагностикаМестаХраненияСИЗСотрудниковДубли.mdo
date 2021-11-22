@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1135f814-accd-4770-8dee-b5bb7168f121">
+  <producedTypes>
+    <objectType typeId="00818141-a08d-43c4-8219-4ddfe6d7c061" valueTypeId="32b6d712-74ed-40f5-9484-640deef741f0"/>
+    <managerType typeId="d0c07ca5-86e0-4c93-bc8e-08f1c38dd4ad" valueTypeId="a91c91c1-16d5-40a7-9779-9ca28c3062ad"/>
+  </producedTypes>
+  <name>ДиагностикаМестаХраненияСИЗСотрудниковДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: места хранения СИЗ сотрудников (дубли)</value>
+  </synonym>
+  <comment>Места хранения СИЗ (дубли по наименованию и по сотрудникам)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаМестаХраненияСИЗСотрудниковДубли.Template.МестаХраненияСИЗСотрудников_Дубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Места хранения СИЗ (дубли по наименованию и по сотрудникам)</value>
+  </explanation>
+  <templates uuid="461ab8bf-00f7-4c92-bcb5-cbac8b5336d3">
+    <name>МестаХраненияСИЗСотрудников_Дубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Места хранения СИЗ (дубли)</value>
+    </synonym>
+    <comment>Места хранения СИЗ (дубли по наименованию). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

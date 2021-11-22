@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="763f86fe-88e4-4953-b35e-870ab103e31f">
+  <name>Обслуживание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обслуживание</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаУчетЧисткиСИЗ</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаУчетЧисткиСИЗ</content>
+  <content>CommonCommand.ПанельОтчетовОбслуживание</content>
+  <content>Report.СредстваЗащитыВЧистке</content>
+  <content>CommonCommand.ДополнительныеОбработкиУчетЧисткиСИЗ</content>
+  <content>InformationRegister.ШтрихкодыНоменклатурыДляУчетаЧистки</content>
+  <content>DataProcessor.ПечатьЭтикетокДляВыданныхСИЗ</content>
+  <content>Report.КонтрольЦикловЧистки</content>
+  <content>Report.ОборотыСИЗвЧистке</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.УтилизированныеСИЗ</content>
+  <content>Report.РемонтСредствЗащиты</content>
+  <content>Report.МестаХраненияСИЗСотрудников</content>
+  <subsystems>Документы</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

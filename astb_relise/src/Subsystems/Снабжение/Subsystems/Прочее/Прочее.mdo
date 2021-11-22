@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1839cfdf-3270-4a6e-b7f9-3c9985b8c3dd">
+  <name>Прочее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прочее</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.УстановкаСоответствийНоменклатурыВыдачи</content>
+  <content>Document.ЦеновоеСоглашение</content>
+  <content>DataProcessor.ЗагрузкаСертификатовНоменклатурыВостокСервис</content>
+  <content>DataProcessor.ЗагрузкаНоменклатурыВостокСервис</content>
+  <parentSubsystem>Subsystem.Снабжение</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddb67f5f-3186-4f1d-8579-d48c0b35d09b">
+  <name>ДокументыСкладскогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы складского учета</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВозвратНоменклатурыПоставщику</content>
+  <content>Document.ИнвентаризацияНоменклатуры</content>
+  <content>Document.ПеремещениеНоменклатуры</content>
+  <content>Document.ОприходованиеНоменклатуры</content>
+  <content>Document.СписаниеНоменклатуры</content>
+  <content>Document.ПоступлениеНоменклатуры</content>
+  <content>Document.КомплектацияНоменклатуры</content>
+  <content>Document.ОбращениеНаСклад</content>
+  <content>Document.ПриемСредствЗащитыНаХранение</content>
+  <content>Document.ВозвратСредствЗащитыСХранения</content>
+  <content>Document.ПеремещениеСредствЗащитыНаХранении</content>
+  <content>Document.ТранспортнаяПоставка</content>
+  <content>Document.ЗаписьНаСклад</content>
+  <parentSubsystem>Subsystem.Склад</parentSubsystem>
+</mdclass:Subsystem>

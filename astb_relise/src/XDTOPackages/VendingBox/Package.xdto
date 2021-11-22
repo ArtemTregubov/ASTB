@@ -1,0 +1,90 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://vending-box.com/" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="TypeDocument" base="xs:string">
+		<enumeration xsi:type="xs:string">Upload</enumeration>
+		<enumeration xsi:type="xs:string">Download</enumeration>
+	</valueType>
+	<valueType name="TypeOperation" base="xs:string">
+		<enumeration xsi:type="xs:string">In layout</enumeration>
+		<enumeration xsi:type="xs:string">Final</enumeration>
+	</valueType>
+	<valueType name="Status" base="xs:string">
+		<enumeration xsi:type="xs:string">OK</enumeration>
+		<enumeration xsi:type="xs:string">ERROR</enumeration>
+	</valueType>
+	<objectType name="MT_RequestMaterials">
+		<property name="DATA">
+			<typeDef xsi:type="ObjectType">
+				<property name="BOX_ID" type="xs:string"/>
+				<property name="USER_TAB" type="xs:string"/>
+				<property name="EXTRA_NORM" type="xs:boolean" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="MT_ResponseRequestMaterials">
+		<property name="Header">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://vending-box.com/" name="STATUS" type="d5p1:Status"/>
+				<property name="MES" type="xs:string" lowerBound="0" nillable="true"/>
+				<property name="USER_TAB" type="xs:string"/>
+				<property name="FIO" type="xs:string" lowerBound="0" nillable="true"/>
+				<property name="EXECUTOR" type="xs:boolean" lowerBound="1"/>
+			</typeDef>
+		</property>
+		<property name="Items" lowerBound="0" upperBound="-1" nillable="true">
+			<typeDef xsi:type="ObjectType">
+				<property name="ITEM_ID" type="xs:anyType"/>
+				<property name="QUANTITY" type="xs:decimal"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="MT_MovementMaterials">
+		<property name="DATA">
+			<typeDef xsi:type="ObjectType">
+				<property name="Items" lowerBound="1" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="BOX_ID" type="xs:string"/>
+						<property name="OPER_ID" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="OPER_DATE" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="USER_TAB" type="xs:string"/>
+						<property name="ITEM_ID" type="xs:string"/>
+						<property name="QUANTITY" type="xs:decimal"/>
+						<property name="EXTRA_NORM" type="xs:boolean" lowerBound="0"/>
+						<property name="EXECUTOR_TAB" type="xs:string" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="MT_ResponseMovementMaterials">
+		<property name="Header">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://vending-box.com/" name="STATUS" type="d5p1:Status"/>
+				<property name="MES" type="xs:string" lowerBound="0" nillable="true"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="MT_UploadDownload">
+		<property xmlns:d3p1="http://vending-box.com/" name="TypeDocument" type="d3p1:TypeDocument"/>
+		<property xmlns:d3p1="http://vending-box.com/" name="TypeOperation" type="d3p1:TypeOperation"/>
+		<property name="BOX_ID" type="xs:string"/>
+		<property name="DocNumber" type="xs:string"/>
+		<property name="Items">
+			<typeDef xsi:type="ObjectType">
+				<property name="Item" lowerBound="1" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="ITEM_ID" type="xs:anyType"/>
+						<property name="QUANTITY" type="xs:decimal"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="MT_ResponseUploadDownload">
+		<property name="Header">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://vending-box.com/" name="STATUS" type="d5p1:Status"/>
+				<property name="MES" type="xs:string" lowerBound="0" nillable="true"/>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

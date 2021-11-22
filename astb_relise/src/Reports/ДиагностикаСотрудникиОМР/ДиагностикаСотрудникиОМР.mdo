@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c60d93d8-118f-4c0c-b014-08844f44ba14">
+  <producedTypes>
+    <objectType typeId="dcf683f7-4ce5-4fa1-a1c3-8d5b5b345b66" valueTypeId="45d432cb-f451-4387-87a6-73e1c991cfd6"/>
+    <managerType typeId="185e687e-33fa-461a-9092-6494727cb1a0" valueTypeId="9f416ebf-b404-4f52-9912-1400c8d0671c"/>
+  </producedTypes>
+  <name>ДиагностикаСотрудникиОМР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сотрудники (основное место работы)</value>
+  </synonym>
+  <comment>Сотрудники (заполнение основного места работы)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСотрудникиОМР.Template.СотрудникиОМР</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сотрудники (заполнение основного места работы)</value>
+  </explanation>
+  <templates uuid="c2882a8d-89bd-43e0-aff3-1f3b61bc8e09">
+    <name>СотрудникиОМР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники (основное место работы)</value>
+    </synonym>
+    <comment>Сотрудники (заполнение основного места работы)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

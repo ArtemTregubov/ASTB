@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ee1b5bd-59dc-4846-9460-dab00f4da2f6">
+  <producedTypes>
+    <objectType typeId="9d2e22d6-ece4-4090-b37c-f252375fd3a6" valueTypeId="6ceff3d6-4ba6-466d-a40e-93f604581d4c"/>
+    <refType typeId="14e9267e-22de-43bc-be10-bed355c4ce80" valueTypeId="7f0930b6-5dc7-480f-ac78-f68f498d888e"/>
+    <selectionType typeId="bdd78779-4a60-48c4-af71-0778e4606d07" valueTypeId="d4820691-c516-4efe-881f-69725300ff12"/>
+    <listType typeId="cc014b21-c1a9-45b9-98ed-033256ce5aee" valueTypeId="d58327b8-bd67-4912-9172-c01014de4903"/>
+    <managerType typeId="7e5f7485-2996-44b5-9378-880f022d30b9" valueTypeId="938dfc63-4994-4261-8e3b-2afc7bcbbac9"/>
+  </producedTypes>
+  <name>ВредныеИОпасныеПроизводственныеФакторы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вредные и (или) опасные производственные факторы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВредныеИОпасныеПроизводственныеФакторы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВредныеИОпасныеПроизводственныеФакторы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>6</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВредныеИОпасныеПроизводственныеФакторы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВредныеИОпасныеПроизводственныеФакторы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a70cca53-fd82-4e45-bb61-3bf32b7812b6">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>600</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="500166dd-4a76-4e69-9df9-97f5f031644d">
+    <producedTypes>
+      <objectType typeId="e7805d04-4420-40b6-9e28-4784af31170e" valueTypeId="ac62cdbd-5d22-4609-940f-0dea87e43527"/>
+      <rowType typeId="f4eb68b0-5224-4b6c-8823-d62e9882fd02" valueTypeId="b454e409-9fc5-4d2b-815b-8ca49e5dd16e"/>
+    </producedTypes>
+    <name>Врачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Врачи</value>
+    </synonym>
+    <attributes uuid="629e76b7-ea9c-4054-a13d-9a13baabecdc">
+      <name>Врач</name>
+      <synonym>
+        <key>ru</key>
+        <value>Врач</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Врачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="29c515dd-336f-43c1-bdc8-36fe78aaea95">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7b10c4d6-9518-4d17-9b4a-ca5bcf6ebea9">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b6ef2840-0b46-4596-bc37-bd61e64aea64">
+    <producedTypes>
+      <objectType typeId="f257ef17-b395-4320-b92e-addbcbd5fd86" valueTypeId="0f55db8f-694a-42f9-91f9-71f176723379"/>
+      <rowType typeId="be66ab20-2340-479e-8a7e-6a53c76eb341" valueTypeId="7492812e-aaaf-4647-9f26-6b1ddc6235e6"/>
+    </producedTypes>
+    <name>ЛабораторныеИФункциональныеИсследования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лабораторные и функциональные исследования</value>
+    </synonym>
+    <attributes uuid="74939776-8516-41bf-8cdc-751c7743f686">
+      <name>Исследование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исследование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЛабораторныеИФункциональныеИсследования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="101133e6-e1d5-4469-a3e0-ab3bbe9576b6">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aa6b3a57-e369-47b4-8653-87678fa10132">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2428974f-4ac7-46b6-8d86-583fc64a1e56">
+    <producedTypes>
+      <objectType typeId="23ab39f4-0692-49eb-9224-0bc660fd9585" valueTypeId="7d50a1b9-b363-4181-a54c-9907a35c3139"/>
+      <rowType typeId="56bd92f3-a325-411c-9e74-640926950b97" valueTypeId="50780e22-a2de-48e0-9b63-62a7e84c340f"/>
+    </producedTypes>
+    <name>ДополнительныеМедицинскиеПротивопоказания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные медицинские противопоказания</value>
+    </synonym>
+    <attributes uuid="49dd0547-bb05-4451-9ef6-14b883d41d69">
+      <name>Противопоказание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Противопоказание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДополнительныеМедицинскиеПротивопоказания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="38e025c2-119d-4686-bc0a-b13396f7d1f2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ae4c255-69f2-40de-ad24-f5b2db156542">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6d69fae9-7517-4c9d-ae69-eaef343cffc6">
+    <name>КлассификаторXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор (XML)</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

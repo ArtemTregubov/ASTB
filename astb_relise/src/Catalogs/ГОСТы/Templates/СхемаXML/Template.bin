@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='GOST_list'>
+  <xsd:complexType>
+   <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xsd:element ref='GOST_list'/>
+   </xsd:sequence>
+   <xsd:attribute name='number' type='xsd:string' default=''/>
+   <xsd:attribute name='name' type='xsd:string' default=''/>
+   <xsd:attribute name='GOST_cancel' type='xsd:string' default=''/>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

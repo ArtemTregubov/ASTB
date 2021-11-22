@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КраснаяЛиния</dataPath>
+			<field>КраснаяЛиния</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Красная линия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентИзноса</dataPath>
+			<field>ПроцентИзноса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОстатокНаСкладе</dataPath>
+			<field>ОстатокНаСкладе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на складе</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеобходимоПополнитьОстаток</dataPath>
+			<field>НеобходимоПополнитьОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо пополнить остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОстаткиНоменклатурыОстатки.Организация КАК Организация,
+	ОстаткиНоменклатурыОстатки.Номенклатура КАК Номенклатура,
+	ОстаткиНоменклатурыОстатки.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	СУММА(ОстаткиНоменклатурыОстатки.КоличествоОстаток) КАК КоличествоОстаток,
+	ОстаткиНоменклатурыОстатки.Склад КАК Склад
+ПОМЕСТИТЬ ВТ_Остатки
+ИЗ
+	РегистрНакопления.ОстаткиНоменклатуры.Остатки(, Склад В (&amp;МассивСкладов)) КАК ОстаткиНоменклатурыОстатки
+
+СГРУППИРОВАТЬ ПО
+	ОстаткиНоменклатурыОстатки.Номенклатура,
+	ОстаткиНоменклатурыОстатки.ХарактеристикаНоменклатуры,
+	ОстаткиНоменклатурыОстатки.Склад,
+	ОстаткиНоменклатурыОстатки.Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Склады.Ссылка КАК Склад
+ПОМЕСТИТЬ ВТ_Склады
+ИЗ
+	Справочник.Склады КАК Склады
+ГДЕ
+	Склады.Ссылка В(&amp;МассивСкладов)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КраснаяЛиния.Номенклатура КАК Номенклатура,
+	КраснаяЛиния.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	КраснаяЛиния.Количество КАК КраснаяЛиния,
+	КраснаяЛиния.Организация КАК Организация,
+	ВТ_Склады.Склад КАК Склад
+ПОМЕСТИТЬ ВТ_КЛ
+ИЗ
+	РегистрСведений.КраснаяЛиния КАК КраснаяЛиния,
+	ВТ_Склады КАК ВТ_Склады
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_КЛ.Номенклатура КАК Номенклатура,
+	ВТ_КЛ.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	ВТ_КЛ.КраснаяЛиния КАК КраснаяЛиния,
+	ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0) КАК ОстатокНаСкладе,
+	ВТ_КЛ.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ВТ_Остатки.КоличествоОстаток ЕСТЬ NULL
+			ТОГДА ВТ_КЛ.КраснаяЛиния
+		ИНАЧЕ ВТ_КЛ.КраснаяЛиния - ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0)
+	КОНЕЦ КАК НеобходимоПополнитьОстаток,
+	ВТ_КЛ.Склад КАК Склад
+ПОМЕСТИТЬ ВТ_ДанныеПоВключённойКонстанте
+ИЗ
+	ВТ_КЛ КАК ВТ_КЛ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Остатки КАК ВТ_Остатки
+		ПО ВТ_КЛ.Номенклатура = ВТ_Остатки.Номенклатура
+			И ВТ_КЛ.ХарактеристикаНоменклатуры = ВТ_Остатки.ХарактеристикаНоменклатуры
+			И ВТ_КЛ.Склад = ВТ_Остатки.Склад,
+	Константа.НеВестиУчетОстатковНоменклатурыПоОрганизации КАК НеВестиУчетОстатковНоменклатурыПоОрганизации
+ГДЕ
+	ВТ_КЛ.КраснаяЛиния &gt; ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0)
+	И НеВестиУчетОстатковНоменклатурыПоОрганизации.Значение = ИСТИНА
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_КЛ.Номенклатура КАК Номенклатура,
+	ВТ_КЛ.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	ВТ_КЛ.КраснаяЛиния КАК КраснаяЛиния,
+	ВТ_КЛ.Организация КАК Организация,
+	ВТ_КЛ.Склад КАК Склад,
+	ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0) КАК ОстатокНаСкладе,
+	ВЫБОР
+		КОГДА ВТ_Остатки.КоличествоОстаток ЕСТЬ NULL
+			ТОГДА ВТ_КЛ.КраснаяЛиния
+		ИНАЧЕ ВТ_КЛ.КраснаяЛиния - ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0)
+	КОНЕЦ КАК НеобходимоПополнитьОстаток
+ПОМЕСТИТЬ ВТ_ДанныеПоВыключеннойКонстанте
+ИЗ
+	ВТ_КЛ КАК ВТ_КЛ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Остатки КАК ВТ_Остатки
+		ПО ВТ_КЛ.Организация = ВТ_Остатки.Организация
+			И ВТ_КЛ.Номенклатура = ВТ_Остатки.Номенклатура
+			И ВТ_КЛ.ХарактеристикаНоменклатуры = ВТ_Остатки.ХарактеристикаНоменклатуры
+			И ВТ_КЛ.Склад = ВТ_Остатки.Склад,
+	Константа.НеВестиУчетОстатковНоменклатурыПоОрганизации КАК НеВестиУчетОстатковНоменклатурыПоОрганизации
+ГДЕ
+	НеВестиУчетОстатковНоменклатурыПоОрганизации.Значение = ЛОЖЬ
+	И ВТ_КЛ.КраснаяЛиния &gt; ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ДанныеПоВключённойКонстанте.Номенклатура КАК Номенклатура,
+	ВТ_ДанныеПоВключённойКонстанте.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	ВТ_ДанныеПоВключённойКонстанте.КраснаяЛиния КАК КраснаяЛиния,
+	ВТ_ДанныеПоВключённойКонстанте.ОстатокНаСкладе КАК ОстатокНаСкладе,
+	ВТ_ДанныеПоВключённойКонстанте.Организация КАК Организация,
+	ВТ_ДанныеПоВключённойКонстанте.НеобходимоПополнитьОстаток КАК НеобходимоПополнитьОстаток,
+	ВТ_ДанныеПоВключённойКонстанте.Склад КАК Склад
+ИЗ
+	ВТ_ДанныеПоВключённойКонстанте КАК ВТ_ДанныеПоВключённойКонстанте
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ДанныеПоВыключеннойКонстанте.Номенклатура,
+	ВТ_ДанныеПоВыключеннойКонстанте.ХарактеристикаНоменклатуры,
+	ВТ_ДанныеПоВыключеннойКонстанте.КраснаяЛиния,
+	ВТ_ДанныеПоВыключеннойКонстанте.ОстатокНаСкладе,
+	ВТ_ДанныеПоВыключеннойКонстанте.Организация,
+	ВТ_ДанныеПоВыключеннойКонстанте.НеобходимоПополнитьОстаток,
+	ВТ_ДанныеПоВыключеннойКонстанте.Склад
+ИЗ
+	ВТ_ДанныеПоВыключеннойКонстанте КАК ВТ_ДанныеПоВыключеннойКонстанте</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КраснаяЛиния</dataPath>
+		<expression>Сумма(КраснаяЛиния)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>МассивСкладов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив складов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>КраснаяЛинияДляВендинга</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Красная линия для вендинга</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикаНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КраснаяЛиния</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОстатокНаСкладе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеобходимоПополнитьОстаток</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>aed73211-82db-49db-909a-14a76a1bc6bf</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МассивСкладов</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>60895ec4-306e-49f2-bb64-64fda0cf5a95</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Организация</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Склад</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ХарактеристикаНоменклатуры</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Красная линия для вендинга</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

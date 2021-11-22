@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1465b57-ed85-4a7a-a9da-3ffca6e6c329">
+  <producedTypes>
+    <listType typeId="7e8f1a4c-2640-4bb8-b06b-f41b5549b79d" valueTypeId="f7335fc9-f925-4af5-ae6f-5876f20bb0c9"/>
+    <managerType typeId="0bc37369-c45c-4d2d-9901-5d2d321a17cf" valueTypeId="eb4f9cca-3345-4a62-8f18-28faa41702a3"/>
+  </producedTypes>
+  <name>ДокументыПоНоменклатуреНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по номенклатуре норм</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.НоменклатураНормОрганизации</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ВыдачаСредствЗащитыПоВедомости.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.Attribute.НоменклатураНормы</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ЗачетУпрощеннойВыдачи.TabularSection.Товары.Attribute.НоменклатураНормыПотребности</content>
+  <content>Document.ЗачетУпрощеннойВыдачи.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ЗаявкаНаВыдачу.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ОбращениеНаСклад.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.TabularSection.Товары.Attribute.НоменклатураНормы</content>
+  <content>Document.УстановкаСоответствийНоменклатурыВыдачи.TabularSection.Соответствия.Attribute.НоменклатураНормы</content>
+  <defaultForm>FilterCriterion.ДокументыПоНоменклатуреНорм.Form.ФормаСписка</defaultForm>
+  <forms uuid="7f8be12b-e5b3-48b4-9f80-86c98648cf8b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:FilterCriterion>

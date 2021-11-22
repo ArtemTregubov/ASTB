@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83dcf2c5-8665-48d2-b27f-214d04f13fb9">
+  <producedTypes>
+    <objectType typeId="55638625-d9ff-4d77-be91-d81db74a3707" valueTypeId="86769cd8-5ff8-4b8a-9981-a296e88a55ea"/>
+    <managerType typeId="d21dd8b5-893d-4cac-a451-48389a188c9b" valueTypeId="5177a5e5-3789-4f1a-86fc-ce55b71d611d"/>
+  </producedTypes>
+  <name>ДиагностикаПодразделенияМВЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: подразделения (МВЗ)</value>
+  </synonym>
+  <comment>Подразделения (заполнение МВЗ подразделений)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПодразделенияМВЗ.Template.ПодразделенияМВЗ</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Подразделения (заполнение МВЗ подразделений)</value>
+  </explanation>
+  <templates uuid="85512cd2-af1e-492e-b649-d07c65b83022">
+    <name>ПодразделенияМВЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделения (заполнение МВЗ)</value>
+    </synonym>
+    <comment>Подразделения (заполнение МВЗ подразделений)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

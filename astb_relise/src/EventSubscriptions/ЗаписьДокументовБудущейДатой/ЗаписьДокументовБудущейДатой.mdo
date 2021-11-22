@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f9fd2a4-4575-436b-976d-423527967a11">
+  <name>ЗаписьДокументовБудущейДатой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись документов будущей датой</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.КадровоеПеремещение</types>
+    <types>DocumentObject.ОтсутствиеНаРабочемМесте</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ЗаписьДокументовБудущейДатойПриЗаписи</handler>
+</mdclass:EventSubscription>

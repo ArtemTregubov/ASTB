@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаВыдачи</dataPath>
+			<field>НормаВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма выдачи</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьУН</dataPath>
+			<field>ЕстьУН</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть УН</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьИН</dataPath>
+			<field>ЕстьИН</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть ИН</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Использовать</dataPath>
+			<field>Использовать</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловиеНормы</dataPath>
+			<field>УсловиеНормы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие нормы</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИсходныеНормыВыдачиСИЗ.Подразделение,
+	ИсходныеНормыВыдачиСИЗ.Должность,
+	ИсходныеНормыВыдачиСИЗ.РабочееМесто,
+	ИсходныеНормыВыдачиСИЗ.УсловиеНормы,
+	ИсходныеНормыВыдачиСИЗ.НормаВыдачи,
+	ИсходныеНормыВыдачиСИЗ.Использовать
+ПОМЕСТИТЬ ВТ_ИсходныеНормы
+ИЗ
+	РегистрСведений.ИсходныеНормыВыдачиСИЗ КАК ИсходныеНормыВыдачиСИЗ
+ГДЕ
+	ИсходныеНормыВыдачиСИЗ.Организация = &amp;Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы,
+	УстановленныеНормыВыдачиСИЗ.НормаВыдачи,
+	МАКСИМУМ(УстановленныеНормыВыдачиСИЗ.Период) КАК Период
+ПОМЕСТИТЬ ВТ_МаксимальныйПериод
+ИЗ
+	РегистрСведений.УстановленныеНормыВыдачиСИЗ КАК УстановленныеНормыВыдачиСИЗ
+ГДЕ
+	УстановленныеНормыВыдачиСИЗ.Организация = &amp;Организация
+
+СГРУППИРОВАТЬ ПО
+	УстановленныеНормыВыдачиСИЗ.Подразделение,
+	УстановленныеНормыВыдачиСИЗ.Должность,
+	УстановленныеНормыВыдачиСИЗ.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗ.УсловиеНормы,
+	УстановленныеНормыВыдачиСИЗ.НормаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Должность,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.НормаВыдачи,
+	МАКСИМУМ(УстановленныеНормыВыдачиСИЗСрезПоследних.Использовать) КАК Использовать
+ПОМЕСТИТЬ ВТ_УстановленныеНормы
+ИЗ
+	ВТ_МаксимальныйПериод КАК ВТ_МаксимальныйПериод
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УстановленныеНормыВыдачиСИЗ.СрезПоследних(, Организация = &amp;Организация) КАК УстановленныеНормыВыдачиСИЗСрезПоследних
+		ПО ВТ_МаксимальныйПериод.Период = УстановленныеНормыВыдачиСИЗСрезПоследних.Период
+			И ВТ_МаксимальныйПериод.Подразделение = УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение
+			И ВТ_МаксимальныйПериод.Должность = УстановленныеНормыВыдачиСИЗСрезПоследних.Должность
+			И ВТ_МаксимальныйПериод.РабочееМесто = УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто
+			И ВТ_МаксимальныйПериод.УсловиеНормы = УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы
+			И ВТ_МаксимальныйПериод.НормаВыдачи = УстановленныеНормыВыдачиСИЗСрезПоследних.НормаВыдачи
+
+СГРУППИРОВАТЬ ПО
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Подразделение,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.Должность,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.РабочееМесто,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.УсловиеНормы,
+	УстановленныеНормыВыдачиСИЗСрезПоследних.НормаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(ВТ_ИсходныеНормы.Подразделение, ВТ_УстановленныеНормы.Подразделение) КАК Подразделение,
+	ЕСТЬNULL(ВТ_ИсходныеНормы.Должность, ВТ_УстановленныеНормы.Должность) КАК Должность,
+	ЕСТЬNULL(ВТ_ИсходныеНормы.РабочееМесто, ВТ_УстановленныеНормы.РабочееМесто) КАК РабочееМесто,
+	ЕСТЬNULL(ВТ_ИсходныеНормы.УсловиеНормы, ВТ_УстановленныеНормы.УсловиеНормы) КАК УсловиеНормы,
+	ЕСТЬNULL(ВТ_ИсходныеНормы.НормаВыдачи, ВТ_УстановленныеНормы.НормаВыдачи) КАК НормаВыдачи,
+	ЕСТЬNULL(ВТ_ИсходныеНормы.Использовать, ВТ_УстановленныеНормы.Использовать) КАК Использовать,
+	ВЫБОР
+		КОГДА ВТ_ИсходныеНормы.Подразделение ЕСТЬ NULL 
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ЕстьИН,
+	ВЫБОР
+		КОГДА ВТ_УстановленныеНормы.Подразделение ЕСТЬ NULL 
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ЕстьУН
+ПОМЕСТИТЬ ВТ_Результат
+ИЗ
+	ВТ_ИсходныеНормы КАК ВТ_ИсходныеНормы
+		ПОЛНОЕ СОЕДИНЕНИЕ ВТ_УстановленныеНормы КАК ВТ_УстановленныеНормы
+		ПО ВТ_ИсходныеНормы.Подразделение = ВТ_УстановленныеНормы.Подразделение
+			И ВТ_ИсходныеНормы.Должность = ВТ_УстановленныеНормы.Должность
+			И ВТ_ИсходныеНормы.РабочееМесто = ВТ_УстановленныеНормы.РабочееМесто
+			И ВТ_ИсходныеНормы.УсловиеНормы = ВТ_УстановленныеНормы.УсловиеНормы
+			И ВТ_ИсходныеНормы.НормаВыдачи = ВТ_УстановленныеНормы.НормаВыдачи
+			И ВТ_ИсходныеНормы.Использовать = ВТ_УстановленныеНормы.Использовать
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Результат.Подразделение,
+	ВТ_Результат.Должность,
+	ВТ_Результат.РабочееМесто,
+	ВТ_Результат.УсловиеНормы,
+	ВТ_Результат.НормаВыдачи,
+	ВТ_Результат.Использовать,
+	ВТ_Результат.ЕстьИН,
+	ВТ_Результат.ЕстьУН
+ИЗ
+	ВТ_Результат КАК ВТ_Результат
+ГДЕ
+	(НЕ ВТ_Результат.ЕстьИН
+			ИЛИ НЕ ВТ_Результат.ЕстьУН)
+
+УПОРЯДОЧИТЬ ПО
+	ВТ_Результат.Подразделение.Наименование,
+	ВТ_Результат.Должность.Наименование,
+	ВТ_Результат.РабочееМесто.Наименование,
+	ВТ_Результат.УсловиеНормы.Наименование,
+	ВТ_Результат.НормаВыдачи.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ИсходныеИУстановленныеНормыСоответствие</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: исходные и установленные нормы (соответствие)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>ddf09b8b-0ef6-4f05-872a-585e3de323bc</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>5a9355af-158c-4d94-ba18-db50b6b5d625</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соответствие исходных и установленных норм</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Подразделение.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Должность</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Должность.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РабочееМесто</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РабочееМесто.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УсловиеНормы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УсловиеНормы.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НормаВыдачи</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НормаВыдачи.Код</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Использовать</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вкл</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЕстьИН</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЕстьУН</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЕстьИН</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЕстьИН</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ЕстьУН</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЕстьУН</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">WithOwnerField</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

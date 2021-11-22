@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95afbda3-64a8-4bae-b3d0-0aae99698cee">
+  <producedTypes>
+    <objectType typeId="487bd1b6-4a58-4898-90da-a585ff517599" valueTypeId="b303fdd5-2413-4f25-9d4e-2a7633ec92ec"/>
+    <managerType typeId="a3268990-cde0-446e-8070-8c3d2daa2f38" valueTypeId="65697947-ecdc-4043-bd50-92823f0a1ce4"/>
+  </producedTypes>
+  <name>АХ_НачальнальноеЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) начальнальное заполнение</value>
+  </synonym>
+  <defaultForm>DataProcessor.АХ_НачальнальноеЗаполнение.Form.ФормаНачальногоЗаполнения</defaultForm>
+  <forms uuid="b450b9fb-ab72-41a3-9f24-15fbdf1d9b88">
+    <name>ФормаНачальногоЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма начального заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c5ab6274-e5fc-4d5f-a518-482b985bbdda">
+    <name>СКД_Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД номенклатура</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="b07ed742-c9ad-4ba6-a657-71d682568b1b">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ) Начальное заполнение</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ce012da-60f7-4900-8691-8f76cfefdc39">
+  <producedTypes>
+    <selectionType typeId="00b521e5-fd5b-4669-8d1c-51589a485ff5" valueTypeId="c167330e-ac8d-4dd8-a2ff-7084219269d1"/>
+    <listType typeId="5838ef35-f267-4b22-bf71-4cf5fac7b060" valueTypeId="1e04644e-9c17-45bb-8fe1-399e6c546e87"/>
+    <managerType typeId="6193422c-e999-446e-918e-4fc49f7f4881" valueTypeId="55058252-41ef-4ef7-a925-002c942cf143"/>
+    <recordSetType typeId="60943440-020b-4ed2-819a-03a0d4353e25" valueTypeId="108935a7-d2ef-4785-9c69-7f2ab7d01a8d"/>
+    <recordKeyType typeId="fdd05f33-1833-475d-9780-5e6f415dd04a" valueTypeId="8bf0c8da-f45b-4ed2-b245-0fe978531604"/>
+    <recordType typeId="1748030d-e0b0-43f9-aec2-4601db9d2d04" valueTypeId="c66c4765-d533-43be-9fab-e668c23df859"/>
+    <recordManagerType typeId="0fe177f1-029f-460d-8c2e-d327c9475851" valueTypeId="477be080-30f8-4424-a0fe-abcf8c155970"/>
+  </producedTypes>
+  <name>ДопустимыеЗначенияАнтропометрическихСвойств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Допустимые значения антропометрических свойств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ДопустимыеЗначенияАнтропометрическихСвойств.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ae6fafa4-68cd-4316-a804-ac7b72bbc13a">
+    <name>ВидСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид свойства</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыАнтропометрическихСвойств</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="111b1702-2e19-4ac1-902c-3db9e99f0ded">
+    <name>ДопустимоеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимое значение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="911d08e0-71bb-483c-93b0-d3fe6a600013">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1d9ff2f8-07d6-425f-b1e3-d6f6e4931d35">
+    <name>СхемаXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема XML</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="11ecfed6-6122-4092-a477-5e4aee463494">
+    <name>ДанныеXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные XML</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="c8d9b41e-e33a-4bb7-8ee2-89cb3fd83447">
+    <name>ЗагрузитьДопустимыеЗначенияАнтропометрическихСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить допустимые значения</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="e354fb10-cbe3-4d3c-abc8-f848b993fdcb">
+    <name>ДопустимыеЗначенияАнтропометрическихСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимые значения антропометрических свойств</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

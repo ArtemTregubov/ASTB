@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21c661fb-6c56-456a-a0d8-f7378f7ba1be">
+  <producedTypes>
+    <refType typeId="de7afcf1-ba69-4619-883d-4c34a9f5d7b3" valueTypeId="499840b6-890b-494b-90dd-6790be504650"/>
+    <listType typeId="823ac223-258e-4a6e-8ee9-2c30cc32af2f" valueTypeId="af5e6189-a578-4320-a977-1251002712b1"/>
+    <managerType typeId="985ecfa0-fef4-4a1a-ba1b-8156512dd884" valueTypeId="826ed1c2-271c-406a-85a9-f902e8499384"/>
+  </producedTypes>
+  <name>СтатусыЗаявокНаВыдачу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявок на выдачу</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a382f2d2-3050-4097-9600-3e177cabf1a5">
+    <name>НеСогласована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не согласована</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="39656de0-a948-4b84-9124-55322a61f6cd">
+    <name>Согласована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласована</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="408935cc-7a29-45e2-9c56-ddbf6cf9b28a">
+  <producedTypes>
+    <objectType typeId="3287a9af-acb4-4533-a4ef-d146b984945e" valueTypeId="c9936963-6c00-462a-8132-5720d6669d9d"/>
+    <refType typeId="3b4e88c1-07c1-47ea-a962-631cbbd16c76" valueTypeId="1a1672ec-4798-4bc7-add3-15d97daafed7"/>
+    <selectionType typeId="39bbfd6f-56f8-411c-92dd-e6a1995d23dd" valueTypeId="2da92ca4-8777-4e4e-894c-bdf0fb4c756f"/>
+    <listType typeId="68e5c9fc-50e9-41e2-bd58-219cfb40e312" valueTypeId="e6188646-ef6c-4418-87bc-91031cdcd57c"/>
+    <managerType typeId="e32764cc-dcb1-440e-bdb3-a4166588169a" valueTypeId="44d52a85-e241-4bfa-9fd9-a64d6c47096d"/>
+  </producedTypes>
+  <name>ВопросыДляТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вопросы для тестов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВопросыДляТестов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВопросыДляТестов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВопросыДляТестов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ВопросыДляТестов.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ВопросыДляТестов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВопросыДляТестов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="f65d971d-ca31-4ae2-867e-c7c4e6409620">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="aa7945e2-7b01-4b80-a505-81407c3d122a">
+    <producedTypes>
+      <objectType typeId="229b17b7-4657-4059-bb1c-2116ca8a3d4c" valueTypeId="285fbe6d-9ed0-4015-937d-508b4205e345"/>
+      <rowType typeId="f4cdaae2-5b45-474c-ba5f-9580531211ae" valueTypeId="9d3861ab-7153-4e7a-bf47-c018cd43aed0"/>
+    </producedTypes>
+    <name>ВариантыОтветов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Варианты ответов</value>
+    </synonym>
+    <attributes uuid="67ebbf12-d45c-4ec4-9c8e-1ae9d6b30bde">
+      <name>Ответ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Ответы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c1164a6e-bc8c-4ed3-98a0-5d174dd3d4ad">
+      <name>Правильный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Правильный</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e2a371cd-e4b5-4940-a313-30098ea634d8">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8c8f926-b36a-4e32-baa1-e1595c4bed80">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="732395fd-543d-40e0-b607-a144c90539bd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75210273-c1f6-45e9-a00b-b438c0912810">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

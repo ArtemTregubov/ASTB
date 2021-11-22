@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="131fd403-c4d2-4b83-99a7-778cbbe14c86">
+  <producedTypes>
+    <objectType typeId="7d28ac38-d158-4da9-ad55-9b341528c7b7" valueTypeId="1422acb0-9e81-4b11-8855-4505e76cbfdf"/>
+    <managerType typeId="4d49f2a5-746e-4061-bfec-c9ef7f1f50a8" valueTypeId="b6aa7511-5084-4a3c-860f-0829bc680c60"/>
+  </producedTypes>
+  <name>ДанныеПоЗанятамРабочимМестам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные по занятым рабочим местам</value>
+  </synonym>
+  <defaultForm>DataProcessor.ДанныеПоЗанятамРабочимМестам.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="72615bb6-ff59-4472-971f-1dd9088eb296">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c0c920d3-508f-4a8e-89e4-74fe892daa41">
+    <name>ЗанятыеРабочиеМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занятые рабочие места</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Подразделения</types>
+      <types>CatalogRef.ДолжностиИПрофессии</types>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f791ca82-52ab-448e-98f2-96a2a814ae7c">
+  <producedTypes>
+    <objectType typeId="b65655df-c0e7-4554-b7f2-02450277a2cb" valueTypeId="b2c771e2-45f3-4704-9f88-99d90ffbb6ec"/>
+    <managerType typeId="bd8f8d25-6cb5-4126-85c7-def6615289a2" valueTypeId="e29847bd-3233-444f-92d5-6374ce3c0b19"/>
+  </producedTypes>
+  <name>ДиагностикаПериодыЗимыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: периоды зимы (заполнение)</value>
+  </synonym>
+  <comment>Заполнение периодов зимы</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПериодыЗимыЗаполнение.Template.ПериодыЗимыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение периодов зимы</value>
+  </explanation>
+  <templates uuid="d41bbd88-1273-4657-8195-f204d5a95da7">
+    <name>ПериодыЗимыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периоды зимы (заполнение)</value>
+    </synonym>
+    <comment>Заполнение периодов зимы</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

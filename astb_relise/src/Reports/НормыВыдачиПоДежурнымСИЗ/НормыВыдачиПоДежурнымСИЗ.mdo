@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f85dacb-b021-40e0-a5de-d00cf2fcbedf">
+  <producedTypes>
+    <objectType typeId="8cedb07b-3780-40e0-9662-de68c73ece21" valueTypeId="3e88e086-dc78-41ed-a21f-d40534633e41"/>
+    <managerType typeId="e64ff0f2-8662-4a16-bec3-3cb1930fe24c" valueTypeId="142f907a-b380-437c-b458-4302c780d362"/>
+  </producedTypes>
+  <name>НормыВыдачиПоДежурнымСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы выдачи по дежурным СИЗ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НормыВыдачиПоДежурнымСИЗ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="5b906808-db87-4b35-ab20-cb74861b4519">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

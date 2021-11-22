@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cfff971-063d-429b-bfe5-bbb8c9cb22de">
+  <producedTypes>
+    <selectionType typeId="ac38ee17-380b-42c7-a8f6-28d0a59d8bd7" valueTypeId="53be14ae-5613-45a1-9c62-69b095426284"/>
+    <listType typeId="bee02a15-7e1a-46c2-b35f-d5516e7f96c8" valueTypeId="dbc28a23-6978-4962-b028-78294578a445"/>
+    <managerType typeId="9bc3a9e9-832e-40eb-8557-08b38ad24476" valueTypeId="e60bdc8a-6912-4c17-b5ed-42fb84b97ee4"/>
+    <recordSetType typeId="d17f5cd0-1d3a-4764-a608-4ab98bd0e508" valueTypeId="93200a5f-6910-4153-8add-c2ac71f3a70b"/>
+    <recordKeyType typeId="fc2c65be-b0b0-4c1b-9597-f19c2bd82d1a" valueTypeId="caddb470-cf44-4c92-b511-8cbb444c7562"/>
+    <recordType typeId="f86beebe-cf2b-43d8-ab97-4626d7eff246" valueTypeId="a3dc17c6-daa8-43e4-9bcf-29ad18e1e320"/>
+    <recordManagerType typeId="57beb20f-8f7e-4178-8cc5-955b30688886" valueTypeId="1504529b-5396-4a55-9fcb-401f20f3226f"/>
+  </producedTypes>
+  <name>ПараметрыЗагрузкиКадровыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры загрузки кадровых данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="69eeae74-17d2-48b2-8fe6-b2a559305a6f">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b1e5b0b9-bd03-4013-a4a9-2b036f37fe83">
+    <name>ПроводитьДокументыПослеЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы после загрузки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ed64d4ac-846b-4119-88b7-a44384325e8d">
+    <name>ИсправлятьНаименованияСуществующихПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих подразделений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a3ebd381-1073-44b0-8fb5-d056bfb31cee">
+    <name>ИсправлятьНаименованияСуществующихДолжностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих должностей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a8920d9-55ad-4602-a0e2-c8d59477fab2">
+    <name>ИсправлятьНаименованияСуществующихРабочихМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих рабочих мест</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="10f7074a-ed56-444a-b21e-11811757b9d3">
+    <name>РазрешитьОтменятьПриемыНаРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить отменять приемы на работу</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="21dd4da9-2df4-449f-bb38-70cff36cd22e">
+    <name>РазрешитьОтменятьКадровыеПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить отменять кадровые перемещения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ab5eca7-1381-423f-a01e-0ca0db0ec57b">
+    <name>РазрешитьОтменятьОтсутствияНаРабочихМестах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить отменять отсутствия на рабочих местах</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5e3d5a46-c0f0-4ef2-8916-08104d4ccfa3">
+    <name>РазрешитьОтменятьУвольнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить отменять увольнения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6254e9e6-9fcc-4920-b2b0-020070039b62">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,26 @@
+<xsd:schema xmlns:ns1="http://v8.1c.ru/8.1/data/core" xmlns:tns="http://v8.1c.ru/agent/scripts/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/agent/scripts/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+ <xsd:element name='size_item'>
+  <xsd:complexType>
+   <xsd:attribute name='matrix_name' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='vas_item'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='size_item'/>
+   </xsd:sequence>
+   <xsd:attribute name='vas_name' type='xsd:string' use='required'/>
+   <xsd:attribute name='vas_id' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='vas_list'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='vas_item'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

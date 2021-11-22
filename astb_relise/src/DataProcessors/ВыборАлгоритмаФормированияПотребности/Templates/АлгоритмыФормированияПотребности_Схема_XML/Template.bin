@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="algorithm_export">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="algorithm_list"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="algorithm_list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="algorithm_item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="algorithm_item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="algorithm_options"/>
+        <xs:element ref="algorithm_description"/>
+      </xs:sequence>
+      <xs:attribute name="algorithm_abbreviation" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="algorithm_code" use="required" type="xs:NCName"/>
+      <xs:attribute name="algorithm_name" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="algorithm_options">
+    <xs:complexType>
+      <xs:attribute name="folding_requirement" use="required" type="xs:integer"/>
+      <xs:attribute name="group_or" use="required" type="xs:integer"/>
+      <xs:attribute name="partial_distribution" use="required" type="xs:integer"/>
+      <xs:attribute name="unified_frequency" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="algorithm_description">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="algorithm_description_item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="algorithm_description_item">
+    <xs:complexType>
+      <xs:attribute name="text" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

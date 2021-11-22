@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a581e07-87cf-4284-93a9-dac2aaf361bc">
+  <producedTypes>
+    <objectType typeId="87e9d681-6b21-43f1-9771-2b7493ae7ddc" valueTypeId="39cb8efa-56f0-467c-9dde-9f2d7822dff6"/>
+    <managerType typeId="4ae4a1f6-38e4-40bf-a7d3-8fb4ed2fab80" valueTypeId="fd4b61d3-c91c-408c-a39f-f6b6a44147f1"/>
+  </producedTypes>
+  <name>СредстваЗащитыНаХранении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средства защиты на хранении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СредстваЗащитыНаХранении.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="623f2684-0f49-4349-bf38-f3ed10cdeab7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

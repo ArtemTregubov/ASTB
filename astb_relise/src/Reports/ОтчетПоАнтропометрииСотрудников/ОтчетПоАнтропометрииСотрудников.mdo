@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7f402c0-0ecf-4958-bf6f-c54ccfe2881b">
+  <producedTypes>
+    <objectType typeId="ae86e4d9-a184-4094-a8f7-25eef5ff0f2b" valueTypeId="bf1a74ed-63b0-4671-bc6d-c8c5cf2d8e04"/>
+    <managerType typeId="e8424bf1-8c2c-4e9c-af92-67f32ea789c2" valueTypeId="bf3449f0-216b-4e31-987c-546a57a1ed13"/>
+  </producedTypes>
+  <name>ОтчетПоАнтропометрииСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по антропометрии сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоАнтропометрииСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e12265e0-2334-4643-99ec-81b5a0786739">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

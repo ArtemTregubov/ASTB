@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42141efd-45b7-4f88-93be-be114f178d7e">
+  <name>АХ_КонтрольОтправленныхДанныхОбработкаПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>А х контроль отправленных данных обработка проведения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеНоменклатуры</types>
+    <types>DocumentObject.ОприходованиеНоменклатуры</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+    <types>DocumentObject.ВыдачаДежурныхСредствЗащиты</types>
+    <types>DocumentObject.СписаниеНоменклатуры</types>
+    <types>DocumentObject.ПоступлениеНоменклатуры</types>
+    <types>DocumentObject.ВыдачаСредствЗащитыСотруднику</types>
+    <types>DocumentObject.ВозвратНоменклатурыПоставщику</types>
+    <types>DocumentObject.ВозвратСредствЗащитыОтСотрудника</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.АХ_ОбменВызовСервера.АХ_КонтрольОтправленныхДанныхПроведениеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

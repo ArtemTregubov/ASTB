@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="188654e3-2ee8-49da-8841-41d50b7ae9b8">
+  <name>ПриПроведенииДокументаУвольнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении документа увольнение</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Увольнение</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ПриПроведенииДокументаУвольнениеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

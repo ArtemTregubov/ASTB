@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4743102a-8487-42c6-99d3-f0aa776cf5e7">
+  <producedTypes>
+    <objectType typeId="c1a5de01-52ec-40fb-b821-6fea5bc6ae4f" valueTypeId="1a0e6e24-5e34-49be-9048-745c36790e2a"/>
+    <managerType typeId="84f19753-8432-4eb9-aa66-65fe1d4e9ec9" valueTypeId="17e7c69c-fb73-48f2-9767-8245613019fb"/>
+  </producedTypes>
+  <name>ОстаткиНоменклатурыОрганизацииСУчетомИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки номенклатуры организации (с % износа)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстаткиНоменклатурыОрганизацииСУчетомИзноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="21557414-99b5-4ca7-b1ad-bc751c7ba43b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="856d266a-f33c-4849-92e4-8fdf35d3b35f">
+    <name>ОстаткиНоменклатурыСИзносом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки номенклатуры (с % износа)</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Организации</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3df244cb-500b-4edf-81d7-04ffc44e7199">
+  <producedTypes>
+    <managerType typeId="928cb7c0-44b0-4871-8cda-9b8d199b05b7" valueTypeId="ef2669b3-82d4-4cc8-a21f-65d24adeeb27"/>
+    <valueManagerType typeId="55510ea0-8a87-4aa6-b675-21048c9cf3ae" valueTypeId="1ca7dc79-e5da-4f6e-b9e4-925748b4d8ff"/>
+    <valueKeyType typeId="446e1932-ceed-4ef1-b0fc-c43f1b1b7db8" valueTypeId="e0611a1a-ec27-40a7-b74e-4bbda45bb780"/>
+  </producedTypes>
+  <name>АХ_ИспользоватьМеханизмПредварительнойСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать механизм предварительной сборки</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

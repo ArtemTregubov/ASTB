@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db5db5d6-ac99-4be4-8eaf-e22ae4782e42">
+  <producedTypes>
+    <objectType typeId="b11706fe-a189-411c-b566-e4faaf3a322a" valueTypeId="0828e494-8d6f-4dc9-9ea9-d22bec51302e"/>
+    <managerType typeId="005271e8-08fc-4e54-b934-a6d295be444a" valueTypeId="ad2fb849-6d86-429c-a1a3-b03a116f075b"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура (дубли)</value>
+  </synonym>
+  <comment>Номенклатура (дубли по наименованию и кодам синхронизации)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураДубли.Template.НоменклатураДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура (дубли по наименованию и кодам синхронизации)</value>
+  </explanation>
+  <templates uuid="77dfbd3f-d9f0-4aed-9fa2-07ce91fd58d6">
+    <name>НоменклатураДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (дубли)</value>
+    </synonym>
+    <comment>Номенклатура (дубли по коду синхронизации).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e67d3e99-fc4d-47e7-8c5d-d4960511a8e2">
+  <producedTypes>
+    <objectType typeId="b80e8dbe-7bfd-4303-a7fb-da29db4757f1" valueTypeId="35b670ef-c208-40f9-9aec-035983ad8a5e"/>
+    <managerType typeId="8ebbe5f9-4f52-4b0f-a830-a2e8f2eb6ef3" valueTypeId="21f9a243-5b02-41a3-b81c-4ca7dd01cc3e"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураХарактеристики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура (характеристики)</value>
+  </synonym>
+  <comment>Номенклатура (дубли характеристик по метрике, наименованию и коду SAP)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураХарактеристики.Template.НоменклатураХарактеристики</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура (дубли характеристик по метрике и коду SAP)</value>
+  </explanation>
+  <templates uuid="dc19645e-7e83-4eeb-8baf-07599814151c">
+    <name>НоменклатураХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (характеристики)</value>
+    </synonym>
+    <comment>Номенклатура (дубли характеристик по метрике и коду SAP).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

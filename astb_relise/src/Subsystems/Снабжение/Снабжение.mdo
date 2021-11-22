@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01224f33-aa60-4206-b2cd-19e9d8973d8d">
+  <name>Снабжение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Снабжение</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаСнабжение</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаСнабжение</content>
+  <content>CommonCommand.ПанельОтчетовСнабжение</content>
+  <content>DataProcessor.ФормированиеЗаказовПоставщику</content>
+  <content>Report.ЗаказыПоставщику</content>
+  <content>Report.СоответствияНоменклатурыВыдачи</content>
+  <content>DataProcessor.УстановкаСоответствийНоменклатуры</content>
+  <content>CommonCommand.ДополнительныеОбработкиСнабжение</content>
+  <content>Report.ОстаткиНоменклатурыВыдачиБезСоответствия</content>
+  <content>Report.НормыВыдачиСИЗДоИзноса</content>
+  <content>Report.НормыВыдачиПоДежурнымСИЗ</content>
+  <content>Report.ПланВыдачиСредствЗащиты</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.ПлановаяПотребность</content>
+  <content>DataProcessor.УправлениеЗапасами</content>
+  <content>Report.УтилизированныеСИЗ</content>
+  <content>Report.СредстваЗащитыКПолучению</content>
+  <content>DataProcessor.ЗагрузкаПоступленийИзСАП</content>
+  <subsystems>Документы</subsystems>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Прочее</subsystems>
+</mdclass:Subsystem>

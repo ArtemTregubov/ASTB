@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3b9de5b-2751-4199-9073-acdb045977ca">
+  <producedTypes>
+    <refType typeId="86ddecc6-f5c9-420c-a896-9092400bb33b" valueTypeId="fbc12e04-b64d-4fe1-90e3-a45f20e27329"/>
+    <listType typeId="163ac73c-f77d-4a78-a806-11ad689d685f" valueTypeId="8cec9b7d-75c9-445e-bd2d-84a2e8a9ef14"/>
+    <managerType typeId="2020f8ad-0f46-43ed-9944-50d9fd7d6d86" valueTypeId="8be52351-67ca-440e-a406-3452f060af6d"/>
+  </producedTypes>
+  <name>ВидыОперацийРемонтаСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций ремонта СИЗ</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9327e2b0-8149-4b68-b94a-5b1977566cb1">
+    <name>ПередачаВРемонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача в ремонт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f253fb2-b311-4c7a-ad81-5ef290b2fa35">
+    <name>ВозвратИзРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат из ремонта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e6a6aed3-e52a-4036-ad6b-730eab898cd8">
+    <name>Ремонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

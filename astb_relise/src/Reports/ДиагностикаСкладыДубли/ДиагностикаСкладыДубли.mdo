@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31f57d1a-77d8-4783-963c-224f5eaf4650">
+  <producedTypes>
+    <objectType typeId="b798e096-628f-4fc5-bcaa-467441cc2e8a" valueTypeId="79ef4a5c-7064-4b11-a9dc-5ad0c763add4"/>
+    <managerType typeId="a8b976e6-fefb-4a27-bde1-22dd22ba11e8" valueTypeId="cf3b0eb8-3681-4e14-aab6-d4fbf5955b61"/>
+  </producedTypes>
+  <name>ДиагностикаСкладыДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: склады (дубли)</value>
+  </synonym>
+  <comment>Склады (дубли по наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСкладыДубли.Template.СкладыДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Склады (дубли по наименованию)</value>
+  </explanation>
+  <templates uuid="a3da96b1-d460-4057-8e13-27128b0715d4">
+    <name>СкладыДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склады (дубли)</value>
+    </synonym>
+    <comment>Склады (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

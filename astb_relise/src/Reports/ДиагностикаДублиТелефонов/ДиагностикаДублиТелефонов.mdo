@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1df8a178-6452-41a4-842b-117c8198a6dc">
+  <producedTypes>
+    <objectType typeId="16bba23d-d03d-43e0-9336-34bcde08218e" valueTypeId="4670b0f4-7e9c-46be-b826-7650a337a3e7"/>
+    <managerType typeId="b6489032-7a7b-4945-b801-0a3244ce57aa" valueTypeId="63f6d81d-15eb-4b1e-a5cd-00f1cf476865"/>
+  </producedTypes>
+  <name>ДиагностикаДублиТелефонов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: дубли телефонов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаДублиТелефонов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Отчёт по дублям телефонных номеров</value>
+  </explanation>
+  <templates uuid="32f28a98-b16f-4544-be06-45dcf36d32ff">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

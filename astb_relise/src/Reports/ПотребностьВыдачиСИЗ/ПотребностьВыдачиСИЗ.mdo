@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ece2afdd-3ef2-4c59-b39b-67ff80e5770e">
+  <producedTypes>
+    <objectType typeId="a19d8fa8-a8f6-4ac2-8be7-c341a806b06d" valueTypeId="aefd66d2-ae36-4882-bb66-cb187ac3001e"/>
+    <managerType typeId="05454d98-51b1-4050-b783-5b04b6376357" valueTypeId="079c6d30-4910-46b5-811b-f58a2400f31f"/>
+  </producedTypes>
+  <name>ПотребностьВыдачиСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потребность выдачи СИЗ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПотребностьВыдачиСИЗ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="f497dcb1-744b-4975-a644-84e4593ee691">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

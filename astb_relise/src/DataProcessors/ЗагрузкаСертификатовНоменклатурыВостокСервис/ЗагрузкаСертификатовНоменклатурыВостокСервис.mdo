@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d1dceb4-bb47-4261-be07-473aa3ca2adc">
+  <producedTypes>
+    <objectType typeId="158d361f-abc3-4bdb-b8a3-6319343a2d08" valueTypeId="a6f29e99-9589-47fb-86ad-0eb0be7dc57f"/>
+    <managerType typeId="e0363bbe-6299-4878-80d3-bce0fbd595b1" valueTypeId="ace9a950-6f81-4297-82b9-4b239d0a7ab5"/>
+  </producedTypes>
+  <name>ЗагрузкаСертификатовНоменклатурыВостокСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка сертификатов номенклатуры &quot;Восток-Сервис&quot;</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаСертификатовНоменклатурыВостокСервис.Form.Форма</defaultForm>
+  <attributes uuid="4855507d-e9c7-4a09-83b5-59bcac0642a6">
+    <name>КаталогОбменаИнформацией</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="50b5dd81-183e-4a5a-9b89-8619ffdb7b2f">
+    <name>ТипИсточника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип источника</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыИсточниковДляЗагрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a538c875-1d7c-46b3-8e0e-39a22a155768">
+    <name>ФайлСертификатовНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл сертификатов номенклатуры</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="c5f9961f-e9ed-45b3-aeef-a7bfb2b8557c">
+    <name>FTPСоединениеАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес FTP-сервера.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8489c0fb-0e52-4549-b4b7-3ac972eac9ca">
+    <name>FTPСоединениеПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8c83d28b-c54d-4576-9641-d7e8e4cfadd2">
+    <name>FTPСоединениеПассивноеСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пассивное соединение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак пассивного соединения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="61a7e60d-9955-497f-841e-17ec92a37454">
+    <name>FTPСоединениеПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь (логин)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя пользователя для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ceb8d3ad-ea4e-40ae-9e64-c40ab78d5d8a">
+    <name>FTPСоединениеПорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порт для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0029495c-d767-4ea3-9a82-82b491b31026">
+    <name>FTPСоединениеПуть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к каталогу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка с полным именем пути FTP-ресурса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f048c365-e64e-477a-a8a7-2def23e9801f">
+    <name>FTPСоединениеЗащищенноеСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Защищенное соединение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак защищенного соединения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0c039e05-a4bb-497b-a011-a8a92799ef9f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="df8b38dc-ec6a-4643-bb69-b1f8495a14e7">
+    <name>ЗагрузкаСертификатовНоменклатурыВостокСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка сертификатов номенклатуры &quot;Восток-Сервис&quot;</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut>Alt+Shift+S</shortcut>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f95a26b-261f-4986-ae10-8554f142b3b9">
+  <producedTypes>
+    <refType typeId="16870c8b-fa33-43fd-b07d-951fa4b4280c" valueTypeId="9198b1f2-1205-40e5-ac6e-3f12afc6c210"/>
+    <listType typeId="c4e624cb-d21b-49b3-8edf-03379c627722" valueTypeId="f4d43977-0e14-4391-8b4a-feedccbfa66e"/>
+    <managerType typeId="70a705c7-561b-4501-aeda-94ed13457b41" valueTypeId="4fd2ca4c-78bc-4102-815e-f92234bcc956"/>
+  </producedTypes>
+  <name>ПричиныСписания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины списания</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dd301706-b04b-4d7c-a7e6-cf94721e5b36">
+    <name>Брак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Брак</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="75f159f8-1e8f-4613-abc7-20444ba3db9f">
+    <name>Износ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Износ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0a2d9a87-ed98-47cf-a5f2-ca82dfa561a8">
+    <name>Порча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порча</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ee57134-3bc8-4f5f-bbe2-41bf867f6ae7">
+    <name>Пропажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропажа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="30ddefb0-af9e-486b-886a-b979a452f1f4">
+    <name>Увольнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Увольнение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d6cb43a9-8453-45b4-9b8a-815cd8dc18a6">
+    <name>ОкончаниеСрокаНоски</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание срока носки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07f4a7d5-8a21-4f62-8798-2069f653f406">
+    <name>ОтменаНорм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмена норм</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="069de1bf-717f-4097-8916-1cb707029658">
+    <name>ТехническоеСписание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническое списание</value>
+    </synonym>
+    <comment>АСТБ_Горюшин_Алексей_20510</comment>
+  </enumValues>
+</mdclass:Enum>

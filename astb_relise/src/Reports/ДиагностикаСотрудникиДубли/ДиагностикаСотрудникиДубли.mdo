@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e95ebb9b-bd96-46f9-83ac-a707eac52821">
+  <producedTypes>
+    <objectType typeId="b6185a06-304d-4dba-a5e6-688eef38adec" valueTypeId="d314da36-2b51-4a8c-83c1-293c3550b399"/>
+    <managerType typeId="00ee3434-9aa9-4e77-98fb-ce6edd659074" valueTypeId="b1db39d6-4497-41f2-8bda-3f69fbbaffc2"/>
+  </producedTypes>
+  <name>ДиагностикаСотрудникиДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сотрудники (дубли)</value>
+  </synonym>
+  <comment>Сотрудники (дубли по наименованию, табельному номеру и месту хранения СИЗ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСотрудникиДубли.Template.СотрудникиДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сотрудники (дубли по табельному номеру и месту хранения СИЗ)</value>
+  </explanation>
+  <templates uuid="f4ed529b-c53c-4182-8cc4-31462f60e11e">
+    <name>СотрудникиДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники (дубли)</value>
+    </synonym>
+    <comment>Сотрудники (дубли по табельному номеру и месту хранения СИЗ)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,144 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="HRexchange">
+	<valueType name="String_12" base="xs:string" minLength="1" maxLength="12"/>
+	<valueType name="String_13" base="xs:string" minLength="1" maxLength="13"/>
+	<valueType name="String_14" base="xs:string" minLength="1" maxLength="14"/>
+	<valueType name="String_20" base="xs:string" minLength="1" maxLength="20"/>
+	<valueType name="String_50" base="xs:string" minLength="1" maxLength="50"/>
+	<valueType name="String_100" base="xs:string" minLength="1" maxLength="100"/>
+	<valueType name="String_150" base="xs:string" minLength="1" maxLength="150"/>
+	<valueType name="Sex" base="xs:string">
+		<enumeration xsi:type="xs:string">M</enumeration>
+		<enumeration xsi:type="xs:string">W</enumeration>
+	</valueType>
+	<valueType name="String_9" base="xs:string" minLength="1" maxLength="9"/>
+	<valueType name="String_6" base="xs:string" minLength="1" maxLength="6"/>
+	<valueType name="ReasonAbsence" base="xs:string">
+		<enumeration xsi:type="xs:string">vacation</enumeration>
+		<enumeration xsi:type="xs:string">maternity_leave</enumeration>
+		<enumeration xsi:type="xs:string">sick_leave</enumeration>
+	</valueType>
+	<valueType name="doc_type" base="xs:string">
+		<enumeration xsi:type="xs:string">Doc_recruitment</enumeration>
+		<enumeration xsi:type="xs:string">Doc_dismissal</enumeration>
+		<enumeration xsi:type="xs:string">Doc_absence</enumeration>
+		<enumeration xsi:type="xs:string">Doc_moving</enumeration>
+	</valueType>
+	<objectType name="Objects">
+		<property name="Object" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="HRexchange" name="Organization" type="d3p1:Organization"/>
+		<property xmlns:d3p1="HRexchange" name="Docs_cancelation" type="d3p1:Doc_cancelation" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Organization">
+		<property xmlns:d3p1="HRexchange" name="inn" type="d3p1:String_12" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="kpp" type="d3p1:String_9" form="Attribute"/>
+	</objectType>
+	<objectType name="Worker">
+		<property xmlns:d3p1="HRexchange" name="fullname" type="d3p1:String_100" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="code" type="d3p1:String_14" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="personnelnumber" type="d3p1:String_13" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="sex" type="d3p1:Sex" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="name" type="d3p1:String_50" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="surname" type="d3p1:String_50" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="secondname" type="d3p1:String_50" lowerBound="0" form="Attribute"/>
+		<property name="bday" type="xs:date" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="id" type="d3p1:String_100" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="mvz" type="d3p1:Mvz" lowerBound="0"/>
+	</objectType>
+	<objectType name="Job">
+		<property xmlns:d3p1="HRexchange" name="name" type="d3p1:String_150" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="okpdtr" type="d3p1:String_6" lowerBound="0" form="Attribute"/>
+		<property name="code" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="HRexchange" name="code" type="d5p1:String_14" form="Attribute"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="Staff">
+		<property xmlns:d3p1="HRexchange" name="division" type="d3p1:Division"/>
+		<property xmlns:d3p1="HRexchange" name="job" type="d3p1:Job"/>
+		<property name="vacancy" type="xs:decimal"/>
+		<property name="date" type="xs:date"/>
+	</objectType>
+	<objectType name="Division">
+		<property xmlns:d3p1="HRexchange" name="name" type="d3p1:String_150" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="code" type="d3p1:String_20" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="owner" type="d3p1:Division" lowerBound="0"/>
+		<property name="actual" type="xs:boolean" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="mvz" type="d3p1:Mvz" lowerBound="0"/>
+	</objectType>
+	<objectType name="Workplace">
+		<property xmlns:d3p1="HRexchange" name="name" type="d3p1:String_100" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="code" type="d3p1:String_9" form="Attribute"/>
+	</objectType>
+	<objectType name="Mvz">
+		<property xmlns:d3p1="HRexchange" name="name" type="d3p1:String_150" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="code" type="d3p1:String_20" form="Attribute"/>
+	</objectType>
+	<objectType name="Doc_recruitment">
+		<property name="date" type="xs:date" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="number" type="d3p1:String_12" form="Attribute"/>
+		<property name="note" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="slice_to_date" type="xs:boolean" form="Attribute"/>
+		<property name="table" lowerBound="1" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="HRexchange" name="worker" type="d5p1:Worker"/>
+				<property xmlns:d5p1="HRexchange" name="division" type="d5p1:Division"/>
+				<property xmlns:d5p1="HRexchange" name="job" type="d5p1:Job"/>
+				<property xmlns:d5p1="HRexchange" name="workplace" type="d5p1:Workplace" lowerBound="0"/>
+				<property name="date_end" type="xs:date" lowerBound="0"/>
+				<property name="vacancy" type="xs:decimal"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="Doc_moving">
+		<property name="date" type="xs:date" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="number" type="d3p1:String_12" form="Attribute"/>
+		<property name="note" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="table" lowerBound="1" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="HRexchange" name="worker" type="d5p1:Worker"/>
+				<property xmlns:d5p1="HRexchange" name="division" type="d5p1:Division"/>
+				<property xmlns:d5p1="HRexchange" name="job" type="d5p1:Job"/>
+				<property xmlns:d5p1="HRexchange" name="workplace" type="d5p1:Workplace" lowerBound="0"/>
+				<property name="vacancy" type="xs:decimal"/>
+				<property xmlns:d5p1="HRexchange" name="division_old" type="d5p1:Division"/>
+				<property xmlns:d5p1="HRexchange" name="job_old" type="d5p1:Job"/>
+				<property xmlns:d5p1="HRexchange" name="workplace_old" type="d5p1:Workplace" lowerBound="0"/>
+				<property name="vacancy_old" type="xs:decimal"/>
+				<property name="date_end" type="xs:date" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="Doc_dismissal">
+		<property name="date" type="xs:date" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="number" type="d3p1:String_12" form="Attribute"/>
+		<property name="note" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="table" lowerBound="1" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="HRexchange" name="worker" type="d5p1:Worker"/>
+				<property xmlns:d5p1="HRexchange" name="division" type="d5p1:Division"/>
+				<property xmlns:d5p1="HRexchange" name="job" type="d5p1:Job"/>
+				<property xmlns:d5p1="HRexchange" name="workplace" type="d5p1:Workplace" lowerBound="0"/>
+				<property name="vacancy" type="xs:decimal"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="Doc_absence">
+		<property xmlns:d3p1="HRexchange" name="reason" type="d3p1:String_150" form="Attribute"/>
+		<property name="date" type="xs:date" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="number" type="d3p1:String_12" form="Attribute"/>
+		<property name="note" type="xs:string" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="worker" type="d3p1:Worker"/>
+		<property name="date_begin" type="xs:date" form="Attribute"/>
+		<property name="date_end" type="xs:date" form="Attribute"/>
+	</objectType>
+	<objectType name="Staff_list">
+		<property xmlns:d3p1="HRexchange" name="staff" type="d3p1:Staff" lowerBound="1" upperBound="-1"/>
+	</objectType>
+	<objectType name="Doc_cancelation">
+		<property xmlns:d3p1="HRexchange" name="doc_type" type="d3p1:doc_type" form="Attribute"/>
+		<property name="date" type="xs:date" form="Attribute"/>
+		<property xmlns:d3p1="HRexchange" name="number" type="d3p1:String_12" form="Attribute"/>
+		<property name="deletionmark" type="xs:boolean"/>
+	</objectType>
+</package>

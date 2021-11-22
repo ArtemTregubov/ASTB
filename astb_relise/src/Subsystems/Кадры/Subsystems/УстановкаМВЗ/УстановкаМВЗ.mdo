@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a7cb5af-ccdf-43bc-86ea-b5a8ff2ed684">
+  <name>УстановкаМВЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка МВЗ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.УстановкаМВЗПодразделений</content>
+  <content>InformationRegister.МВЗСотрудников</content>
+  <content>Document.УстановкаМВЗДолжностей</content>
+  <parentSubsystem>Subsystem.Кадры</parentSubsystem>
+</mdclass:Subsystem>

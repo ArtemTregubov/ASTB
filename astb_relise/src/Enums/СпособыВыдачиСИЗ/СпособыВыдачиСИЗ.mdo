@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13ef3d24-7b79-44b2-8780-cdc90195ebac">
+  <producedTypes>
+    <refType typeId="3b0b78fe-0649-473b-948e-e6a04d5275f3" valueTypeId="c3dd1e6c-22a1-42f6-b3a9-c909f3fbae40"/>
+    <listType typeId="b0ef0771-0a08-4d54-b72d-872e9bef9c26" valueTypeId="abb9e372-849b-4d09-87b1-dd9fdb71ddd6"/>
+    <managerType typeId="dab0d234-2123-4ff7-8c58-5d0edb11cde9" valueTypeId="775fabbc-8cc1-4610-aedd-3bf77826accf"/>
+  </producedTypes>
+  <name>СпособыВыдачиСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы выдачи СИЗ</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2cd8d9ec-eb5f-4e30-a1d4-e7b9838e266d">
+    <name>Индивидуально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индивидуально</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="497b67f7-7c77-421c-af20-f918528f08f9">
+    <name>ПосредствомДозирующейСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посредством дозирующей системы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

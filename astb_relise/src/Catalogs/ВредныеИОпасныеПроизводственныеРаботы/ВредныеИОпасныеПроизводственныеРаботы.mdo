@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5af12d2-179b-4bfb-b496-a09c32bd0e38">
+  <producedTypes>
+    <objectType typeId="862660b6-2c63-4604-9725-477cf555cf5a" valueTypeId="d1be0fa7-02cd-4383-9d50-aed7bac2e976"/>
+    <refType typeId="26f1f89f-31c9-4a2d-a50b-32b44b83c5ce" valueTypeId="253b2e5e-c69f-453f-89c3-790374d51bfc"/>
+    <selectionType typeId="c8db17f4-8cdf-4caf-87a9-899599328cb0" valueTypeId="7c92ab06-37f8-4ce2-a6d7-150951dfccdf"/>
+    <listType typeId="5815e72f-007e-4e1a-a250-005b9b06bda5" valueTypeId="e0f62b0a-e24d-427f-9017-56af3ca8187d"/>
+    <managerType typeId="0bb3c5b6-08f1-4171-af5b-1a4806cd7ce7" valueTypeId="be2e352a-f189-4c26-95a9-4c63422da97d"/>
+  </producedTypes>
+  <name>ВредныеИОпасныеПроизводственныеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вредные и (или) опасные производственные работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВредныеИОпасныеПроизводственныеРаботы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВредныеИОпасныеПроизводственныеРаботы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВредныеИОпасныеПроизводственныеРаботы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВредныеИОпасныеПроизводственныеРаботы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="90462cf0-5e80-45f0-8149-7f30d926f79b">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>600</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="f028e683-d446-4143-a2c2-11c3cec0fc55">
+    <producedTypes>
+      <objectType typeId="75a64075-52c3-48b4-b6e6-aacdbd493d45" valueTypeId="4ef6c6ab-6952-4f27-a84c-25d8d50db837"/>
+      <rowType typeId="0aeec069-6121-4abb-a4ff-24027b7013a5" valueTypeId="a4a75de6-cc25-4bde-bfa9-2a2672a5d860"/>
+    </producedTypes>
+    <name>Врачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Врачи</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e4db5322-f229-47d2-b3a1-980b4d90c1b5">
+      <name>Врач</name>
+      <synonym>
+        <key>ru</key>
+        <value>Врач</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Врачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="90d04fe8-fc94-44d3-8a0c-ae19edfc9bb9">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aefb1c37-7bfe-4426-beba-363497f667ba">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="596e389c-58b1-4e4e-9261-8f2108b19bab">
+    <producedTypes>
+      <objectType typeId="f0b69f02-1de5-4648-8d23-8e4ebd8536c6" valueTypeId="79199c83-7be8-4fbe-944e-6b390649b897"/>
+      <rowType typeId="a58feb5e-7b22-449f-806e-07639ecf6bc1" valueTypeId="5d3f93f4-a9f5-4744-8d5c-ec0bae472b94"/>
+    </producedTypes>
+    <name>ЛабораторныеИФункциональныеИсследования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лабораторные и функциональные исследования</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="eb1ac3cc-109f-4afc-8036-c4b0602b3ff7">
+      <name>Исследование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исследование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЛабораторныеИФункциональныеИсследования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b080cf37-2915-415f-b336-672d9bf73ee9">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e6514703-9ed7-4946-93e3-747e6f4f52b8">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b7cc08c6-7aa3-462d-b0a0-c902dbc8fb09">
+    <producedTypes>
+      <objectType typeId="cf875498-4563-4068-8c26-cf0907715f56" valueTypeId="93f8bbbc-622d-4780-8ba2-ccaffedca696"/>
+      <rowType typeId="9320fec0-5f98-4362-8287-300e5d975254" valueTypeId="7031e52a-7ac7-47cd-8df0-143a2e6011c0"/>
+    </producedTypes>
+    <name>ДополнительныеМедицинскиеПротивопоказания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные медицинские противопоказания</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d4cd6a63-d2f8-4b65-9a40-74a9306677fd">
+      <name>Противопоказание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Противопоказание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДополнительныеМедицинскиеПротивопоказания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="97f87ef6-98a9-49a3-aa32-ce402b196ef7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7ef855da-e194-4d60-b6f5-d7bf3c5e8297">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0afbf8c0-8920-414b-8f90-0f9dd8fd275f">
+    <name>КлассификаторXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор (XML)</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

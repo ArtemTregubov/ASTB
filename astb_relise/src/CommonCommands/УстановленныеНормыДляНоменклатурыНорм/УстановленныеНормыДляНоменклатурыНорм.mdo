@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8289d524-5919-43e3-be3e-84fa98b418cf">
+  <name>УстановленныеНормыДляНоменклатурыНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установленные нормы</value>
+  </synonym>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>CatalogRef.НоменклатураНормОрганизации</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

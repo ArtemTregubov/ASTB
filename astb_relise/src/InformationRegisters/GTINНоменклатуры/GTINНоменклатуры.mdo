@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6732e71d-0f92-4b51-9c3f-27df6e8b1d4e">
+  <producedTypes>
+    <selectionType typeId="e41d3c9c-922b-498d-b02d-62d5e8f077e3" valueTypeId="93cb00d6-1fdc-49ab-831c-6cf06f9e7c45"/>
+    <listType typeId="4244fd57-4061-44ae-b453-838f8734a49e" valueTypeId="79f67aa6-3f0d-43c6-bce4-993c0c9d4bd9"/>
+    <managerType typeId="2174ceed-e1cc-49e6-a244-b202ff72e498" valueTypeId="16bec418-600f-45c9-b562-1545efecec0a"/>
+    <recordSetType typeId="44762c14-d3eb-4a85-a47b-e8891c974eab" valueTypeId="f7db7d39-cdb1-4104-b2e7-1dce3f4eb849"/>
+    <recordKeyType typeId="5598660e-684b-46c3-bc15-d0f136163322" valueTypeId="2f864e37-e12f-4d8d-a04a-fe6d3e025ee3"/>
+    <recordType typeId="b0a93421-76ec-4cce-980f-ea0e6d3ff064" valueTypeId="d82b297b-cf39-4c4a-9f83-d038337d87a2"/>
+    <recordManagerType typeId="1d9513a2-159c-4073-b8a5-3631117b0b6e" valueTypeId="ca6ba795-a8f4-416e-b33c-7e69205ba5a9"/>
+  </producedTypes>
+  <name>GTINНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>GTIN номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.GTINНоменклатуры.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.GTINНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f1e1acfb-d5eb-4f71-ad58-6ac9914e00ad">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7e5343ba-5841-444b-81c7-904c758bdfaa">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.GTINНоменклатуры.Resource.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b4786350-d0dc-4faa-a823-200d612e7503">
+    <name>GTIN</name>
+    <synonym>
+      <key>ru</key>
+      <value>GTIN</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="450d26e9-ce60-4ce6-86f2-a4a7fdd9b1fa">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2200cf80-5c6f-4031-996e-b3c7c178067a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

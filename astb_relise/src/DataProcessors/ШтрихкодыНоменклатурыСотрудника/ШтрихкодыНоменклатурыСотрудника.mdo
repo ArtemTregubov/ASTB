@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b387a8f2-1000-4530-8a98-ad286d4840e5">
+  <producedTypes>
+    <objectType typeId="340ae19e-885e-4a26-a50d-115edfc415f4" valueTypeId="983c0b88-f5db-45a9-8c20-2e099d78352e"/>
+    <managerType typeId="fe25f8e0-6f1b-477c-a712-7702e1154b4f" valueTypeId="f13cce19-a233-4071-a95b-4774cc1df747"/>
+  </producedTypes>
+  <name>ШтрихкодыНоменклатурыСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрихкоды номенклатуры сотрудника</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ШтрихкодыНоменклатурыСотрудника.Form.Форма</defaultForm>
+  <forms uuid="b6ec8fcc-f382-4832-a098-4e89e79a37b8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4b78c64e-1ef3-435b-91ee-753942c0c886">
+    <name>ШтрихкодыНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкоды номенклатуры</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88b2f0c4-c993-4484-b31c-1201a2461709">
+  <name>ИнструментыРазработчика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инструменты разработчика</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделИнструментыРазработчика48</picture>
+  </picture>
+  <content>CommonCommand.ПанельОтчетовИнструментыРазработчика</content>
+  <content>DataProcessor.ИнструментыРазработчикаЗамерСкоростиОткрытияФорм</content>
+  <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
+  <content>DataProcessor.ИнструментыРазработчикаПроверкаБСППередСборкой</content>
+  <content>34300c68-1b2e-43db-bbf2-2fa090b9de3e</content>
+  <content>CommonPicture.РазделИнструментыРазработчика48</content>
+  <content>8f78cf63-7c56-4fc0-8b2b-c4be69f6bf90</content>
+  <content>DataProcessor.ИнструментыРазработчикаУправлениеДоступом</content>
+  <content>702fcca5-94b6-48ab-aee6-ff243fda3f5b</content>
+  <content>c453901b-73e6-42b3-a53b-9ef500231de5</content>
+  <content>DataProcessor.ПанельАдминистрированияАсТБ</content>
+  <subsystems>БазоваяФункциональность</subsystems>
+  <subsystems>ВариантыОтчетов</subsystems>
+  <subsystems>ОбменДанными</subsystems>
+  <subsystems>ОбновлениеВерсииИБ</subsystems>
+  <subsystems>ПереходНаНовыеВерсии</subsystems>
+  <subsystems>ПоставляемыеДанные</subsystems>
+  <subsystems>РезервноеКопированиеИБ</subsystems>
+  <subsystems>РаботаСКонтрагентами</subsystems>
+</mdclass:Subsystem>

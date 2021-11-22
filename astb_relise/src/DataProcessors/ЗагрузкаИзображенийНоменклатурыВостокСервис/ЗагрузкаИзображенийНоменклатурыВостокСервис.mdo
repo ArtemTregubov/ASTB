@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10631f4c-43a4-4ec3-b650-322fbe0052cd">
+  <producedTypes>
+    <objectType typeId="89372211-c7e7-4912-bd07-d30ecd78d6bf" valueTypeId="a36f87c5-99b4-4d26-9266-3df59c226c36"/>
+    <managerType typeId="b8cd94a9-dc34-4fc2-9915-159835e852c3" valueTypeId="af12ae7d-5593-45b2-8345-8e4a0c937322"/>
+  </producedTypes>
+  <name>ЗагрузкаИзображенийНоменклатурыВостокСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка изображений номенклатуры &quot;Восток-Сервис&quot;</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаИзображенийНоменклатурыВостокСервис.Form.Форма</defaultForm>
+  <attributes uuid="818ba995-417c-48ed-b4b7-7e2abe1ee597">
+    <name>FTPСоединениеАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес FTP-сервера.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73f9d082-f1d3-4968-9769-b7a7552f84ae">
+    <name>FTPСоединениеПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="be2614cb-42c8-4a7b-866b-79426dc6ee26">
+    <name>FTPСоединениеПассивноеСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пассивное соединение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак пассивного соединения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="666115b7-8d02-4bd8-b4f8-9fa3c44b67d0">
+    <name>FTPСоединениеПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь (логин)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя пользователя для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ac57ad8c-4c5b-4011-94cc-3b344f02941e">
+    <name>FTPСоединениеПорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порт для доступа на FTP-ресурс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d7815f7a-76a9-4c2d-b105-050179c409a8">
+    <name>FTPСоединениеПуть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к каталогу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка с полным именем пути FTP-ресурса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="464fd854-f1c5-419b-9712-dcbfe18cae69">
+    <name>HTTPСоединениеАдресСервераЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервера загрузки</value>
+    </synonym>
+    <comment>№142456 </comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка с полным именем пути FTP-ресурса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ed38376-fe8e-43e8-ae3e-2096a450ba7b">
+    <name>HTTPСоединениеАдресСервераЧтения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервера чтения</value>
+    </synonym>
+    <comment>№142456 </comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка с полным именем пути FTP-ресурса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="2d8488cc-7419-4b95-a2c8-69f7c8467102">
+    <producedTypes>
+      <objectType typeId="c3cfa0e2-f277-42b6-849d-bf9f9d9836a2" valueTypeId="91984e61-f97a-4c37-86ca-eaa2c554e01c"/>
+      <rowType typeId="6b9d9845-ad8c-4792-9e77-880cd62fb7b3" valueTypeId="693dcfc3-9dd1-44e6-8c19-3fa10e76e64b"/>
+    </producedTypes>
+    <name>ТаблицаДляЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица для загрузки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1aeec963-6fa4-42be-a583-083a51b161bb">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8dae7ce5-2e00-4a44-9306-23b9f88b6b68">
+      <name>Артикул</name>
+      <synonym>
+        <key>ru</key>
+        <value>Артикул</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0b35d6c3-3af1-4695-9d5c-8f6be1b001a4">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="14fa3191-5d52-4a7b-92e8-4d7172c4fcb0">
+      <name>Изображение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изображение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатураПрисоединенныеФайлы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ВладелецФайла</name>
+        <field>DataProcessor.ЗагрузкаИзображенийНоменклатурыВостокСервис.TabularSection.ТаблицаДляЗагрузки.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a07efac5-ee5f-42ad-8d83-f935f2a341d5">
+      <name>ДатаЗагрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата загрузки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2249a31e-dceb-4fe7-8cc3-00270992866b">
+      <name>ДатаНаFTP</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата на FTP</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a5f70fcf-de01-46af-85fc-16544a7e1c82">
+      <name>АдресИзображения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес изображения</value>
+      </synonym>
+      <comment>№142456 </comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="b819a0f1-aff6-401c-b938-b544d632777e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7214ebf3-c9e4-43bf-94b6-1c81b9369f92">
+    <name>ЗагрузкаИзображенийНоменклатурыВостокСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка изображений номенклатуры &quot;Восток-Сервис&quot;</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

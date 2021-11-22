@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fdd9ff5-432b-49ab-b00a-ea260142096b">
+  <producedTypes>
+    <objectType typeId="7896bfff-8110-492f-8f4e-914c7b8ff400" valueTypeId="deb391f5-f5c0-4170-90cf-4ab4cd351c32"/>
+    <refType typeId="4d497462-9562-4d90-a75e-52dc8f8eceee" valueTypeId="ac878f91-3c00-4ac2-8b6c-10302e90a9ac"/>
+    <selectionType typeId="02f983b8-1531-480d-accb-d28e2f41eaf6" valueTypeId="486f180d-8129-4f1f-aa72-b34fb4e3ec66"/>
+    <listType typeId="9ce65352-2dd2-42cf-8447-63aab1b13c87" valueTypeId="0c97386c-02c3-41ac-bb56-e283bcdf06be"/>
+    <managerType typeId="d0493bf9-1579-466c-b6b2-304f32b7e906" valueTypeId="de19d44e-c4f5-40bd-84c8-399494deaefd"/>
+  </producedTypes>
+  <name>ПричиныПроведенияИнструктажей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины проведения инструктажей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПричиныПроведенияИнструктажей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПричиныПроведенияИнструктажей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8b3fc182-b728-4de1-bf97-4b8c0456d9fd">
+      <name>ВнеплановыеИнструктажи</name>
+      <description>Внеплановые инструктажи</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="4ca85bd0-7d7c-47f1-818f-70f0c391c58a">
+        <name>ЗаменаИлиМодернизацияОборудования</name>
+        <description>Замена или модернизация оборудования</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="8e00419a-211b-4249-aaa6-8359ee09a87f">
+        <name>ИзменениеИнструкций</name>
+        <description>Изменение инструкций</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="b9ea707f-99e5-4c4e-9771-65f7ac23a8f0">
+        <name>ИзменениеТехнологическихПроцессов</name>
+        <description>Изменение технологических процессов</description>
+        <code xsi:type="core:StringValue">
+          <value>000000003</value>
+        </code>
+      </content>
+      <content id="70addb8e-20ae-4885-9dd9-634184a39e8d">
+        <name>НарушениеТребованийОхраныТруда</name>
+        <description>Нарушение требований охраны труда</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="20ed1d15-dfdd-47cd-a74e-b98844754636">
+        <name>ПерерывВРаботеСотрудникаБолее30КалендарныхДней</name>
+        <description>Перерыв в работе сотрудника более 30 календарных дней</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+      <content id="00c20a1c-338e-4520-970b-140c1c8076a9">
+        <name>ПерерывВРаботеСотрудникаБолееДвухМесяцев</name>
+        <description>Перерыв в работе сотрудника более двух месяцев</description>
+        <code xsi:type="core:StringValue">
+          <value>000000015</value>
+        </code>
+      </content>
+      <content id="e4ef3f41-d22f-465a-a3ce-f54ae6c826f0">
+        <name>РешениеРуководителяОбучения</name>
+        <description>Решение руководителя обучения</description>
+        <code xsi:type="core:StringValue">
+          <value>000000009</value>
+        </code>
+      </content>
+      <content id="e5fbc8c4-3d5d-4bf9-9604-de674354aafc">
+        <name>ТребованиеДолжностныхЛиц</name>
+        <description>Требование должностных лиц</description>
+        <code xsi:type="core:StringValue">
+          <value>000000008</value>
+        </code>
+      </content>
+    </items>
+    <items id="5ff5b827-4f45-4cbd-89f7-efccd0114b85">
+      <name>ЦелевыеИнструктажи</name>
+      <description>Целевые инструктажи</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="b3db42a3-8649-4371-9718-1414633366d8">
+        <name>ПроведениеМассовыхМероприятий</name>
+        <description>Проведение массовых мероприятий</description>
+        <code xsi:type="core:StringValue">
+          <value>000000014</value>
+        </code>
+      </content>
+      <content id="f18b9015-a5ae-4803-b812-d3698e666c18">
+        <name>РаботыПриЛиквидацииПоследствийАварий</name>
+        <description>Работы при ликвидации последствий аварий</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+      <content id="f40b2dd8-929c-46e4-b9d3-7f684f9066aa">
+        <name>РаботыСПовышеннойОпасностью</name>
+        <description>Работы с повышенной опасностью</description>
+        <code xsi:type="core:StringValue">
+          <value>000000010</value>
+        </code>
+      </content>
+      <content id="db606d41-fe0e-41b3-8783-78ab7b6bdd0a">
+        <name>РаботыСПовышеннымРискомОпасногоВоздействия</name>
+        <description>Работы с повышенным риском опасного воздействия</description>
+        <code xsi:type="core:StringValue">
+          <value>000000012</value>
+        </code>
+      </content>
+      <content id="8a2ae4e4-341b-443c-b4fc-894246de90f3">
+        <name>РазовыеРаботы</name>
+        <description>Разовые работы</description>
+        <code xsi:type="core:StringValue">
+          <value>000000011</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПричиныПроведенияИнструктажей.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ПричиныПроведенияИнструктажей.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ПричиныПроведенияИнструктажей.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ПричиныПроведенияИнструктажей.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="d9293046-e8f3-4b9a-8f4d-b94e6425e674">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80928d5a-faf5-440f-a608-97f5604518c1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f8ed5193-5fcc-4894-8be6-8c0ef84f0c9c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a16150d3-7ef2-4c19-8b99-3134fbb2005c">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

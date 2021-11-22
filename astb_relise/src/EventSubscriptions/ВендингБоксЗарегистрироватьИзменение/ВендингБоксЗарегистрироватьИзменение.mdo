@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5867bf08-a053-43bb-81b5-46353ee0a4bd">
+  <name>ВендингБоксЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вендинг бокс зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ХарактеристикиНоменклатуры</types>
+    <types>CatalogObject.Номенклатура</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменДаннымиВендингБокс.ВендингБоксЗарегистрироватьИзменениеПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a47b2bc-dd67-47a2-8c2e-9f6e65cb8f54">
+  <producedTypes>
+    <objectType typeId="841e40ba-d9cc-4b53-b9a2-2aabfefc843a" valueTypeId="fae2bcdc-fe72-4825-9947-d37c701b2c20"/>
+    <managerType typeId="39893f26-a3f6-4908-b898-4e80125f57d5" valueTypeId="7097655a-0f91-4a9e-95aa-8fc0b40c0846"/>
+  </producedTypes>
+  <name>АХ_ШтрихкодыНоменклатурыАдресногоХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) штрихкоды номенклатуры адресного хранения</value>
+  </synonym>
+  <defaultForm>DataProcessor.АХ_ШтрихкодыНоменклатурыАдресногоХранения.Form.ФормаШтрихкодовНоменклатурыАдресногоХранения</defaultForm>
+  <forms uuid="d37b0bb8-5eee-48a0-bb5b-b00ab9f86d96">
+    <name>ФормаШтрихкодовНоменклатурыАдресногоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма штрихкодов номенклатуры адресного хранения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4b622aaa-0cda-40dd-8785-e14c18637c79">
+    <name>СКД_ОстаткиНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД остатки номенклатуры</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="3ff6810d-5a69-413a-a32c-a5b47534bd81">
+    <name>ШтрихкодыНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ) Штрихкоды номенклатуры</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

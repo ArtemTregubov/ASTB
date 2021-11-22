@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3547b0f-9a7c-4930-b42d-8f73af10fca8">
+  <producedTypes>
+    <objectType typeId="06b28957-89d9-47e3-abf9-6fa59d88d5e2" valueTypeId="51170725-248a-4161-9af3-574321959c3d"/>
+    <managerType typeId="df153ab5-521e-4320-9a22-9762b4a335bd" valueTypeId="2cfc0883-18ec-4ec4-8e99-756ba8cd0271"/>
+  </producedTypes>
+  <name>ОтчетОСписанииСИЗсСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о списании СИЗ с сотрудников </value>
+  </synonym>
+  <comment>Требует доступ к документам &quot;СписаниеСИЗСотрудника&quot; и его полям.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетОСписанииСИЗсСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="bf7c10a4-9143-4129-8b54-daa8af491a9b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b7aa543-50ab-4dcf-a75b-aa66a8e7836f">
+  <name>ИспользоватьМаркировку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать маркировку</value>
+  </synonym>
+  <location>Constant.ИспользоватьМаркировку</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.КодыМаркировкиВыданныхСредствЗащиты</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.КодыМаркировки</content>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.TabularSection.КодыМаркировки</content>
+  <content>Catalog.ВидыМаркированнойНоменклатуры</content>
+  <content>Report.КодыМаркировкиВыданныхСредствЗащиты</content>
+  <content>InformationRegister.ПараметрыПодключенияКСервисуДляПроверкиКодовМаркировки</content>
+  <content>Enum.ИсточникиДляПроверкиКодовМаркировки</content>
+</mdclass:FunctionalOption>

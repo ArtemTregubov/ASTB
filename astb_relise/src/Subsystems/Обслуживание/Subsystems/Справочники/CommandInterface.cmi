@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>InformationRegister.ШтрихкодыНоменклатурыДляУчетаЧистки.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.ПодключаемоеОборудование.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Организации.Command.ДобавитьОрганизацию</commands>
+      <commands>Catalog.Организации.Command.РеквизитыОрганизации</commands>
+      <commands>Catalog.Контрагенты.StandardCommand.OpenList</commands>
+      <commands>Catalog.Организации.Command.Организации</commands>
+      <commands>InformationRegister.ШтрихкодыНоменклатурыДляУчетаЧистки.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПодключаемоеОборудование.Command.ОткрытьПодключаемоеОборудование</commands>
+      <commands>Catalog.ПодключаемоеОборудование.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

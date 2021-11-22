@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="062d13d6-d7b1-4df8-bf53-bee6e5e2f247">
+  <producedTypes>
+    <selectionType typeId="be165c4e-bf9d-4cab-b515-be122e2536ba" valueTypeId="076c6ea4-2ee2-4953-ad84-cf673b918995"/>
+    <listType typeId="2d063a51-dfce-4a88-ae38-10ede6efdbc6" valueTypeId="007e419c-de75-469d-9821-2342159c4d05"/>
+    <managerType typeId="c3720eb3-8380-40c1-8d5d-bb747cdfa19c" valueTypeId="7da9f638-92b2-4328-9d92-adc63e2a48a1"/>
+    <recordSetType typeId="d707cdf8-ad2f-4a77-8424-e64832b4b5e8" valueTypeId="4a3f13b7-3479-4faf-a6ff-2fe0ef7aedef"/>
+    <recordKeyType typeId="ba7554f4-b70f-47a0-8ad1-ae06784e9574" valueTypeId="da99822b-2ef5-4bc7-8bed-cd89c8f3708f"/>
+    <recordType typeId="070921d0-cd7a-491d-b43c-2f1fcceac5bc" valueTypeId="363165f8-9cad-4d0d-9f98-545a6accbe14"/>
+    <recordManagerType typeId="d62926a4-f16a-42b7-a80b-8f8b5d360045" valueTypeId="58f84ad3-46ef-43c7-9d9a-b7e39f2eed7e"/>
+  </producedTypes>
+  <name>ЦеныРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены ремонта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЦеныРемонта.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a077afd1-0efb-4ed1-8315-090669f54ce2">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7fcd1352-003c-46a2-b6da-db85d173fb3f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24f8a55b-4b0a-4766-a6a1-db0c51596c56">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b854d030-ec4b-461c-884c-8af1c7b8d3b6">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРемонтаСИЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2e5f3dc0-17f6-4830-a6b1-c71dfdf88f45">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

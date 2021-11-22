@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a17d490-8ec9-47b2-a471-e3b1f399600b">
+  <name>Алгоритм_0_0_1_2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Алгоритм 0_0_1_2</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.Алгоритм_0_0_1_2_Клиент</content>
+  <content>dd6607ef-08c4-41fb-88ea-cb305ffa65a4</content>
+  <content>CommonModule.Алгоритм_0_0_1_2_Сервер</content>
+  <content>FunctionalOption.ИспользоватьАлгоритм_0_0_1_2</content>
+  <content>5d6a6944-5d61-4e9b-b9ec-f2b368901fa2</content>
+  <parentSubsystem>Subsystem.АсТБ</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d588ffc6-56c3-4d98-8b26-3065fabeb60f">
+  <producedTypes>
+    <objectType typeId="4cee79f6-b31a-4d11-8fff-ed0d3fafd394" valueTypeId="0aada5ff-8b50-420b-a44b-c8a146efa5cb"/>
+    <managerType typeId="46331057-8617-45ad-b1e9-b1c6bc686461" valueTypeId="3683e539-8386-441c-808c-ee45a9bc9234"/>
+  </producedTypes>
+  <name>ДиагностикаПустыеМетрики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: пустые метрики</value>
+  </synonym>
+  <comment>Пустые метрики у характеристик номенклатуры</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПустыеМетрики.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Пустые метрики у характеристик номенклатуры</value>
+  </explanation>
+  <templates uuid="83634e23-769f-4b6c-a6d6-bd0f2500350b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

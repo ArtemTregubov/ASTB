@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac3e750d-7e04-4bb2-a077-c977b3797b02">
+  <producedTypes>
+    <refType typeId="31dd2a85-50d3-4491-9cb1-8d03162f8859" valueTypeId="c4365b64-8e8c-4425-830e-a245cd042e2e"/>
+    <listType typeId="b9409d7c-139a-4257-a879-1f0a89efaf24" valueTypeId="d3249510-ecd5-4cdf-83b6-64870899bc63"/>
+    <managerType typeId="8e55bfef-2e8a-44a1-b331-18fbfc70776f" valueTypeId="d078d016-e4b5-4cd1-9583-6f6704d0858a"/>
+  </producedTypes>
+  <name>ВидыУчетаКомплектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды учета комплектов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4652981c-bf24-4ab0-ae94-c7769055d49a">
+    <name>УчитыватьКакКомплект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать как комплект</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="18f26201-1587-4739-8514-fde3b84360eb">
+    <name>УчитыватьКакКомплектующие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать как комплектующие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="95de55c3-4f2f-4b9c-88a7-23afbb5e5651">
+    <name>УчитыватьСогласноВыдаче</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать согласно выдаче</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

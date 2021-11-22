@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Организации.Command.ДобавитьОрганизацию</commands>
+      <commands>Catalog.Организации.Command.РеквизитыОрганизации</commands>
+      <commands>Catalog.ДолжностиИПрофессии.StandardCommand.OpenList</commands>
+      <commands>Catalog.ЗащитныеСвойства.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПериодичностьВыдачиСИЗ.StandardCommand.OpenList</commands>
+      <commands>Catalog.УсловияНорм.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

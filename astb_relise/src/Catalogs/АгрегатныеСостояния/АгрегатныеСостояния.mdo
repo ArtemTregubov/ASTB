@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ea4b03d-c790-43c5-961c-0ad9f3aeb900">
+  <producedTypes>
+    <objectType typeId="960d83f8-8dce-4513-bc46-b1581c67ed18" valueTypeId="bc40f758-8888-4495-8503-7c2d28538174"/>
+    <refType typeId="9a301104-a3a1-4c77-8b7f-4f204145ee1c" valueTypeId="54948a6f-74d3-4e21-8a11-2130653d7fc1"/>
+    <selectionType typeId="f230abf0-4e46-4363-b2d7-63d29402f4ec" valueTypeId="e1c76511-052f-4e60-a5c8-c7aced663112"/>
+    <listType typeId="fd8d0d6e-b405-4c86-80f4-68875c525b71" valueTypeId="d3ac8694-78f7-4ced-95d8-ecfb96bfc9ec"/>
+    <managerType typeId="5cdd999b-21bb-4117-9676-936fd42eee71" valueTypeId="74b1c344-5385-4776-9ac4-b403e9f72807"/>
+  </producedTypes>
+  <name>АгрегатныеСостояния</name>
+  <synonym>
+    <key>ru</key>
+    <value>Агрегатные состояния</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.АгрегатныеСостояния.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.АгрегатныеСостояния.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.АгрегатныеСостояния.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.АгрегатныеСостояния.Form.ФормаСписка</defaultListForm>
+  <forms uuid="7a8e8c24-3123-425f-ab70-0d86f8f8a91f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b6a60863-c15e-40ab-b3d6-0f031ed7327c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

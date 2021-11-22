@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9222625-9406-4b57-865e-dae80d5852d4">
+  <name>МедицинскиеОсмотры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Медицинские осмотры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Врачи</content>
+  <content>Catalog.ЛабораторныеИФункциональныеИсследования</content>
+  <content>Catalog.ДополнительныеМедицинскиеПротивопоказания</content>
+  <content>Catalog.ВредныеИОпасныеПроизводственныеРаботы</content>
+  <content>Catalog.ВредныеИОпасныеПроизводственныеФакторы</content>
+  <content>Document.ПриказНаПроведениеМедицинскихОсмотров</content>
+  <content>Document.НаправлениеНаМедицинскийОсмотр</content>
+  <content>Document.МедицинскийОсмотр</content>
+  <parentSubsystem>Subsystem.ОТиТБ</parentSubsystem>
+</mdclass:Subsystem>

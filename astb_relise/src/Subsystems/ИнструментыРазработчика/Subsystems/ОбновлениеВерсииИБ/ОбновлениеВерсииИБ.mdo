@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b00a0ad-b0f0-4b52-84d0-b11c04a7fc0c">
+  <name>ОбновлениеВерсииИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление версии ИБ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>d85a9612-93c2-4cd8-b996-8ee0700d0619</content>
+  <content>DataProcessor.ИнструментыРазработчикаОбновлениеВерсииИБ</content>
+  <content>DataProcessor.ИнструментыРазработчикаОбновлениеВспомогательныхДанных</content>
+  <parentSubsystem>Subsystem.ИнструментыРазработчика</parentSubsystem>
+</mdclass:Subsystem>

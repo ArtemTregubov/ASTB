@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="178539ef-597c-471f-b4b5-1c8668588009">
+  <producedTypes>
+    <selectionType typeId="1692213e-8f3e-441f-bbb2-7b68f941c48f" valueTypeId="ee6a78be-e6a3-4dfe-9d67-d4fc06906b94"/>
+    <listType typeId="4a0812ed-aed6-4aa1-a4c0-420a276d220f" valueTypeId="5ddfc402-75a0-44ce-9cb7-58b2d025ca15"/>
+    <managerType typeId="6d46e817-bfeb-4363-95c1-68438c0840ac" valueTypeId="25ec781d-2360-4a33-9e51-458198b10f08"/>
+    <recordSetType typeId="2a2b1928-9361-4eec-ac13-59bb3765aa72" valueTypeId="2635fb22-0116-44bf-bd2d-2bb6f9246956"/>
+    <recordKeyType typeId="45d6aad7-ffa6-414b-b2d3-d8397a59df63" valueTypeId="58a1f25d-9310-4bd1-8653-8afdba4cdb6f"/>
+    <recordType typeId="c0369e0e-d625-460f-a662-aeb31357c298" valueTypeId="4a5e55c2-c598-4241-bc30-bde883f51251"/>
+    <recordManagerType typeId="c7879749-22a7-4185-9dff-edfbf53c25d0" valueTypeId="f5692d50-0990-43d6-b472-2ff3d75b92b9"/>
+  </producedTypes>
+  <name>КодыМаркировкиВыданныхСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды маркировки выданных средств защиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.КодыМаркировкиВыданныхСредствЗащиты.Form.ФормаСписка</defaultListForm>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1e970bab-cf10-4137-b3dc-800a4154ecdf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="283d647c-72b3-4915-a541-795046c85284">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7819598b-468f-4e01-ae8b-91f8b531ee8b">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.КодыМаркировкиВыданныхСредствЗащиты.Resource.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cdb385ee-c108-4807-94a1-85af46f330d7">
+    <name>КодМаркировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код маркировки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="62a49459-0ad0-4c39-a926-43ded93ae199">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

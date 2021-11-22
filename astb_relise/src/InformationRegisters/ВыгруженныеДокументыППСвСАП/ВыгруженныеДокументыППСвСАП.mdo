@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91f1ed55-bbb8-42e7-bea5-199b6f5bd50c">
+  <producedTypes>
+    <selectionType typeId="338ebf9d-aace-408c-a732-a26d8d16b486" valueTypeId="56dd5518-086d-4cbe-9508-0b43652db2f7"/>
+    <listType typeId="4a7abb2d-49a4-4479-ba39-ab9d1d737434" valueTypeId="5401813c-8e44-4b22-853c-05344c7b13e2"/>
+    <managerType typeId="216d5ae6-16e3-4e13-b0e5-3eff16bf9001" valueTypeId="98cabb50-5435-4047-94f0-2250dba1776f"/>
+    <recordSetType typeId="058434cc-2d9f-45db-b4b6-96a5a7a24a07" valueTypeId="21b94b28-3aa6-4eb9-bfde-2c2cea1d236c"/>
+    <recordKeyType typeId="5eba22df-4ea8-4ce0-81be-07022f183c79" valueTypeId="0b13260a-04df-4598-91f6-785e9d4b1f44"/>
+    <recordType typeId="7b526efe-46cf-457e-9966-088719f40d73" valueTypeId="84639517-16eb-4dcf-8bb2-282ce42d7871"/>
+    <recordManagerType typeId="748efdbc-9010-4608-8d03-53bf7a4ce6b5" valueTypeId="2f6e7f52-d9a2-4103-8152-c4cc90b0b09b"/>
+  </producedTypes>
+  <name>ВыгруженныеДокументыППСвСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгруженные документы ППС в САП</value>
+  </synonym>
+  <comment>Выгруженные документы перехода прав собственности в САП</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВыгруженныеДокументыППСвСАП.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВыгруженныеДокументыППСвСАП.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Выгруженные документы перехода прав собственности в САП</value>
+  </explanation>
+  <resources uuid="2ac90d97-12f4-4678-a7a0-b9f08ef0e58d">
+    <name>ДатаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8b38027f-4217-40c7-aba5-92b57e61f8ec">
+    <name>КодЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="4e80cabd-e44b-4220-a64a-67b1c28aaf04">
+    <name>ДокументППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ППС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПереходПраваСобственности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="88d9606b-b733-45f6-8b31-232ee7a790d0">
+    <name>КодЗавода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код завода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8a639cc5-974e-47a7-bcd0-8a561dbb4922">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6b2be4f5-1de4-4970-bcd2-c55b71b9590b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

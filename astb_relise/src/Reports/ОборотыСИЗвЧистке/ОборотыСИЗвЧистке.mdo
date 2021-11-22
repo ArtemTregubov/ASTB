@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dc6a6e6-4a2b-4001-8085-ec23aedd478f">
+  <producedTypes>
+    <objectType typeId="896af641-5523-43d3-85fa-1854a65ac3e3" valueTypeId="31c8e23e-ab8e-43b8-8c13-39e818a7494c"/>
+    <managerType typeId="a1ed9d45-0465-44f6-a3da-12320e494b39" valueTypeId="e2eaf579-12ab-4f83-a4ab-69848f672a6b"/>
+  </producedTypes>
+  <name>ОборотыСИЗвЧистке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты СИЗ в чистке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОборотыСИЗвЧистке.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="7ce7a143-c7de-4430-80c3-38f7a836b686">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

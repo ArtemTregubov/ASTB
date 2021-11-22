@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="958132f1-4e26-4631-a754-6a617df46bca">
+  <name>ВозвратИСписание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возврат и списание</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВозвратСредствЗащитыОтСотрудника</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника</content>
+  <content>DataProcessor.СписаниеВыданныхСИЗПоПричине</content>
+  <content>Role.ЧтениеДок_ВозвратСредствЗащитыОтСотрудника</content>
+  <content>Document.ПродлениеСрокаЭксплуатации</content>
+  <parentSubsystem>Subsystem.ОбеспечениеСотрудников</parentSubsystem>
+</mdclass:Subsystem>

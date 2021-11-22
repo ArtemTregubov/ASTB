@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9233fd9e-b15e-4742-8cb1-e14569a3ad26">
+  <name>ПриПроведенииДокументовОбращенияЗаписиНаСклад</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении документов обращения и записи на склад</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОбращениеНаСклад</types>
+    <types>DocumentObject.ЗаписьНаСклад</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ПриПроведенииДокументовОбращенияЗаписиНаСкладОбработкаПроведения</handler>
+</mdclass:EventSubscription>

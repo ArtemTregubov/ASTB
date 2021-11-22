@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c1b98fe-6de2-493c-8ce1-1f7792c7c5ec">
+  <producedTypes>
+    <refType typeId="9312cd1f-fbad-4fdc-adc8-15c78ca8437d" valueTypeId="664c6d7c-d0c6-41cd-afb5-1f59465fda31"/>
+    <listType typeId="9469eaaf-1049-4212-9486-6a92baff5e0b" valueTypeId="9c030f89-f59d-4d59-8e71-ad60f63c4d3d"/>
+    <managerType typeId="f499136a-9d7c-4158-bd6a-136250cecf40" valueTypeId="c60b4eee-7f49-42a6-8fdc-3ac4fb1b6faa"/>
+  </producedTypes>
+  <name>ВидДополнительнойИнформацииПоНоменклатуре</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид дополнительной информации по номенклатуре</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="110d7a60-9bb8-4ce9-a1c1-e3b0f66ed870">
+    <name>Артикул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артикул</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07e86c23-614d-47a4-a0a1-5835b47fe9e3">
+    <name>Код</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c1eb1d9-62e9-4e6f-80cd-7e62fb880533">
+    <name>КодСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код синхронизации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="91c3d50a-fb6a-42d9-8734-de33d463a0f6">
+    <name>НоменклатурныйНомерОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурный номер организации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d744c80e-8ad8-4a84-9650-fb902eb4b6c6">
+    <name>НеВыводить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выводить</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

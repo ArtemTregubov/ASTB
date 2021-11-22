@@ -1,0 +1,31 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='metrika_item'>
+  <xsd:complexType>
+   <xsd:attribute name='metrika_no' type='xsd:string' use='required'/>
+   <xsd:attribute name='metrika_name' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='size_item'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='metrika_item'/>
+   </xsd:sequence>
+   <xsd:attribute name='size' type='xsd:string' use='required'/>
+   <xsd:attribute name='lengt' type='xsd:string' use='required'/>
+   <xsd:attribute name='sex' type='xsd:string' use='required'/>
+   <xsd:attribute name='vid_SIZ' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='size_list'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='size_item'/>
+   </xsd:sequence>
+   <xsd:attribute name='xmlns:xsi' type='xsd:string' use='required'/>
+   <xsd:attribute name='xsi:noNamespaceSchemaLocation' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

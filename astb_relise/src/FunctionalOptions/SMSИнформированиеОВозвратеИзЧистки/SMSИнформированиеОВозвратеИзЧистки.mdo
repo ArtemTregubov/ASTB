@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfa74e74-263d-4eda-9dc3-3fe5e8e07659">
+  <name>SMSИнформированиеОВозвратеИзЧистки</name>
+  <synonym>
+    <key>ru</key>
+    <value>SMS-информирование о возврате из чистки</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.SMSИнформированиеОВозвратеИзЧистки</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

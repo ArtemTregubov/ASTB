@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="444a1904-d1af-497d-880c-326959c14a62">
+  <name>ВендингНеЗагружатьРаскладку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вендинг не загружать раскладку</value>
+  </synonym>
+  <location>Constant.ВендингНеЗагружатьРаскладку</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

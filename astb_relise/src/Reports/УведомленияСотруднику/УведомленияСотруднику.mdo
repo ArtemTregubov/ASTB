@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1602db5f-7ec4-4be7-904d-7ee331b998e5">
+  <producedTypes>
+    <objectType typeId="074f4a60-4279-4d14-8d5e-5afdb402678b" valueTypeId="9277809a-5867-430c-965a-26a58d377af2"/>
+    <managerType typeId="f69c23ed-b6b7-4986-9411-d6d7619af9cb" valueTypeId="8b4468da-818f-4275-8ccc-dc9284b467a9"/>
+  </producedTypes>
+  <name>УведомленияСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УведомленияСотруднику.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ecac1163-8a23-46c4-92b8-9d5595557f2e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="bed7d40f-4fb3-4786-84bd-1d1300ae8fc5">
+    <name>УведомленияСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомления</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

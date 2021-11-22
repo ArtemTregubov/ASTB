@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30a954b2-a4dc-451a-a194-5a138ed9fe26">
+  <producedTypes>
+    <objectType typeId="5cf74a0f-8ba3-4da5-bd7f-2c48e6243ba1" valueTypeId="231328af-2f09-4028-8830-1b92a4666b7d"/>
+    <refType typeId="1ea4d5f4-4661-4f06-91db-c4fea87abf27" valueTypeId="f3af0bf7-5d36-49c5-9541-f772147e6f0d"/>
+    <selectionType typeId="11d9d999-c05b-4b0a-8834-3c9962b124d3" valueTypeId="c57fad98-37fa-44a8-b63d-2c8736f7de55"/>
+    <listType typeId="35c28e15-827c-4fa2-a153-692b068280de" valueTypeId="e7d30261-b635-473a-8377-ff7bef64a5a6"/>
+    <managerType typeId="d70adfb8-ebdd-42ae-a733-7c3be777e514" valueTypeId="d77bea72-846d-4cd1-8e48-b8e326e5f7cc"/>
+  </producedTypes>
+  <name>ВидыТочекХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды точек хранения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыТочекХранения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыТочекХранения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="6dd62a5f-7fcc-446d-9a3c-3746c71bf1e3">
+      <name>Полка</name>
+      <description>Полка</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000001</value>
+      </code>
+    </items>
+    <items id="a7cea6ec-73f1-4a1f-a1dd-daeb187a66fd">
+      <name>Секция</name>
+      <description>Секция</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000005</value>
+      </code>
+    </items>
+    <items id="6422ecbc-7138-434c-8ec3-5db178fd6b15">
+      <name>Склад</name>
+      <description>Склад</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000006</value>
+      </code>
+    </items>
+    <items id="afd1fb4d-c04a-4f1b-bcaa-b8e8b4a04a4d">
+      <name>Стеллаж</name>
+      <description>Стеллаж</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000007</value>
+      </code>
+    </items>
+    <items id="90c9afa0-fbe1-4c99-b90a-ddc6d2ddf6d0">
+      <name>Ячейка</name>
+      <description>Ячейка</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000008</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

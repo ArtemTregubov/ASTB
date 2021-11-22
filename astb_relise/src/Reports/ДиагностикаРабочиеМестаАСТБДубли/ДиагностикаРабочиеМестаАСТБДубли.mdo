@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f1e8c25-2109-47cf-82ce-25e32d20d4a5">
+  <producedTypes>
+    <objectType typeId="dcd358fd-d38f-4358-945c-2b0560aa6ac8" valueTypeId="32aabc03-2f92-4245-b8af-b7df0b35f6fc"/>
+    <managerType typeId="a995141a-df65-4501-b675-456ed65e7ca4" valueTypeId="38408f7e-3c71-4f36-9b18-a5a200d8f541"/>
+  </producedTypes>
+  <name>ДиагностикаРабочиеМестаАСТБДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: рабочие места АСТБ (дубли)</value>
+  </synonym>
+  <comment>Рабочие места АСТБ (дубли по коду синхронизации и наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаРабочиеМестаАСТБДубли.Template.РабочиеМестаАСТБДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Рабочие места АСТБ (дубли по коду синхронизации и наименованию)</value>
+  </explanation>
+  <templates uuid="bb66568b-2194-453f-8b6d-695f1b55117d">
+    <name>РабочиеМестаАСТБДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочие места АСТБ (дубли)</value>
+    </synonym>
+    <comment>Рабочие места АСТБ (дубли по коду синхронизации и наименованию)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

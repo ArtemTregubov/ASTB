@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eb710c8-99c0-4302-92a8-acf633501d2f">
+  <producedTypes>
+    <objectType typeId="033d1706-e7a0-495b-9257-046b66e56b3d" valueTypeId="004a1d44-bc31-4644-b88d-22c342e16099"/>
+    <managerType typeId="4861b822-5800-40ee-8405-5be5d697b16c" valueTypeId="8910934d-1764-4073-94ce-6102406fb951"/>
+  </producedTypes>
+  <name>ДиагностикаСоответствияРазмеровКомплектовИКомплектующих</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: соответствие размеров комплектов и комплектующих</value>
+  </synonym>
+  <comment>Диагностика: соответствие размеров комплектов и комплектующих</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСоответствияРазмеровКомплектовИКомплектующих.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствия размерного ряда комплектов и комплектующих. Выводятся несоотвествующие размеры и их остатки.</value>
+  </explanation>
+  <templates uuid="0bf9b973-3de9-4db4-ba6a-0621276b11d3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

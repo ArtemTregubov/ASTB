@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c1612be-5441-4c46-b429-9ad9a0700bec">
+  <producedTypes>
+    <listType typeId="b2f1bf78-3817-4ee3-b39a-c3a583e92cb1" valueTypeId="0a433125-239a-4728-8a3b-5a2617a2ebb1"/>
+    <managerType typeId="0c9c3b48-74bb-44dc-9018-74fa9f78b79b" valueTypeId="90958eee-b1ee-4e44-ad0d-490169d45d72"/>
+  </producedTypes>
+  <name>ДокументыПоНормеВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по норме выдачи</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.НормыВыдачиСИЗ</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ВыдачаСредствЗащитыПоВедомости.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.Attribute.НормаВыдачи</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ЗачетУпрощеннойВыдачи.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ЗаявкаНаВыдачу.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ОбращениеНаСклад.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.ПриказПоНормамВыдачиСИЗ.TabularSection.НормыВыдачиСИЗ.Attribute.НормаВыдачи</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.TabularSection.Товары.Attribute.НормаВыдачи</content>
+  <defaultForm>FilterCriterion.ДокументыПоНормеВыдачи.Form.ФормаСписка</defaultForm>
+  <forms uuid="19ed0549-2609-4a5c-88d9-27d1c1f25b62">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:FilterCriterion>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="726302d1-b375-4362-aae9-5a4d78f04a75">
+  <name>ПереходНаНовыеВерсии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переход на новые версии</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>5bd81a7a-319a-4b01-96ab-7dc402c0019e</content>
+  <content>DataProcessor.ИнструментыРазработчикаПереносВариантовОтчетов</content>
+  <content>71b60d3b-205f-49c6-8700-63d19103a878</content>
+  <content>363537e8-41fa-4203-ab4d-243e54bbd48a</content>
+  <content>dbef77a1-0b99-4f8e-98b8-d3a4cf03c426</content>
+  <content>d2aa8485-01d7-4887-ad33-d004a2431682</content>
+  <content>0cc46964-64fb-422e-a883-7fff2f2414d5</content>
+  <content>d9c35ea4-a702-451d-89ba-cd6479a5da6c</content>
+  <parentSubsystem>Subsystem.ИнструментыРазработчика</parentSubsystem>
+</mdclass:Subsystem>

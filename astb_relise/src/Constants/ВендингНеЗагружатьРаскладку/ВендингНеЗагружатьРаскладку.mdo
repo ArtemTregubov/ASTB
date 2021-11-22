@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e163edd-57d1-4e99-86ea-8d23c14b97b7">
+  <producedTypes>
+    <managerType typeId="b3af49cd-7d4a-4a9a-839b-3347949b7bbf" valueTypeId="bc48d24c-f9f9-42cc-a8f6-d483444c720e"/>
+    <valueManagerType typeId="aa64e28c-90b1-4e3f-b6de-4a34b99e71de" valueTypeId="49d34b39-0f20-44d0-8328-9d388590699f"/>
+    <valueKeyType typeId="6a39fb8f-4831-412b-8fab-bc1d2b4b6b68" valueTypeId="1490a4ce-ed9e-4973-93b3-8771c838033a"/>
+  </producedTypes>
+  <name>ВендингНеЗагружатьРаскладку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вендинг не загружать раскладку</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

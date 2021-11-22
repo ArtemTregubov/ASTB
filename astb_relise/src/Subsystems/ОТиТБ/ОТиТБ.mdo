@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1529c09-1081-449f-bb38-af26deb781ba">
+  <name>ОТиТБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Охрана труда и техника безопасности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОТиТБ</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаОТиТБ</content>
+  <content>Enum.УсловияТруда</content>
+  <content>Enum.ВидыИнструктажей</content>
+  <content>Enum.ВидыМедосмотров</content>
+  <content>Enum.РезультатыМедосмотров</content>
+  <content>Catalog.Врачи</content>
+  <content>Catalog.ЛабораторныеИФункциональныеИсследования</content>
+  <content>Catalog.ДополнительныеМедицинскиеПротивопоказания</content>
+  <content>Catalog.ВредныеИОпасныеПроизводственныеФакторы</content>
+  <content>Document.ИнструктажСотрудников</content>
+  <content>Catalog.ПрограммыИнструктажей</content>
+  <content>Catalog.Инструктажи</content>
+  <content>Catalog.ВопросыДляТестов</content>
+  <content>Catalog.Тесты</content>
+  <content>Catalog.Ответы</content>
+  <content>Report.ЖурналПроведенныхИнструктажей</content>
+  <content>CommonCommand.ПанельОтчетовОТиТБ</content>
+  <content>Report.ГрафикПрохожденияИнструктажей</content>
+  <content>Report.ПроведенныеПроверкиЗнаний</content>
+  <content>Report.ИсполнениеПриказовНаПроведениеПроверкиЗнаний</content>
+  <content>CommonCommand.ДополнительныеОбработкиОТиТБ</content>
+  <content>InformationRegister.ВредныеИОпасныеФакторыИРаботыНаРабочихМестах</content>
+  <content>InformationRegister.ПриказыНаПроведениеМедицинскихОсмотров</content>
+  <content>InformationRegister.МедицинскиеОсмотрыСотрудников</content>
+  <content>Report.ГрафикПрохожденияМедицинскихОсмотров</content>
+  <content>Report.СпециальнаяОценкаРабочихМест</content>
+  <content>Report.ПрохождениеМедосмотров</content>
+  <subsystems>Инструктажи</subsystems>
+  <subsystems>ПроверкаЗнаний</subsystems>
+  <subsystems>СпециальнаяОценкаРабочихМест</subsystems>
+  <subsystems>МедицинскиеОсмотры</subsystems>
+</mdclass:Subsystem>

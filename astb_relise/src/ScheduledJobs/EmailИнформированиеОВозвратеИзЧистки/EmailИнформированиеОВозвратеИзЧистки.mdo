@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c64ba70a-0a76-4b72-abe3-18411de10a40">
+  <name>EmailИнформированиеОВозвратеИзЧистки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информирование о возврате из чистки по e-mail</value>
+  </synonym>
+  <methodName>CommonModule.ПроцедурыРаботыСНормамиСервер.EmailИнформированиеОВозвратеИзЧистки</methodName>
+  <description>Информирование о возврате из чистки по e-mail</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

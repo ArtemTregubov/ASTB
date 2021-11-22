@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bc79b5a-aed7-4ea9-921d-6d8cf3b46740">
+  <name>ОбеспечениеСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обеспечение сотрудников</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОбеспечение</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаОбеспечение</content>
+  <content>CommonCommand.ПанельОтчетовОбеспечениеСотрудников</content>
+  <content>Report.ГрафикОбеспеченияСИЗ</content>
+  <content>Report.ОтчетОСписанииСИЗсСотрудников</content>
+  <content>Report.ОтчетПоНормамПоШР</content>
+  <content>Report.ПотребностьВыдачиСИЗ</content>
+  <content>CommonCommand.ДополнительныеОбработкиОбеспечениеСотрудников</content>
+  <content>Report.РаспределениеСотрудниковПоСкладамВыдачи</content>
+  <content>Report.ГрафикОбеспеченияСИЗПоСкладам</content>
+  <content>Report.ОбеспеченностьПредприятия</content>
+  <content>Report.УточненныеПричиныСписания</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.ПроцентнаяОбеспеченность</content>
+  <content>Report.Обеспечение</content>
+  <content>Report.ОбеспеченностьПоВсейПотребности</content>
+  <content>Report.ОбеспеченностьПоПерсональнойПотребности</content>
+  <content>Report.ОбеспеченностьПоКоллективнойПотребности</content>
+  <content>Report.ОценкиСервисногоОбслуживания</content>
+  <content>DataProcessor.ИсправлениеДанныхПоПотребности</content>
+  <content>Report.ОтчетПоОбеспеченности</content>
+  <content>Report.ПодсчетРасходаСИЗБудущегоПериода</content>
+  <content>Report.ГрафикОбеспеченияСИЗсНоменклатуройВыдачи</content>
+  <subsystems>ВозвратИСписание</subsystems>
+  <subsystems>УсловияРаботы</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

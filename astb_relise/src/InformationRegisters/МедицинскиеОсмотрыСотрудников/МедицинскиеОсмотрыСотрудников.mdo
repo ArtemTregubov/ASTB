@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c162fef-eaee-4aef-a6e9-b30e9759d25e">
+  <producedTypes>
+    <selectionType typeId="dd3b50bc-f71d-4687-b197-f11731f7c67b" valueTypeId="d333d7af-5b08-4e58-87a5-df35a715e67d"/>
+    <listType typeId="28f1539e-dfee-4c83-b381-018a41e1dc5e" valueTypeId="e1723a8c-2193-475e-b43d-d6a173ddd26d"/>
+    <managerType typeId="9528eea1-5b5b-4d26-b400-a745abcab2ed" valueTypeId="ea4b3711-7f05-4b95-bbfb-ac3e7a08de1f"/>
+    <recordSetType typeId="490d0fdc-b231-45c0-b4cc-58c7f65e8729" valueTypeId="5c43cf80-7740-4034-b4a3-b242900e1297"/>
+    <recordKeyType typeId="6b6e0116-a6a7-42df-8eca-8ee36ced40db" valueTypeId="6e5148f8-6b1a-4d3c-ae03-5f5534d665d9"/>
+    <recordType typeId="802e3145-2dd7-4fa7-b7ec-5a3023d9e36c" valueTypeId="b67ea420-c6f2-45ca-a381-9cd8d9695fd3"/>
+    <recordManagerType typeId="d0cbdc0f-40bb-41bc-9473-8fcddd0e4747" valueTypeId="af7682d7-b8cf-495d-a5af-0917fa65a6b6"/>
+  </producedTypes>
+  <name>МедицинскиеОсмотрыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Медицинские осмотры сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.МедицинскиеОсмотрыСотрудников.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5ababa90-f3c4-44f6-b579-5598bf0dfc51">
+    <name>Противопоказания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Противопоказания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8f7daf6f-22c7-41ab-8385-127765a76e3b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1baa0ea1-ad58-41b2-bf3d-d5a52812272f">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.МедицинскиеОсмотрыСотрудников.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7ac52a2e-568d-4a9a-b080-e2c4c117a01d">
+    <name>МедицинскаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медицинская организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b3c931c9-49cf-41d6-b88a-4b73ce0f85f1">
+    <name>ВидМедосмотра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид медосмотра</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыМедосмотров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3e6177f0-713d-463a-9c6f-6112b62fcd36">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.НаправлениеНаМедицинскийОсмотр</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.МедицинскиеОсмотрыСотрудников.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1c207b76-e431-448e-8a0e-0d8d79df2456">
+    <name>ФакторРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фактор работа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВредныеИОпасныеПроизводственныеФакторы</types>
+      <types>CatalogRef.ВредныеИОпасныеПроизводственныеРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="58958c45-7064-400a-9b1c-47c9941ab21c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

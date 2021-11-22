@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02350ef6-5605-4bd3-96b3-9221d11ee8f1">
+  <producedTypes>
+    <objectType typeId="9a1881f6-2e4c-4a96-85e3-b9925ff2aa45" valueTypeId="262dcd90-c97d-471d-a293-3d69cb179028"/>
+    <managerType typeId="296aaa24-396c-4fef-b060-bb61eed2c3f3" valueTypeId="49d06726-428f-431c-8595-2cb3a1de942f"/>
+  </producedTypes>
+  <name>СредстваЗащитыСотрудникаНаХранении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средства защиты сотрудника на хранении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СредстваЗащитыСотрудникаНаХранении.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3607c4c0-3083-4026-b911-66e34b9b509f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="01598210-a5dd-44f2-8ec5-b91c2f92707e">
+    <name>СредстваЗащитыНаХранении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средства защиты на хранении</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

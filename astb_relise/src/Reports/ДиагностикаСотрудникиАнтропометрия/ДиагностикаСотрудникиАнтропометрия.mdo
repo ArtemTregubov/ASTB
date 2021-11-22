@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ef61662-5672-4ccd-ac4c-d3288d0e41a9">
+  <producedTypes>
+    <objectType typeId="bf75c235-8f3c-4990-9ab1-3617ac80088d" valueTypeId="9bcbc42f-6efd-4270-8886-38dca43eb0b2"/>
+    <managerType typeId="f1ced5a1-84a4-4e59-a331-3656fd086008" valueTypeId="782722d2-95e2-45ad-a695-bc9b0abfefc6"/>
+  </producedTypes>
+  <name>ДиагностикаСотрудникиАнтропометрия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сотрудники (антропометрия)</value>
+  </synonym>
+  <comment>Сотрудники (заполнение антропометрии)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСотрудникиАнтропометрия.Template.СотрудникиАнтропометрия</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сотрудники (заполнение антропометрии)</value>
+  </explanation>
+  <templates uuid="8e2a2de6-7489-4c80-8d00-d5e78136594c">
+    <name>СотрудникиАнтропометрия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники (антропометрия)</value>
+    </synonym>
+    <comment>Сотрудники (заполнение антропометрии). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

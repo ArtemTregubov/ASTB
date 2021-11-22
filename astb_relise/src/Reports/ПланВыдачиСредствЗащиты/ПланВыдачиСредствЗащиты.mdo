@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a450458c-c221-482e-9fa5-d30c0b3d158e">
+  <producedTypes>
+    <objectType typeId="2de1ae4f-40e9-4aea-98ed-b61ea0703a38" valueTypeId="3285582e-dc8c-41fb-b168-499cf615b43e"/>
+    <managerType typeId="361a9674-4167-4205-aebc-909bbc63e1c3" valueTypeId="a62d52b6-021c-4bc1-9a84-fa307d623719"/>
+  </producedTypes>
+  <name>ПланВыдачиСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>План выдачи средств защиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПланВыдачиСредствЗащиты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="d661dd6b-2714-43e0-95e3-5ccb5e22bb61">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

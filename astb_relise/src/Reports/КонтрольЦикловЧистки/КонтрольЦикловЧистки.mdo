@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18eeaa30-72c6-4351-a56e-e07826c42c50">
+  <producedTypes>
+    <objectType typeId="ad78842d-b7a6-43c8-8b37-43f0966fd821" valueTypeId="6801bd89-f7bf-468c-aaa3-1e7bf77c0b3d"/>
+    <managerType typeId="c04db212-cc05-43c4-9075-ec39f0ba5883" valueTypeId="c3461827-1ffb-474b-b4f2-b7e3d171f56d"/>
+  </producedTypes>
+  <name>КонтрольЦикловЧистки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль циклов чистки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.КонтрольЦикловЧистки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="7d433ed3-14d6-4dd4-b651-e19fc5d0bdf0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

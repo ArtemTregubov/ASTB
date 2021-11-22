@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ef82c16-f3fd-4d91-b3f3-316555c911ff">
+  <producedTypes>
+    <objectType typeId="2084ece2-ef8b-4253-b300-1187f82bcc4b" valueTypeId="d5eb0d97-14fa-4270-9def-b33d314c16fb"/>
+    <managerType typeId="181fbb57-68c6-464a-ac4b-935965d82310" valueTypeId="acdee4e5-bf83-4116-9776-79ceb56ded85"/>
+  </producedTypes>
+  <name>ОстаткиПоВыдачеСУчетомИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки по выдаче (с % износа)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстаткиПоВыдачеСУчетомИзноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f1e9f11a-30ec-4328-898e-90dc2d5a0991">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="e760f84e-23dd-40e6-a0c6-f205d74a4d03">
+    <name>ОстаткиПоВыдачеСИзносом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки по выдаче (с % износа)</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Организации</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

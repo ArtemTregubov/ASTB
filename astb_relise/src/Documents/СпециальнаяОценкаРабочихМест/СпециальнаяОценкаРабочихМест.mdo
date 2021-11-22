@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75f7cf4b-c75c-4cb9-846b-3a30d9a7c54a">
+  <producedTypes>
+    <objectType typeId="aea7a0b5-1da5-404b-9312-16952aa48f03" valueTypeId="0f7f9552-058a-4f9e-a672-d65d75279e28"/>
+    <refType typeId="94f86625-9988-4b9f-b580-49edddbdc827" valueTypeId="c183423e-3fc0-4351-b020-26431b739d4d"/>
+    <selectionType typeId="800582d3-4353-4f70-be2f-83a2b3d7b17a" valueTypeId="ee8467ee-be24-40a0-967a-3c97203694f7"/>
+    <listType typeId="a78519e9-19e3-4b30-bfa1-c148822a6cf8" valueTypeId="f9b82eff-1a76-41ed-bc01-0044bdb56e5f"/>
+    <managerType typeId="49f49db5-9262-4bd1-85bd-720570af4d1a" valueTypeId="b253b647-249f-4685-b2d6-642ecda92a9c"/>
+  </producedTypes>
+  <name>СпециальнаяОценкаРабочихМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Специальная оценка рабочих мест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СпециальнаяОценкаРабочихМест.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_СпециальнаяОценкаРабочихМест</value>
+    </typesFilterValue>
+    <characteristicValues>Document.СпециальнаяОценкаРабочихМест.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Document.СпециальнаяОценкаРабочихМест.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Document.СпециальнаяОценкаРабочихМест.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Document.СпециальнаяОценкаРабочихМест.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_СпециальнаяОценкаРабочихМест</value>
+    </typesFilterValue>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>12</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СпециальнаяОценкаРабочихМест.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СпециальнаяОценкаРабочихМест.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.СпециальнаяОценкаРабочихМест.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecords>InformationRegister.ВредныеИОпасныеФакторыИРаботыНаРабочихМестах</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="894140f9-6e33-4f73-b888-096e2ad842de">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c5119aca-45de-4d13-87be-77aa15727379">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ee99b59-a13c-4517-a23f-beb973a23320">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2ec3727-4554-421b-a0c4-c3b6cc47e8ee">
+    <name>СоздательДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создатель документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fce4ff9f-907c-45c4-a90b-2b457326e05f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="261ac65d-1830-48a1-958a-5acccb073c1a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3aecbb4b-97b2-4bcf-92a0-a08aad3dbb57">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7f9e646c-fe46-4efe-bb6e-b63113346234">
+    <producedTypes>
+      <objectType typeId="c8c94227-b26a-4a67-971a-7170893d2aad" valueTypeId="815676f1-3385-46d0-a2b3-47cef3bee3cc"/>
+      <rowType typeId="9f9ccee0-e761-4f4d-8965-35a62b330bf5" valueTypeId="fe39c617-0c27-4f22-be1e-2b078719f8d3"/>
+    </producedTypes>
+    <name>РабочиеМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочие места</value>
+    </synonym>
+    <attributes uuid="f657b9ee-abb1-487f-b175-fa67e27b6aa8">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СпециальнаяОценкаРабочихМест.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f042cd50-46cc-4787-a9dc-e522fa805c16">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДолжностиИПрофессии</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aed7e8e0-6b5e-4dba-af93-67cf945404a4">
+      <name>РабочееМесто</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рабочее место</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РабочиеМестаАСТБ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СпециальнаяОценкаРабочихМест.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="629f5aed-9e4a-4f06-8ee8-6a6660412360">
+    <producedTypes>
+      <objectType typeId="370550f5-cf68-48d2-b61b-b5b8e65a6c16" valueTypeId="31a67df7-66c6-40d4-a652-961917547548"/>
+      <rowType typeId="2aa22ba3-a061-4e4b-b392-1fb1379181de" valueTypeId="1c07f5ee-bf13-4609-942f-cd4298268b37"/>
+    </producedTypes>
+    <name>ВредныеИОпасныеПроизводственныеФакторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные и опасные производственные факторы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="558c99a1-3ae9-4d0b-acdd-0699de29a2cb">
+      <name>Фактор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Фактор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВредныеИОпасныеПроизводственныеФакторы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="900b13f9-7875-4dc4-a0cd-c5bf00d81d39">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="56d6d9de-5380-4564-9d1d-05c404ccfde5">
+    <producedTypes>
+      <objectType typeId="09baaf67-00d9-4aaa-a451-22d6bf9582e3" valueTypeId="426be3c0-d784-4127-87b1-e391c91be61f"/>
+      <rowType typeId="5ff0ab4d-099c-47d1-a11c-46419f305fd1" valueTypeId="9d6cd6c1-2512-4649-a161-d918bfd2d2a9"/>
+    </producedTypes>
+    <name>ВредныеИОпасныеПроизводственныеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вредные и опасные производственные работы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="98e46aeb-8d6d-45c0-9b10-11a2b38d4a48">
+      <name>Работа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Работа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВредныеИОпасныеПроизводственныеРаботы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0ab6cfd2-adae-4356-91b6-eabbfbc0e4f7">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="53d0c3b2-a5c2-475e-a40a-857bfd6e2746">
+    <producedTypes>
+      <objectType typeId="ca95bc47-3057-4d54-aec9-a85fb4f9e9ec" valueTypeId="a18d5992-b8dc-433a-b0ce-8c311377bf41"/>
+      <rowType typeId="d55db2fe-b950-42a6-bfe3-7ed0f99147f8" valueTypeId="1f6f5481-936c-4bec-b30a-6c44fd1bec77"/>
+    </producedTypes>
+    <name>Врачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Врачи</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="015b7d36-e40d-44ac-a547-2c76df26f718">
+      <name>Врач</name>
+      <synonym>
+        <key>ru</key>
+        <value>Врач</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Врачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b8da0d3c-71e7-43cd-ba5a-1931cddf32db">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d4c04610-1b46-448e-96e0-fd476d3281ef">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="bd6caf77-85fc-4e75-abda-f86ba80bfb73">
+    <producedTypes>
+      <objectType typeId="5d58f6d8-5929-4fce-afdb-a2fec92a487d" valueTypeId="a800d481-9adf-4181-b96c-6f8744d58240"/>
+      <rowType typeId="91bcdcd6-0225-4e25-92b7-5d93e535b2f6" valueTypeId="e3446652-f651-4112-b45c-30dd6e4c1d34"/>
+    </producedTypes>
+    <name>ЛабораторныеИФункциональныеИсследования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лабораторные и функциональные исследования</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ad445643-a20a-44bf-98ea-233d1d225961">
+      <name>Исследование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исследование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЛабораторныеИФункциональныеИсследования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="489f8bbb-bdb5-4a22-b40c-f6e7d0906840">
+      <name>ПоРекомендации</name>
+      <synonym>
+        <key>ru</key>
+        <value>По рекомендации</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e97468e4-d430-4b56-b8dc-c2bab95d4677">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5d350ed4-7b9c-4513-9e9b-41b888503708">
+    <producedTypes>
+      <objectType typeId="6afc38dd-d8aa-4e6e-9d27-bf37d60e8b62" valueTypeId="ad42d00a-997d-46dc-832f-4b354ff282d2"/>
+      <rowType typeId="d5b52111-5415-45af-960c-6464b19452db" valueTypeId="10a0bc6c-32a4-4b03-96d1-8bdcf4874a54"/>
+    </producedTypes>
+    <name>ДополнительныеМедицинскиеПротивопоказания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные медицинские противопоказания</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0c436e3a-aac6-4597-82bf-90733766274b">
+      <name>Противопоказание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Противопоказание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДополнительныеМедицинскиеПротивопоказания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="0134a0fa-be3c-43f6-b741-5d8c23d1c545">
+    <producedTypes>
+      <objectType typeId="b1be3181-f7ec-48bc-a184-1280d55bcf02" valueTypeId="aefa4c2f-23f5-4e93-ae89-045b04d2e98d"/>
+      <rowType typeId="4dc214af-4efb-47f4-95c8-26e3b830f474" valueTypeId="0152b0ec-d5d9-47c4-abe3-f1fe1541ba2f"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="38515851-ec6c-43c7-bb8a-9f753fbfdb54">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c483f1f2-17f5-4c32-97ec-16dc4d2cf5f3">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СпециальнаяОценкаРабочихМест.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="56f01b81-2f60-4916-b0d8-7505b4070a6f">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

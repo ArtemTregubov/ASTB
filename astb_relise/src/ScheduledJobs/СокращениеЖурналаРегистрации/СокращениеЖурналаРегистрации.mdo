@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00815406-9408-42d6-9564-6ae3958b5820">
+  <name>СокращениеЖурналаРегистрации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сокращение журнала регистрации</value>
+  </synonym>
+  <methodName>CommonModule.ОбщегоНазначенияПереопределяемый.ВыполнитьСокращениеЖурналаРегистрации</methodName>
+  <description>Сокращение журнала регистрации</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cfc097a-963e-4d02-b9a1-663a58e5ed51">
+  <producedTypes>
+    <objectType typeId="e7f58cef-7962-4772-bafa-df510d623d71" valueTypeId="ee624b6a-f3af-431e-b5c6-fc4bebad29c9"/>
+    <managerType typeId="69992d2f-f433-4705-b5f4-b778f6148bf7" valueTypeId="a30741b2-0a7f-4f80-808d-3bbe719e3ca1"/>
+  </producedTypes>
+  <name>ДиагностикаПотребность_ЗРМ_ДУР_УН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: потребность-ЗРМ-ДУР-УН</value>
+  </synonym>
+  <comment>Соответствие потребности, занятых рабочих мест, действующих условий работы и установленных норм</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПотребность_ЗРМ_ДУР_УН.Template.Потребность_ЗРМ_ДУР_УН</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствие потребности, занятых рабочих мест, действующих условий работы и установленных норм</value>
+  </explanation>
+  <templates uuid="9feef7be-2615-4df3-b0ce-9a1bdf36bb3c">
+    <name>Потребность_ЗРМ_ДУР_УН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребность &lt;-> ЗРМ &lt;-> ДУР &lt;-> УН</value>
+    </synonym>
+    <comment>Соответствие потребности, занятых рабочих мест, действующих условий работы и установленных норм</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

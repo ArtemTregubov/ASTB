@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cea2352c-777f-40c9-95bb-8d09b90de089">
+  <name>ПодключаемоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключаемое оборудование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Подсистема механизма внешнего оборудования</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодключаемоеОборудованиеСканерШтрихкода32</picture>
+  </picture>
+  <content>CommonModule.ПодключаемоеОборудование1ССканерыШтрихкодаКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеАтолСканерыШтрихкодаКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеАтолТерминалыСбораДанныхКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеСканкодСканерыШтрихкодаКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеСканкодТерминалыСбораДанныхКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеСканситиТерминалыСбораДанныхКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеУниверсальныйДрайверКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеШтрихМТерминалыСбораДанныхКлиент</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеСканерШтрихкода16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеСканерШтрихкода32</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеТерминалСбораДанных16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеТерминалСбораДанных32</content>
+  <content>InformationRegister.ПодключаемоеОборудованиеПоРабочимМестам</content>
+  <content>Catalog.РабочиеМеста</content>
+  <content>Catalog.ПодключаемоеОборудование</content>
+  <content>SessionParameter.РабочееМестоКлиента</content>
+  <content>Role.РаботаСТорговымОборудованием</content>
+  <content>DataProcessor.ТестированиеПодключаемогоОборудования</content>
+  <subsystems>СканерыШтрихкода</subsystems>
+  <subsystems>СчитывателиМагнитныхКарт</subsystems>
+  <subsystems>ТерминалыСбораДанных</subsystems>
+  <subsystems>СчитывателиRFID</subsystems>
+  <subsystems>ПринтерыЭтикеток</subsystems>
+</mdclass:Subsystem>

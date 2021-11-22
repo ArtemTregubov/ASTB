@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b21d7fb-d288-481a-ad8a-bfa92ca7553e">
+  <producedTypes>
+    <managerType typeId="272420d9-4807-4fa1-b3de-fa1f42309f63" valueTypeId="4b782cec-4abf-4435-8bb1-5074f922ccf2"/>
+    <valueManagerType typeId="2a0ae5f1-033f-4cdb-88bd-241199a3262f" valueTypeId="b9c0c41f-7920-4c4e-b457-d3c71b10e53a"/>
+    <valueKeyType typeId="ca819ee5-ffe3-4236-8174-0ab96f509cda" valueTypeId="25ff2912-75c0-4725-b862-9faecf90374a"/>
+  </producedTypes>
+  <name>АХ_ПарольВнешнегоПользователя</name>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

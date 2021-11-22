@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82833d48-e2d3-48f5-af0f-d72de55207a6">
+  <producedTypes>
+    <objectType typeId="6b9d971a-84cc-4b9a-b1d4-fa94f9138f2f" valueTypeId="56a15c4d-eb7f-4a3e-b349-ef02e22cfdb4"/>
+    <managerType typeId="c9473e67-e36f-455d-9c19-0ef827394ebf" valueTypeId="454b3ba1-7751-4115-8d74-f7a58346e02b"/>
+  </producedTypes>
+  <name>ДиагностикаДолжностиИПрофессииДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: должности и профессии (дубли)</value>
+  </synonym>
+  <comment>Должности и профессии (дубли по наименованию и кодам синхронзации).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаДолжностиИПрофессииДубли.Template.ДолжностиИПрофессииДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Должности и профессии (дубли по наименованию и кодам синхронизации).</value>
+  </explanation>
+  <templates uuid="46e40364-d0b9-49a4-9c04-1246d8a3bb34">
+    <name>ДолжностиИПрофессииДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должности и профессии (дубли)</value>
+    </synonym>
+    <comment>Должности и профессии (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

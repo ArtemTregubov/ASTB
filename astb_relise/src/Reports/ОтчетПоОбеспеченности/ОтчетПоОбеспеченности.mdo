@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29750218-57be-46f4-99e1-6a2829670351">
+  <producedTypes>
+    <objectType typeId="8a467a2b-951b-46f0-93a1-270541db1fa2" valueTypeId="5124c83a-fb9f-457c-92fa-bd2f3bd78a9d"/>
+    <managerType typeId="6131088a-089e-4d50-8ea9-f12fee669748" valueTypeId="88834693-fcf6-496c-8ce1-7a4bd5be8613"/>
+  </producedTypes>
+  <name>ОтчетПоОбеспеченности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по обеспеченности</value>
+  </synonym>
+  <comment>//+++АСТБ_Горюшин_Алексей_40502</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоОбеспеченности.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоОбеспеченности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="26efbada-caa2-4ec6-993e-3a8238e11612">
+    <name>НПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>За период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f2f39c5b-2ae9-40bb-a35a-bae35144fa60">
+    <name>Нподразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделения</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="51558929-442f-4e4c-9343-b404ad2b2098">
+    <name>НСотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59f50af1-c5eb-44bb-9315-dd5e86b91d30">
+    <name>НоменклатураНормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура нормы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураНормОрганизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1ec5b25a-1885-4c75-8103-4aaa4123da27">
+    <name>НоменклатураВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c0ce6cc-cc48-4530-a018-329e8cc52548">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="463ceaa7-537c-484e-9829-809f5a4ae5d4">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4cdefdc3-8c05-462f-be19-aa8e97bbe221">
+    <name>ФормаВыбораДереваПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора дерева подразделений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8e6fde26-56e2-437f-8d38-7199862eff1e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

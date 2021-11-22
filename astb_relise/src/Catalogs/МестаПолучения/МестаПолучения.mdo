@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50baaf13-80d0-40be-a40c-456981f11e96">
+  <producedTypes>
+    <objectType typeId="c705273e-e01e-4f6f-8680-4203ef750015" valueTypeId="4a9ffa14-2844-4653-9d13-65602b7c9860"/>
+    <refType typeId="7d50c2b6-b812-47d3-baa9-08596c837cd9" valueTypeId="a74b7d6a-f211-4489-ad88-963dd0b5a568"/>
+    <selectionType typeId="c4a38be1-cf40-452b-a91e-a82084cb7558" valueTypeId="106bab03-b410-43d4-8726-210cd614a19a"/>
+    <listType typeId="2c68a4dc-0720-4f7f-9ba5-e588fd4bf3bb" valueTypeId="4ffd8287-ea5c-4475-b301-9a85edc92ec7"/>
+    <managerType typeId="edf759c9-311a-4547-90c9-c86bd4a7a84b" valueTypeId="529390ab-c535-4f87-8554-a914299f2202"/>
+  </producedTypes>
+  <name>МестаПолучения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места получения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МестаПолучения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МестаПолучения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МестаПолучения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.МестаПолучения.Form.ФормаСписка</defaultListForm>
+  <forms uuid="bf404998-e075-4ddf-8bef-7495943d0b45">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="207a5a29-be4f-44d3-b33d-f71bf206f934">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

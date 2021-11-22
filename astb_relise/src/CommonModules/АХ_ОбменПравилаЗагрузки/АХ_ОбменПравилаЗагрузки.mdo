@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1df2c59-9436-49e8-ade1-c1120c497e25">
+  <name>АХ_ОбменПравилаЗагрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>А х обмен правила загрузки</value>
+  </synonym>
+  <server>true</server>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

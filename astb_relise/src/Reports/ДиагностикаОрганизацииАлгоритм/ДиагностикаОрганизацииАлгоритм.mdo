@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89843e7b-3386-4a39-9e9d-6b8693fb325b">
+  <producedTypes>
+    <objectType typeId="ccb60e06-122e-46e0-a123-a42ff5ef8eba" valueTypeId="126c8acf-53b4-44e1-b448-2866cf252fb9"/>
+    <managerType typeId="5927ffc2-cca7-483e-b2df-0d945d312eac" valueTypeId="8cc3f321-5585-4c91-9d01-90ec13084f47"/>
+  </producedTypes>
+  <name>ДиагностикаОрганизацииАлгоритм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: организации (алгоритм)</value>
+  </synonym>
+  <comment>Выбор алгоритма формирования потребности</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаОрганизацииАлгоритм.Template.ОрганизацииАлгоритм</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Выбор алгоритма формирования потребности</value>
+  </explanation>
+  <templates uuid="d0a67921-4d5a-47a0-be32-3f571b3606d4">
+    <name>ОрганизацииАлгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организации (алгоритм)</value>
+    </synonym>
+    <comment>Выбор алгоритма формирования потребности</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

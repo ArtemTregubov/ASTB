@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link></head><body>
+<div>Для запуска аппаратов VendigBox:</div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>1.<span class="Apple-tab-span" style="white-space:pre">	</span>Создаем папку «astb_****» на vendbox (\\astb-websrv) </div></blockquote>
+<div>Для получения доступа к ftp, обратитесь к IT ЦО</div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>2.<span class="Apple-tab-span" style="white-space:pre">	</span>Внутри создаем папки «<b>VB_nsi</b>», «<b>VB_pictures</b>», «<b>VB_nsi_arhiv</b>»</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>3.<span class="Apple-tab-span" style="white-space:pre">	</span>В номенклатурах, выдача которых планируется через аппарат, проставляем признак «автоматизированная выдача», добавляем в номенклатуру картинку 600x600 пикселей, на белом фоне</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>4.<span class="Apple-tab-span" style="white-space:pre">	</span>При помощи плана обмена «Вендинг Вох» выгружаем в папки соответствующую информацию (NSI – таблица номенклатуры, Pictures- картинки, Archiv – тоже номенклатура)</div></blockquote>
+<div>Для этого открываем план обмена:</div>
+<div> <img alt="Венд1" src="_files/1.png"></img></div>
+<div>Нажимаем «Создать»:</div>
+<div> <img alt="Венд2" src="_files/22.png"></img></div>
+<div>Придумываем код и наименование, указываем путь к каталогам на ftp:</div>
+<div> <img alt="Венд3" src="_files/31.png"></img></div>
+<div> Сохраняем, закрываем. Выделяем созданный план обмена, нажимаем «Зарегистрировать изменения». После нажатия в информацию на выгрузку попадут все номенклатуры, которые есть в базе с признаком «автоматизированная выдача». </div>
+<div>В дальнейшем при выгрузке будут выгружаться изменения (добавленные или измененные номенклатуры).</div>
+<div><br></div>
+<div>В базе создаем склад вендингового аппарата, транзитный склад, указываем в складе вендингового аппарата склад-отправитель.</div>
+<div><br></div>
+<div>Сообщаем ведущему специалисту (уточнить у сотрудников отдела АСТБ), какую базу настраиваем, он вносит изменения в обработку «ТестСервисаАСТБ» (добавляет туда новую базу) и переопубликовывает базу. (Временное действие)</div>
+<div><br></div>
+<div>Сотрудникам <b>Vending Box</b> сообщаем код синхронизации аппарата в АСТБ:</div>
+<div><img alt="Венд4" src="_files/4.png"></img></div>
+<div> , место хранения папок на ftp и wsdl (описание веб-сервиса) этой базы.</div>
+<div>Чтобы получить wsdl:</div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>1. Открываем отредактированную обработку, нажимаем на … «Текущая база».</div></blockquote>
+<div> <img alt="Венд6" src="_files/6.png"></img></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>2. Копируем адрес интересующей базы.</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>3. Вводим этот адрес в браузере</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>4. Вводим админский логин пароль</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>5. Откроется страница с xml – текстом</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<div>6. Нажимаем правой клавишей, сохраняем в xml-документ</div></blockquote>
+<div><br></div>
+<div><br></div>
+
+
+</body></html>

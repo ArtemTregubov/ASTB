@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.ИнвентаризацияНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.ОприходованиеНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.СписаниеНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.КомплектацияНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.ПеремещениеНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.ПоступлениеНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Document.ВозвратНоменклатурыПоставщику.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

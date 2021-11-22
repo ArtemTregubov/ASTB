@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b446a88-8687-425d-8dcc-60053d2bc147">
+  <producedTypes>
+    <objectType typeId="90852ccb-ecb7-4c9b-929b-ef0b189284aa" valueTypeId="a2252cb5-365a-47e3-a383-50893526d490"/>
+    <refType typeId="abd259b7-4144-4f87-b1a0-77fac4def02c" valueTypeId="bdbbf993-9481-40ab-bca1-5a18f3c4b5d3"/>
+    <selectionType typeId="da59cc3d-7742-45e7-b22c-c74fe89c9356" valueTypeId="546445bf-0fb0-4d00-b0e3-62eee1449ec4"/>
+    <listType typeId="2982c401-d6ff-49ea-894e-9f86a7d61eda" valueTypeId="dee207c8-f593-40b5-b499-4132ca644f94"/>
+    <managerType typeId="60bdc929-bb29-499c-9c6e-4adb6a143b42" valueTypeId="d735bc0b-91f9-4d93-84b7-7ff996632e0d"/>
+  </producedTypes>
+  <name>Ответы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Ответы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Ответы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ответ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ответы</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Ответы на вопросы тестирования</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Ответы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.Ответы.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.Ответы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Ответы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="78892e30-2804-4413-abbe-47013924172f">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="15cb6bfb-cf55-4772-a461-0a89ef60e072">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8900e64d-a764-4de9-9d4a-df36e2433b70">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05c68d6c-5ea4-428e-b0f7-9f4f06d270d4">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7c233bd2-325c-4361-81bf-a3ba17691390">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

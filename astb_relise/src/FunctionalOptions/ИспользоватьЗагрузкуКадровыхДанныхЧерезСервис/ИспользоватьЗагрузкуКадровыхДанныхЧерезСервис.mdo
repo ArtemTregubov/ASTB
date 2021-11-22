@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af97330a-c601-4aba-868a-b79dbd26781f">
+  <name>ИспользоватьЗагрузкуКадровыхДанныхЧерезСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать загрузку кадровых данных через сервис</value>
+  </synonym>
+  <location>Constant.ИспользоватьЗагрузкуКадровыхДанныхЧерезСервис</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.ПараметрыЗагрузкиКадровыхДанных</content>
+  <content>InformationRegister.ИсторияЗагрузкиКадровыхДанных</content>
+</mdclass:FunctionalOption>

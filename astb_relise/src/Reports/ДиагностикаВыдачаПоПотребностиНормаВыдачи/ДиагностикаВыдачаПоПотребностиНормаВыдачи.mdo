@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5959d73-61a7-4a67-bbd1-a97edc401256">
+  <producedTypes>
+    <objectType typeId="09409d94-524d-465b-8457-9e4608df22ee" valueTypeId="9c0de2be-4341-4d28-bcad-3b393620ec70"/>
+    <managerType typeId="52368e86-2065-427c-8e19-8bcdcdb1f528" valueTypeId="fa01c52e-9377-407b-be01-2549945fc6de"/>
+  </producedTypes>
+  <name>ДиагностикаВыдачаПоПотребностиНормаВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: выдача по потребности-норма выдачи</value>
+  </synonym>
+  <comment>Соответствие остатка выдачи по потребности и количества по норме выдачи</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаВыдачаПоПотребностиНормаВыдачи.Template.ВыдачаПоПотребностиНормаВыдачи</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствие остатка выдачи по потребности и количества по норме выдачи</value>
+  </explanation>
+  <templates uuid="8f9d3552-d60b-426a-a700-bc88d9075abb">
+    <name>ВыдачаПоПотребностиНормаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдача по потребности &lt;-> Норма выдачи</value>
+    </synonym>
+    <comment>Соответствие остатка выдачи по потребности и количества по норме выдачи</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

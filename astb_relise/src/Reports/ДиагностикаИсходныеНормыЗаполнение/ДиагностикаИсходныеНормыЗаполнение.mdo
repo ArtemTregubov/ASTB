@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35ee42da-1ea2-4656-b748-20aa3095e400">
+  <producedTypes>
+    <objectType typeId="1d7be1a3-3559-4281-a269-c219e57df782" valueTypeId="9569fcca-dcd8-44ba-9adc-b19c822c2e52"/>
+    <managerType typeId="fc418c44-7ca2-480a-921f-2add832f965b" valueTypeId="24a552d3-8e74-4481-9a75-e32ed840fe44"/>
+  </producedTypes>
+  <name>ДиагностикаИсходныеНормыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: исходные нормы (заполнение)</value>
+  </synonym>
+  <comment>Заполнение исходных норм согласно штатному расписанию</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаИсходныеНормыЗаполнение.Template.ИсходныеНормыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение исходных норм согласно штатному расписанию</value>
+  </explanation>
+  <templates uuid="bf2eb506-9d65-490d-b088-b6263e5729cf">
+    <name>ИсходныеНормыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходные нормы (заполнение)</value>
+    </synonym>
+    <comment>Заполнение исходных норм согласно штатному расписанию. Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

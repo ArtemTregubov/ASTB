@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetObject">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Сотрудники</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНормы</dataPath>
+			<field>НоменклатураНормы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура нормы</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НоменклатураНормОрганизации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Подразделения</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ДолжностиИПрофессии</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидВыдачи</dataPath>
+			<field>ВидВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид выдачи</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.ВидыВыдачиСИЗ</v8:Type>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ТаблицаНеМожетБытьПодобрано</objectName>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Маппинг</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловиеДолжность</dataPath>
+			<field>УсловиеДолжность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие должность</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНормыОрганизации</dataPath>
+			<field>НоменклатураНормыОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловиеПодразделение</dataPath>
+			<field>УсловиеПодразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие подразделение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловиеСотрудник</dataPath>
+			<field>УсловиеСотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие сотрудник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приоритет</dataPath>
+			<field>Приоритет</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопИнформация</dataPath>
+			<field>ДопИнформация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп информация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Номенклатура.Ссылка КАК Ссылка,
+	Номенклатура.Код КАК Код,
+	Номенклатура.Артикул КАК Артикул,
+	Номенклатура.КодСинхронизации КАК КодСинхронизации
+ПОМЕСТИТЬ ВТ_Номенклатура
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+ГДЕ
+	НЕ Номенклатура.ЭтоГруппа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	НоменклатурныеНомераОрганизаций.Номенклатура КАК Номенклатура,
+	НоменклатурныеНомераОрганизаций.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	НоменклатурныеНомераОрганизаций.НоменклатурныйНомер КАК НоменклатурныйНомер,
+	НоменклатурныеНомераОрганизаций.Организация КАК Организация
+ПОМЕСТИТЬ ВТ_НоменклатурныеНомера
+ИЗ
+	РегистрСведений.НоменклатурныеНомераОрганизаций КАК НоменклатурныеНомераОрганизаций
+ГДЕ
+	(НоменклатурныеНомераОрганизаций.Организация = &amp;Организация
+			ИЛИ &amp;НеУчитыватьОстаткиПоОрганизации)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ХарактеристикиНоменклатуры.Владелец КАК Номенклатура,
+	ХарактеристикиНоменклатуры.Ссылка КАК ХарактеристикаНоменклатуры
+ПОМЕСТИТЬ ВТ_Характеристики
+ИЗ
+	Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Номенклатура.Ссылка КАК Номенклатура,
+	ЕСТЬNULL(ВТ_Характеристики.ХарактеристикаНоменклатуры, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК ХарактеристикаНоменклатуры,
+	ВТ_Номенклатура.Код КАК Код,
+	ВТ_Номенклатура.Артикул КАК Артикул,
+	ВТ_Номенклатура.КодСинхронизации КАК КодСинхронизации,
+	Организации.Ссылка КАК Организация
+ПОМЕСТИТЬ ВТ_НоменклатураИХарактеристики
+ИЗ
+	ВТ_Номенклатура КАК ВТ_Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Характеристики КАК ВТ_Характеристики
+		ПО ВТ_Номенклатура.Ссылка = ВТ_Характеристики.Номенклатура,
+	Справочник.Организации КАК Организации
+ГДЕ
+	(Организации.Ссылка = &amp;Организация
+			ИЛИ &amp;НеУчитыватьОстаткиПоОрганизации)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_НоменклатураИХарактеристики.Номенклатура КАК Номенклатура,
+	МАКСИМУМ(ВЫБОР
+			КОГДА &amp;ВидДополнительнойИнформацииПоНоменклатуре = ЗНАЧЕНИЕ(Перечисление.ВидДополнительнойИнформацииПоНоменклатуре.Артикул)
+				ТОГДА ВТ_НоменклатураИХарактеристики.Артикул
+			КОГДА &amp;ВидДополнительнойИнформацииПоНоменклатуре = ЗНАЧЕНИЕ(Перечисление.ВидДополнительнойИнформацииПоНоменклатуре.Код)
+				ТОГДА ВТ_НоменклатураИХарактеристики.Код
+			КОГДА &amp;ВидДополнительнойИнформацииПоНоменклатуре = ЗНАЧЕНИЕ(Перечисление.ВидДополнительнойИнформацииПоНоменклатуре.КодСинхронизации)
+				ТОГДА ВТ_НоменклатураИХарактеристики.КодСинхронизации
+			КОГДА &amp;ВидДополнительнойИнформацииПоНоменклатуре = ЗНАЧЕНИЕ(Перечисление.ВидДополнительнойИнформацииПоНоменклатуре.НоменклатурныйНомерОрганизации)
+				ТОГДА ЕСТЬNULL(ВТ_НоменклатурныеНомера.НоменклатурныйНомер, "")
+			ИНАЧЕ ""
+		КОНЕЦ) КАК ДопИнформация,
+	ВТ_НоменклатураИХарактеристики.Организация КАК Организация
+ПОМЕСТИТЬ ВТ_ДопИнфо
+ИЗ
+	ВТ_НоменклатураИХарактеристики КАК ВТ_НоменклатураИХарактеристики
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_НоменклатурныеНомера КАК ВТ_НоменклатурныеНомера
+		ПО ВТ_НоменклатураИХарактеристики.Номенклатура = ВТ_НоменклатурныеНомера.Номенклатура
+			И ВТ_НоменклатураИХарактеристики.ХарактеристикаНоменклатуры = ВТ_НоменклатурныеНомера.ХарактеристикаНоменклатуры
+			И ВТ_НоменклатураИХарактеристики.Организация = ВТ_НоменклатурныеНомера.Организация
+
+СГРУППИРОВАТЬ ПО
+	ВТ_НоменклатураИХарактеристики.Номенклатура,
+	ВТ_НоменклатураИХарактеристики.Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СоответствияНоменклатурыВыдачиСрезПоследних.НоменклатураНормыОрганизации КАК НоменклатураНормыОрганизации,
+	СоответствияНоменклатурыВыдачиСрезПоследних.Номенклатура КАК Номенклатура,
+	СоответствияНоменклатурыВыдачиСрезПоследних.Сотрудник КАК УсловиеСотрудник,
+	СоответствияНоменклатурыВыдачиСрезПоследних.Подразделение КАК УсловиеПодразделение,
+	СоответствияНоменклатурыВыдачиСрезПоследних.Должность КАК УсловиеДолжность,
+	СоответствияНоменклатурыВыдачиСрезПоследних.Приоритет КАК Приоритет,
+	ВТ_ДопИнфо.ДопИнформация КАК ДопИнформация
+ИЗ
+	РегистрСведений.СоответствияНоменклатурыВыдачи.СрезПоследних(&amp;ДатаАнализа, ) КАК СоответствияНоменклатурыВыдачиСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДопИнфо КАК ВТ_ДопИнфо
+		ПО СоответствияНоменклатурыВыдачиСрезПоследних.НоменклатураНормыОрганизации.Владелец = ВТ_ДопИнфо.Организация
+			И СоответствияНоменклатурыВыдачиСрезПоследних.Номенклатура = ВТ_ДопИнфо.Номенклатура
+ГДЕ
+	СоответствияНоменклатурыВыдачиСрезПоследних.Использовать
+
+УПОРЯДОЧИТЬ ПО
+	НоменклатураНормыОрганизации,
+	Приоритет</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Антропометрия</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Рост</dataPath>
+			<field>Рост</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рост (общий)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОбуви</dataPath>
+			<field>РазмерОбуви</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер обуви</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерПерчаток</dataPath>
+			<field>РазмерПерчаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер перчаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОдежды</dataPath>
+			<field>РазмерОдежды</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер одежды</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерПротивогаза</dataPath>
+			<field>РазмерПротивогаза</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер противогаза</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерРубашки</dataPath>
+			<field>РазмерРубашки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер рубашки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерГоловногоУбора</dataPath>
+			<field>РазмерГоловногоУбора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер головного убора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОдеждыНиз</dataPath>
+			<field>РазмерОдеждыНиз</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер одежды (низ)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОдеждыВерх</dataPath>
+			<field>РазмерОдеждыВерх</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер одежды (верх)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерОдеждыЗимний</dataPath>
+			<field>РазмерОдеждыЗимний</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер одежды (зимний)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РостВерхОдежды</dataPath>
+			<field>РостВерхОдежды</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рост (верх одежды)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РостНизОдежды</dataPath>
+			<field>РостНизОдежды</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рост (низ одежды)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗначенияАнтропометрическихСвойств.ВидСвойства КАК ВидСвойства,
+	ЗначенияАнтропометрическихСвойств.Сотрудник КАК Сотрудник,
+	ЗначенияАнтропометрическихСвойств.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_Антропометрия
+ИЗ
+	РегистрСведений.ЗначенияАнтропометрическихСвойств КАК ЗначенияАнтропометрическихСвойств
+ГДЕ
+	ЗначенияАнтропометрическихСвойств.Сотрудник В(&amp;МассивСотрудников)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерГоловногоУбора
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерГоловногоУбора)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерОбуви
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОбуви)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерОдежды
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОдежды)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерОдеждыВерх
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОдеждыВерх)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерОдеждыЗимний
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОдеждыЗимний)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерОдеждыНиз
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерОдеждыНиз)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерПерчаток
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерПерчаток)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерПротивогаза
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерПротивогаза)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РазмерРубашки
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РазмерРубашки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_Рост
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.Рост)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РостВерхОдежды
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РостВерхОдежды)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Антропометрия.Сотрудник КАК Сотрудник,
+	ВТ_Антропометрия.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_РостНизОдежды
+ИЗ
+	ВТ_Антропометрия КАК ВТ_Антропометрия
+ГДЕ
+	ВТ_Антропометрия.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.РостНизОдежды)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Сотрудники.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_Сотрудники
+ИЗ
+	Справочник.Сотрудники КАК Сотрудники
+ГДЕ
+	Сотрудники.Ссылка В(&amp;МассивСотрудников)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сотрудники.Ссылка КАК Сотрудник,
+	ЕСТЬNULL(ВТ_РазмерГоловногоУбора.ЗначениеСвойства, "") КАК РазмерГоловногоУбора,
+	ЕСТЬNULL(ВТ_РазмерОбуви.ЗначениеСвойства, "") КАК РазмерОбуви,
+	ЕСТЬNULL(ВТ_РазмерОдежды.ЗначениеСвойства, "") КАК РазмерОдежды,
+	ЕСТЬNULL(ВТ_РазмерОдеждыВерх.ЗначениеСвойства, "") КАК РазмерОдеждыВерх,
+	ЕСТЬNULL(ВТ_РазмерОдеждыЗимний.ЗначениеСвойства, "") КАК РазмерОдеждыЗимний,
+	ЕСТЬNULL(ВТ_РазмерОдеждыНиз.ЗначениеСвойства, "") КАК РазмерОдеждыНиз,
+	ЕСТЬNULL(ВТ_РазмерПерчаток.ЗначениеСвойства, "") КАК РазмерПерчаток,
+	ЕСТЬNULL(ВТ_РазмерПротивогаза.ЗначениеСвойства, "") КАК РазмерПротивогаза,
+	ЕСТЬNULL(ВТ_РазмерРубашки.ЗначениеСвойства, "") КАК РазмерРубашки,
+	ЕСТЬNULL(ВТ_Рост.ЗначениеСвойства, "") КАК Рост,
+	ЕСТЬNULL(ВТ_РостВерхОдежды.ЗначениеСвойства, "") КАК РостВерхОдежды,
+	ЕСТЬNULL(ВТ_РостНизОдежды.ЗначениеСвойства, "") КАК РостНизОдежды
+ИЗ
+	ВТ_Сотрудники КАК ВТ_Сотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерГоловногоУбора КАК ВТ_РазмерГоловногоУбора
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерГоловногоУбора.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОбуви КАК ВТ_РазмерОбуви
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерОбуви.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОдежды КАК ВТ_РазмерОдежды
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерОдежды.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерПерчаток КАК ВТ_РазмерПерчаток
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерПерчаток.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерПротивогаза КАК ВТ_РазмерПротивогаза
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерПротивогаза.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерРубашки КАК ВТ_РазмерРубашки
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерРубашки.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Рост КАК ВТ_Рост
+		ПО ВТ_Сотрудники.Ссылка = ВТ_Рост.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОдеждыВерх КАК ВТ_РазмерОдеждыВерх
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерОдеждыВерх.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОдеждыЗимний КАК ВТ_РазмерОдеждыЗимний
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерОдеждыЗимний.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РазмерОдеждыНиз КАК ВТ_РазмерОдеждыНиз
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РазмерОдеждыНиз.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РостВерхОдежды КАК ВТ_РостВерхОдежды
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РостВерхОдежды.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РостНизОдежды КАК ВТ_РостНизОдежды
+		ПО ВТ_Сотрудники.Ссылка = ВТ_РостНизОдежды.Сотрудник</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>Маппинг</destinationDataSet>
+		<sourceExpression>НоменклатураНормы</sourceExpression>
+		<destinationExpression>НоменклатураНормыОрганизации</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>Антропометрия</destinationDataSet>
+		<sourceExpression>Сотрудник</sourceExpression>
+		<destinationExpression>Сотрудник</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>КоличествоСотрудников</dataPath>
+		<expression>Сотрудник</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество сотрудников</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоСотрудников</dataPath>
+		<expression>Количество(Различные КоличествоСотрудников)</expression>
+		<group>Сотрудник</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>МассивСотрудников</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив сотрудников</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Сотрудники</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаАнализа</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата анализа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидДополнительнойИнформацииПоНоменклатуре</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид дополнительной информации по номенклатуре</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидДополнительнойИнформацииПоНоменклатуре</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НеУчитыватьОстаткиПоОрганизации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Не учитывать остатки по организации</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоСотрудников</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МассивСотрудников</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаАнализа</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВидДополнительнойИнформацииПоНоменклатуре</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НеУчитыватьОстаткиПоОрганизации</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Приоритет</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>КоличествоСотрудников</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура не может быть подобрана</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Организация</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник.Владелец</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Должность</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерГоловногоУбора</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерОбуви</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерОдежды</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерОдеждыВерх</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерОдеждыЗимний</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерОдеждыНиз</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерПерчаток</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерПротивогаза</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РазмерРубашки</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Рост</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РостВерхОдежды</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РостНизОдежды</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоСотрудников</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Должность</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерГоловногоУбора</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерОбуви</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерОдежды</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерОдеждыВерх</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерОдеждыЗимний</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерОдеждыНиз</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерПерчаток</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерПротивогаза</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РазмерРубашки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Рост</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РостВерхОдежды</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РостНизОдежды</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НоменклатураНормы</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидВыдачи</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ДопИнформация</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Номенклатура</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>УсловиеСотрудник</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>УсловиеПодразделение</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>УсловиеДолжность</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Приоритет</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">УсловиеСотрудник</dcsset:left>
+										<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">УсловиеСотрудник</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">Сотрудник</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">УсловиеДолжность</dcsset:left>
+										<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">УсловиеДолжность</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">Должность</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>Приоритет</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+									<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+									<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+									<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+									<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+									<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

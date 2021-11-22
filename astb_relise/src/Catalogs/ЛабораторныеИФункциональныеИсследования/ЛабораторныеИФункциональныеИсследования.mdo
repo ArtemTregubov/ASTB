@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef06dfa8-3cde-4076-b51b-3e31881ec63c">
+  <producedTypes>
+    <objectType typeId="a98c41fd-35ab-4440-8eca-1f8d1853160a" valueTypeId="ceb09cfa-fd98-47a9-9ded-4fac7b41eef1"/>
+    <refType typeId="a88dd938-690b-4c66-83e2-a3aab9bacdfc" valueTypeId="542d7c19-0fe2-474e-bb42-35101eccdc49"/>
+    <selectionType typeId="66b5780f-5a3a-4fb8-bcdc-666ac50eb0e6" valueTypeId="40b18890-1527-4fb0-92f1-2d5c8d865e4b"/>
+    <listType typeId="1c4cf60f-d57a-41ea-ac77-2394d6dce7bd" valueTypeId="964cd33f-e7cc-4f53-b258-76b785c1f455"/>
+    <managerType typeId="c3ccf846-b0ef-4a21-8925-ac4d089899ec" valueTypeId="c0c8aeb9-1122-4a67-87c9-2eb04dded7a3"/>
+  </producedTypes>
+  <name>ЛабораторныеИФункциональныеИсследования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лабораторные и функциональные исследования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЛабораторныеИФункциональныеИсследования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЛабораторныеИФункциональныеИсследования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЛабораторныеИФункциональныеИсследования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЛабораторныеИФункциональныеИсследования.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ЛабораторныеИФункциональныеИсследования.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="b3335768-c395-4166-ac72-d10f4202c16a">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>400</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c135e5ac-2e6a-490d-89c1-ff9715dee852">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="34db6611-5e49-47ad-83dd-63369617afee">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2bf7d85a-51ac-407e-9569-eb0a9cf82288">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e1c18d0-1cf2-4211-8223-9234ba1d346c">
+  <producedTypes>
+    <objectType typeId="743165a3-610e-4caa-861a-768670225834" valueTypeId="11df233f-3676-43fe-9cea-256f6988fc23"/>
+    <managerType typeId="9a280819-dbba-452c-a882-8a7f0c621ad7" valueTypeId="f5cb9153-7a8e-4ab5-a5d2-eedc22891de9"/>
+  </producedTypes>
+  <name>ДиагностикаМетрикиДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: метрики (дубли)</value>
+  </synonym>
+  <comment>Метрики (дубли по наименованию).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаМетрикиДубли.Template.МетрикиДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Метрики (дубли по наименованию).</value>
+  </explanation>
+  <templates uuid="c8e79bc7-6a4b-4eb5-9864-8f47c17b5f5a">
+    <name>МетрикиДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метрики (дубли)</value>
+    </synonym>
+    <comment>Метрики (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

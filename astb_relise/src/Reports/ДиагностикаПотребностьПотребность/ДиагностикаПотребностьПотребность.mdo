@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1a8444c-dfcc-4774-a168-0896bb273537">
+  <producedTypes>
+    <objectType typeId="be796984-ebbb-4af7-b95a-9cf042c712b1" valueTypeId="74927c8a-0b3c-400d-a3ec-ac051348b8b8"/>
+    <managerType typeId="b8d74322-435e-437a-adc9-e96dcd6c530c" valueTypeId="e6d46c5b-41b0-415b-8675-09c24d783a7f"/>
+  </producedTypes>
+  <name>ДиагностикаПотребностьПотребность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: потребность-потребность</value>
+  </synonym>
+  <comment>Задвоенная потребность выдачи СИЗ</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПотребностьПотребность.Template.ПотребностьПотребность</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Задвоенная потребность выдачи СИЗ</value>
+  </explanation>
+  <templates uuid="b09a35d1-134b-49c9-8bfd-12b1b99b3c5f">
+    <name>ПотребностьПотребность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребность &lt;-> Потребность</value>
+    </synonym>
+    <comment>Задвоенная потребность выдачи СИЗ</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

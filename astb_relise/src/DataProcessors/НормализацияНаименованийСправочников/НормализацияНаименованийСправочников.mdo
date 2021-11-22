@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08ba3fea-5af1-4691-8893-4ee441d28e80">
+  <producedTypes>
+    <objectType typeId="2c7d1bff-7ca5-41d0-8e9f-d25829d1435c" valueTypeId="95d72afc-60b7-440a-a6bb-bfb528ca17a6"/>
+    <managerType typeId="09cae279-9f20-4a43-9a23-dca181da97b0" valueTypeId="b40bfe0e-4c65-4b07-897d-d7a432ad38a0"/>
+  </producedTypes>
+  <name>НормализацияНаименованийСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормализация наименований справочников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НормализацияНаименованийСправочников.Form.Форма</defaultForm>
+  <tabularSections uuid="67f1b942-3546-4f1f-a84e-693a0a03d707">
+    <producedTypes>
+      <objectType typeId="9a86f245-f1cb-4f56-8b74-7479234af5a2" valueTypeId="98f4966f-399a-4156-b56b-2de127a74de0"/>
+      <rowType typeId="4f00ebed-a7ef-4611-931a-153ab3aa9e80" valueTypeId="953c77ca-48a2-4f60-b36e-70e2df94f362"/>
+    </producedTypes>
+    <name>ТаблицаИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица изменений</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="555e4907-7cd6-4d12-b21a-2d893b24e165">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="978fdbd9-e7f3-4534-b7a6-98a51cf22f5c">
+      <name>СтароеНаименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Старое наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8c14ac49-8236-4c09-8e41-e3c38bdd9d52">
+      <name>НовоеНаименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новое наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="97d18f1e-58ed-42f3-b66d-fb0f0ea2f724">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="cb895def-08e9-46ea-9677-525f805cdc4a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

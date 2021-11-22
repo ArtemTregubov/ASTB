@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3eed6ba6-45f4-44ba-ac5c-381cc9888721">
+  <producedTypes>
+    <objectType typeId="ae203b9f-c12b-4197-bafb-f5b945f6102b" valueTypeId="6f019961-8ff0-4487-b77e-7d061333a06a"/>
+    <managerType typeId="35f8472c-77bc-4600-91f3-d69093088226" valueTypeId="5812093a-4347-4362-8251-371df3ab1065"/>
+  </producedTypes>
+  <name>ОстаткиНоменклатурыНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки номенклатуры на складах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстаткиНоменклатурыНаСкладах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2a3771fb-e2fe-4f2b-b693-8ab110ecc20e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="aeaa5485-e14a-4724-ad88-3c19ed48e979">
+    <name>ОстаткиНоменклатурыВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки на складах</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Номенклатура</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

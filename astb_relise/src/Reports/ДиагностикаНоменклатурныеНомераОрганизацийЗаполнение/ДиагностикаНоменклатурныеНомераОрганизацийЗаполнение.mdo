@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b35130b1-4fa7-4bd4-a54d-2a3b5425642f">
+  <producedTypes>
+    <objectType typeId="05ece9e4-a38d-4863-a2b2-95ff5067f7f2" valueTypeId="25c9a70d-498f-48b0-bed9-e4f01c9148a7"/>
+    <managerType typeId="b2722b95-ddcb-4594-b263-8ac36bc245e2" valueTypeId="3738f9f9-7aaa-4941-be93-bf4f4d13f6ba"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатурныеНомераОрганизацийЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатурные номера организаций (заполнение)</value>
+  </synonym>
+  <comment>Заполнение номенклатурных номеров организации</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатурныеНомераОрганизацийЗаполнение.Template.НоменклатурныеНомераОрганизацийЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение номенклатурных номеров организации</value>
+  </explanation>
+  <templates uuid="4691d4bf-4448-4536-ab9d-6a498bb2ce18">
+    <name>НоменклатурныеНомераОрганизацийЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурные номера организации (заполнение)</value>
+    </synonym>
+    <comment>Заполнение номенклатурных номеров организации. Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81ca91af-45d0-4b69-916e-5a1a013426ce">
+  <producedTypes>
+    <objectType typeId="278b67b5-ae6e-4635-848c-4ee0b8b15035" valueTypeId="0b838846-4523-495a-ab39-470f4166715f"/>
+    <managerType typeId="8b01041b-a78f-47dd-8eef-d723c7e259c9" valueTypeId="c58c24f0-3bb9-4550-b015-bfeea5525ec3"/>
+  </producedTypes>
+  <name>ДиагностикаЕдиницыИзмеренияДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: единицы измерения (дубли)</value>
+  </synonym>
+  <comment>Диагностика: единицы измерения (дубли по коду и наименованию).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаЕдиницыИзмеренияДубли.Template.ЕдиницыИзмеренияДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Единицы измерения (дубли по коду и наименованию).</value>
+  </explanation>
+  <templates uuid="6d42d77e-7fa5-4d5d-8f72-28962cc556e1">
+    <name>ЕдиницыИзмеренияДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единицы измерения (дубли)</value>
+    </synonym>
+    <comment>Единицы измерения (дубли по коду и наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

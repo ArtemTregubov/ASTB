@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b6a441b-4442-4c15-a2f1-0be523dd0ac8">
+  <producedTypes>
+    <objectType typeId="e56debe5-7a33-492f-94fc-abd16886ae9a" valueTypeId="d644e2e9-bf2a-4c10-b783-3c8c4b3def44"/>
+    <refType typeId="50ee9bca-aba3-4d80-83ec-ad2bb5764ede" valueTypeId="6bddc931-5ab6-46d1-a84a-4849ade353fe"/>
+    <selectionType typeId="8279acbe-0e98-4af3-93c0-3734341f2c52" valueTypeId="3999aefc-cafd-46c9-aef8-ae533a5ea7c9"/>
+    <listType typeId="bf6cd2f8-2591-45e9-9a32-eb359ad1fdab" valueTypeId="22b0a318-6d26-4f5c-9c6b-e17dfe202f07"/>
+    <managerType typeId="6b3109e7-ce35-4157-a4c6-511847db5750" valueTypeId="ae1de228-60a1-4140-b0a9-62bb17c8e430"/>
+  </producedTypes>
+  <name>ДополнительныеМедицинскиеПротивопоказания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные медицинские противопоказания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДополнительныеМедицинскиеПротивопоказания.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДополнительныеМедицинскиеПротивопоказания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ДополнительныеМедицинскиеПротивопоказания.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ДополнительныеМедицинскиеПротивопоказания.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ДополнительныеМедицинскиеПротивопоказания.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="563a7fd9-0e7a-4783-9f51-b421e76302ac">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>600</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="de1bb06a-8541-4315-951c-9f5e0901c177">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9d61f056-719a-42b6-9ef8-f185cc24b0c6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8084fd10-f9af-42cc-9389-f336180e872f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

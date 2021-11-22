@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48f8c9b6-c4f8-4538-9aa0-0a10d22aa8b8">
+  <producedTypes>
+    <objectType typeId="408de46c-88c8-49c9-be50-ac43fd220530" valueTypeId="3b175718-fe27-40fa-baf1-723b9ca0be6e"/>
+    <managerType typeId="fa434af1-9d66-41a7-a409-91c5fcb5f1a1" valueTypeId="fd2a0ccd-1588-4162-b189-4354577f66ef"/>
+  </producedTypes>
+  <name>ПанельАдминистрированияАсТБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель администрирования АсТБ</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПанельАдминистрированияАсТБ.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="29bcf09f-22db-4d8f-8db8-a26ae124189b">
+    <name>НастройкаАСТБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка АСТБ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e35842b6-c8c1-4878-ad37-e183a86f800e">
+    <name>ИнструментыДляРаботыСДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструменты для работы с данными</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="71f2542a-a326-4dd6-a9c1-ace954a5e34f">
+    <name>НоменклатураВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура выдачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0e832fa2-4e3c-45c2-a258-8f9b6724b141">
+    <name>ВнешнееОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешнее оборудование</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d26d25b1-812c-44f0-84b8-8d2296b7aae6">
+    <name>ВспомогательныеИнструменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательные инструменты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3deb2b67-cf03-4555-b8e4-8b04e16da793">
+    <name>ДиагностикаСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диагностика системы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c11b9b61-1d3f-4f89-b87d-8e84a41bc0db">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac8691bb-b316-4b2f-aa56-1a3146d1d688">
+    <name>АХ_ИнструментыДляРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ) Инструменты для работы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6753fe15-a786-4435-af52-dbc0201e63d7">
+    <name>НастройкаАСТБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка АСТБ</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="5a20d536-3ba6-4cfa-a5c6-5300666e6c5e">
+    <name>ИнструментыДляРаботыСДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструменты для работы с данными</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="de0d3b26-c33f-450c-b8c2-c06eab439b4a">
+    <name>НоменклатураВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура выдачи</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="8903a73d-3169-4852-b9ee-f8c686df4659">
+    <name>ВнешнееОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешнее оборудование</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="a0b37076-18ba-4275-96e5-4a5d3494a558">
+    <name>ВспомогательныеИнструменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательные инструменты</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="b660f5ec-5f73-4a72-82e7-3e8c56002807">
+    <name>ДиагностикаСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диагностика системы</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="d7052201-35f4-4bd6-887d-f24bb0a8dea9">
+    <name>АХ_ИнструментыДляРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ)  Инструменты для работы</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

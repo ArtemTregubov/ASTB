@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='Metrika'>
+  <xsd:complexType>
+   <xsd:attribute name='metrika_id' type='xsd:string' use='required'/>
+   <xsd:attribute name='METRIKA_NAME' type='xsd:string' use='required'/>
+   <xsd:attribute name='PERCENT' type='xsd:string' default=''/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='NOM'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='Metrika'/>
+   </xsd:sequence>
+   <xsd:attribute name='id' type='xsd:string' use='required'/>
+   <xsd:attribute name='name' type='xsd:string' use='required'/>
+   <xsd:attribute name='STATUS_SAP' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='spisok'>
+  <xsd:complexType>
+   <xsd:sequence maxOccurs='unbounded'>
+    <xsd:element ref='NOM'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

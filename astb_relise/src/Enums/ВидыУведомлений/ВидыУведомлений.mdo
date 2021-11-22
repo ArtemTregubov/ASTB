@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1809c5f0-51e8-4353-bca2-f44ec1b293aa">
+  <producedTypes>
+    <refType typeId="54ffaac1-896f-4d1d-b39a-16015ab10ab9" valueTypeId="05f5a29f-8764-4974-b98e-e46788a1d74e"/>
+    <listType typeId="c4be14fe-324d-4556-a90f-539ca076cdab" valueTypeId="748a34e9-011d-4cfa-b0dc-dc6af77f98c3"/>
+    <managerType typeId="5c4b167a-d76f-4586-9931-197f432ab959" valueTypeId="aa1ceb7e-f249-4629-a58c-687ad681583c"/>
+  </producedTypes>
+  <name>ВидыУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды уведомлений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a8f7ea8a-8c20-4602-970c-549cc3e10d6f">
+    <name>ВозвратИзЧистки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат из чистки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4e95ff03-09e1-447a-ad70-3d8a0d4072b6">
+    <name>ОбработкаОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка обращения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7ce28282-be71-48d9-b5d1-0eacc154f9b2">
+    <name>Поздравление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поздравление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6e6f4fba-eadb-416b-b2d0-e2fbbe537e7b">
+    <name>ПолучениеСредствЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение средств защиты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c8a2b9f-a4cd-4e2f-9132-8fc43f0ab2b8">
+    <name>ПоступлениеНаСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление на склад</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0ab9fafc-bbd5-4a36-bc43-e079d746bcde">
+    <name>Произвольное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольное</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

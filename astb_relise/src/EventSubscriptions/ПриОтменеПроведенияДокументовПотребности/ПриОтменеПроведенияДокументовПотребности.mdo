@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88b51bfd-d708-4beb-841e-65e1ce37083e">
+  <name>ПриОтменеПроведенияДокументовПотребности</name>
+  <synonym>
+    <key>ru</key>
+    <value>При отмене проведения документов потребности</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ПриказПоНормамВыдачиСИЗ</types>
+    <types>DocumentObject.СписаниеСредствЗащитыСотрудника</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.КадровоеПеремещение</types>
+    <types>DocumentObject.ВыдачаСредствЗащитыСотруднику</types>
+    <types>DocumentObject.ПереносЗимнейПотребности</types>
+    <types>DocumentObject.ЗачетУпрощеннойВыдачи</types>
+    <types>DocumentObject.УстановкаУсловийРаботыСотрудника</types>
+    <types>DocumentObject.ПродлениеСрокаЭксплуатации</types>
+    <types>DocumentObject.УстановкаПериодаЗимы</types>
+    <types>DocumentObject.ОтсутствиеНаРабочемМесте</types>
+  </source>
+  <event>UndoPosting</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ПриОтменеПроведенияДокументовПотребностиОбработкаУдаленияПроведения</handler>
+</mdclass:EventSubscription>

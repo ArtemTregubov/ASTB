@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ba35549-2821-4bfe-890b-2aa73791d684">
+  <producedTypes>
+    <objectType typeId="2e0a794c-0fc5-4e51-a936-70586b0a096b" valueTypeId="23793dc4-accf-45df-88e3-148f5adc502d"/>
+    <managerType typeId="507e7630-6900-4830-a3e4-d140f42ae2e3" valueTypeId="0e2f86f4-cdae-4c0d-83b9-5cf8c480fd87"/>
+  </producedTypes>
+  <name>ДиагностикаШтатноеРасписаниеЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: штатное расписание (заполнение)</value>
+  </synonym>
+  <comment>Заполнение штатного расписания</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаШтатноеРасписаниеЗаполнение.Template.ШтатноеРасписаниеЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение штатного расписания</value>
+  </explanation>
+  <templates uuid="9bcd3aa4-a648-4c05-a00d-7003950d0918">
+    <name>ШтатноеРасписаниеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штатное расписание (заполнение)</value>
+    </synonym>
+    <comment>Заполнение штатного расписания</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

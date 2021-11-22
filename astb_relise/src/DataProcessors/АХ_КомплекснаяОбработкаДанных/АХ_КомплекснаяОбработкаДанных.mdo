@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="409ee58c-ca16-481f-beaf-17d3f1eddc39">
+  <producedTypes>
+    <objectType typeId="6fea9111-0f50-4640-b204-a21bb7192ea9" valueTypeId="cb7e301f-ccf8-4b9c-9008-15fccba79545"/>
+    <managerType typeId="4e7523ea-fd39-4b4b-95dc-882fcbaffc0c" valueTypeId="712dc281-efa1-41cf-97d2-8c66e75de673"/>
+  </producedTypes>
+  <name>АХ_КомплекснаяОбработкаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) Комплексная обработка данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АХ_КомплекснаяОбработкаДанных.Form.ФормаСозданияПредварительнойВыдачи</defaultForm>
+  <forms uuid="73144be3-52f8-4147-aad2-d51578c50373">
+    <name>ФормаПередачиТранспортнойПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма передачи транспортной поставки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f8eff791-4fe7-43ee-8014-6217a17f7306">
+    <name>ФормаСнятияСЯчеек</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ) Снятие с ячеек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b044a15-77ad-471c-b69e-e36bcd581998">
+    <name>ФормаСозданияПредварительнойВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>(АХ) Фомирование предварительной выдачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

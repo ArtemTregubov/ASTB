@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="065802e0-51cd-4281-ab5d-799b1e98652f">
+  <name>ИспользоватьРабочиеМеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать рабочие места</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.ИспользоватьРабочиеМеста</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.РабочиеМестаАСТБ</content>
+  <content>Document.ПриемНаРаботу.TabularSection.Работники.Attribute.РабочееМесто</content>
+  <content>Document.ИнструктажСотрудников.TabularSection.Работники.Attribute.РабочееМесто</content>
+  <content>Document.Увольнение.TabularSection.Работники.Attribute.РабочееМесто</content>
+  <content>Document.КадровоеПеремещение.TabularSection.Работники.Attribute.РабочееМестоСтарое</content>
+  <content>Document.КадровоеПеремещение.TabularSection.Работники.Attribute.РабочееМестоНовое</content>
+  <content>InformationRegister.ЗначенияЗащитныхСвойствРабочихМест</content>
+  <content>AccumulationRegister.ЗанятыеРабочиеМеста.Dimension.РабочееМесто</content>
+  <content>Document.ПриказПоНормамВыдачиСИЗ.TabularSection.НормыВыдачиСИЗ.Attribute.РабочееМесто</content>
+  <content>Document.УстановкаУсловийРаботыСотрудника.TabularSection.УсловияРаботы.Attribute.РабочееМесто</content>
+  <content>Document.УстановкаОсновногоМестаРаботыСотрудника.TabularSection.ОсновноеМестоРаботы.Attribute.РабочееМесто</content>
+  <content>InformationRegister.УстановленныеНормыВыдачиСИЗ.Dimension.РабочееМесто</content>
+  <content>InformationRegister.ИсходныеНормыВыдачиСИЗ.Dimension.РабочееМесто</content>
+  <content>InformationRegister.ДоступныеУсловияРаботыСотрудника.Dimension.РабочееМесто</content>
+  <content>InformationRegister.ОсновноеМестоРаботыСотрудника.Resource.РабочееМесто</content>
+  <content>Document.ПриказНаПроведениеИнструктажей.TabularSection.РабочиеМеста.Attribute.РабочееМесто</content>
+  <content>InformationRegister.ИнструктажиСотрудников.Dimension.РабочееМесто</content>
+  <content>Document.СпециальнаяОценкаРабочихМест.TabularSection.РабочиеМеста.Attribute.РабочееМесто</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.Attribute.РабочееМесто</content>
+  <content>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.РабочееМесто</content>
+</mdclass:FunctionalOption>

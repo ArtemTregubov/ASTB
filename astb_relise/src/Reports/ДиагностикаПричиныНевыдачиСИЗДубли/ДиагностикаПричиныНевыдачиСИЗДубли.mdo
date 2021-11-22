@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="196be7e6-316e-4942-b1d4-7e1509ba976b">
+  <producedTypes>
+    <objectType typeId="0258fa5b-34bd-4fae-a99b-e57f11fa9ab8" valueTypeId="04eb8718-4b2b-415c-a6b2-b8cf8ef4de59"/>
+    <managerType typeId="c1bdc292-5acc-4dd3-8a6f-2756b7b25bb0" valueTypeId="14a69fc1-c1cf-439d-9686-2f180117b6d2"/>
+  </producedTypes>
+  <name>ДиагностикаПричиныНевыдачиСИЗДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: причины невыдачи СИЗ (дубли)</value>
+  </synonym>
+  <comment>Причины невыдачи (дубли по наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПричиныНевыдачиСИЗДубли.Template.ПричиныНевыдачиСИЗДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Причины невыдачи (дубли по наименованию)</value>
+  </explanation>
+  <templates uuid="6ec71886-2e86-428f-aa8c-678e313431da">
+    <name>ПричиныНевыдачиСИЗДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причины невыдачи (дубли)</value>
+    </synonym>
+    <comment>Причины невыдачи (дубли по наименованию).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

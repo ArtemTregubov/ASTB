@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="217f321c-11d6-4332-8207-995e23fade79">
+  <producedTypes>
+    <refType typeId="922567f6-b097-4afb-9821-206fea6b9bdc" valueTypeId="728da742-6f50-4784-933d-bfc49dbe14c9"/>
+    <listType typeId="b03cfe3c-86a3-4455-8746-e0fb70d98c06" valueTypeId="e197e8f3-d252-479c-97b4-8b6276ddd35f"/>
+    <managerType typeId="1d69decc-2bcb-4443-8ab9-05f607640116" valueTypeId="bd924cca-480c-4220-ad44-156bb82cab31"/>
+  </producedTypes>
+  <name>УровниСервисногоОбслуживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни сервисного обслуживания</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="77ab110c-752c-44e1-af25-381f4c7993b7">
+    <name>Отлично</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отлично</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="744e9a8d-35c8-4898-9da9-3cdfc55e3785">
+    <name>Нормально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормально</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7dac5f2-2cf5-4233-8d9b-ed01ce7d4707">
+    <name>Плохо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плохо</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

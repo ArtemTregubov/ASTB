@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d6e3274-24a3-442d-b223-c133951ea87b">
+  <name>AdressStorageExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Adress storage exchange</value>
+  </synonym>
+  <namespace>AdressStorageExchange</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.AdressStorageIntegration</value>
+  </xdtoPackages>
+  <xdtoPackages xsi:type="core:StringValue">
+    <value>http://v8.1c.ru/8.1/data/core</value>
+  </xdtoPackages>
+  <descriptorFileName>AdressStorageExchange.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="1d7c9b2e-7878-4ce3-bbe3-b5200ec51b96">
+    <name>ОтправитьПакетОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить пакет обмена</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ValueStorage</name>
+      <nsUri>http://v8.1c.ru/8.1/data/core</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ОтправитьПакетОбмена</procedureName>
+    <parameters uuid="778b157b-f83b-4aeb-9dc9-1820acc206ce">
+      <name>ПакетОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пакет обмена</value>
+      </synonym>
+      <xdtoValueType>
+        <name>ValueStorage</name>
+        <nsUri>http://v8.1c.ru/8.1/data/core</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="fef813ba-a8e9-4d88-ba00-d3929dc20aac">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>Ping</procedureName>
+  </operations>
+  <operations uuid="775de292-0960-4936-b1b3-b6a45e8315d5">
+    <name>НачатьПредварительнуюСборку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начать предварительную сборку</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ValueStorage</name>
+      <nsUri>http://v8.1c.ru/8.1/data/core</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>НачатьПредварительнуюСборку</procedureName>
+    <parameters uuid="95f7f179-2058-4322-8c98-4cb04dea9c69">
+      <name>Период</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="f2ed2d1b-828e-4615-a411-d968187f7b7d">
+    <name>ТаблицаСотрудниковПоШтрихкодам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица сотрудников по штрихкодам</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ValueStorage</name>
+      <nsUri>http://v8.1c.ru/8.1/data/core</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ТаблицаСотрудниковПоШтрихкодам</procedureName>
+    <parameters uuid="05c949ab-46e8-4c5f-b94b-0329230bbed1">
+      <name>МассивШтрихкодов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Массив штрихкодов</value>
+      </synonym>
+      <xdtoValueType>
+        <name>ValueStorage</name>
+        <nsUri>http://v8.1c.ru/8.1/data/core</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

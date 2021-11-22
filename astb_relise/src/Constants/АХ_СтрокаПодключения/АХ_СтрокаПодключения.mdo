@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec15a12d-c98b-4fd6-8bed-4d1700e8bfa9">
+  <producedTypes>
+    <managerType typeId="94365f0f-625b-4e50-8f16-77549af89a48" valueTypeId="4c2cf768-fdb9-4c1f-9221-e719bc92d766"/>
+    <valueManagerType typeId="0a6a96d3-8dbc-4926-a132-da3e23ec4ac2" valueTypeId="60870238-0bf1-42d2-b8c1-f3edec61776d"/>
+    <valueKeyType typeId="9e46c76a-a348-4e0b-801a-dd4e87c09c5c" valueTypeId="6252c3cf-b3b9-4079-b42b-4ec521bf6272"/>
+  </producedTypes>
+  <name>АХ_СтрокаПодключения</name>
+  <synonym>
+    <key>ru</key>
+    <value>А х строка подключения</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9836f54a-763d-4bcd-9ff9-01ef8ac57881">
+  <producedTypes>
+    <objectType typeId="5d679767-d04b-4702-aca9-b5839bb2790f" valueTypeId="3a93a321-f573-4dcd-b903-539974c4f588"/>
+    <managerType typeId="d6ef920f-c440-4e7e-8b2d-ba20263cdc17" valueTypeId="3f61e0ea-38c7-4cb3-93bc-f702d82e3d14"/>
+  </producedTypes>
+  <name>ПодсчетРасходаСИЗБудущегоПериода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсчет расходов СИЗ на будущий период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПодсчетРасходаСИЗБудущегоПериода.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c79a4e8f-f60e-4e49-84e6-1d8dd9d0ce49">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

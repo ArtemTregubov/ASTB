@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b2e7c02-779a-4b3a-8511-48a36b4136bb">
+  <producedTypes>
+    <managerType typeId="21681681-77d6-4c53-9537-217e28fc840f" valueTypeId="6380bbba-2947-4b9d-9888-c820d0a56ba1"/>
+    <valueManagerType typeId="adcc29f6-5c5e-4295-af64-3ddb6dc3bdbd" valueTypeId="02261b1f-3318-413d-9733-ce4379a75d09"/>
+    <valueKeyType typeId="d8c0d02a-39db-47c1-84f4-1ede5e59a43b" valueTypeId="6488099d-6c3e-4381-be5d-40175d6e1d43"/>
+  </producedTypes>
+  <name>ИспользоватьЗагрузкуКадровыхДанныхЧерезСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать загрузку кадровых данных через сервис</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

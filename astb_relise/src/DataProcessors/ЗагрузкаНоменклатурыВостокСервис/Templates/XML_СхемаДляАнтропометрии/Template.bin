@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="matrix_list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="matrix_item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="matrix_item">
+    <xs:complexType>
+      <xs:attribute name="matrix_name" use="required"/>
+      <xs:attribute name="matrix_number" use="required" type="xs:NCName"/>
+      <xs:attribute name="РазмерГоловногоУбора" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерОбуви" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерОдеждыМеждународный" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерОдеждыМетрический" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерПерчатокМеждународный" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерПерчатокМетрический" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерПротивогаза" use="required" type="xs:integer"/>
+      <xs:attribute name="РазмерРубашки" use="required" type="xs:integer"/>
+      <xs:attribute name="Рост" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

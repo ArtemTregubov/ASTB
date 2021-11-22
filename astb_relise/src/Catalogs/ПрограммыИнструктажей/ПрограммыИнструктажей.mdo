@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c454922-9a4a-490b-ba93-5fb212412738">
+  <producedTypes>
+    <objectType typeId="f3131e84-20e9-46c5-986a-6827bb93f475" valueTypeId="a1c57d28-93d6-4138-8fd8-22ca1a47b245"/>
+    <refType typeId="341420dd-fc35-4414-963f-974eb0fb1f7d" valueTypeId="40e705c5-62fe-49cc-a75e-5b69063a720a"/>
+    <selectionType typeId="8c981a8a-67a2-4cfb-98c8-6319de98f265" valueTypeId="77d1346b-4a88-4ed8-9d45-7d67dec613da"/>
+    <listType typeId="5086e3ee-56ab-4b12-801f-6d6675676f4a" valueTypeId="c0f4fc95-4f98-43af-a387-a0055a7831ba"/>
+    <managerType typeId="26547963-7c76-4ba9-8b27-d32a8bf08430" valueTypeId="db03067c-8218-4d7f-85e0-01c4ef5c35cf"/>
+  </producedTypes>
+  <name>ПрограммыИнструктажей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программы инструктажей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПрограммыИнструктажей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПрограммыИнструктажей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Программа инструктажа</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Программа инструктажа</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <levelCount>3</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Инструктажи</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПрограммыИнструктажей.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПрограммыИнструктажей.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a4ca65ae-e35c-407f-b4ac-df1775d35d95">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f7e9b49-1d5e-48f0-a2d7-5429b14508a1">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3fbc827a-10cc-4f54-b174-67caf16a51d3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b1b1584a-da11-4719-a557-e5aba577e8ad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

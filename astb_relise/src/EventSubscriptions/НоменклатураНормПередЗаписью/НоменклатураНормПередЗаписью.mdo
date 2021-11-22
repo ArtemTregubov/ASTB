@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f1a0e99-19c7-4cb3-a4d4-23a6e61b943b">
+  <name>НоменклатураНормПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура норм перед записью</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.НоменклатураНормОрганизации</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.НоменклатураНормПередЗаписьюПередЗаписью</handler>
+</mdclass:EventSubscription>

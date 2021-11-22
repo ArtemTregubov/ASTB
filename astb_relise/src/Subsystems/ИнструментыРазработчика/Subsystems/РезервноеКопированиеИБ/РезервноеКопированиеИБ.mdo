@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c59cfb8-94a3-494a-95ca-41cb6fc374e8">
+  <name>РезервноеКопированиеИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Резервное копирование ИБ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ИнструментыРазработчикаСбросНастроекРезервногоКопирования</content>
+  <parentSubsystem>Subsystem.ИнструментыРазработчика</parentSubsystem>
+</mdclass:Subsystem>

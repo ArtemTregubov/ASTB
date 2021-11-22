@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f18f11e2-62bd-4166-be77-5b37d1942c5e">
+  <name>ПриЗаписиДокументаППС</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи документа ППС</value>
+  </synonym>
+  <comment>При записи документа &quot;Переход права собственности&quot;</comment>
+  <source>
+    <types>DocumentObject.ПереходПраваСобственности</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ПриЗаписиДокументаППСПриЗаписи</handler>
+</mdclass:EventSubscription>

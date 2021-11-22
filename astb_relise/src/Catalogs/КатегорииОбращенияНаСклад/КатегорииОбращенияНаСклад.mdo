@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19c85cd0-ee5a-4605-929a-404e92143d71">
+  <producedTypes>
+    <objectType typeId="8e9f2a41-cd92-48a5-a4f7-8995f3bded3e" valueTypeId="b20d9dd2-36de-49ab-94d0-40f0b56492cb"/>
+    <refType typeId="d546cd8e-50a3-4c3b-bcdf-dc4bc3830e2c" valueTypeId="f3714f2b-8ebb-4fcb-bdb2-69b0fd086ac1"/>
+    <selectionType typeId="990c738c-3166-4a7c-b304-71c61b2e47ce" valueTypeId="1bdb594f-fe65-478e-b6b6-574e8aeb89ea"/>
+    <listType typeId="aff09b9c-75ef-423d-a841-827bebbdd15c" valueTypeId="6ebef3ff-cfd2-4799-8e2e-5849c8d21971"/>
+    <managerType typeId="6d70ce79-6ffe-4985-aa13-ef382f69751b" valueTypeId="9a1ad0ed-b128-417d-8eb2-89b000a4a5e9"/>
+  </producedTypes>
+  <name>КатегорииОбращенияНаСклад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории обращения на склад</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииОбращенияНаСклад.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииОбращенияНаСклад.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c9127a70-1bb9-460b-a834-2e86102f6cd6">
+      <name>ВыдачаДежурныхСредствЗащиты</name>
+      <description>Выдача дежурных средств защиты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="1c8a117c-1462-40d2-a5ba-74717745a947">
+      <name>ЗаявкаНаПолучение</name>
+      <description>Заявка на получение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="063b890d-919e-4b0e-b536-687995f439c3">
+      <name>ИзменениеАнтропометрии</name>
+      <description>Изменение антропометрии</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="a9a7d4a8-93f4-4a2e-b76e-ca523f2b1b40">
+      <name>ИзменениеКадровыхДанных</name>
+      <description>Изменение кадровых данных</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="4de73864-1006-484a-b905-dd5aef329848">
+      <name>ИзменениеКонтактнойИнформации</name>
+      <description>Изменение контактной информации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="2522f350-3698-4700-9626-0d8ec3c25d24">
+      <name>КоллективнаяВыдача</name>
+      <description>Коллективная выдача</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="d221c0d4-c8d8-45e9-a59e-8f0ea3ddebdc">
+      <name>ОбращениеПоОбслуживанию</name>
+      <description>Обращение по обслуживанию</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="98283b46-7c7a-4b2b-901e-e8ded34b575f">
+      <name>ОповещениеПоЭлектроннойПочте</name>
+      <description>Оповещение по e-mail</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="a5adb17f-0d80-4fea-a01f-fa7df1090cbb">
+      <name>ОповещениеПоСМС</name>
+      <description>Оповещение по SMS</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="6ba2be30-65c8-43d3-8331-1b8a35a0c22c">
+      <name>ПерсональнаяВыдача</name>
+      <description>Персональная выдача</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="824dff45-a194-476c-a6f3-93ec67edf056">
+      <name>ПроизвольнаяВыдача</name>
+      <description>Произвольная выдача</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="5132c213-419f-4b56-a661-9c6f9209e85e">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="73ee9a37-e0f4-4e2b-a6df-9081afdb6e18">
+      <name>СписаниеСредствЗащиты</name>
+      <description>Списание средств защиты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="96d2f9f5-228e-42be-a425-4d743fdbcb79">
+      <name>УпрощеннаяВыдача</name>
+      <description>Упрощенная выдача</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КатегорииОбращенияНаСклад.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КатегорииОбращенияНаСклад.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КатегорииОбращенияНаСклад.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="5a1d5059-40ce-4e1b-b284-3a5a27b9061f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="552a410b-1410-4aee-af13-7bed6ad9e7d6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f4e29f9a-afab-4c8a-a3ed-d439f0d5ea46">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

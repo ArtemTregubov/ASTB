@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1eeec7c-372d-4622-ac72-be07a156f228">
+  <name>БазоваяФункциональность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовая функциональность</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>d9a4d06f-cb18-45de-923b-c0c4cf8f8c25</content>
+  <content>CommonCommand.ИдентификаторыОбъектовМетаданных</content>
+  <content>1eb6740f-8f85-48ff-a249-a1c1ea7e43fa</content>
+  <content>f385d7f4-27ac-4e15-b818-2220c82676a1</content>
+  <content>Catalog.ИдентификаторыОбъектовМетаданных</content>
+  <content>Report.ИнструментыРазработчикаЗависимостиПодсистем</content>
+  <parentSubsystem>Subsystem.ИнструментыРазработчика</parentSubsystem>
+</mdclass:Subsystem>

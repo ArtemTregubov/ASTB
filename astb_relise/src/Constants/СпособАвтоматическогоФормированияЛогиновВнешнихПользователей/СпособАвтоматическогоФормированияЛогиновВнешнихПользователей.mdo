@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf1622d1-47ed-4503-9bc4-0ade5d9d3912">
+  <producedTypes>
+    <managerType typeId="45fda16b-7b24-4b7d-9db9-1382aabed079" valueTypeId="7abc0df0-3b6b-4f34-9300-0fc05c55cf0c"/>
+    <valueManagerType typeId="aacb583c-920d-4c3c-b62d-b92cdef155aa" valueTypeId="62632b77-ecbd-464d-9a27-fe5631c6b9c1"/>
+    <valueKeyType typeId="bf0c7f9f-b55f-594d-b546-67183bc95e3e" valueTypeId="f073bfd3-d1a5-5c9e-9ecc-7d17d1f2f28e"/>
+  </producedTypes>
+  <name>СпособАвтоматическогоФормированияЛогиновВнешнихПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ автоматического формирования логинов внешних пользователей</value>
+  </synonym>
+  <type>
+    <types>EnumRef.СпособыАвтоматическогоФормированияЛогиновВнешнихПользователей</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

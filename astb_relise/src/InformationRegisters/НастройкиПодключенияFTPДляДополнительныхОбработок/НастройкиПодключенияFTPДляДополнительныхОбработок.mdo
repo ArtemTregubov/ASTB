@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51984b97-8f3d-42ba-962d-3fec036d03d3">
+  <producedTypes>
+    <selectionType typeId="acbdbb3c-7fcd-44fd-afdd-8c6ed0328ac4" valueTypeId="61cf8537-8599-4556-bd7b-e96c305ef7cd"/>
+    <listType typeId="e61527bd-e159-4787-a201-df22f459b328" valueTypeId="5b811550-af86-475c-9e2f-0a1fde51c7f1"/>
+    <managerType typeId="b7b8c51a-317e-4f04-b11d-962a4d6df173" valueTypeId="54798102-60f0-4744-968c-a93a9b7c6c13"/>
+    <recordSetType typeId="c2c82c36-cff5-4f9d-8d20-79953ae6dbfc" valueTypeId="c626369f-9ba0-4daf-9466-58ed5eb145b0"/>
+    <recordKeyType typeId="ad2db9d2-85db-4c92-838a-eac5a33a405e" valueTypeId="bf5e9e2e-6eea-4993-9765-6ab1379fddac"/>
+    <recordType typeId="0e8fd1f0-2bb4-4014-93a0-0f5f44eb54b6" valueTypeId="cc0eb9e8-820f-4dc6-9ad6-c7424c80059a"/>
+    <recordManagerType typeId="83938e00-b7e8-43ea-998d-43ac4c6421d7" valueTypeId="6b1ae9f2-e6bb-4e64-bfdd-9833c828430c"/>
+  </producedTypes>
+  <name>НастройкиПодключенияFTPДляДополнительныхОбработок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки подключения FTP для дополнительных обработок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a6b2474a-e8f9-4033-9a6c-81bd927e39bc">
+    <name>НастройкиПодключенияFTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки подключения FTP</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="05d5a9f9-f41d-4527-b5c7-42f9eef97075">
+    <name>ИдентификаторОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

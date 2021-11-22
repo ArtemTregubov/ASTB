@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cbfe947-1cfc-493a-9e8e-9e05af178084">
+  <producedTypes>
+    <objectType typeId="4457e5d0-f86f-4e9b-bb3d-336f690add44" valueTypeId="3e40bd77-09e3-4bec-823d-bf2a9e5877b1"/>
+    <managerType typeId="d8a62755-d01a-459c-a129-e95082b33eec" valueTypeId="b75de04a-7cf1-4895-8440-11f2920b8a80"/>
+  </producedTypes>
+  <name>ГрафикОбеспеченияСИЗПоСкладам</name>
+  <synonym>
+    <key>ru</key>
+    <value>График обеспечения СИЗ по складам</value>
+  </synonym>
+  <comment>Оригинал СКД в обработке &quot;Анализ Потребности&quot;</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикОбеспеченияСИЗПоСкладам.Template.СКД_ГрафикВыдачи</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="c5ca18e6-7315-4e15-8c40-3e01378ed8a4">
+    <name>СКД_ГрафикВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД график выдачи</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

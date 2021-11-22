@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fce68d8-c3bf-4757-a391-b106d644ac10">
+  <producedTypes>
+    <objectType typeId="52c19f75-710a-4578-8e62-4d9073f2d49c" valueTypeId="e0902ee4-4dcd-487e-b7c2-6a438f005512"/>
+    <managerType typeId="4cf7b7e0-e045-4d75-bd56-5f24369ac19b" valueTypeId="974c6cab-3036-4208-9245-09f11dda5392"/>
+  </producedTypes>
+  <name>НормыПоСотрудникуСНоменклатуройВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы по сотруднику с номенклатурой выдачи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НормыПоСотрудникуСНоменклатуройВыдачи.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="feb1ce25-5db7-4c3b-975b-6e25ba3325a5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="1de2d58f-1218-4dd3-8204-003802bce433">
+    <name>НормыСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормы с номенклатурой выдачи</value>
+    </synonym>
+    <group>CommandGroup.Отчеты</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+  </commands>
+</mdclass:Report>

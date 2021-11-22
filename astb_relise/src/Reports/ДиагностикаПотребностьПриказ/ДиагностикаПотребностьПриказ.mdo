@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f48b794-40ff-468c-abd9-56bd2ff6dc77">
+  <producedTypes>
+    <objectType typeId="1c524e1b-3996-4ea6-890c-68e993f253a4" valueTypeId="bd8afabb-d04f-4c2c-bd80-32fd34e370c0"/>
+    <managerType typeId="b6412889-751c-4e17-97e0-e90074066b2b" valueTypeId="76edaef4-273d-4fec-bb3c-1702254d7a85"/>
+  </producedTypes>
+  <name>ДиагностикаПотребностьПриказ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: потребность-приказ</value>
+  </synonym>
+  <comment>Соответствие движения по потребности и приказа по нормам выдачи</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПотребностьПриказ.Template.ПотребностьПриказ</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствие движения по потребности и приказа по нормам выдачи</value>
+  </explanation>
+  <templates uuid="6d4b15ae-0c2d-4de1-98b9-f2e3770d56f9">
+    <name>ПотребностьПриказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребность &lt;-> Приказ по нормам</value>
+    </synonym>
+    <comment>Соответствие движения по потребности и приказа по нормам выдачи</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

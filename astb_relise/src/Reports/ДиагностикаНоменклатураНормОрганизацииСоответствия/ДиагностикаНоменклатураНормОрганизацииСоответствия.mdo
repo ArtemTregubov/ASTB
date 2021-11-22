@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b98cd2c4-17b4-48d1-870a-704529568f7c">
+  <producedTypes>
+    <objectType typeId="f133a255-8ebd-45ec-bda2-82d5627f1bfa" valueTypeId="14ee77d6-07df-41df-aad2-c1635d8ad127"/>
+    <managerType typeId="b6a73f31-3425-426c-9785-f6914c5d668c" valueTypeId="9c219d37-fa14-4035-9373-605d70c1f8c2"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураНормОрганизацииСоответствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура норм организации (соответствия)</value>
+  </synonym>
+  <comment>Номенклатура норм (заполнение соответствий номенклатуры выдачи)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураНормОрганизацииСоответствия.Template.НоменклатураНормОрганизацииСоответствия</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура норм (заполнение соответствий номенклатуры выдачи)</value>
+  </explanation>
+  <templates uuid="0b61fdbd-dde2-416b-b34c-255720cbca21">
+    <name>НоменклатураНормОрганизацииСоответствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура норм (соответствия)</value>
+    </synonym>
+    <comment>Номенклатура норм (заполнение соответствий номенклатуры выдачи). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

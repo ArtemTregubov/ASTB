@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2af6e21-a3da-4a52-a4ce-cca99f98fb37">
+  <producedTypes>
+    <objectType typeId="62db0fa8-537f-46e6-9089-88c50a74438d" valueTypeId="4437397b-8068-4fc4-8e74-a0c39f66c14e"/>
+    <managerType typeId="b526dad3-10ca-4b0b-b3c8-59477e3ae305" valueTypeId="df439fe5-b6c2-4f1b-8af4-9b43fcfa171b"/>
+  </producedTypes>
+  <name>СписаниеВыданныхСИЗПоПричине</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списание выданных СИЗ по причине</value>
+  </synonym>
+  <comment>Списание выданных СИЗ по причине окончания срока носки, увольнению или отмене норм.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СписаниеВыданныхСИЗПоПричине.Form.Форма</defaultForm>
+  <attributes uuid="54e6b03a-2acd-462c-8153-e0bd2cc9bc5e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6817f972-7305-4749-bb77-4c5b0d344aaa">
+    <name>ДатаАнализа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата анализа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c52d9b5d-1bbf-434f-9dde-39a5c5d015ee">
+    <name>ВидВыдачиСИЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид выдачи СИЗ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыВыдачиСИЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="64974ee4-a0f8-431f-8b78-e87d9fe15877">
+    <name>ПричинаСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина списания</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПричиныСписания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="cfa2382f-6ab9-4189-a8e8-685c843cd715">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="f4c4d7c4-cce9-4d98-81ca-8334c9fecfcd">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДолжностиИПрофессии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="16e71b03-a026-4f22-8617-81baead4c0c8">
+    <name>РабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РабочиеМестаАСТБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <tabularSections uuid="76aa9ee3-2ccf-4fb6-8fd4-62e69f6a4d23">
+    <producedTypes>
+      <objectType typeId="373352fa-d361-4477-9b1b-af9297470223" valueTypeId="cdf1d9be-99bf-40b4-9a5a-bea49a92648b"/>
+      <rowType typeId="7002705c-88ac-4a88-8c83-4299fde37734" valueTypeId="210b043b-1ca9-4cdb-bf5a-01e60f0d032d"/>
+    </producedTypes>
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8670c6a1-010f-41b5-85c4-e3e4f64f77cd">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5ed3ce9e-00f7-49da-a163-5b438d0485a6">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="18df6822-fb9a-4ad4-b6d6-fe8466420cb6">
+    <producedTypes>
+      <objectType typeId="e7cdec59-2a78-44b6-b121-c9f9506f43ef" valueTypeId="c24c62ae-f5c5-45a5-86a1-c484cf8ee846"/>
+      <rowType typeId="fff3b565-8d9c-43f7-aa4d-c803eaf4f287" valueTypeId="a2d486e0-accd-4c4a-a58c-bc6edfcdefac"/>
+    </producedTypes>
+    <name>ТаблицаНормВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица норм выдачи</value>
+    </synonym>
+    <attributes uuid="1424fb62-f9b8-4177-b2a0-38220c6fbdbd">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2f8862d7-88ba-41de-afc8-5a46fd5cb928">
+      <name>НормаВыдачи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норма выдачи</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НормыВыдачиСИЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="1e02343d-f44f-46bc-a673-fa4f607ca567">
+    <producedTypes>
+      <objectType typeId="5e21b0b8-2b47-42ef-b718-bc37bf82311b" valueTypeId="940e932f-23da-4bd9-8fae-b2dd6decd47b"/>
+      <rowType typeId="2364c738-e831-49ba-8f58-743fe902ef2f" valueTypeId="18a2aafc-5d3b-4557-8f89-a5f569b27b05"/>
+    </producedTypes>
+    <name>ТаблицаНоменклатурыНорм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица номенклатуры норм</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="53cfa2e6-68fd-4044-8def-70f60be8690e">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="148d823d-d3bd-4fb0-96d1-73931ca945c3">
+      <name>НоменклатураНорм</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура норм</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатураНормОрганизации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.СписаниеВыданныхСИЗПоПричине.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="021c8c6b-42e6-474f-909c-68ca98f9ca14">
+    <producedTypes>
+      <objectType typeId="4d6c02d7-53ad-4ba5-80ee-fb04592a3305" valueTypeId="61a04ca4-9064-4c0c-8453-f2d0410fea4c"/>
+      <rowType typeId="cfab6b3f-d828-4a48-b653-9acdbbe0b07a" valueTypeId="690c6ef9-ea63-4e6b-9cd9-d68a3abdd7dc"/>
+    </producedTypes>
+    <name>ТаблицаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица номенклатуры</value>
+    </synonym>
+    <attributes uuid="98bb99f0-9495-4ec6-a80c-e7d6a796524e">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ba6aac55-0ed8-4d2b-9189-fa000914b9b7">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1eeeb7e0-b270-4348-b1d7-406683701ad5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

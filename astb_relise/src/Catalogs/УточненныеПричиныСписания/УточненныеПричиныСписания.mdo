@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e1bc5c2-b6c6-4f91-b25b-d5b5b9dc4222">
+  <producedTypes>
+    <objectType typeId="90f47c17-6d5d-4930-b301-a63c843a65a7" valueTypeId="7965f73e-d2db-4b44-90c1-df5ba6fb4806"/>
+    <refType typeId="5e8a867a-228b-44d9-92e3-320012578c1b" valueTypeId="28562e98-cdff-472a-a7dc-35899270f18c"/>
+    <selectionType typeId="bf585bed-be8c-4c2e-a70b-81f2b9dd3bd7" valueTypeId="36d5a245-5985-4be8-877b-753c5c9d1768"/>
+    <listType typeId="599328b7-6586-41d8-8c82-3edeed4c83e6" valueTypeId="e2f4fc1e-ecb0-431f-bb58-440c046d1d8a"/>
+    <managerType typeId="a0fb4fc2-e095-428a-b5ab-42e6ac8c6b15" valueTypeId="2ebc554f-cd9a-4803-bb21-446333a4552e"/>
+  </producedTypes>
+  <name>УточненныеПричиныСписания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уточненные причины списания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.УточненныеПричиныСписания.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.УточненныеПричиныСписания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>3</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.УточненныеПричиныСписания.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.УточненныеПричиныСписания.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.УточненныеПричиныСписания.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.УточненныеПричиныСписания.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="64d5cdfc-07ed-4fdf-9994-c392646076ef">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b5298c3-4be5-432e-bc95-7c4a95a1b27b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb604745-f3b1-4dfe-9f49-289c5ba87c30">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a1573d20-07eb-43f7-9211-055cd1404c70">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="63744214-c568-42cc-ac8e-96706861fb0c">
+    <name>ДанныеXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные XML</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="803a04df-2add-4fe3-a5b7-3d4c4aa97ff7">
+  <producedTypes>
+    <objectType typeId="b2802c4d-310e-4f4e-b72c-943402818fc2" valueTypeId="3c619524-2a6b-4f43-a5b1-ccf08720c060"/>
+    <managerType typeId="25adc572-a569-4cc1-b0e0-74c327ce4f83" valueTypeId="36b03ec0-490e-444f-906c-298480268693"/>
+  </producedTypes>
+  <name>ОтчетПоНевыданнымСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по невыданным СИЗ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоНевыданнымСИЗ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="134a7fee-612d-4f6e-b24f-6a7d8e533390">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

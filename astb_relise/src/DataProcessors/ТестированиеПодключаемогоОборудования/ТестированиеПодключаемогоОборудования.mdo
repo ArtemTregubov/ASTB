@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e280fa3-83f6-4815-987a-d2523b11301c">
+  <producedTypes>
+    <objectType typeId="8bfbcdc0-4b55-45b9-9048-8e3117f6c891" valueTypeId="5d31330f-1555-4ca0-b435-c5c08ad4d948"/>
+    <managerType typeId="59655c8b-af43-491c-99fd-9888ca727a73" valueTypeId="3ca226a2-98ef-4dcf-b966-9dde2c7cbd40"/>
+  </producedTypes>
+  <name>ТестированиеПодключаемогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование подключаемого оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТестированиеПодключаемогоОборудования.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b53b7f95-80f9-44ba-a19f-37b06e90fee3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестирование подключаемого оборудования</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ef20d76c-af58-4eb2-98f5-4a2f555197e4">
+    <name>ТестированиеПодключаемогоОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестирование подключаемого оборудования</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

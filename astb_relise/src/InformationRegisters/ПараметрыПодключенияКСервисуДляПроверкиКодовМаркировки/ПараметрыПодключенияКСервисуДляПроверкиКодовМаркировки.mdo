@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dee1b087-244e-40bd-ad9e-b4f1dcd7c5cd">
+  <producedTypes>
+    <selectionType typeId="5b66edf3-d570-4ada-9f48-b0954abc0de9" valueTypeId="bdbf9ca4-ead7-4b94-9134-ec631f76a950"/>
+    <listType typeId="f55cbb41-1396-4e3f-a751-9d5ea5a9eac5" valueTypeId="2f9c0bfb-a8ff-4511-9029-1c4c8e482c03"/>
+    <managerType typeId="3121704a-3744-42bf-b401-d9639035bb00" valueTypeId="6ad973ee-9f77-4385-9c0a-4a474ed063bd"/>
+    <recordSetType typeId="11056ebb-7ff4-416b-b2b3-b0305a655f09" valueTypeId="249817c5-8d03-4a3b-a746-0fc310038538"/>
+    <recordKeyType typeId="c3afe7f9-e06d-4ae7-b072-6aa56c274384" valueTypeId="fbc6d018-ae09-45a8-bc8e-8becd5758fee"/>
+    <recordType typeId="c3d0e120-60fb-4efb-b5a2-bc00c10a9cc8" valueTypeId="beb4542c-5293-4b09-b570-22d13f483db4"/>
+    <recordManagerType typeId="646a1e32-281f-4dba-b1be-4eeed45bfab5" valueTypeId="5ef8c6c8-662c-412d-954f-22d1121bf987"/>
+  </producedTypes>
+  <name>ПараметрыПодключенияКСервисуДляПроверкиКодовМаркировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры подключения к сервису для проверки кодов маркировки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыПодключенияКСервисуДляПроверкиКодовМаркировки.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыПодключенияКСервисуДляПроверкиКодовМаркировки.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5c375f0f-8790-4a94-b885-07913815078b">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИсточникиДляПроверкиКодовМаркировки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ИсточникиДляПроверкиКодовМаркировки.EnumValue.SAPВостокСервис</value>
+    </fillValue>
+  </resources>
+  <resources uuid="44ac3287-8eaa-488f-a41a-ff883a18ec25">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="93b2cbb3-91d2-4475-b936-d9e5f415739d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="911572ea-0a40-4cae-9350-60057d9ac32e">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="699818e4-8f31-4883-9ff0-639a51384d0e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="143479a2-2315-446f-990c-42044f6bcfdd">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a48eb9f-f49c-4a85-a5ba-945add9312af">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

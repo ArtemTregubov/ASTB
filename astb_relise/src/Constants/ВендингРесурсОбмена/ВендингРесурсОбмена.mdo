@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c94da244-a79b-4a5b-bc5f-7da616dfbbc3">
+  <producedTypes>
+    <managerType typeId="58dece3d-c002-4d74-a676-e064021e956f" valueTypeId="b7720108-031d-47c2-877c-0aa1504d6443"/>
+    <valueManagerType typeId="3a88c258-fe25-49a3-9278-4e1b28f00cba" valueTypeId="51d55b23-2cd0-4115-a3d8-3fc579e0bf40"/>
+    <valueKeyType typeId="916326ce-a056-525a-b799-4c3201974e79" valueTypeId="3d2cd0b5-d736-503f-811a-8e5468b89a12"/>
+  </producedTypes>
+  <name>ВендингРесурсОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вендинг (ресурс обмена)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

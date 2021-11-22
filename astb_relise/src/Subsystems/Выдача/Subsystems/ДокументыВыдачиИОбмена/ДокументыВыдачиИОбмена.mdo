@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8592dde2-ead2-4f4a-8d24-c49148925cd3">
+  <name>ДокументыВыдачиИОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы выдачи и обмена</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВыдачаСредствЗащитыСотруднику</content>
+  <content>Document.ОбменСредствЗащитыСотрудника</content>
+  <content>Document.ВыдачаСредствЗащитыПоВедомости</content>
+  <content>Document.ВыдачаДежурныхСредствЗащиты</content>
+  <content>Document.УстановкаШтрихкодовНоменклатуры</content>
+  <content>Document.ЗаявкаНаВыдачу</content>
+  <content>Document.ЗачетУпрощеннойВыдачи</content>
+  <parentSubsystem>Subsystem.Выдача</parentSubsystem>
+</mdclass:Subsystem>

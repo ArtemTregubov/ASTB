@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cfc982f-5366-4cb4-a8b4-dbeed6715c42">
+  <name>Выдача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаВыдача</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаВыдача</content>
+  <content>CommonCommand.ПанельОтчетовВыдача</content>
+  <content>Report.ВыданныеСИЗ_Расширенный</content>
+  <content>Report.ОтчетПоНевыданнымСИЗ</content>
+  <content>Report.СводныйОтчетПоВыдаче</content>
+  <content>Report.СИЗПереданныеВСобственность</content>
+  <content>Report.ВыдачаСИЗ</content>
+  <content>Report.ОтчетДляЗагрузкиВСАП</content>
+  <content>Report.ОтчетПоВыдачеИСписанию</content>
+  <content>DataProcessor.ВводИнформацииПоВыданнымСредствамЗащиты</content>
+  <content>CommonCommand.ДополнительныеОбработкиВыдача</content>
+  <content>Report.ВыдачаПоВедомостям</content>
+  <content>Report.ВедомостьПоЗаявкамНаВыдачу</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.ГрафикУпрощеннойВыдачи</content>
+  <content>Report.КодыМаркировкиВыданныхСредствЗащиты</content>
+  <content>DataProcessor.ФормированиеППСпоПредварительномуППС</content>
+  <content>Report.ВедомостьПоОстаткамПредварительногоППС</content>
+  <content>DataProcessor.КорректировкаДанныхОВыдачеДляЛичнойКарточки</content>
+  <content>Report.ОтчетПоТочкамОбслуживания</content>
+  <content>Report.ВыдачаПоТабличнымЧастямДокументов</content>
+  <content>Report.ОтчетВыгруженныеППСвСАП</content>
+  <content>Report.ОтчетПоНевыданнымСИЗБезЗакрытыхЗадач</content>
+  <content>Report.ВыданныеСИЗПоВидуУчета</content>
+  <subsystems>ДокументыВыдачиИОбмена</subsystems>
+  <subsystems>ПроизвольнаяВыдача</subsystems>
+  <subsystems>ПереходПраваСобственности</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

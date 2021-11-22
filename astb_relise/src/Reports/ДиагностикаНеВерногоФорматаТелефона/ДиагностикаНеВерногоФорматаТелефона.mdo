@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdce2a28-40e8-4f9e-8dc5-3677ff22b176">
+  <producedTypes>
+    <objectType typeId="8f4ba798-cab3-44eb-82c3-3b693395677a" valueTypeId="1de885ac-e0e4-40b5-90cd-218c24f249df"/>
+    <managerType typeId="98901a22-c55d-4cdc-9b15-94d4419075b3" valueTypeId="0d08eaa1-5d6e-4538-a97d-baaeceab6e2c"/>
+  </producedTypes>
+  <name>ДиагностикаНеВерногоФорматаТелефона</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: не корректные телефонные номера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНеВерногоФорматаТелефона.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Диагностика не верных форматов телефонных номеров</value>
+  </explanation>
+  <templates uuid="ee4d43ff-dee9-442a-97d1-c41531bccf34">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

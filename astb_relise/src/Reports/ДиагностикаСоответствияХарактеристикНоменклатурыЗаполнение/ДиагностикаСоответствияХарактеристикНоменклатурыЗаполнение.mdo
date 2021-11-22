@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd3de7ee-298a-4483-b746-d52f185fe8d7">
+  <producedTypes>
+    <objectType typeId="3d5644be-89eb-42b9-9b55-a70a7d925beb" valueTypeId="9ac9e14a-df8a-4043-b637-257555d90f2c"/>
+    <managerType typeId="80ca2f47-9e3a-4dc7-867b-8d6a2c2148bd" valueTypeId="ebba41ed-d7e7-47a8-96db-6b8dfba46fb2"/>
+  </producedTypes>
+  <name>ДиагностикаСоответствияХарактеристикНоменклатурыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: соответствия характеристик номенклатуры (заполнение)</value>
+  </synonym>
+  <comment>Заполнение соответствий характеристик номенклатуры</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСоответствияХарактеристикНоменклатурыЗаполнение.Template.СоответствияХарактеристикНоменклатурыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение соответствий характеристик номенклатуры</value>
+  </explanation>
+  <templates uuid="37c406c8-a803-4bf3-a9f1-758d82568b7d">
+    <name>СоответствияХарактеристикНоменклатурыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствия характеристик номенклатуры (заполнение)</value>
+    </synonym>
+    <comment>Заполнение соответствий характеристик номенклатуры.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

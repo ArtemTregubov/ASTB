@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfaeeb70-7bcf-4dcd-8d5a-e52c366f8706">
+  <name>Анкетирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анкетирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаАнкетирование</picture>
+  </picture>
+  <content>CommonModule.Анкетирование</content>
+  <content>CommonModule.АнкетированиеКлиент</content>
+  <content>CommonModule.АнкетированиеКлиентСервер</content>
+  <content>FunctionalOption.ИспользоватьАнкетирование</content>
+  <content>CommonCommand.ПанельОтчетовАнкетирование</content>
+  <content>CommonPicture.ПодсистемаАнкетирование</content>
+  <content>Constant.ИспользоватьАнкетирование</content>
+  <content>Catalog.ВариантыОтветовАнкет</content>
+  <content>Catalog.ВопросыШаблонаАнкеты</content>
+  <content>Catalog.ШаблоныАнкет</content>
+  <content>Document.Анкета</content>
+  <content>Document.НазначениеОпросов</content>
+  <content>Enum.ТипыВопросовШаблонаАнкеты</content>
+  <content>Enum.ТипыТабличныхВопросов</content>
+  <content>ChartOfCharacteristicTypes.ВопросыДляАнкетирования</content>
+  <subsystems>СозданиеАнкетИОпросов</subsystems>
+  <subsystems>ХодАнкетированияИАнализ</subsystems>
+  <subsystems>Респонденты</subsystems>
+</mdclass:Subsystem>

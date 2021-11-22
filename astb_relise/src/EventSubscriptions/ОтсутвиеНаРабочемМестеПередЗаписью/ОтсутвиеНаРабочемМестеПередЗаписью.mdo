@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23885644-37f1-4f70-a0ee-3b5bfab8daf6">
+  <name>ОтсутвиеНаРабочемМестеПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отсутвие на рабочем месте (перед записью)</value>
+  </synonym>
+  <comment>Перед записью документа &quot;Отсутвие на рабочем месте&quot;</comment>
+  <source>
+    <types>DocumentObject.ОтсутствиеНаРабочемМесте</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПроцедурыРаботыСНормамиСервер.ОтсутвиеНаРабочемМестеПередЗаписьюПередЗаписью</handler>
+</mdclass:EventSubscription>

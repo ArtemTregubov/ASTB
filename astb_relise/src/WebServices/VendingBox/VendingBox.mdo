@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a53d98e5-29bb-47b8-9c71-f079668a0bc8">
+  <name>VendingBox</name>
+  <synonym>
+    <key>ru</key>
+    <value>Vending box</value>
+  </synonym>
+  <comment>Обмен данными с вендинговыми аппаратами ( Vending box)</comment>
+  <namespace>http://vending-box.com/</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.VendingBox</value>
+  </xdtoPackages>
+  <descriptorFileName>VB.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="66b7e044-360f-4fbf-9021-3c1e5bb45d2b">
+    <name>ReguestMaterials</name>
+    <synonym>
+      <key>ru</key>
+      <value>Reguest materials</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>MT_ResponseRequestMaterials</name>
+      <nsUri>http://vending-box.com/</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ReguestMaterials</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="de0075c5-6e4c-4ebc-95d4-800045ee60ed">
+      <name>Data</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>MT_RequestMaterials</name>
+        <nsUri>http://vending-box.com/</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="473ec35f-80df-4524-95c2-b8c8ed68f4c3">
+    <name>MovementMaterials</name>
+    <synonym>
+      <key>ru</key>
+      <value>Movement materials</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>MT_ResponseMovementMaterials</name>
+      <nsUri>http://vending-box.com/</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>MovementMaterials</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="ca962182-32e9-4c0a-8851-b42a998df4ed">
+      <name>Data</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>MT_MovementMaterials</name>
+        <nsUri>http://vending-box.com/</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="6058c146-0d67-4cbb-8946-dc1948dc7426">
+    <name>UploadDownload</name>
+    <synonym>
+      <key>ru</key>
+      <value>Upload download</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>MT_ResponseUploadDownload</name>
+      <nsUri>http://vending-box.com/</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>UploadDownload</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="cd6f1489-af85-485f-8f99-75abc982a6a1">
+      <name>Data</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>MT_UploadDownload</name>
+        <nsUri>http://vending-box.com/</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

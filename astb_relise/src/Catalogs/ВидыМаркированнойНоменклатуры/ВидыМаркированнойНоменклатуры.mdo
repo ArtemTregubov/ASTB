@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6149883f-02de-454e-9b81-93b9ed6eb2c8">
+  <producedTypes>
+    <objectType typeId="5183fefd-fc84-43ba-b9ee-798470cd62df" valueTypeId="54e51ea2-2b60-4979-a146-d468f0b6247a"/>
+    <refType typeId="92fe0930-a115-47b3-9f96-222f745a0bef" valueTypeId="086ef80d-7518-400c-844d-792c9b738cee"/>
+    <selectionType typeId="f7db79d1-6b39-427b-9cc4-349439983fce" valueTypeId="f30f785d-2a1e-489f-8576-63e55213e8d8"/>
+    <listType typeId="e78ad35e-9c1f-4fa7-8083-e38b16413dbf" valueTypeId="f991459b-7caa-4c9c-a0ab-95eca68b719c"/>
+    <managerType typeId="c2c4f096-c220-4672-8ed0-dc7ac7b2d207" valueTypeId="0323cc31-7a9f-45fa-a933-a34ffb75771b"/>
+  </producedTypes>
+  <name>ВидыМаркированнойНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды маркированной номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыМаркированнойНоменклатуры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыМаркированнойНоменклатуры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыМаркированнойНоменклатуры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыМаркированнойНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыМаркированнойНоменклатуры.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="8a7f3228-270d-4941-801a-6964c46b1311">
+    <name>ДатаНачалаОбязательнойМаркировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала обязательной маркировки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6be73353-b345-4a4d-83c2-7348d7b11f37">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="27faa60f-bebc-4bda-8e3d-e72f39b50aa8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8545e74b-970c-4de7-b2ef-64b51059772e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

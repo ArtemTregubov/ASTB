@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0933680-d119-4e08-9fc1-70cb091e3342">
+  <name>УчетИПланирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет и планирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonCommand.ДополнительныеОбработкиУчетИПланирование</content>
+</mdclass:Subsystem>

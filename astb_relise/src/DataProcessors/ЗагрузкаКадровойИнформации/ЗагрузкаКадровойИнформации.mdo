@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ada123f4-c152-417c-b674-0277d2821c7e">
+  <producedTypes>
+    <objectType typeId="9ea11972-7ad7-46e0-b027-ad3bb3215822" valueTypeId="7c16a47f-b1a7-4a44-b69f-e1ea7376cef0"/>
+    <managerType typeId="f8c0672a-8abc-4154-9c1e-57b45bc1edc6" valueTypeId="048bd201-fc41-4646-b04f-ef0e1fc22e95"/>
+  </producedTypes>
+  <name>ЗагрузкаКадровойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка кадровой информации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаКадровойИнформации.Form.Форма</defaultForm>
+  <attributes uuid="a3f40e31-59b3-429e-a519-0b1da4c59818">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6d5b734-7b26-4d62-872a-01483bd7714b">
+    <name>ПротоколОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол ошибок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d4a3b06-d19a-4d10-b4b2-02565fdd3651">
+    <name>ФайлДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="478d2473-e09d-48cd-a1cb-890485597805">
+    <name>ДатаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f64db19d-51d7-4fd9-8b06-7deaa023a88c">
+    <name>ИсправлятьНаименованияСуществующихПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих подразделений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c88f530-4dd1-428c-a6c9-12f6b8b04256">
+    <name>ИсправлятьНаименованияСуществующихДолжностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих должностей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9fa3fa56-55eb-4c4a-9db5-05fed30c9fea">
+    <name>ИсправлятьНаименованияСуществующихРабочихМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлять наименования существующих рабочих мест</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="0b406d9d-9b38-4817-bdaa-fd29934786cf">
+    <producedTypes>
+      <objectType typeId="f3c17ec6-2bfb-45d0-bde6-79668a9864b1" valueTypeId="76d8cac0-4f57-4366-8277-a0dd4eb1057c"/>
+      <rowType typeId="00a68474-a734-43f2-a7f1-4a4b9e2174bb" valueTypeId="bb7caf8d-d078-4b2d-91f0-a7690c794e68"/>
+    </producedTypes>
+    <name>ТаблицаПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица подразделений</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="44108c8d-60a5-4175-b281-5e9889304ccf">
+      <name>division_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="6ff9e090-3092-4290-b56a-9a13fcd03349">
+      <name>division_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b397b8b9-2ac6-42ad-b7c0-943d03d943ed">
+      <name>owner_division</name>
+      <synonym>
+        <key>ru</key>
+        <value>Owner division</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="776ccece-0cd3-407f-95ee-fd141f6ceb2d">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a7ac36b9-21dd-4a1a-9618-52c5c4c97b32">
+      <name>ГоловноеПодразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Головное подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0ba3ed24-8260-4f3d-a64a-edccab204dfd">
+      <name>division_actual</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division actual</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ee53a284-22a1-4d3f-87cc-b0fef2906c88">
+      <name>division_mvz_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division mvz name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="89549ec7-3b17-459d-b8c5-60fd5ed82b4d">
+      <name>division_mvz_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division mvz code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="27c32d71-d23b-434e-a07c-4383e92b04e7">
+      <name>МВЗ</name>
+      <synonym>
+        <key>ru</key>
+        <value>МВЗ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МВЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7f636cc1-2cc1-46dc-82f9-37074522168d">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="d91a210a-1305-4b1c-97c5-85e9b4954262">
+    <producedTypes>
+      <objectType typeId="c3a5fd76-8fdb-4b6f-b2c7-eb29a2bc2198" valueTypeId="d49d9784-1ecf-4277-8377-139037c14209"/>
+      <rowType typeId="9f20eed8-6bc4-4f3e-be54-4167142d1e1b" valueTypeId="8315f4c5-269d-4131-b2f7-c05c673f8596"/>
+    </producedTypes>
+    <name>ТаблицаРабочихМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица рабочих мест</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1ab6bcae-f2d6-401a-8369-c4ed64fd92c5">
+      <name>workplace_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Workplace name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="64b82f0b-6183-42e0-a0c2-d8f1f2fcae88">
+      <name>workplace_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Workplace code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0f40fd7a-21a8-4300-a0bb-b87cd71e7d6d">
+      <name>РабочееМесто</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рабочее место</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РабочиеМестаАСТБ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="78e62f55-30bb-403f-be7e-3012f9d150de">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="29c68303-e524-4594-8ceb-8557e9324469">
+    <producedTypes>
+      <objectType typeId="d8eb32ca-23cd-42cc-ae3a-7042695ab61a" valueTypeId="01c54fe5-ca9e-4708-832c-b525fa2910a4"/>
+      <rowType typeId="6316b7b1-612e-43b1-8df7-e9a886fdec84" valueTypeId="ea259051-e731-4772-9699-3058f498ee0c"/>
+    </producedTypes>
+    <name>ТаблицаДолжностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица должностей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="33ae4236-4fac-477a-87ca-d7e0d7054a01">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДолжностиИПрофессии</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c8009ffc-52cd-476e-ab2b-ec6a5b6fa54f">
+      <name>job_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Job name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="cc3f6883-ca84-4e4a-bfbe-2a81e6fc5413">
+      <name>job_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Job code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0325da86-06a2-4ef4-bdcf-ab3af4579928">
+      <name>job_okpdtr</name>
+      <synonym>
+        <key>ru</key>
+        <value>Job okpdtr</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>6</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bb501ee9-3842-4014-9263-adbf9a1bbea0">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="987a756f-e69a-4381-982b-6e445885744d">
+    <producedTypes>
+      <objectType typeId="956dd1a6-ab5a-4472-a951-77b3d923a488" valueTypeId="12a451ec-a0d6-4802-ac33-0aa49d166b78"/>
+      <rowType typeId="373f46bc-22af-447d-b913-411fe158c80a" valueTypeId="1ae73dc0-3a63-404b-876a-6b228b5e22cd"/>
+    </producedTypes>
+    <name>ТаблицаСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица сотрудников</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bb327bda-7273-4f9f-88dd-054b7ea77872">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f52041e1-0f81-4987-aaa8-05d8ace469ee">
+      <name>worker_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="6c82d0e9-a66e-4f50-9d01-6aae009347de">
+      <name>worker_surname</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker surname</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5fb19f43-311e-43f3-b17a-7eb7d003575c">
+      <name>worker_family</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker family</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="ce0415cf-de70-4bc8-9390-0f59320bdc5b">
+      <name>worker_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Табельный номер сотрудника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="47927b96-7a13-4e1e-9e4c-6900a3f17ec0">
+      <name>worker_snils</name>
+      <synonym>
+        <key>ru</key>
+        <value>СНИЛС (код синхронизации) физического лица</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="cd1b1008-2351-4ebf-b84c-0a38bc9bfd96">
+      <name>worker_sex</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker sex</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>1</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9e5850f4-3987-482b-bac9-3c73ea2283a2">
+      <name>worker_bday</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker bday</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="224c54df-dc07-49cf-93f7-12275105cf54">
+      <name>worker_mvz_name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker mvz name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0ab75f2a-b090-40ba-9166-28d9475f39ff">
+      <name>worker_mvz_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker mvz code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e1783ce8-f4b2-4247-a698-07452b57c910">
+      <name>worker_id</name>
+      <synonym>
+        <key>ru</key>
+        <value>Worker id</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bdc5d7bf-6126-4249-a510-d7a0c5da719b">
+      <name>МВЗ</name>
+      <synonym>
+        <key>ru</key>
+        <value>МВЗ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МВЗ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЗагрузкаКадровойИнформации.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8ab1df53-9d96-4e89-afae-40e846704776">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8eef2f3b-7cea-4e24-a412-71f440779c48">
+    <producedTypes>
+      <objectType typeId="6d594880-53d9-4a52-b292-159bf5921e7e" valueTypeId="b83ee991-23f2-49d4-b2cd-18e81eb3477b"/>
+      <rowType typeId="d9ae27a3-7406-4b9a-8532-05f4b7e8106a" valueTypeId="34f4bf89-6ad9-4a5b-8771-62e1d1a2e079"/>
+    </producedTypes>
+    <name>ТаблицаШтатногоРасписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица штатного расписания</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="33579efb-a8bd-4f29-82a0-65616754b4f9">
+      <name>division_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Division code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d676aca4-30c8-47ef-8312-5e206ce9971d">
+      <name>job_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Job code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8a996f3d-5211-490c-860b-77975988954b">
+      <name>vacancy</name>
+      <synonym>
+        <key>ru</key>
+        <value>Vacancy</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e82ab4a7-126e-483a-a681-1da97de0ff1c">
+      <name>date</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f2553c40-53ca-46b1-9b34-477899b0ddba">
+      <name>ЕстьВБазе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть в базе</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d32aa3b9-5d61-4451-bab9-3599041aad96">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="649ba82f-64e6-4d42-8b23-41a0193d391d">
+    <producedTypes>
+      <objectType typeId="84cd8fdd-5446-4935-aacb-25186adf7bcb" valueTypeId="6e589af0-003b-4132-9897-bcf126feadef"/>
+      <rowType typeId="fc915313-0da8-42e4-a6f7-f3608a8ffaef" valueTypeId="a38d7f51-d3f3-4d0d-804f-a59d3c875ab9"/>
+    </producedTypes>
+    <name>ТаблицаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица документов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="822abb04-738b-442f-b43d-69c61f44ec5b">
+      <name>document_type</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document type</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>11</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="336094ce-a984-4b83-a047-5d2f5aeb5888">
+      <name>document_date</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cdc39b03-1081-4ae8-b818-1731b0756fb5">
+      <name>document_number</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document number</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="9266b4c2-b041-4e32-96bc-b54ff72f21ba">
+      <name>document_note</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document note</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b3009618-0c7e-4957-92ea-28368e9cd492">
+      <name>document_date_begin</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document date begin</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="220c55fe-a3f6-4294-851d-9103bfb516d4">
+      <name>document_date_end</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document date end</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="22602028-4ec1-4d23-86cd-8dc69f6059bf">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f5ad5e16-1aa8-4b28-985a-8eae1ee87573">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="6047a555-74cb-4846-b086-3151f981138a">
+    <producedTypes>
+      <objectType typeId="1c8925fa-0a1f-4460-8081-e3e1c983b795" valueTypeId="7a600ee2-da5b-44f3-ab19-16bfbf05c9a7"/>
+      <rowType typeId="315c26d0-a342-4dfe-8931-79f3eda68aa4" valueTypeId="d4a4b981-50ff-43e5-b1c5-3e9c44d580a4"/>
+    </producedTypes>
+    <name>ТаблицаСоставаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица состава документов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d728c08b-53c5-446b-96d1-04b96f567345">
+      <name>document_type</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document type</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>11</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2085a413-ad0b-429f-8dc2-3328d0eef276">
+      <name>document_date</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9bd4d702-a3c4-44b4-b8c2-51846e3ad6e4">
+      <name>document_number</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document number</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e10c0fd9-5bb0-423b-86ac-5c175a9eed80">
+      <name>document_worker_snils</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document worker snils</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="6263bf1b-7170-4d91-82a4-7b9791b973da">
+      <name>document_division_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document division code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="203ed50c-d29a-43cb-ba1e-6baf8681dab3">
+      <name>document_job_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document job code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e7f3e378-fc91-4e36-a994-f03655e39798">
+      <name>document_vacancy</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document vacancy</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="729cbecc-c052-4b03-9877-f3dcdb0d8512">
+      <name>document_old_division_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document old division code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2a17d6c9-2726-4d39-9721-3f562eafcef4">
+      <name>document_old_job_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document old job code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8945c19a-bb34-4c76-b8b6-7d5561024b0c">
+      <name>document_old_workplace_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document old workplace code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b8b60c06-bfd4-4c54-8188-8ba12f085580">
+      <name>document_workplace_code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document workplace code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bf7f5d88-1e99-4b2d-90d2-8e3a22f0d70e">
+      <name>document_old_vacancy</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document old vacancy</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="566350ab-e270-460d-a424-0ed342de5544">
+      <name>date_end</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date end</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6f104dad-09d6-4246-9bd3-d0e4a0a2f669">
+      <name>ЕстьВБазе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть в базе</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="95848987-6b3a-470f-9ff7-d4c9e0c8abc2">
+      <name>Ошибка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="87c2462b-733f-4ecf-a75e-8ef9e1e42e8d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

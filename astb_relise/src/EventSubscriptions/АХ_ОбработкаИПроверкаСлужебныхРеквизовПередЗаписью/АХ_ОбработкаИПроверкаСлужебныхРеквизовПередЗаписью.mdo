@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0fb9ede-4b1e-4482-a1af-b1e079d0d312">
+  <name>АХ_ОбработкаИПроверкаСлужебныхРеквизовПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) Проверка служебных реквизов перед записью</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеНоменклатуры</types>
+    <types>DocumentObject.ОприходованиеНоменклатуры</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+    <types>DocumentObject.ВыдачаДежурныхСредствЗащиты</types>
+    <types>DocumentObject.СписаниеНоменклатуры</types>
+    <types>DocumentObject.ПоступлениеНоменклатуры</types>
+    <types>DocumentObject.ВыдачаСредствЗащитыСотруднику</types>
+    <types>DocumentObject.ВозвратНоменклатурыПоставщику</types>
+    <types>DocumentObject.ВозвратСредствЗащитыОтСотрудника</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.АХ_ОбменВызовСервера.АХ_ПроверкаСлужебныхРеквизовПередЗаписьюПередЗаписью</handler>
+</mdclass:EventSubscription>

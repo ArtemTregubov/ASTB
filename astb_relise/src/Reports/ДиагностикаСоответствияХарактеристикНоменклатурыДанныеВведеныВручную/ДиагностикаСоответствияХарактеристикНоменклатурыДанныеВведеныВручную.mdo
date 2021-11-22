@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ff46998-b274-4583-b1b0-c00463dc34c4">
+  <producedTypes>
+    <objectType typeId="371317a9-9fd9-4e25-ac76-3eb97a2864cc" valueTypeId="9e504bdc-ca0d-49a7-945f-b9a7c5432e34"/>
+    <managerType typeId="425c9760-5f2d-4afa-90db-0c4ae612bdab" valueTypeId="7170e4d0-f45f-478a-8c09-15d99f450372"/>
+  </producedTypes>
+  <name>ДиагностикаСоответствияХарактеристикНоменклатурыДанныеВведеныВручную</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: соответствия характеристик номенклатуры (данные введены вручную)</value>
+  </synonym>
+  <comment>Соответствия характеристик номенклатуры, введенные вручную. Т.е. не соответствуют &quot;зашитым&quot; в конфигурацию данным.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСоответствияХарактеристикНоменклатурыДанныеВведеныВручную.Template.СоответствияХарактеристикНоменклатурыДанныеВведеныВручную</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствия характеристик номенклатуры, введенные вручную. Т.е. не соответствуют &quot;зашитым&quot; в конфигурацию данным.</value>
+  </explanation>
+  <templates uuid="f74743d1-840f-4c3f-b020-db2cc206458b">
+    <name>СоответствияХарактеристикНоменклатурыДанныеВведеныВручную</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствия характеристик номенклатуры (данные введены вручную)</value>
+    </synonym>
+    <comment>Соответствия характеристик номенклатуры, введенные вручную. Т.е. не соответствуют &quot;зашитым&quot; в конфигурацию данным.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

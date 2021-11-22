@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37e6020f-9de0-4fb1-84ab-01fc74a0c62b">
+  <producedTypes>
+    <objectType typeId="f460546b-fb96-47e4-af7e-d318e3430e0e" valueTypeId="7aa8e75a-b546-4209-9221-178f0364614c"/>
+    <managerType typeId="ca8ce4b8-1e57-4093-b14d-17a4dbc666fa" valueTypeId="6ca227eb-b7db-4ee3-a8fe-5cf98c2e287c"/>
+  </producedTypes>
+  <name>ДиагностикаПериодичностьВыдачиСИЗДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: периодичность выдачи СИЗ (дубли)</value>
+  </synonym>
+  <comment>Периодичность выдачи (дубли по приоритету).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПериодичностьВыдачиСИЗДубли.Template.ПериодичностьВыдачиСИЗДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Периодичность выдачи (дубли по приоритету).</value>
+  </explanation>
+  <templates uuid="56051b73-c1ad-4482-9655-1142a2435181">
+    <name>ПериодичностьВыдачиСИЗДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность выдачи (дубли)</value>
+    </synonym>
+    <comment>Периодичность выдачи (дубли по приоритету).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

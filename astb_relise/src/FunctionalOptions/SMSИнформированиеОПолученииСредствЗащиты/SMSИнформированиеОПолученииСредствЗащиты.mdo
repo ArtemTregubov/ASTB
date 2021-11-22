@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8669530-7fcd-419f-86be-d1d15c4fb681">
+  <name>SMSИнформированиеОПолученииСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>SMS-информирование о получении средств защиты</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.SMSИнформированиеОПолученииСредствЗащиты</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

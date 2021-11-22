@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d55e650-9564-42c6-a141-e8351d381d85">
+  <name>ЗаполнениеПланаОбменаДляВыгрузкиВ_КонсолидациюРегистрыНакопления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение плана обмена для выгрузки в консолидацию (Регистры накопления)</value>
+  </synonym>
+  <comment>33597</comment>
+  <source>
+    <types>AccumulationRegisterRecordSet.ЗанятыеРабочиеМеста</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.КонсолидацияСервер.ЗаполнениеПланаОбменаДляВыгрузкиВ_КонсолидациюРегистрыНакопленияПриЗаписи</handler>
+</mdclass:EventSubscription>

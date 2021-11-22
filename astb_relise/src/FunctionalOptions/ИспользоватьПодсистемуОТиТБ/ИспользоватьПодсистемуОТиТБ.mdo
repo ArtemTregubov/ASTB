@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3806b39b-1316-47bf-935a-7657826dd75a">
+  <name>ИспользоватьПодсистемуОТиТБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подсистему &quot;ОТ и ТБ&quot;</value>
+  </synonym>
+  <location>Constant.ИспользоватьПодситемуОТиТБ</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Subsystem.ОТиТБ</content>
+  <content>InformationRegister.ИнструктажиСотрудников</content>
+  <content>InformationRegister.ПриказыНаИнструктажи</content>
+  <content>Catalog.ПричиныПроведенияИнструктажей</content>
+  <content>Report.ЖурналПроведенныхИнструктажей</content>
+  <content>Report.ГрафикПрохожденияИнструктажей</content>
+  <content>InformationRegister.РезультатыПроверкиЗнанийСотрудников</content>
+  <content>Document.ПроверкаЗнанийСотрудника</content>
+  <content>Document.ПриказНаПроведениеИнструктажей</content>
+  <content>Document.ИнструктажСотрудников</content>
+  <content>Catalog.ПрограммыИнструктажей</content>
+  <content>Catalog.Инструктажи</content>
+  <content>Catalog.ВопросыДляТестов</content>
+  <content>Catalog.Тесты</content>
+  <content>Catalog.Ответы</content>
+  <content>Report.ПроведенныеПроверкиЗнаний</content>
+  <content>Document.ПриказНаПроведениеПроверкиЗнаний</content>
+  <content>InformationRegister.ПриказыНаПроведениеПроверкиЗнаний</content>
+  <content>DataProcessor.ЗагрузкаТестовДляПроверкиЗнаний</content>
+  <content>Document.СпециальнаяОценкаРабочихМест</content>
+  <content>InformationRegister.ВредныеИОпасныеФакторыИРаботыНаРабочихМестах</content>
+  <content>Document.ПриказНаПроведениеМедицинскихОсмотров</content>
+  <content>InformationRegister.ПриказыНаПроведениеМедицинскихОсмотров</content>
+  <content>Document.НаправлениеНаМедицинскийОсмотр</content>
+  <content>Document.МедицинскийОсмотр</content>
+  <content>InformationRegister.МедицинскиеОсмотрыСотрудников</content>
+</mdclass:FunctionalOption>

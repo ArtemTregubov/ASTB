@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21e230e6-eac5-426b-b2e5-29f90a48a634">
+  <producedTypes>
+    <objectType typeId="816a6f76-e8cf-46e4-b313-a0a93feeea4d" valueTypeId="e276ef63-803e-4231-a7f0-e28a07a47a67"/>
+    <managerType typeId="9bb8480c-492d-47cc-880a-58ed6f8ea824" valueTypeId="470b3a92-3180-4169-a003-fbca4b69afb1"/>
+  </producedTypes>
+  <name>ПечатьСертификатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать сертификатов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьСертификатов.Form.Форма</defaultForm>
+  <attributes uuid="d1013901-1391-4624-9d0d-e2ecc525c258">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="356ab706-5d20-46a8-abd6-cb2dfc2f556a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="348efcfe-fd05-49cb-a696-243399e287d4">
+    <name>МакетPDF</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет PDF</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="988df4b7-2f34-42a0-b76f-52007e4b7db6">
+    <name>СкриптБиблиотека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрипт библиотека</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5a591136-0e49-404e-b356-4cb1d302bed4">
+    <name>СкриптWorker</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрипт worker</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

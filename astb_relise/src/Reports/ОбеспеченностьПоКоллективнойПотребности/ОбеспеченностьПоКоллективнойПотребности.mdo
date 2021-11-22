@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61c5adf9-af00-4baf-84a9-eed881768329">
+  <producedTypes>
+    <objectType typeId="db9b14f1-2e6a-4f1e-8120-906baa178a94" valueTypeId="94c232b9-eed8-414f-8c50-1652d85862e9"/>
+    <managerType typeId="b871caf0-4603-4b87-b29d-fff99c5c32bc" valueTypeId="e6104df6-0215-44c1-95f3-e26596a6ad90"/>
+  </producedTypes>
+  <name>ОбеспеченностьПоКоллективнойПотребности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обеспеченность по коллективной потребности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОбеспеченностьПоКоллективнойПотребности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f30f2fb3-6bda-4cd0-86d9-10938f39c618">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

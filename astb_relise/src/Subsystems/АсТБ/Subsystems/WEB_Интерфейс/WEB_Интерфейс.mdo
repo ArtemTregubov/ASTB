@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cedfbf02-b3d5-47e0-8e68-b3b1f7bb8e08">
+  <name>WEB_Интерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>WEB интерфейс</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonPicture.WEB_Обеспеченность_72</content>
+  <content>CommonPicture.WEB_ГрафикВыдачи_72</content>
+  <content>CommonPicture.WEB_ЛичныеДанные_72</content>
+  <content>CommonPicture.WEB_ОбратнаяСвязь_72</content>
+  <content>CommonPicture.WEB_Выход_72</content>
+  <content>CommonPicture.WEB_Выход_48</content>
+  <content>CommonPicture.WEB_Назад_48</content>
+  <content>CommonPicture.WEB_МедицинскиеОбследования_72</content>
+  <content>CommonPicture.WEB_ВыданныеСредстваЗащиты_72</content>
+  <content>CommonPicture.WEB_НормыВыдачи_72</content>
+  <content>CommonPicture.WEB_ПроверкаЗнаний_72</content>
+  <content>CommonPicture.WEB_Инструктажи_72</content>
+  <content>CommonPicture.WEB_SMSИнформирование_72</content>
+  <content>CommonPicture.WEB_СредстваЗащитыВЧистке_72</content>
+  <content>CommonPicture.WEB_ПроверкаЗнаний_48</content>
+  <content>CommonPicture.WEB_SMSИнформирование_100</content>
+  <content>CommonPicture.WEB_Обеспеченность_100</content>
+  <content>CommonPicture.WEB_ГрафикВыдачи_100</content>
+  <content>CommonPicture.WEB_ЛичныеДанные_100</content>
+  <content>CommonPicture.WEB_ОбратнаяСвязь_100</content>
+  <content>CommonPicture.WEB_Выход_100</content>
+  <content>CommonPicture.WEB_МедицинскиеОбследования_100</content>
+  <content>CommonPicture.WEB_ВыданныеСредстваЗащиты_100</content>
+  <content>CommonPicture.WEB_НормыВыдачи_100</content>
+  <content>CommonPicture.WEB_ПроверкаЗнаний_100</content>
+  <content>CommonPicture.WEB_Инструктажи_100</content>
+  <content>CommonPicture.WEB_СредстваЗащитыВЧистке_100</content>
+  <content>CommonPicture.WEB_Уведомления_72</content>
+  <content>CommonPicture.WEB_ЗаписьНаСклад_100</content>
+  <parentSubsystem>Subsystem.АсТБ</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВыдачи</dataPath>
+			<field>ДокументВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентОбеспеченности</dataPath>
+			<field>ПроцентОбеспеченности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент обеспеченности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеВыданоПоПричине</dataPath>
+			<field>НеВыданоПоПричине</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаВыдачи</dataPath>
+			<field>НормаВыдачи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНормы</dataPath>
+			<field>НоменклатураНормы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДокументаВыдачи</dataPath>
+			<field>ДатаДокументаВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата документа выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основание</dataPath>
+			<field>Основание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уточненное основание нормы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыдачи</dataPath>
+			<field>ДатаВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыданныеСИЗ</dataPath>
+			<field>ВыданныеСИЗ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выданные СИЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Организация КАК Организация,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Сотрудник КАК Сотрудник,
+	ВыдачаСредствЗащитыСотрудникуТовары.НормаВыдачи КАК НормаВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.НоменклатураНормы КАК НоменклатураНормы,
+	СУММА(ВыдачаСредствЗащитыСотрудникуТовары.Количество) КАК Количество,
+	СУММА(ВыдачаСредствЗащитыСотрудникуТовары.КоличествоПотребность) КАК КоличествоПотребность,
+	МАКСИМУМ(ВыдачаСредствЗащитыСотрудникуТовары.НеВыданоПоПричине) КАК НеВыданоПоПричине,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Дата КАК ДатаДокументаВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка КАК ДокументВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.Номенклатура КАК ВыданныеСИЗ,
+	ВЫБОР
+		КОГДА ВыдачаСредствЗащитыСотрудникуТовары.Номенклатура = ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)
+			ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+		ИНАЧЕ ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Дата
+	КОНЕЦ КАК ДатаВыдачи
+ПОМЕСТИТЬ ВТ_ИсходнаяВыдача
+ИЗ
+	Документ.ВыдачаСредствЗащитыСотруднику.Товары КАК ВыдачаСредствЗащитыСотрудникуТовары
+ГДЕ
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Проведен
+	И ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.ВидВыдачиСИЗ = ЗНАЧЕНИЕ(Перечисление.ВидыВыдачиСИЗ.ПерсональнаяВыдача)
+	И (ВыдачаСредствЗащитыСотрудникуТовары.НеВыданоПоПричине В (&amp;НеВыданоПоПричине)
+			ИЛИ ВыдачаСредствЗащитыСотрудникуТовары.НеВыданоПоПричине = ЗНАЧЕНИЕ(Справочник.ПричиныНевыдачиСИЗ.ПустаяСсылка))
+
+СГРУППИРОВАТЬ ПО
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка,
+	ВыдачаСредствЗащитыСотрудникуТовары.НормаВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.НоменклатураНормы,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Организация,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Сотрудник,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Дата,
+	ВыдачаСредствЗащитыСотрудникуТовары.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ИсходнаяВыдача.Организация КАК Организация,
+	ВТ_ИсходнаяВыдача.Сотрудник КАК Сотрудник,
+	ВТ_ИсходнаяВыдача.НормаВыдачи КАК НормаВыдачи,
+	ВТ_ИсходнаяВыдача.НоменклатураНормы КАК НоменклатураНормы,
+	ВТ_ИсходнаяВыдача.Количество КАК Количество,
+	ВТ_ИсходнаяВыдача.Количество / ВТ_ИсходнаяВыдача.КоличествоПотребность * 100 КАК ПроцентОбеспеченности,
+	ВТ_ИсходнаяВыдача.НеВыданоПоПричине КАК НеВыданоПоПричине,
+	ВТ_ИсходнаяВыдача.ДатаДокументаВыдачи КАК ДатаДокументаВыдачи,
+	ВТ_ИсходнаяВыдача.ДокументВыдачи КАК ДокументВыдачи,
+	ВТ_ИсходнаяВыдача.ДатаВыдачи КАК ДатаВыдачи,
+	ВТ_ИсходнаяВыдача.ВыданныеСИЗ КАК ВыданныеСИЗ
+ПОМЕСТИТЬ ВТ_ПроцентОбеспеченности
+ИЗ
+	ВТ_ИсходнаяВыдача КАК ВТ_ИсходнаяВыдача
+ГДЕ
+	НЕ ВТ_ИсходнаяВыдача.КоличествоПотребность = 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Организация КАК Организация,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Сотрудник КАК Сотрудник,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Подразделение КАК Подразделение,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Должность КАК Должность,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.РабочееМесто КАК РабочееМесто
+ПОМЕСТИТЬ ВТ_ОсновноеМестоРаботы
+ИЗ
+	РегистрСведений.ОсновноеМестоРаботыСотрудника.СрезПоследних(&amp;ДатаОкончания, ) КАК ОсновноеМестоРаботыСотрудникаСрезПоследних
+ГДЕ
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.ОсновноеМестоРаботы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	НЕ УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	НЕ УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	НЕ УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И НЕ УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	НЕ УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УточненныеОснованияНормВыдачи.Организация КАК Организация,
+	УточненныеОснованияНормВыдачи.НормаВыдачи КАК НормаВыдачи,
+	УточненныеОснованияНормВыдачи.Подразделение КАК Подразделение,
+	УточненныеОснованияНормВыдачи.Должность КАК Должность,
+	УточненныеОснованияНормВыдачи.РабочееМесто КАК РабочееМесто,
+	УточненныеОснованияНормВыдачи.Основание КАК Основание
+ПОМЕСТИТЬ ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто
+ИЗ
+	РегистрСведений.УточненныеОснованияНормВыдачи КАК УточненныеОснованияНормВыдачи
+ГДЕ
+	УточненныеОснованияНормВыдачи.Подразделение = ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.Должность = ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка)
+	И УточненныеОснованияНормВыдачи.РабочееМесто = ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	НормаВыдачи,
+	Подразделение,
+	Должность,
+	РабочееМесто
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПроцентОбеспеченности.Организация КАК Организация,
+	ВТ_ОсновноеМестоРаботы.Подразделение КАК Подразделение,
+	ВТ_ОсновноеМестоРаботы.Должность КАК Должность,
+	ВТ_ОсновноеМестоРаботы.РабочееМесто КАК РабочееМесто,
+	ВТ_ПроцентОбеспеченности.Сотрудник КАК Сотрудник,
+	ВТ_ПроцентОбеспеченности.НормаВыдачи КАК НормаВыдачи,
+	ВТ_ПроцентОбеспеченности.НоменклатураНормы КАК НоменклатураНормы,
+	ВТ_ПроцентОбеспеченности.Количество КАК Количество,
+	ВТ_ПроцентОбеспеченности.ПроцентОбеспеченности КАК ПроцентОбеспеченности,
+	ВТ_ПроцентОбеспеченности.НеВыданоПоПричине КАК НеВыданоПоПричине,
+	ВТ_ПроцентОбеспеченности.ДатаДокументаВыдачи КАК ДатаДокументаВыдачи,
+	ВТ_ПроцентОбеспеченности.ДокументВыдачи КАК ДокументВыдачи,
+	ВТ_ПроцентОбеспеченности.ДатаВыдачи КАК ДатаВыдачи,
+	ВТ_ПроцентОбеспеченности.ВыданныеСИЗ КАК ВыданныеСИЗ
+ПОМЕСТИТЬ ВТ_Результат
+ИЗ
+	ВТ_ПроцентОбеспеченности КАК ВТ_ПроцентОбеспеченности
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОсновноеМестоРаботы КАК ВТ_ОсновноеМестоРаботы
+		ПО ВТ_ПроцентОбеспеченности.Организация = ВТ_ОсновноеМестоРаботы.Организация
+			И ВТ_ПроцентОбеспеченности.Сотрудник = ВТ_ОсновноеМестоРаботы.Сотрудник
+ГДЕ
+	НЕ ВТ_ОсновноеМестоРаботы.Сотрудник ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Результат.Организация КАК Организация,
+	ВТ_Результат.Подразделение КАК Подразделение,
+	ВТ_Результат.Должность КАК Должность,
+	ВТ_Результат.Сотрудник КАК Сотрудник,
+	ВТ_Результат.НормаВыдачи КАК НормаВыдачи,
+	ВТ_Результат.НоменклатураНормы КАК НоменклатураНормы,
+	ВТ_Результат.Количество КАК Количество,
+	ВТ_Результат.ПроцентОбеспеченности КАК ПроцентОбеспеченности,
+	ВТ_Результат.НеВыданоПоПричине КАК НеВыданоПоПричине,
+	ВТ_Результат.ДатаДокументаВыдачи КАК ДатаДокументаВыдачи,
+	ВТ_Результат.ДокументВыдачи КАК ДокументВыдачи,
+	ВТ_Результат.ВыданныеСИЗ КАК ВыданныеСИЗ,
+	ВТ_Результат.ДатаВыдачи КАК ДатаВыдачи,
+	ВЫБОР
+		КОГДА ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.Основание ЕСТЬ NULL
+			ТОГДА ВЫБОР
+					КОГДА ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.Основание ЕСТЬ NULL
+						ТОГДА ВЫБОР
+								КОГДА ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.Основание ЕСТЬ NULL
+									ТОГДА ВЫБОР
+											КОГДА ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.Основание ЕСТЬ NULL
+												ТОГДА ВЫБОР
+														КОГДА ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто.Основание ЕСТЬ NULL
+															ТОГДА ВЫБОР
+																	КОГДА ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто.Основание ЕСТЬ NULL
+																		ТОГДА ВЫБОР
+																				КОГДА ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто.Основание ЕСТЬ NULL
+																					ТОГДА ""
+																				ИНАЧЕ ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто.Основание
+																			КОНЕЦ
+																	ИНАЧЕ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто.Основание
+																КОНЕЦ
+														ИНАЧЕ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто.Основание
+													КОНЕЦ
+											ИНАЧЕ ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.Основание
+										КОНЕЦ
+								ИНАЧЕ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.Основание
+							КОНЕЦ
+					ИНАЧЕ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.Основание
+				КОНЕЦ
+		ИНАЧЕ ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.Основание
+	КОНЕЦ КАК Основание
+ИЗ
+	ВТ_Результат КАК ВТ_Результат
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто КАК ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто
+		ПО ВТ_Результат.Подразделение = ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.Подразделение
+			И ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.НормаВыдачи
+			И ВТ_Результат.Должность = ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.Должность
+			И ВТ_Результат.РабочееМесто = ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.РабочееМесто
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_Подразделение_Должность_РабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто КАК ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто
+		ПО ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.НормаВыдачи
+			И ВТ_Результат.Должность = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.Должность
+			И ВТ_Результат.РабочееМесто = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.РабочееМесто
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_РабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто КАК ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто
+		ПО ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.НормаВыдачи
+			И ВТ_Результат.Подразделение = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.Подразделение
+			И ВТ_Результат.РабочееМесто = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.РабочееМесто
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_РабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто КАК ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто
+		ПО ВТ_Результат.Подразделение = ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.Подразделение
+			И ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.НормаВыдачи
+			И ВТ_Результат.Должность = ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.Должность
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_Подразделение_Должность_ПустоеРабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто КАК ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто
+		ПО ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто.НормаВыдачи
+			И ВТ_Результат.Должность = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто.Должность
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_ПустоеПодразделение_Должность_ПустоеРабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто КАК ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто
+		ПО ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто.НормаВыдачи
+			И ВТ_Результат.Подразделение = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто.Подразделение
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_Подразделение_ПустаяДолжность_ПустоеРабочееМесто.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто КАК ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто
+		ПО ВТ_Результат.НормаВыдачи = ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто.НормаВыдачи
+			И ВТ_Результат.Организация = ВТ_УОНВ_Организация_ПустоеПодразделение_ПустаяДолжность_ПустоеРабочееМесто.Организация</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ПроцентОбеспеченности</dataPath>
+		<expression>Среднее(ПроцентОбеспеченности)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НеВыданоПоПричине</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Не выдано по причине</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПричиныНевыдачиСИЗ</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПроцентнаяОбеспеченность</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Процентная обеспеченность</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураНормы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаДокументаВыдачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеВыданоПоПричине</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВыдачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВыданныеСИЗ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаВыдачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Основание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентОбеспеченности</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>% обеспеченности</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>33ad829d-2149-4f36-88c4-1f39f020726d</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>1256b157-6d46-4ad2-9cdc-e54e103f560f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>a6ee777e-f57f-4d38-966e-d3414b1f8d58</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>07a3104f-2403-4044-b577-de98ca9b889e</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">НоменклатураНормы</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>8d2b014b-41ba-4e73-863d-1f4795badbdd</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НеВыданоПоПричине</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>8faa0128-e8f8-4fd6-b911-889014ada113</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>7553303d-c620-44b9-b5a6-720b472e0826</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентОбеспеченности</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процентная обеспеченность</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+							<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подразделение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Должность</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НоменклатураНормы</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Количество</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ДатаДокументаВыдачи</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НеВыданоПоПричине</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ДокументВыдачи</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВыданныеСИЗ</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ДатаВыдачи</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:use>false</dcsset:use>
+								<dcsset:field>Основание</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

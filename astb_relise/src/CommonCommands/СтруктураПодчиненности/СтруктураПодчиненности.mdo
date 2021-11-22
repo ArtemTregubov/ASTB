@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41f87891-ddd5-4e0f-a4f2-8039fb71981b">
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>DocumentRef.ОприходованиеНоменклатуры</types>
+    <types>DocumentRef.ПередачаВЧистку</types>
+    <types>DocumentRef.Увольнение</types>
+    <types>DocumentRef.ПриемСредствЗащитыНаХранение</types>
+    <types>DocumentRef.КадровоеПеремещение</types>
+    <types>DocumentRef.ПереходПраваСобственности</types>
+    <types>DocumentRef.ОтсутствиеНаРабочемМесте</types>
+    <types>DocumentRef.ОбращениеНаСклад</types>
+    <types>DocumentRef.РемонтСредствЗащиты</types>
+    <types>DocumentRef.ВыдачаДежурныхСредствЗащиты</types>
+    <types>DocumentRef.ПеремещениеНоменклатуры</types>
+    <types>DocumentRef.ПриказНаПроведениеПроверкиЗнаний</types>
+    <types>DocumentRef.ПоступлениеНоменклатуры</types>
+    <types>DocumentRef.ЗаявкаНаВыдачу</types>
+    <types>DocumentRef.ИнвентаризацияНоменклатуры</types>
+    <types>DocumentRef.ЗачетВыданныхСредствЗащиты</types>
+    <types>DocumentRef.ВыдачаСредствЗащитыСотруднику</types>
+    <types>DocumentRef.ЗакрытиеЗаказовПоставщику</types>
+    <types>DocumentRef.ПриемНаРаботу</types>
+    <types>DocumentRef.ПредварительныйПереходПраваСобственности</types>
+    <types>DocumentRef.ПриказНаПроведениеИнструктажей</types>
+    <types>DocumentRef.ПеремещениеСредствЗащитыНаХранении</types>
+    <types>DocumentRef.ЗаказПоставщику</types>
+    <types>DocumentRef.ТранспортнаяПоставка</types>
+    <types>DocumentRef.СписаниеНоменклатуры</types>
+    <types>DocumentRef.ВозвратСредствЗащитыСХранения</types>
+    <types>DocumentRef.ВозвратСредствЗащитыОтСотрудника</types>
+    <types>DocumentRef.СписаниеСредствЗащитыСотрудника</types>
+    <types>DocumentRef.ПриказПоНормамВыдачиСИЗ</types>
+    <types>DocumentRef.ВозвратНоменклатурыПоставщику</types>
+    <types>DocumentRef.ВозвратИзЧистки</types>
+    <types>DocumentRef.УстановкаШтрихкодовНоменклатуры</types>
+    <types>DocumentRef.ЗаявкаНаПроизвольнуюВыдачуСИЗ</types>
+    <types>DocumentRef.ВыполненныеРаботыПоРемонту</types>
+    <types>DocumentRef.ИнструктажСотрудников</types>
+    <types>DocumentRef.ПроверкаЗнанийСотрудника</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

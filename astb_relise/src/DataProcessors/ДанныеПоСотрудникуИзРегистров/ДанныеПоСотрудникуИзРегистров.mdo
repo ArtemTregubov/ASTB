@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddccc879-805f-458d-81a4-5e0153a2b96e">
+  <producedTypes>
+    <objectType typeId="2f501496-1b9e-40d1-8337-b941150be79a" valueTypeId="e3689d35-0745-464b-8f73-14a4099c384a"/>
+    <managerType typeId="0aacfec8-1314-435b-b213-cd2eb6bb8218" valueTypeId="4eb4fea7-dcba-4232-9291-03f1aba2c4f7"/>
+  </producedTypes>
+  <name>ДанныеПоСотрудникуИзРегистров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные по сотруднику из регистров накопления</value>
+  </synonym>
+  <defaultForm>DataProcessor.ДанныеПоСотрудникуИзРегистров.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="70ccb5c5-be1a-4906-8826-5b6687da2935">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="0c80a911-dcc2-4435-9a90-a515b83b9a6f">
+    <name>ВыданныеСредстваЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выданные средства защиты</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="1ea362cf-0e2e-4930-8819-7e178b57820a">
+    <name>ВыдачаСредствЗащитыПоВедомости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдача средств защиты по ведомости</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="09e5076c-d595-4841-8cb6-55251ff666c4">
+    <name>ВыдачаПоПотребности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдача по потребности</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="cde3a69f-c9bf-43ff-81f1-ab0856ed68b3">
+    <name>СредстваЗащитыВЧистке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средства защиты в чистке</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="b487aa98-838f-4bc6-8bfc-653c2381b2b0">
+    <name>ПотребностьВыдачиСИЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребность выдачи СИЗ</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сотрудники</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

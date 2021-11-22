@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0e6771d-b15e-4f9b-a62a-c2f99caed563">
+  <producedTypes>
+    <objectType typeId="5da9b86f-4c39-4427-9e5d-acab6ce6e1a8" valueTypeId="7f6bafbe-1d7f-4425-a4af-58e4b130024c"/>
+    <managerType typeId="32982229-5b0f-40c9-bc14-f90c03a88ec7" valueTypeId="a063613d-b28b-4afa-a2ba-70239fec32da"/>
+  </producedTypes>
+  <name>ДиагностикаУстановленныеНормыЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: установленные нормы (заполнение)</value>
+  </synonym>
+  <comment>Заполнение установленных норм согласно штатному расписанию</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаУстановленныеНормыЗаполнение.Template.УстановленныеНормыЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Заполнение установленных норм согласно штатному расписанию</value>
+  </explanation>
+  <templates uuid="af57b6fe-9836-4e9d-93a6-ae962a617c6c">
+    <name>УстановленныеНормыЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установленные нормы (заполнение)</value>
+    </synonym>
+    <comment>Заполнение установленных норм согласно штатному расписанию. Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

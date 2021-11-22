@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60f9f4de-2ac8-48e3-a946-7d0e126e5193">
+  <producedTypes>
+    <listType typeId="8c1dc981-e958-4678-b42f-ca1c36b3edd3" valueTypeId="41f47f7e-6006-4d11-9207-d3d8ceacdc3c"/>
+    <managerType typeId="2e8f68ae-13de-4889-9977-88dff601d413" valueTypeId="113af208-ddb9-476f-94e2-f1b11d656fd9"/>
+  </producedTypes>
+  <name>ДокументыПоФизическомуЛицу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по физическому лицу</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ФизическиеЛица</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.Анкета.Attribute.Респондент</content>
+  <content>Document.МедицинскийОсмотр.Attribute.ПредседательМедицинскойКомиссии</content>
+  <content>Document.ОтзывСогласияНаОбработкуПерсональныхДанных.Attribute.Субъект</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.Attribute.ПредседательКомиссии</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.Attribute.ЧленКомиссии1</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.Attribute.ЧленКомиссии2</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.Attribute.ЧленКомиссии3</content>
+  <content>Document.СогласиеНаОбработкуПерсональныхДанных.Attribute.Субъект</content>
+  <content>Document.СообщениеSMS.TabularSection.Адресаты.Attribute.Контакт</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.Attribute.ПредседательКомиссии</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.Attribute.ЧленКомиссии1</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.Attribute.ЧленКомиссии2</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.Attribute.ЧленКомиссии3</content>
+  <content>Document.ТелефонныйЗвонок.Attribute.АбонентКонтакт</content>
+  <content>Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиПисьма.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиКопий.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоВходящее.TabularSection.ПолучателиОтвета.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоВходящее.TabularSection.АдресаУведомленияОПрочтении.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиПисьма.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиКопий.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиОтвета.Attribute.Контакт</content>
+  <content>Document.ЭлектронноеПисьмоИсходящее.TabularSection.ПолучателиСкрытыхКопий.Attribute.Контакт</content>
+  <defaultForm>FilterCriterion.ДокументыПоФизическомуЛицу.Form.ФормаСписка</defaultForm>
+  <forms uuid="9ec0ab0b-a909-4167-9c11-4de14beb3d4a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:FilterCriterion>

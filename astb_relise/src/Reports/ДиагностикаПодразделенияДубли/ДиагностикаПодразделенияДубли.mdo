@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9f861ec-e0b7-4bea-aaed-cefd4356793c">
+  <producedTypes>
+    <objectType typeId="e02220f6-5899-46de-b683-a91fb30681b4" valueTypeId="c74c1368-680b-4d89-8963-67718985813f"/>
+    <managerType typeId="6681874a-4860-4898-9686-e293a305539e" valueTypeId="3fadd8e0-aa0c-4f17-b7c6-6e0922333bc7"/>
+  </producedTypes>
+  <name>ДиагностикаПодразделенияДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: подразделения (дубли)</value>
+  </synonym>
+  <comment>Подразделения (дубли по коду синхронизации и наименованию в пределах групп)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПодразделенияДубли.Template.ПодразделенияДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Подразделения (дубли по коду синхронизации и наименованию в пределах групп)</value>
+  </explanation>
+  <templates uuid="14371310-36b8-49a8-ab42-1555ff50d7a8">
+    <name>ПодразделенияДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделения (дубли)</value>
+    </synonym>
+    <comment>Подразделения (дубли по коду синхронизации и наименованию в пределах групп)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

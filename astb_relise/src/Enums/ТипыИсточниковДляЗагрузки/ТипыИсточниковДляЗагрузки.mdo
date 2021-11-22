@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="314687ae-c4a6-4a35-81e2-bae801126672">
+  <producedTypes>
+    <refType typeId="d096ef8f-0daf-41ff-8c5d-ecdee673d993" valueTypeId="ce7f33dd-8491-4192-96f0-83fb0e0fc34f"/>
+    <listType typeId="d5ae1850-94a3-447d-ad58-ecc3b1c773ab" valueTypeId="2121980b-f0f7-4f57-a2ff-6d26820093e9"/>
+    <managerType typeId="1e7eaf28-ffd8-460a-8852-12c0b63543c2" valueTypeId="c9d27edf-6718-446b-b1d2-79ecfe250ad3"/>
+  </producedTypes>
+  <name>ТипыИсточниковДляЗагрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы источников для загрузки</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="953c5b74-3f96-47bc-a3a6-0e1accb01754">
+    <name>FTPРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>FTP - ресурс</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5da27d7e-fe52-48f6-b998-9da2da368325">
+    <name>ЛокальныйРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Локальный ресурс</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

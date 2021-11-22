@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50c964da-8ff1-4b98-ba22-8b8dd36a8dd2">
+  <producedTypes>
+    <objectType typeId="2b6b2479-2123-4c29-90ea-e63b2da54332" valueTypeId="d516382a-3dbf-4aa1-9828-937cbd22266d"/>
+    <managerType typeId="85b92245-8f52-47bb-975e-355efe290711" valueTypeId="fc538422-89e6-4b1f-8ce5-c2074293056a"/>
+  </producedTypes>
+  <name>ПлановаяПотребность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановая потребность</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПлановаяПотребность.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="93ad108a-ecf6-4c34-8a2b-476b6b358707">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

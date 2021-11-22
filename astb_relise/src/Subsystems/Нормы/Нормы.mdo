@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4230aa9-4091-4071-bb00-83dc577bc256">
+  <name>Нормы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаНормы</picture>
+  </picture>
+  <content>CommonCommand.ПанельОтчетовНормы</content>
+  <content>CommonPicture.ПодсистемаНормы</content>
+  <content>DataProcessor.СозданиеНормВыдачиСИЗ</content>
+  <content>Report.ОтчетПоОтсутствующимНормам</content>
+  <content>Report.ОтчетПоНормамПоСотруднику</content>
+  <content>Report.ОтчетПоНормамПоПодразделениюПоЗанятымРМ</content>
+  <content>Report.ОтчетПоНормамПоПодразделению</content>
+  <content>CommonCommand.ДополнительныеОбработкиНормы</content>
+  <content>InformationRegister.УточненныеОснованияНормВыдачи</content>
+  <content>CommonCommand.СообщениеВТехподдержку</content>
+  <content>CommonCommand.ОбменДаннымиXML</content>
+  <content>Report.НормыПоСотрудникамСИнформациейПоВыданнымСИЗ</content>
+  <content>Report.УстановленныеНормыСНоменклатуройВыдачи</content>
+  <content>DataProcessor.МассоваяУстановкаУсловий</content>
+  <subsystems>ДокументыУстановкиНормы</subsystems>
+  <subsystems>Справочники</subsystems>
+  <subsystems>ТиповыеОтраслевыеНормы</subsystems>
+</mdclass:Subsystem>

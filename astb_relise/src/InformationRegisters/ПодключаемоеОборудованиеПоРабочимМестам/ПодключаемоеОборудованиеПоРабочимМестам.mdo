@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="883dc4ea-9847-417c-9006-d8a8c7c30497">
+  <producedTypes>
+    <selectionType typeId="e64d6ad9-bfbf-46af-a178-837465c5f1ef" valueTypeId="92dcaf19-d4e7-4b9f-ae0e-a24199d70edd"/>
+    <listType typeId="b9e47fee-9c7b-4760-8ed9-94ad2d4b7eb0" valueTypeId="49b0a399-a9dc-4c13-b512-5e6b72c1e1ab"/>
+    <managerType typeId="97a19b86-c058-448b-b1ba-ec895a4a7def" valueTypeId="c199920d-e7c7-4232-bcae-0f0de9b58546"/>
+    <recordSetType typeId="a36768fb-1a3d-4f8f-b1be-e9bd33ab0340" valueTypeId="30de0f4d-fd6c-40f9-9f93-97d38866a711"/>
+    <recordKeyType typeId="02871ec8-7a69-4897-8b63-04025504b05a" valueTypeId="b2e2b83d-6b78-4e41-a318-8706f265b0fe"/>
+    <recordType typeId="53897726-c5d8-422a-b971-8dd057b79df3" valueTypeId="06c2a2ab-c0ad-4318-ad22-a1e4697bf430"/>
+    <recordManagerType typeId="4e2a4012-e9f1-4d8d-b1a8-d9deb6a8e59f" valueTypeId="e1e1b489-0f14-42da-bdf9-ec72fc4337cf"/>
+  </producedTypes>
+  <name>ПодключаемоеОборудованиеПоРабочимМестам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключаемое оборудование по удаленным рабочим местам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ПодключаемоеОборудованиеПоРабочимМестам.Form.НастройкаРабочихМест</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПодключаемоеОборудованиеПоРабочимМестам.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="0e33d640-dbf5-4ff3-b568-556d2fbae55b">
+    <name>РабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РабочиеМеста</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="462669dc-f46c-42f6-a46e-a94de0c0bc23">
+    <name>Устройство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устройство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодключаемоеОборудование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e7efaac5-1ed0-4afc-ace5-7d11babd5118">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="65f9ceea-6a8f-41cf-a4ea-e056f5174ea9">
+    <name>НастройкаРабочихМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка рабочих мест</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

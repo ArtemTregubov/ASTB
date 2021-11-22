@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18bf6916-83cc-41e5-a35b-1489450ae632">
+  <producedTypes>
+    <listType typeId="9e16ad15-d167-4333-93b1-dd05dfe4196d" valueTypeId="13494fee-f044-4f98-94ee-527ae8a7d2bb"/>
+    <managerType typeId="f3419e42-7083-4e23-8233-2155ef776262" valueTypeId="f672e9f7-cdcc-4293-b1f2-e4c26f912c00"/>
+  </producedTypes>
+  <name>СвязанныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ОприходованиеНоменклатуры</types>
+    <types>DocumentRef.ПередачаВЧистку</types>
+    <types>DocumentRef.Увольнение</types>
+    <types>DocumentRef.ПриемСредствЗащитыНаХранение</types>
+    <types>DocumentRef.КадровоеПеремещение</types>
+    <types>DocumentRef.ОтсутствиеНаРабочемМесте</types>
+    <types>DocumentRef.ОбращениеНаСклад</types>
+    <types>DocumentRef.РемонтСредствЗащиты</types>
+    <types>DocumentRef.ВыдачаДежурныхСредствЗащиты</types>
+    <types>DocumentRef.ПеремещениеНоменклатуры</types>
+    <types>DocumentRef.ПриказНаПроведениеПроверкиЗнаний</types>
+    <types>DocumentRef.ПоступлениеНоменклатуры</types>
+    <types>DocumentRef.ЗаявкаНаВыдачу</types>
+    <types>DocumentRef.ИнвентаризацияНоменклатуры</types>
+    <types>DocumentRef.ЗачетВыданныхСредствЗащиты</types>
+    <types>DocumentRef.ВыдачаСредствЗащитыСотруднику</types>
+    <types>DocumentRef.ЗакрытиеЗаказовПоставщику</types>
+    <types>DocumentRef.ПриемНаРаботу</types>
+    <types>DocumentRef.ПредварительныйПереходПраваСобственности</types>
+    <types>DocumentRef.ПриказНаПроведениеИнструктажей</types>
+    <types>DocumentRef.ПеремещениеСредствЗащитыНаХранении</types>
+    <types>DocumentRef.ЗаказПоставщику</types>
+    <types>String</types>
+    <types>DocumentRef.СписаниеНоменклатуры</types>
+    <types>DocumentRef.ВозвратСредствЗащитыСХранения</types>
+    <types>DocumentRef.ВозвратСредствЗащитыОтСотрудника</types>
+    <types>DocumentRef.СписаниеСредствЗащитыСотрудника</types>
+    <types>DocumentRef.ПриказПоНормамВыдачиСИЗ</types>
+    <types>DocumentRef.ВозвратНоменклатурыПоставщику</types>
+    <types>DocumentRef.ВозвратИзЧистки</types>
+    <types>DocumentRef.УстановкаШтрихкодовНоменклатуры</types>
+    <types>DocumentRef.ЗаявкаНаПроизвольнуюВыдачуСИЗ</types>
+    <types>DocumentRef.ВыполненныеРаботыПоРемонту</types>
+    <types>DocumentRef.ИнструктажСотрудников</types>
+    <types>DocumentRef.ПроверкаЗнанийСотрудника</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <content>Document.ВозвратИзЧистки.Attribute.ДокументОснование</content>
+  <content>Document.ВозвратНоменклатурыПоставщику.Attribute.ДокументОснование</content>
+  <content>Document.ВозвратСредствЗащитыОтСотрудника.Attribute.ДокументОснование</content>
+  <content>Document.ВозвратСредствЗащитыСХранения.Attribute.ДокументОснование</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.Attribute.ДокументОснование</content>
+  <content>Document.ВыполненныеРаботыПоРемонту.TabularSection.Документы.Attribute.ДокументРемонта</content>
+  <content>Document.ЗакрытиеЗаказовПоставщику.TabularSection.Товары.Attribute.ЗаказПоставщику</content>
+  <content>Document.ИнструктажСотрудников.Attribute.ДокументОснование</content>
+  <content>Document.ОприходованиеНоменклатуры.Attribute.ДокументОснование</content>
+  <content>Document.ОтсутствиеНаРабочемМесте.Attribute.КорректируемыйДокумент</content>
+  <content>Document.ПеремещениеНоменклатуры.Attribute.ДокументОснование</content>
+  <content>Document.ПеремещениеСредствЗащитыНаХранении.Attribute.ДокументОснование</content>
+  <content>Document.ПереходПраваСобственности.Attribute.ДокументОснование</content>
+  <content>Document.ПереходПраваСобственности.TabularSection.Товары.Attribute.ДокументВыдачи</content>
+  <content>Document.ПереходПраваСобственности.TabularSection.Товары.Attribute.ДокументОснование</content>
+  <content>Document.ПоступлениеНоменклатуры.Attribute.ДокументОснование</content>
+  <content>Document.ПоступлениеНоменклатуры.TabularSection.Товары.Attribute.ЗаказПоставщику</content>
+  <content>Document.ПредварительныйПереходПраваСобственности.TabularSection.Товары.Attribute.ДокументВыдачи</content>
+  <content>Document.ПриказПоНормамВыдачиСИЗ.Attribute.ДокументОснование</content>
+  <content>Document.ПроверкаЗнанийСотрудника.Attribute.ДокументОснование</content>
+  <content>Document.РемонтСредствЗащиты.Attribute.ДокументОснование</content>
+  <content>Document.СписаниеНоменклатуры.Attribute.ДокументОснование</content>
+  <content>Document.ТранспортнаяПоставка.TabularSection.Короба.Attribute.ДокументПоступления</content>
+  <content>Document.УстановкаУсловийРаботыСотрудника.Attribute.ДокументОснование</content>
+  <content>Document.УстановкаШтрихкодовНоменклатуры.Attribute.ДокументОснование</content>
+</mdclass:FilterCriterion>

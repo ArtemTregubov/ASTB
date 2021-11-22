@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d3ba24a-1c6d-47b6-92d8-4effc5946ab6">
+  <name>ПереходПраваСобственности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переход права собственности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПереходПраваСобственности</content>
+  <content>Document.ПредварительныйПереходПраваСобственности</content>
+  <parentSubsystem>Subsystem.Выдача</parentSubsystem>
+</mdclass:Subsystem>

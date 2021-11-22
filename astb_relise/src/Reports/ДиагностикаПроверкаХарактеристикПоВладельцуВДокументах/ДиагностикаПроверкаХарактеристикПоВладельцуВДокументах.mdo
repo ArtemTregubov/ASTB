@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ade13a7-5e21-461f-83de-7b9f522106be">
+  <producedTypes>
+    <objectType typeId="81c3a592-600f-462c-9f9d-eaeb1be3451d" valueTypeId="5b1693f0-9fad-47b4-b039-bfecdea0ce8c"/>
+    <managerType typeId="3a97404b-553a-4f51-92d6-2cf689d3c828" valueTypeId="06954521-d8b4-450d-81b8-b995d1becfd9"/>
+  </producedTypes>
+  <name>ДиагностикаПроверкаХарактеристикПоВладельцуВДокументах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: проверка характеристик по владельцу в документах</value>
+  </synonym>
+  <comment>Проверка соответствия владельца характеристики номенклатуре в документах</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаПроверкаХарактеристикПоВладельцуВДокументах.Template.ДиагностикаДокументыПроверкаХарактеристикПоВладельцу</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Проверка соответствия владельца характеристики номенклатуре в документах</value>
+  </explanation>
+  <templates uuid="6264c2f0-dc93-40c8-96e5-0b60b0e563a3">
+    <name>ДиагностикаДокументыПроверкаХарактеристикПоВладельцу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка номенклатуры и характеристик по владельцу</value>
+    </synonym>
+    <comment>Проверка соответствия владельца характеристики номенклатуре в документах</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e27ad23-9a19-4486-8061-6266b61ea880">
+  <producedTypes>
+    <objectType typeId="c2549a87-03e7-4d02-8ff3-e343701b2c25" valueTypeId="f136a2e9-8657-4f0b-ac69-bfe629e4cea5"/>
+    <managerType typeId="77a457bf-6fd5-42b8-80a3-f1ba37349634" valueTypeId="0d76207e-b6ab-415a-9181-21d1b07917ac"/>
+  </producedTypes>
+  <name>ВыданныеСИЗПоВидуУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выданные СИЗ по виду учета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВыданныеСИЗПоВидуУчета.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="31ba39f9-6cf2-41e7-bcdf-273f4662ef3b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

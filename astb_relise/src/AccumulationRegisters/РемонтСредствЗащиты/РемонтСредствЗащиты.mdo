@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3ab1832-5c14-404e-a661-08237840ce19">
+  <producedTypes>
+    <selectionType typeId="510f3c05-fd52-48e3-8540-64f675e74e8d" valueTypeId="786189b1-a54a-4a3f-bf4d-1c7adf7ce229"/>
+    <listType typeId="52466af1-2f55-482f-afcb-22abc5f7ad95" valueTypeId="bee47fe2-3b7a-4a73-9f0f-03c151e71bca"/>
+    <managerType typeId="12f54bbf-d3cc-4241-aec3-4c064eb04845" valueTypeId="c4ca4500-b2db-49bb-a6b8-945a722c318b"/>
+    <recordSetType typeId="b7edc8d3-e017-4520-9de4-8a08e2bb84e7" valueTypeId="12d31937-a885-4448-a6ab-84373f3b00e0"/>
+    <recordKeyType typeId="9ac63cbb-fa43-4b60-a875-3a2cb7535efb" valueTypeId="206d1571-feca-456d-b386-fc0f40b93cb3"/>
+    <recordType typeId="7122eb48-4e5f-418a-a2bb-b8789a5ca006" valueTypeId="bfb64c9f-d470-4019-a92b-7cd0e73522f1"/>
+  </producedTypes>
+  <name>РемонтСредствЗащиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонт средств защиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.РемонтСредствЗащиты.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="6d54e27b-c6a9-48be-8bb7-b37c164483ef">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="a08eafdf-ca62-4b37-9b65-7f7116ba7ff8">
+    <name>ШтрихкодИзделия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод изделия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="1bf654eb-9c79-44a4-87ab-c0553be424eb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b3475ff9-6894-4714-9ed3-1192e8c9b5ec">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c0340db6-d663-4968-89b4-fd013c7853d9">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРемонтаСИЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="c05b3222-076f-46f8-9d26-e81c2f3c719d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

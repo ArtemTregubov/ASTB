@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="250ae034-63df-4f1a-8b53-6fb576976b3f">
+  <producedTypes>
+    <objectType typeId="d8231e76-8799-4e38-b5ff-80fe9375bc8c" valueTypeId="b1a4b7ac-bc01-46e7-83bf-7c79f934ef73"/>
+    <managerType typeId="6e81d2ee-2bc4-4149-99d6-46a35531c6f6" valueTypeId="df99c93f-7aa6-43ef-9dbc-4bf27f65bee9"/>
+  </producedTypes>
+  <name>ВыдачаПоВедомостям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача по ведомостям</value>
+  </synonym>
+  <comment>Выдача по ведомостям</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВыдачаПоВедомостям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="279b580f-9397-406e-89a4-06bc84d945c9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

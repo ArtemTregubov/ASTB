@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54962fe6-084d-489b-87fa-2cbdee854ccf">
+  <name>ОбменДаннымиXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными XML</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

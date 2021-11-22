@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4df1a2d4-bb9c-4b6d-9a00-dd407ada999a">
+  <name>EmailИнформированиеОПоступленииСредствЗащитыНаСклад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информирование о поступлении средств защиты на склад по e-mail</value>
+  </synonym>
+  <methodName>CommonModule.ПроцедурыРаботыСНормамиСервер.EmailИнформированиеОПоступленииСредствЗащитыНаСклад</methodName>
+  <description>Информирование о поступлении средств защиты на склад по e-mail</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

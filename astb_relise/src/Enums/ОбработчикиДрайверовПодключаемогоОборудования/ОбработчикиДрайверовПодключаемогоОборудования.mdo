@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3723c44b-b6af-4ffe-ab8a-eedfeed2b8f6">
+  <producedTypes>
+    <refType typeId="8db2ee6e-3444-4da0-808f-246e943749f3" valueTypeId="7ffb7b76-e996-4a43-afbe-c3eade04fb1d"/>
+    <listType typeId="78bcb724-f16d-4356-8936-e4834afe172e" valueTypeId="5d04cf77-5c44-4252-8e4f-4f47cb8ec909"/>
+    <managerType typeId="ef6a03b0-63bb-45e7-8c27-0989dad6b0ee" valueTypeId="a61a20db-ee82-46a9-919a-bdf5c666a10b"/>
+  </producedTypes>
+  <name>ОбработчикиДрайверовПодключаемогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчики драйверов подключаемого оборудования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e912ab43-8089-45c1-b8bf-0df95e74767b">
+    <name>Обработчик1ССканерыШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С:Сканеры штрихкода (COM)</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="6091611a-965a-4403-a6ac-4786a63930a5">
+    <name>Обработчик1ССканерыШтрихкодаNative</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С:Сканеры штрихкода (NativeApi)</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="5d298dc5-efa9-45f0-9665-9b6b0252c76a">
+    <name>Обработчик1ССчитывателиМагнитныхКарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С:Считыватели магнитных карт (COM)</value>
+    </synonym>
+    <comment>СчитывательМагнитныхКарт</comment>
+  </enumValues>
+  <enumValues uuid="d16cba57-1dde-45ce-b8e1-75f08b9933de">
+    <name>Обработчик1ССчитывателиМагнитныхКартNative</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С:Считыватели магнитных карт (NativeApi)</value>
+    </synonym>
+    <comment>СчитывательМагнитныхКарт</comment>
+  </enumValues>
+  <enumValues uuid="f3af3404-9a2b-4df5-abe9-7bb5f4137355">
+    <name>ОбработчикERFIDСчитывательRFID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ERFID:Считыватель RFID</value>
+    </synonym>
+    <comment>СчитывательRFID</comment>
+  </enumValues>
+  <enumValues uuid="984f3303-eae7-45c4-859c-995c865811c4">
+    <name>ОбработчикIronLogicСчитывателиБесконтактныхКарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>IronLogic:Считыватели бесконтактных карт Z-2</value>
+    </synonym>
+    <comment>СчитывательМагнитныхКарт</comment>
+  </enumValues>
+  <enumValues uuid="2d5eaffb-f030-45c4-936e-6857da52ab36">
+    <name>ОбработчикISBCСчитывательRFID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ISBC:Считыватель RFID</value>
+    </synonym>
+    <comment>СчитывательRFID</comment>
+  </enumValues>
+  <enumValues uuid="9f9d7b6a-0c95-4f90-8a6e-4363ee413329">
+    <name>ОбработчикRightScanТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>RightScan:Терминалы сбора данных (ПО RS:Mobile ACS)</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="5251e65c-a449-4bee-94c3-bdf9bf1c0eec">
+    <name>ОбработчикАтолСканерыШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Сканеры штрихкода</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="26b43144-e17e-4556-8eb7-e0eb25249b21">
+    <name>ОбработчикАтолСканерыШтрихкода8X</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Сканеры штрихкода 8.Х</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="972ed56f-fa36-4d01-b73f-1f74abf5037b">
+    <name>ОбработчикАтолСчитывателиМагнитныхКарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Считыватели магнитных карт</value>
+    </synonym>
+    <comment>СчитывательМагнитныхКарт</comment>
+  </enumValues>
+  <enumValues uuid="defdccf0-3e72-4de0-923b-84ce574cd445">
+    <name>ОбработчикАтолСчитывателиМагнитныхКарт8X</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Считыватели магнитных карт 8.Х</value>
+    </synonym>
+    <comment>СчитывательМагнитныхКарт</comment>
+  </enumValues>
+  <enumValues uuid="1825ee72-dc7d-4e14-aff0-97291fd398a3">
+    <name>ОбработчикАтолТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Терминалы сбора данных</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="41b654a8-7a0e-49f0-9b4d-60554e58adfa">
+    <name>ОбработчикАтолТерминалыСбораДанныхMobileLogistics</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ:Терминалы сбора данных MobileLogistics 8.Х</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="8ea16cd9-a62e-4598-8f6c-6bd55d4a7480">
+    <name>ОбработчикГексагонПринтераЭтикеток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гексагон:Принтера этикеток Zebra,Proton,Toshiba-TEC,Datamax-O neil</value>
+    </synonym>
+    <comment>ПринтерЭтикеток</comment>
+  </enumValues>
+  <enumValues uuid="3fb0f944-27d7-496e-b454-9d3b880f912d">
+    <name>ОбработчикГексагонСканерыШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гексагон:Сканеры штрихкода Proton</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="66a698a8-d1b6-4306-8b2c-e513250c7293">
+    <name>ОбработчикГексагонТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гексагон:Терминалы сбора данных Goods</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="f844b4e0-f43f-471a-93a1-dea9d889c529">
+    <name>ОбработчикКлеверенсСчитывателиRFID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клеверенс:Cчитыватели RFID</value>
+    </synonym>
+    <comment>СчитывательRFID</comment>
+  </enumValues>
+  <enumValues uuid="0f182739-4587-4fa2-b928-72ec726a4b28">
+    <name>ОбработчикКлеверенсТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клеверенс:Терминалы сбора данных</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="c857ac3a-68b1-42b9-9dfd-93ab2d1fba77">
+    <name>ОбработчикСканкодПринтераЭтикетокGodexEZPL8Native</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканкод:Принтера этикетокGodexEZPL8 (NativeAPI)</value>
+    </synonym>
+    <comment>ПринтерЭтикеток</comment>
+  </enumValues>
+  <enumValues uuid="979fbe28-08de-4264-ab0a-75fc0bb4af6a">
+    <name>ОбработчикСканкодСканерыШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканкод:Сканеры штрихкода</value>
+    </synonym>
+    <comment>СканерШтрихкода</comment>
+  </enumValues>
+  <enumValues uuid="84180d74-2b80-4aad-adc0-554a0ebbbf0b">
+    <name>ОбработчикСканкодСчитывательRFIDCipherLab</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканкод:Считыватели RFID CipherLab</value>
+    </synonym>
+    <comment>СчитывательRFID</comment>
+  </enumValues>
+  <enumValues uuid="4dc8141f-5e83-4347-b9df-28b370b58ed2">
+    <name>ОбработчикСканкодТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканкод:Терминалы сбора данных</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="9b42453f-1de7-4aed-8330-106edc1c7cd7">
+    <name>ОбработчикСканкодТерминалыСбораДанныхNative</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканкод:Терминалы сбора данных CipherLAB 8x00 (NativeApi)</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="9f13a35f-95b8-4bde-9bad-480612fa5f32">
+    <name>ОбработчикСканситиПринтераЭтикеток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скансити:Принтер печати этикеток TSC</value>
+    </synonym>
+    <comment>ПринтерЭтикеток</comment>
+  </enumValues>
+  <enumValues uuid="6ad7569b-c1f8-4b73-9fd3-1437c2f3fa09">
+    <name>ОбработчикСканситиТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скансити:Терминалы сбора данных</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+  <enumValues uuid="56741f85-7315-4317-a625-689160a069ca">
+    <name>ОбработчикШтрихМТерминалыСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>ШТРИХ-М:Терминалы сбора данных</value>
+    </synonym>
+    <comment>ТерминалСбораДанных</comment>
+  </enumValues>
+</mdclass:Enum>

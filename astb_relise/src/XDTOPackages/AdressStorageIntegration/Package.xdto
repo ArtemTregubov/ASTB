@@ -1,0 +1,55 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="AddressStorage">
+	<objectType name="Объекты">
+		<property name="Объекты" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="РСДанныеВАдресномХранении">
+		<property xmlns:d3p1="AddressStorage" name="Документ" type="d3p1:УправленческийДокумент" lowerBound="0" nillable="true"/>
+		<property name="НаборЗаписей" lowerBound="0" nillable="true">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокиНабораЗаписей" lowerBound="0" upperBound="-1" nillable="true">
+					<typeDef xsi:type="ObjectType">
+						<property name="Номенклатура" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ХарактеристикаНоменклатуры" type="xs:string" lowerBound="0" nillable="true"/>
+						<property xmlns:d7p1="AddressStorage" name="Заказ" type="d7p1:УправленческийДокумент" lowerBound="0" nillable="true"/>
+						<property name="ВидАдресногоДокумента" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="Количество" type="xs:decimal" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="УправленческийДокумент">
+		<property name="ID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ВидДокумента" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ДокПеремещениеНоменклатуры">
+		<property name="КодУзлаТочкиХранения" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Товары" lowerBound="0" nillable="true">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокиТабличнойЧасти" lowerBound="0" upperBound="-1" nillable="true">
+					<typeDef xsi:type="ObjectType">
+						<property name="Номенклатура" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ХарактеристикаНоменклатуры" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="Количество" type="xs:decimal" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="ДокИнвентаризацияНоменклатуры">
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Товары" lowerBound="0" nillable="true">
+			<typeDef xsi:type="ObjectType">
+				<property name="СтрокиТабличнойЧасти" lowerBound="0" upperBound="-1" nillable="true">
+					<typeDef xsi:type="ObjectType">
+						<property name="Номенклатура" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="ХарактеристикаНоменклатуры" type="xs:string" lowerBound="0" nillable="true"/>
+						<property name="Количество" type="xs:decimal" lowerBound="0" nillable="true"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26c4516d-dfde-4e79-8105-6d8b467ff395">
+  <producedTypes>
+    <objectType typeId="0828d43c-749f-4e00-b9be-7c1ffb17e182" valueTypeId="de11f265-d4f7-48ad-a341-69d2a3b8351e"/>
+    <refType typeId="843c69f9-397c-49c6-9d81-0fcd01edb3b9" valueTypeId="c7607d02-33a1-493e-b82e-545ddbfa9cb9"/>
+    <selectionType typeId="2f474b59-822d-4e44-a09d-51c33ff761cc" valueTypeId="8272f652-622c-4650-8bba-6eadaa8ceb6e"/>
+    <listType typeId="7b90d2c7-b1af-4366-b992-3f175bd845b1" valueTypeId="40a87b61-5f4f-4ba4-bc84-8604a82ab6d4"/>
+    <managerType typeId="87ae5cff-7d6d-40cc-b0d3-b5b093a30a5c" valueTypeId="4313a770-0d2b-49d9-8952-58a541bd2376"/>
+  </producedTypes>
+  <name>ВидыАнтропометрическихСвойств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды антропометрических свойств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыАнтропометрическихСвойств.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыАнтропометрическихСвойств.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="0a231198-28d0-4640-8ccf-a158ee230243">
+      <name>НеОпределен</name>
+      <description>Не определен</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="4a48a597-31e8-4fed-b30b-bf584ccb39de">
+      <name>РазмерГоловногоУбора</name>
+      <description>Размер головного убора</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="6a5b624d-59c2-4c55-9aec-a0ab3efcc454">
+      <name>РазмерОбуви</name>
+      <description>Размер обуви</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="15edd5cd-5271-4c95-8db4-eb1d2005c888">
+      <name>РазмерОдежды</name>
+      <description>Размер одежды</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="92fb951f-8f79-43da-ae1c-557343ca483d">
+      <name>РазмерОдеждыВерх</name>
+      <description>Размер одежды (верх)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+    <items id="de49f091-4521-48cb-a771-2b1e4d621a70">
+      <name>РазмерОдеждыЗимний</name>
+      <description>Размер одежды (зимний)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="a9d9c850-fb2b-4852-89b7-24e2b38940ae">
+      <name>РазмерОдеждыНиз</name>
+      <description>Размер одежды (низ)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="d140887a-d8fe-4ac5-9768-d1bacb2dd0ea">
+      <name>РазмерПерчаток</name>
+      <description>Размер перчаток</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="afa9ed6f-c460-431b-8066-78de968479cb">
+      <name>РазмерПротивогаза</name>
+      <description>Размер противогаза</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="7ab0fea5-afda-4d55-8ae6-74910b26c4d0">
+      <name>РазмерРеспиратора</name>
+      <description>Размер респиратора</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="b84691ea-99c9-4a0c-82fc-1e140ae5135a">
+      <name>РазмерРубашки</name>
+      <description>Размер рубашки (ворот)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="e6ae2bb5-7f2b-45b3-9548-549634a53776">
+      <name>РазмерРукавиц</name>
+      <description>Размер рукавиц</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="4a85e7a6-702c-4b33-adaf-9998d1a3e545">
+      <name>РостВерхОдежды</name>
+      <description>Рост (верх одежды)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="f1a4c11f-8d39-4262-baff-1c65b5745151">
+      <name>РостНизОдежды</name>
+      <description>Рост (низ одежды)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="a78aa794-1987-48cf-884f-e064b7d313f9">
+      <name>Рост</name>
+      <description>Рост (общий)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

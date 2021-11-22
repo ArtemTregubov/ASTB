@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7be94b92-cb4d-420e-81c4-09422ce20f16">
+  <name>АХ_АдресноеХранение</name>
+  <synonym>
+    <key>ru</key>
+    <value>(АХ) Адресное хранение</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Constant.АХ_ИспользоватьАдресноеХранениеСкоробами</content>
+  <content>Constant.АХ_ДатаСтартаАдресногоХранения</content>
+  <content>FunctionalOption.АХ_ИспользоватьАдресноеХранениеСкоробами</content>
+  <content>CommonModule.АХ_ОбменПовтИсп</content>
+  <content>CommonModule.АХ_ОбменКлиент</content>
+  <content>CommonModule.АХ_ОбменПравилаЗагрузки</content>
+  <content>CommonModule.АХ_ОбменПравилаВыгрузки</content>
+  <content>CommonModule.АХ_ОбменВызовСервера</content>
+  <content>InformationRegister.АХ_ДанныеВАдресномХранении</content>
+  <content>EventSubscription.АХ_КонтрольОтправленныхДанныхУдалениеПроведения</content>
+  <content>EventSubscription.АХ_КонтрольОтправленныхДанныхОбработкаПроведения</content>
+  <content>Constant.АХ_СтрокаПодключения</content>
+  <content>Constant.АХ_ПарольВнешнегоПользователя</content>
+  <content>Constant.АХ_ВнешнийПользователь</content>
+  <content>c32db4a6-1c88-4a0e-a684-ac277d2df323</content>
+  <content>XDTOPackage.AdressStorageIntegration</content>
+  <content>WebService.AdressStorageExchange</content>
+  <content>Enum.АХ_СтатусыСборкиТоваров</content>
+  <content>Enum.АХ_ВидыДокументовАдресногоХранения</content>
+  <content>DataProcessor.АХ_КомплекснаяОбработкаДанных</content>
+  <content>DataProcessor.АХ_НачальнальноеЗаполнение</content>
+  <content>Constant.АХ_ИспользоватьМеханизмПредварительнойСборки</content>
+  <content>Constant.АХ_СкладПредварительнойСборки</content>
+  <content>FunctionalOption.АХ_ИспользоватьМеханизмПредварительнойСборки</content>
+  <content>DataProcessor.АХ_ШтрихкодыНоменклатурыАдресногоХранения</content>
+  <content>Report.АХ_ОтчетРасхожденияОстаков</content>
+  <content>InformationRegister.АХ_ПечатныеФормы</content>
+  <content>CommonTemplate.АХ_ПФ_MXL_ТоварыБезКодаОракл</content>
+  <content>DataProcessor.АХ_ДокументыДоступныеКПередачеНаСклад</content>
+  <content>EventSubscription.АХ_ОбработкаИПроверкаСлужебныхРеквизовПередЗаписью</content>
+</mdclass:Subsystem>

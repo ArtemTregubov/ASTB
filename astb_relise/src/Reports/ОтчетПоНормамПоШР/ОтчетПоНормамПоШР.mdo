@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b815428a-6054-4d12-a27d-61321fc8d86d">
+  <producedTypes>
+    <objectType typeId="8a165710-5606-4282-b1bb-bddc34a9ce46" valueTypeId="15c5eda0-d362-4563-9182-6e43042a08ee"/>
+    <managerType typeId="e7cbbc3c-1932-4d63-b55f-9b279eac71db" valueTypeId="d987da02-0cf2-4102-bc3d-23bad33845cb"/>
+  </producedTypes>
+  <name>ОтчетПоНормамПоШР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по нормам по ШР</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоНормамПоШР.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="80ce714d-b0ae-4cc4-9873-d616e9322d95">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

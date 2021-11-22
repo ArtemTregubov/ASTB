@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e927f80-9221-414d-8d3d-a2ddc0270606">
+  <producedTypes>
+    <objectType typeId="69e88c25-bd47-4a54-ac2f-02ae29974eb0" valueTypeId="87631776-abfc-49ab-bd3f-eecb612be105"/>
+    <managerType typeId="ce96c72b-0c6b-4f09-b99d-f640819bd8b9" valueTypeId="09b95bb9-1f61-4fa6-ae03-e5f5aa8f4dbd"/>
+  </producedTypes>
+  <name>РабочийСтолВнешнегоПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий стол внешнего пользователя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолВнешнегоПользователя.Form.Форма</defaultForm>
+  <attributes uuid="5b271600-dfd2-4e42-a795-fa818074ae67">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3a855a3c-8c30-4cd7-939c-daf1a92dfaaf">
+    <name>ВыбранныйТест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранный тест</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="ddd0ff0a-5c88-4cc4-b70f-9818775b9913">
+    <producedTypes>
+      <objectType typeId="485cee1d-9395-40cc-8352-2803d4885ffc" valueTypeId="71f0aa66-a7b6-4cab-9825-089b2d489b20"/>
+      <rowType typeId="e3d66fb2-cd19-4261-83ca-9df4652825cb" valueTypeId="3ebdb947-435b-4df1-aa51-3ed5b8c10f3a"/>
+    </producedTypes>
+    <name>Результаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1983d8ef-a10a-42dd-827f-3658ad78c081">
+      <name>Вопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вопрос</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВопросыДляТестов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cac86ce8-b680-4e37-a5c8-d7fd7491d2ed">
+      <name>Ответ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Ответы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9d16c4f7-a2fb-4bc2-a8b8-5aa9a59e0af3">
+      <name>Правильный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Правильный</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="4550e817-2658-401d-9dd2-c2f70eaa3d63">
+    <producedTypes>
+      <objectType typeId="a5e7db15-afb4-4817-b6d8-cc115187a30e" valueTypeId="3613f3b9-28c0-4028-92a3-032716d9d06a"/>
+      <rowType typeId="7cd9f75c-f924-4601-a71a-6c0515134cc5" valueTypeId="0160d54e-231d-41fc-80c4-efd746e2a19e"/>
+    </producedTypes>
+    <name>ДоступныеТесты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные тесты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="cc40b04b-15a0-4af7-b605-c56077a10bc3">
+      <name>Тест</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тест</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Тесты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2c3ee652-14cf-4eb6-ab5a-8238886cefc2">
+    <producedTypes>
+      <objectType typeId="4db1ea9e-0dc3-4e77-9a33-2fc32914744f" valueTypeId="ccaa478f-a42c-4e58-9eb8-4caadc30cbaa"/>
+      <rowType typeId="31f4b706-1f9b-41b7-b5ca-c1141331b301" valueTypeId="70eefdb3-fb9d-4863-b948-1eb1b63336ff"/>
+    </producedTypes>
+    <name>ВопросыВыбранногоТеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопросы выбранного теста</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3628ec4a-b9d1-43e4-a2f4-31ba31bdc32f">
+      <name>Вопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вопрос</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВопросыДляТестов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="84091641-ac72-4d88-a016-1e0d7aa985d2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3d04889b-2a00-437b-90a6-8fadc260e519">
+    <name>ФормаВводаЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода заявки на получение</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6839fa2a-939c-4d8d-8372-57091e7d36d2">
+    <name>ОбращенияСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращения сотрудника</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="abe22b91-85a5-4cb2-924f-0146570ef4c0">
+    <name>СредстваЗащитыВЧистке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средства защиты в чистке</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="1f2e8113-7b12-450a-ae2d-b0acf4c93ee4">
+    <name>НормыВыдачиСпецодежды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормы выдачи спецодежды</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="1d4ad6ac-e2b2-47b8-b18f-83716fbcfa21">
+    <name>ОбеспеченностьСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обеспеченность сотрудника</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="90d975a1-8f76-4494-9b70-b767de82a2dc">
+    <name>ВыданныеСредстваЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выданные средства защиты</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="00285132-0426-4d4f-bd5d-f853f031e5e2">
+    <name>ГрафикВыдачиСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>График выдачи сотруднику</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b81f3eb1-48f9-412b-970e-b7d79dc3ea1f">
+    <name>СервисНаходитсяВРазработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис находится в разработке</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="92cd3385-6400-4975-b0b8-63d3f628ae9a">
+    <name>Уведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомления</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d895cf7d-79bc-4ac4-9be7-c804b906db15">
+    <name>ПриказыНаПроверкуЗнаний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказы на проверку знаний</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f06612c1-4eb2-4be1-8f09-4b0cff21504b">
+    <name>РезультатыПроверкиЗнаний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты проверки знаний</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d0cb9a36-e115-4c61-8687-9ab30f7c3a0c">
+    <name>ПройденныеИнструктажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройденные инструктажи</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="faba4fb6-5a3d-4b7d-baa5-f28b0eae1622">
+    <name>ГрафикПрохожденияИнструктажей</name>
+    <synonym>
+      <key>ru</key>
+      <value>График прохождения инструктажей</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="4f435f33-d609-4066-9be2-68cdd86727d9">
+    <name>ПройденныеМедосмотры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройденные медосмотры</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="44f831d2-b0d9-462c-861e-510752d49d60">
+    <name>ГрафикПрохожденияМедосмотров</name>
+    <synonym>
+      <key>ru</key>
+      <value>График прохождения медосмотров</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

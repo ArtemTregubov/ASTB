@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Номенклатура.Ссылка КАК Номенклатура
+ПОМЕСТИТЬ ВТ_Номенклатура
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+ГДЕ
+	НЕ Номенклатура.ЭтоГруппа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВыданныеСредстваЗащиты.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_ВыданныеСредстваЗащиты
+ИЗ
+	РегистрНакопления.ВыданныеСредстваЗащиты КАК ВыданныеСредстваЗащиты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВыданныеСредстваЗащитыПоВедомости.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_ВыданныеСредстваЗащитыПоВедомости
+ИЗ
+	РегистрНакопления.ВыданныеСредстваЗащитыПоВедомости КАК ВыданныеСредстваЗащитыПоВедомости
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗаказыПоставщику.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_ЗаказыПоставщику
+ИЗ
+	РегистрНакопления.ЗаказыПоставщику КАК ЗаказыПоставщику
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗаявкиНаВыдачу.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_ЗаявкиНаВыдачу
+ИЗ
+	РегистрНакопления.ЗаявкиНаВыдачу КАК ЗаявкиНаВыдачу
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОстаткиНоменклатуры.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_ОстаткиНоменклатуры
+ИЗ
+	РегистрНакопления.ОстаткиНоменклатуры КАК ОстаткиНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	РеализованныеСИЗ.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_РеализованныеСИЗ
+ИЗ
+	РегистрНакопления.РеализованныеСИЗ КАК РеализованныеСИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СобственныеСИЗ.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_СобственныеСИЗ
+ИЗ
+	РегистрНакопления.СобственныеСИЗ КАК СобственныеСИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СредстваЗащитыВЧистке.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_СредстваЗащитыВЧистке
+ИЗ
+	РегистрНакопления.СредстваЗащитыВЧистке КАК СредстваЗащитыВЧистке
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СредстваЗащитыНаХранении.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_СредстваЗащитыНаХранении
+ИЗ
+	РегистрНакопления.СредстваЗащитыНаХранении КАК СредстваЗащитыНаХранении
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УтилизированныеСИЗ.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_УтилизированныеСИЗ
+ИЗ
+	РегистрНакопления.УтилизированныеСИЗ КАК УтилизированныеСИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Номенклатура.Номенклатура КАК Номенклатура
+ИЗ
+	ВТ_Номенклатура КАК ВТ_Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ВыданныеСредстваЗащиты КАК ВТ_ВыданныеСредстваЗащиты
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_ВыданныеСредстваЗащиты.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ВыданныеСредстваЗащитыПоВедомости КАК ВТ_ВыданныеСредстваЗащитыПоВедомости
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_ВыданныеСредстваЗащитыПоВедомости.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗаказыПоставщику КАК ВТ_ЗаказыПоставщику
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_ЗаказыПоставщику.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗаявкиНаВыдачу КАК ВТ_ЗаявкиНаВыдачу
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_ЗаявкиНаВыдачу.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОстаткиНоменклатуры КАК ВТ_ОстаткиНоменклатуры
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_ОстаткиНоменклатуры.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РеализованныеСИЗ КАК ВТ_РеализованныеСИЗ
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_РеализованныеСИЗ.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СобственныеСИЗ КАК ВТ_СобственныеСИЗ
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_СобственныеСИЗ.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СредстваЗащитыВЧистке КАК ВТ_СредстваЗащитыВЧистке
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_СредстваЗащитыВЧистке.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СредстваЗащитыНаХранении КАК ВТ_СредстваЗащитыНаХранении
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_СредстваЗащитыНаХранении.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_УтилизированныеСИЗ КАК ВТ_УтилизированныеСИЗ
+		ПО ВТ_Номенклатура.Номенклатура = ВТ_УтилизированныеСИЗ.Номенклатура
+ГДЕ
+	ВТ_ВыданныеСредстваЗащиты.Номенклатура ЕСТЬ NULL
+	И ВТ_ВыданныеСредстваЗащитыПоВедомости.Номенклатура ЕСТЬ NULL
+	И ВТ_ЗаказыПоставщику.Номенклатура ЕСТЬ NULL
+	И ВТ_ЗаявкиНаВыдачу.Номенклатура ЕСТЬ NULL
+	И ВТ_ОстаткиНоменклатуры.Номенклатура ЕСТЬ NULL
+	И ВТ_РеализованныеСИЗ.Номенклатура ЕСТЬ NULL
+	И ВТ_СобственныеСИЗ.Номенклатура ЕСТЬ NULL
+	И ВТ_СредстваЗащитыВЧистке.Номенклатура ЕСТЬ NULL
+	И ВТ_СредстваЗащитыНаХранении.Номенклатура ЕСТЬ NULL
+	И ВТ_УтилизированныеСИЗ.Номенклатура ЕСТЬ NULL</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>ДиагностикаНоменклатураВыдачиБезДвижений</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: номенклатура выдачи без движений</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Номенклатура.КодСинхронизации</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код синхронизации</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Номенклатура.Артикул</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Артикул</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Номенклатура.Код</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Заголовок</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диагностика: номенклатура выдачи без движений</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

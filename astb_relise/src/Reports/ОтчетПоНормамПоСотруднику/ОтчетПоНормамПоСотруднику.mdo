@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00a96c60-e793-4eec-bb03-ae1f699e4079">
+  <producedTypes>
+    <objectType typeId="fde37051-be11-4d77-9a31-5987ab546d40" valueTypeId="9377f4d2-83fb-4123-8d71-253cad6b1a1b"/>
+    <managerType typeId="139b12e1-1e2d-4634-b572-60553ca4df31" valueTypeId="6ff40d7b-7b62-44d3-81d5-694eab757d4d"/>
+  </producedTypes>
+  <name>ОтчетПоНормамПоСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по нормам по сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоНормамПоСотруднику.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="df929a28-a4bc-454e-a73c-dd04f73a16a6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22f7285b-4780-4352-b8f2-fbc731c61797">
+  <producedTypes>
+    <managerType typeId="ed9330be-61c4-494a-b68d-e55988cb4c47" valueTypeId="3f1c9a83-16f8-4458-af8e-044d6276d5e0"/>
+    <valueManagerType typeId="80678a26-8968-4d68-a6da-0b2c5c87040b" valueTypeId="0030b512-7d2f-436b-a08b-a2b06a4c9ddd"/>
+    <valueKeyType typeId="9abd0840-355d-4edf-b4dc-8ca917d9d73c" valueTypeId="0ad12dc3-058f-4d06-9660-796de4287b30"/>
+  </producedTypes>
+  <name>ИспользоватьМаркировку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать маркировку</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

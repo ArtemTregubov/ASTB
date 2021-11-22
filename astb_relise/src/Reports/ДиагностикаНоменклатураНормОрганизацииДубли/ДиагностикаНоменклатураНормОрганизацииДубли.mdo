@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b0bd8d5-81a7-4ed8-b330-6c7fad366382">
+  <producedTypes>
+    <objectType typeId="d8b98e6e-3d80-45ec-9c02-b35cf351ffed" valueTypeId="bd82e8fb-2e2b-4ee4-97df-329bdb5bcffc"/>
+    <managerType typeId="72cda64f-eca8-4d45-baff-ad3fb85b1382" valueTypeId="4b308609-6fe0-4d0c-b6d4-e34c6d68bf57"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураНормОрганизацииДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура норм организации (дубли)</value>
+  </synonym>
+  <comment>Номенклатура норм (дубли по наименованию)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураНормОрганизацииДубли.Template.НоменклатураНормОрганизацииДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура норм (дубли по наименованию)</value>
+  </explanation>
+  <templates uuid="a8f2d769-85cd-4807-891d-a7063a36aa4f">
+    <name>НоменклатураНормОрганизацииДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура норм (дубли)</value>
+    </synonym>
+    <comment>Номенклатура норм (дубли по наименованию). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

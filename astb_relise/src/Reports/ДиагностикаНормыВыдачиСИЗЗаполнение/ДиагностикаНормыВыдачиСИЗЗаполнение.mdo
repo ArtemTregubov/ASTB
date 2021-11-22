@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62f8b234-6519-454e-b5dd-ad8293a5c927">
+  <producedTypes>
+    <objectType typeId="49bbbf0c-0f77-4d9f-8230-7bfa64e28cac" valueTypeId="6a23a27d-b65b-469c-8869-fa087c75ece5"/>
+    <managerType typeId="a87d9320-431c-4023-b3d3-ef1d7f6e4210" valueTypeId="13e811f8-8673-4a11-8c87-4a06df58c312"/>
+  </producedTypes>
+  <name>ДиагностикаНормыВыдачиСИЗЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: нормы выдачи СИЗ (заполнение)</value>
+  </synonym>
+  <comment>Нормы выдачи (заполнение вида выдачи СИЗ, вида расчета и состава)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНормыВыдачиСИЗЗаполнение.Template.НормыВыдачиСИЗЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Нормы выдачи (заполнение вида выдачи СИЗ, вида расчета и состава)</value>
+  </explanation>
+  <templates uuid="c3b34c45-20b0-4a03-a329-939fe585b902">
+    <name>НормыВыдачиСИЗЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормы выдачи (заполнение)</value>
+    </synonym>
+    <comment>Нормы выдачи (заполнение вида выдачи СИЗ, вида расчета и состава)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

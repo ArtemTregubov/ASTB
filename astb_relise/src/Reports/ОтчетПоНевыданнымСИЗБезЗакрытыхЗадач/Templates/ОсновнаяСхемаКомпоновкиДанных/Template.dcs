@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыдачи</dataPath>
+			<field>ДатаВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНормы</dataPath>
+			<field>НоменклатураНормы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура нормы</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаНевыдачи</dataPath>
+			<field>ПричинаНевыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина невыдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВыдачи</dataPath>
+			<field>ДокументВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПотребности</dataPath>
+			<field>ДатаПотребности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаВыдачи</dataPath>
+			<field>НормаВыдачи</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Номенклатура</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Рост</dataPath>
+			<field>Рост</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рост</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеАнтропометрии</dataPath>
+			<field>ЗначениеАнтропометрии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение антропометрии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАнтропометрии</dataPath>
+			<field>ВидАнтропометрии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид антропометрии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидВыдачиСИЗ</dataPath>
+			<field>ВидВыдачиСИЗ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид выдачи СИЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентИзноса</dataPath>
+			<field>ПроцентИзноса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОстатокПотребности</dataPath>
+			<field>ОстатокПотребности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток потребности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВыданныеСредстваЗащитыОстатки.Организация КАК Организация,
+	ВыданныеСредстваЗащитыОстатки.Сотрудник КАК Сотрудник,
+	ВыданныеСредстваЗащитыОстатки.НормаВыдачи КАК НормаВыдачи,
+	ВыданныеСредстваЗащитыОстатки.НоменклатураНормы КАК НоменклатураНормы,
+	ВыданныеСредстваЗащитыОстатки.ДатаВыдачи КАК ДатаВыдачи,
+	СУММА(ВыданныеСредстваЗащитыОстатки.КоличествоОстаток) КАК Количество_ххх2
+ПОМЕСТИТЬ КорректировкаПо_ххх2
+ИЗ
+	РегистрНакопления.ВыданныеСредстваЗащиты.Остатки(, ) КАК ВыданныеСредстваЗащитыОстатки
+
+СГРУППИРОВАТЬ ПО
+	ВыданныеСредстваЗащитыОстатки.Организация,
+	ВыданныеСредстваЗащитыОстатки.НормаВыдачи,
+	ВыданныеСредстваЗащитыОстатки.Сотрудник,
+	ВыданныеСредстваЗащитыОстатки.НоменклатураНормы,
+	ВыданныеСредстваЗащитыОстатки.ДатаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПотребностьВыдачи.Организация КАК Организация,
+	ПотребностьВыдачи.Сотрудник КАК Сотрудник,
+	ПотребностьВыдачи.НоменклатураНормы КАК НоменклатураНормы,
+	ПотребностьВыдачи.ДатаПотребности КАК ДатаПотребности,
+	ПотребностьВыдачи.КоличествоОстаток КАК КоличествоОстаток,
+	ПотребностьВыдачи.НормаВыдачи КАК НормаВыдачи,
+	ПотребностьВыдачи.Организация.СверткаПотребностиПоНоменклатуреНормы КАК Параметр_3,
+	ПотребностьВыдачи.Организация.ЧастичнаяВыдача КАК Параметр_4
+ПОМЕСТИТЬ ВТ_ПотребностьВыдачиСИЗОстатки
+ИЗ
+	РегистрНакопления.ПотребностьВыдачиСИЗ.Остатки(, ДатаПотребности &lt; НАЧАЛОПЕРИОДА(&amp;ДатаАнализа, ДЕНЬ)) КАК ПотребностьВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.Организация КАК Организация,
+	ВыдачаСредствЗащитыСотрудникуТовары.Сотрудник КАК Сотрудник,
+	ВыдачаСредствЗащитыСотрудникуТовары.НоменклатураНормы КАК НоменклатураНормы,
+	ВыдачаСредствЗащитыСотрудникуТовары.КоличествоПотребность КАК Количество,
+	ВыдачаСредствЗащитыСотрудникуТовары.НеВыданоПоПричине КАК НеВыданоПоПричине,
+	ВыдачаСредствЗащитыСотрудникуТовары.ДатаВыдачи КАК ДатаВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка КАК ДокументВыдачи,
+	ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.ВидВыдачиСИЗ КАК ВидВыдачиСИЗ,
+	ВыдачаСредствЗащитыСотрудникуТовары.НормаВыдачи КАК НормаВыдачи
+ПОМЕСТИТЬ ВТ_ТаблицаНевыданного
+ИЗ
+	Документ.ВыдачаСредствЗащитыСотруднику.Товары КАК ВыдачаСредствЗащитыСотрудникуТовары
+ГДЕ
+	ВыдачаСредствЗащитыСотрудникуТовары.НеВыдано = ИСТИНА
+	И НЕ(ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.ВидВыдачиСИЗ = ЗНАЧЕНИЕ(Перечисление.ВидыВыдачиСИЗ.ПроизвольнаяВыдача)
+				ИЛИ ВыдачаСредствЗащитыСотрудникуТовары.Ссылка.ВидВыдачиСИЗ = ЗНАЧЕНИЕ(Перечисление.ВидыВыдачиСИЗ.УпрощеннаяВыдача))
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	Сотрудник,
+	НоменклатураНормы,
+	НормаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПотребностьВыдачиСИЗОстатки.Организация КАК Организация,
+	ВТ_ПотребностьВыдачиСИЗОстатки.Сотрудник КАК Сотрудник,
+	ВТ_ПотребностьВыдачиСИЗОстатки.НоменклатураНормы КАК НоменклатураНормы,
+	ВТ_ПотребностьВыдачиСИЗОстатки.ДатаПотребности КАК ДатаВыдачи,
+	ВТ_ПотребностьВыдачиСИЗОстатки.КоличествоОстаток - ЕСТЬNULL(КорректировкаПо_ххх2.Количество_ххх2, 0) КАК КоличествоОстаток,
+	ВЫБОР
+		КОГДА ВТ_ПотребностьВыдачиСИЗОстатки.Параметр_4 = 2
+				И КорректировкаПо_ххх2.Количество_ххх2 &gt; 0
+			ТОГДА "Частичная выдача"
+		КОГДА ВТ_ПотребностьВыдачиСИЗОстатки.ДатаПотребности &lt; НАЧАЛОПЕРИОДА(&amp;ДатаАнализа, МЕСЯЦ)
+			ТОГДА "Не получил в прошлом месяце"
+		КОГДА ВТ_ПотребностьВыдачиСИЗОстатки.ДатаПотребности &lt; НАЧАЛОПЕРИОДА(&amp;ДатаАнализа, ДЕНЬ)
+			ТОГДА "Не получил в текущем месяце"
+	КОНЕЦ КАК Примечание,
+	ВТ_ПотребностьВыдачиСИЗОстатки.НормаВыдачи КАК НормаВыдачи
+ПОМЕСТИТЬ ВТ_ТаблицаНеявившихся
+ИЗ
+	ВТ_ПотребностьВыдачиСИЗОстатки КАК ВТ_ПотребностьВыдачиСИЗОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ КорректировкаПо_ххх2 КАК КорректировкаПо_ххх2
+		ПО (ВТ_ПотребностьВыдачиСИЗОстатки.Параметр_4 = 2)
+			И ВТ_ПотребностьВыдачиСИЗОстатки.Организация = КорректировкаПо_ххх2.Организация
+			И ВТ_ПотребностьВыдачиСИЗОстатки.Сотрудник = КорректировкаПо_ххх2.Сотрудник
+			И ВТ_ПотребностьВыдачиСИЗОстатки.НормаВыдачи = КорректировкаПо_ххх2.НормаВыдачи
+			И ВТ_ПотребностьВыдачиСИЗОстатки.НоменклатураНормы = КорректировкаПо_ххх2.НоменклатураНормы
+			И ВТ_ПотребностьВыдачиСИЗОстатки.ДатаПотребности = КорректировкаПо_ххх2.ДатаВыдачи
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	Сотрудник,
+	НоменклатураНормы,
+	НормаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ КорректировкаПо_ххх2
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ПотребностьВыдачиСИЗОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЕСТЬNULL(ВТ_ТаблицаНевыданного.Организация, ВТ_ТаблицаНеявившихся.Организация) КАК Организация,
+	ЕСТЬNULL(ВТ_ТаблицаНевыданного.Сотрудник, ВТ_ТаблицаНеявившихся.Сотрудник) КАК Сотрудник,
+	ЕСТЬNULL(ВТ_ТаблицаНевыданного.НоменклатураНормы, ВТ_ТаблицаНеявившихся.НоменклатураНормы) КАК НоменклатураНормы,
+	ЕСТЬNULL(ВТ_ТаблицаНевыданного.НормаВыдачи, ВТ_ТаблицаНеявившихся.НормаВыдачи) КАК НормаВыдачи,
+	ВЫБОР
+		КОГДА ВТ_ТаблицаНевыданного.ДатаВыдачи &lt; ВТ_ТаблицаНеявившихся.ДатаВыдачи
+			ТОГДА ВТ_ТаблицаНеявившихся.КоличествоОстаток
+		ИНАЧЕ ЕСТЬNULL(ВТ_ТаблицаНевыданного.Количество, ВТ_ТаблицаНеявившихся.КоличествоОстаток)
+	КОНЕЦ КАК Количество,
+	ВЫБОР
+		КОГДА ВТ_ТаблицаНевыданного.ДатаВыдачи &lt; ВТ_ТаблицаНеявившихся.ДатаВыдачи
+			ТОГДА ВТ_ТаблицаНеявившихся.Примечание
+		ИНАЧЕ ЕСТЬNULL(ВТ_ТаблицаНевыданного.НеВыданоПоПричине, ВТ_ТаблицаНеявившихся.Примечание)
+	КОНЕЦ КАК ПричинаНевыдачи,
+	ВЫБОР
+		КОГДА ВТ_ТаблицаНевыданного.ДатаВыдачи &lt; ВТ_ТаблицаНеявившихся.ДатаВыдачи
+			ТОГДА ВТ_ТаблицаНеявившихся.ДатаВыдачи
+		ИНАЧЕ ЕСТЬNULL(ВТ_ТаблицаНевыданного.ДатаВыдачи, ВТ_ТаблицаНеявившихся.ДатаВыдачи)
+	КОНЕЦ КАК ДатаВыдачи,
+	ВЫБОР
+		КОГДА ВТ_ТаблицаНевыданного.ДатаВыдачи &lt; ВТ_ТаблицаНеявившихся.ДатаВыдачи
+			ТОГДА NULL
+		ИНАЧЕ ВТ_ТаблицаНевыданного.ДокументВыдачи
+	КОНЕЦ КАК ДокументВыдачи,
+	ЕСТЬNULL(ВТ_ТаблицаНевыданного.ВидВыдачиСИЗ, ВТ_ТаблицаНеявившихся.НоменклатураНормы.ВидСИЗ.ВидВыдачиСИЗ) КАК ВидВыдачиСИЗ
+ПОМЕСТИТЬ ВТ_ВлЗапрос
+ИЗ
+	ВТ_ТаблицаНеявившихся КАК ВТ_ТаблицаНеявившихся
+		ПОЛНОЕ СОЕДИНЕНИЕ ВТ_ТаблицаНевыданного КАК ВТ_ТаблицаНевыданного
+		ПО ВТ_ТаблицаНеявившихся.Организация = ВТ_ТаблицаНевыданного.Организация
+			И ВТ_ТаблицаНеявившихся.Сотрудник = ВТ_ТаблицаНевыданного.Сотрудник
+			И ВТ_ТаблицаНеявившихся.НоменклатураНормы = ВТ_ТаблицаНевыданного.НоменклатураНормы
+			И ВТ_ТаблицаНеявившихся.НормаВыдачи = ВТ_ТаблицаНевыданного.НормаВыдачи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ТаблицаНевыданного
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ТаблицаНеявившихся
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ВТ_ВлЗапрос.Организация КАК Организация,
+	ВТ_ВлЗапрос.Сотрудник КАК Сотрудник,
+	ВТ_ВлЗапрос.НоменклатураНормы КАК НоменклатураНормы,
+	ВТ_ВлЗапрос.НормаВыдачи КАК НормаВыдачи,
+	ВТ_ВлЗапрос.Количество КАК Количество,
+	ВТ_ВлЗапрос.ПричинаНевыдачи КАК ПричинаНевыдачи,
+	ВТ_ВлЗапрос.ДатаВыдачи КАК ДатаВыдачи,
+	ВТ_ВлЗапрос.ДокументВыдачи КАК ДокументВыдачи,
+	ВТ_ВлЗапрос.ВидВыдачиСИЗ КАК ВидВыдачиСИЗ,
+	НормыВыдачиСИЗСоставНормы.ПериодичностьВыдачи.Приоритет КАК ПериодичностьВыдачиПриоритет,
+	ВТ_ВлЗапрос.Организация.СверткаПотребностиПоНоменклатуреНормы КАК ОрганизацияСверткаПотребностиПоНоменклатуреНормы
+ПОМЕСТИТЬ ТаблицаИсходныхДанных
+ИЗ
+	ВТ_ВлЗапрос КАК ВТ_ВлЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.НормыВыдачиСИЗ.СоставНормы КАК НормыВыдачиСИЗСоставНормы
+		ПО ВТ_ВлЗапрос.Организация = НормыВыдачиСИЗСоставНормы.Ссылка.Владелец
+			И ВТ_ВлЗапрос.НормаВыдачи = НормыВыдачиСИЗСоставНормы.Ссылка
+			И ВТ_ВлЗапрос.НоменклатураНормы = НормыВыдачиСИЗСоставНормы.НоменклатураНормы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВлЗапрос
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаИсходныхДанных.Организация КАК Организация,
+	ТаблицаИсходныхДанных.Сотрудник КАК Сотрудник,
+	ТаблицаИсходныхДанных.НоменклатураНормы КАК НоменклатураНормы,
+	МАКСИМУМ(ТаблицаИсходныхДанных.ПериодичностьВыдачиПриоритет) КАК ПериодичностьВыдачиПриоритет,
+	ИСТИНА КАК НормаОптимизирована
+ПОМЕСТИТЬ КорректировкаПо_хх1х
+ИЗ
+	ТаблицаИсходныхДанных КАК ТаблицаИсходныхДанных
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаИсходныхДанных.Организация,
+	ТаблицаИсходныхДанных.Сотрудник,
+	ТаблицаИсходныхДанных.НоменклатураНормы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ТаблицаИсходныхДанных.Организация КАК Организация,
+	ТаблицаИсходныхДанных.Сотрудник КАК Сотрудник,
+	ТаблицаИсходныхДанных.НоменклатураНормы КАК НоменклатураНормы,
+	ТаблицаИсходныхДанных.НормаВыдачи КАК НормаВыдачи,
+	ТаблицаИсходныхДанных.Количество КАК Количество,
+	ТаблицаИсходныхДанных.ПричинаНевыдачи КАК ПричинаНевыдачи,
+	ТаблицаИсходныхДанных.ДатаВыдачи КАК ДатаВыдачи,
+	ТаблицаИсходныхДанных.ДокументВыдачи КАК ДокументВыдачи,
+	ТаблицаИсходныхДанных.ВидВыдачиСИЗ КАК ВидВыдачиСИЗ,
+	ТаблицаИсходныхДанных.ПериодичностьВыдачиПриоритет КАК ПериодичностьВыдачиПриоритет
+ПОМЕСТИТЬ ТаблицаИсходныхДанных_хх1х
+ИЗ
+	ТаблицаИсходныхДанных КАК ТаблицаИсходныхДанных
+		ЛЕВОЕ СОЕДИНЕНИЕ КорректировкаПо_хх1х КАК КорректировкаПо_хх1х
+		ПО ТаблицаИсходныхДанных.Организация = КорректировкаПо_хх1х.Организация
+			И ТаблицаИсходныхДанных.Сотрудник = КорректировкаПо_хх1х.Сотрудник
+			И ТаблицаИсходныхДанных.НоменклатураНормы = КорректировкаПо_хх1х.НоменклатураНормы
+			И ТаблицаИсходныхДанных.ПериодичностьВыдачиПриоритет = КорректировкаПо_хх1х.ПериодичностьВыдачиПриоритет
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ТаблицаИсходныхДанных
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗначенияАнтропометрическихСвойств.Сотрудник КАК Сотрудник,
+	ЗначенияАнтропометрическихСвойств.ВидСвойства КАК ВидСвойства,
+	ЗначенияАнтропометрическихСвойств.ЗначениеСвойства КАК ЗначениеСвойства
+ПОМЕСТИТЬ ВТ_АнтропометрияСотрудников
+ИЗ
+	РегистрСведений.ЗначенияАнтропометрическихСвойств КАК ЗначенияАнтропометрическихСвойств
+ГДЕ
+	НЕ ЗначенияАнтропометрическихСвойств.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.Рост)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗначенияАнтропометрическихСвойств.Сотрудник КАК Сотрудник,
+	ЗначенияАнтропометрическихСвойств.ЗначениеСвойства КАК Рост
+ПОМЕСТИТЬ ВТ_РостСотрудников
+ИЗ
+	РегистрСведений.ЗначенияАнтропометрическихСвойств КАК ЗначенияАнтропометрическихСвойств
+ГДЕ
+	ЗначенияАнтропометрическихСвойств.ВидСвойства = ЗНАЧЕНИЕ(Справочник.ВидыАнтропометрическихСвойств.Рост)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИсходныеДанные.Организация КАК Организация,
+	ИсходныеДанные.Сотрудник КАК Сотрудник,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Подразделение КАК Подразделение,
+	ОсновноеМестоРаботыСотрудникаСрезПоследних.Должность КАК Должность,
+	ИсходныеДанные.НоменклатураНормы КАК НоменклатураНормы,
+	ИсходныеДанные.ПричинаНевыдачи КАК ПричинаНевыдачи,
+	ИсходныеДанные.ДатаВыдачи КАК ДатаВыдачи,
+	ИсходныеДанные.ДокументВыдачи КАК ДокументВыдачи,
+	ИсходныеДанные.ВидВыдачиСИЗ КАК ВидВыдачиСИЗ,
+	ИсходныеДанные.НормаВыдачи КАК НормаВыдачи,
+	ИсходныеДанные.Количество КАК Количество,
+	ВЫБОР
+		КОГДА ВТ_АнтропометрияСотрудников.ВидСвойства ЕСТЬ NULL
+			ТОГДА ИсходныеДанные.НоменклатураНормы.ВидАнтропометрическогоСвойства
+		ИНАЧЕ ВТ_АнтропометрияСотрудников.ВидСвойства
+	КОНЕЦ КАК ВидАнтропометрии,
+	ЕСТЬNULL(ВТ_АнтропометрияСотрудников.ЗначениеСвойства, "") КАК ЗначениеАнтропометрии,
+	ВЫБОР
+		КОГДА ИсходныеДанные.НоменклатураНормы.ИспользоватьРост
+			ТОГДА ЕСТЬNULL(ВТ_РостСотрудников.Рост, "")
+		ИНАЧЕ ""
+	КОНЕЦ КАК Рост,
+	ПотребностьВыдачиСИЗОстатки.КоличествоОстаток КАК ОстатокПотребности
+ИЗ
+	ТаблицаИсходныхДанных_хх1х КАК ИсходныеДанные
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.Организация КАК Организация,
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.Сотрудник КАК Сотрудник,
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.Подразделение КАК Подразделение,
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.Должность КАК Должность,
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.РабочееМесто КАК РабочееМесто
+		ИЗ
+			РегистрСведений.ОсновноеМестоРаботыСотрудника.СрезПоследних(, ) КАК ОсновноеМестоРаботыСотрудникаСрезПоследних
+		ГДЕ
+			ОсновноеМестоРаботыСотрудникаСрезПоследних.ОсновноеМестоРаботы = ИСТИНА) КАК ОсновноеМестоРаботыСотрудникаСрезПоследних
+		ПО ИсходныеДанные.Организация = ОсновноеМестоРаботыСотрудникаСрезПоследних.Организация
+			И ИсходныеДанные.Сотрудник = ОсновноеМестоРаботыСотрудникаСрезПоследних.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_АнтропометрияСотрудников КАК ВТ_АнтропометрияСотрудников
+		ПО ИсходныеДанные.Сотрудник = ВТ_АнтропометрияСотрудников.Сотрудник
+			И ИсходныеДанные.НоменклатураНормы.ВидАнтропометрическогоСвойства = ВТ_АнтропометрияСотрудников.ВидСвойства
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_РостСотрудников КАК ВТ_РостСотрудников
+		ПО ИсходныеДанные.Сотрудник = ВТ_РостСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ПотребностьВыдачиСИЗ.Остатки(, ДатаПотребности &lt;= &amp;ДатаАнализа) КАК ПотребностьВыдачиСИЗОстатки
+		ПО ИсходныеДанные.Организация = ПотребностьВыдачиСИЗОстатки.Организация
+			И ИсходныеДанные.Сотрудник = ПотребностьВыдачиСИЗОстатки.Сотрудник
+			И ИсходныеДанные.НормаВыдачи = ПотребностьВыдачиСИЗОстатки.НормаВыдачи
+			И ИсходныеДанные.НоменклатураНормы = ПотребностьВыдачиСИЗОстатки.НоменклатураНормы
+ГДЕ
+	ПотребностьВыдачиСИЗОстатки.КоличествоОстаток &gt; 0
+
+УПОРЯДОЧИТЬ ПО
+	ИсходныеДанные.Организация,
+	ИсходныеДанные.Сотрудник,
+	Подразделение,
+	Должность,
+	ИсходныеДанные.НоменклатураНормы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ТаблицаИсходныхДанных_хх1х
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_АнтропометрияСотрудников
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_РостСотрудников</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ТаблицаИспользуемогоАлгоритма</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазрешеноСформироватьОтчет</dataPath>
+			<field>РазрешеноСформироватьОтчет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешено сформировать отчет</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВеткаАлгоритма</dataPath>
+			<field>ВеткаАлгоритма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ветка алгоритма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	Организации.Ссылка КАК Организация,
+	Организации.ИспользоватьГруппыИЛИ КАК Параметр_1,
+	Организации.НеИзменятьСрокНоскиВыданныхСИЗ КАК Параметр_2,
+	Организации.СверткаПотребностиПоНоменклатуреНормы КАК Параметр_3,
+	Организации.ЧастичнаяВыдача КАК Параметр_4,
+	ВЫБОР
+		КОГДА Организации.ИспользоватьГруппыИЛИ
+			ТОГДА "1"
+		ИНАЧЕ "0"
+	КОНЕЦ + ВЫБОР
+		КОГДА Организации.НеИзменятьСрокНоскиВыданныхСИЗ
+			ТОГДА "1"
+		ИНАЧЕ "0"
+	КОНЕЦ + ВЫБОР
+		КОГДА Организации.СверткаПотребностиПоНоменклатуреНормы
+			ТОГДА "1"
+		ИНАЧЕ "0"
+	КОНЕЦ + "" + ВЫБОР
+		КОГДА Организации.ЧастичнаяВыдача = 3
+			ТОГДА "3"
+		КОГДА Организации.ЧастичнаяВыдача = 4
+			ТОГДА "4"
+		КОГДА Организации.ЧастичнаяВыдача = 2
+			ТОГДА "2"
+		ИНАЧЕ "1"
+	КОНЕЦ КАК ВеткаАлгоритма,
+	ИСТИНА КАК РазрешеноСформироватьОтчет
+{ВЫБРАТЬ
+	Организация,
+	ВеткаАлгоритма,
+	РазрешеноСформироватьОтчет}
+ИЗ
+	Справочник.Организации КАК Организации
+ГДЕ
+	ВЫБОР
+			КОГДА Организации.ИспользоватьГруппыИЛИ
+				ТОГДА "1"
+			ИНАЧЕ "0"
+		КОНЕЦ + ВЫБОР
+			КОГДА Организации.НеИзменятьСрокНоскиВыданныхСИЗ
+				ТОГДА "1"
+			ИНАЧЕ "0"
+		КОНЕЦ + ВЫБОР
+			КОГДА Организации.СверткаПотребностиПоНоменклатуреНормы
+				ТОГДА "1"
+			ИНАЧЕ "0"
+		КОНЕЦ + "" + ВЫБОР
+			КОГДА Организации.ЧастичнаяВыдача = 3
+				ТОГДА "3"
+			КОГДА Организации.ЧастичнаяВыдача = 4
+				ТОГДА "4"
+			КОГДА Организации.ЧастичнаяВыдача = 2
+				ТОГДА "2"
+			ИНАЧЕ "1"
+		КОНЕЦ В (&amp;СписокРеализованныхАлгоритмов)</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>ТаблицаИспользуемогоАлгоритма</destinationDataSet>
+		<sourceExpression>Организация</sourceExpression>
+		<destinationExpression>Организация</destinationExpression>
+	</dataSetLink>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаАнализа</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата анализа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СписокРеализованныхАлгоритмов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список реализованных алгоритмов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>5</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string">0003</value>
+		<value xsi:type="xs:string">1011</value>
+		<value xsi:type="xs:string">0012</value>
+		<value xsi:type="xs:string">0103</value>
+		<value xsi:type="xs:string">0004</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоНевыданнымСИЗ</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по не выданным (без закрытых выдач)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>568c5e36-7756-4d9b-af6a-084794fe7fe2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>InHierarchy</dcsset:comparisonType>
+					<dcsset:userSettingID>9abd406f-f66b-4fd3-a097-8762261fdbd3</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПричинаНевыдачи</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>162548c5-7be1-459f-ace8-4852f56f6c8b</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>1c1dfc6d-7b52-4aed-808a-3f50857757f7</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+					<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник не уволен</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник не уволен</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДокументВыдачи</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">28</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПричинаНевыдачи</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>НоменклатураНормы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РазрешеноСформироватьОтчет</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Алгоритм не реализован</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+							<dcsset:groupType>Hierarchy</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Должность</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>НормаВыдачи</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>НоменклатураНормы</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ВидАнтропометрии</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЗначениеАнтропометрии</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Рост</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ДатаВыдачи</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПричинаНевыдачи</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ДокументВыдачи</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:item>
+								<dcsset:selection/>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">Количество</dcsset:left>
+										<dcsset:comparisonType>Less</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ЦветТекста</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+						</dcsset:conditionalAppearance>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>РеестрСотрудниковНеполучившихСИЗ</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Реестр неполучивших СИЗ сотрудников</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник.ТабельныйНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

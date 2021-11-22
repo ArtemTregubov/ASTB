@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe1a641d-429b-4c13-9264-d29a991dd6ca">
+  <producedTypes>
+    <objectType typeId="23da227c-448f-432d-9aa7-7995b7adf9de" valueTypeId="9633ad72-56b2-4714-baec-94ee502de2f8"/>
+    <managerType typeId="de724a4c-eb05-416b-8664-6a4251620a10" valueTypeId="aa3797d7-d59f-4136-a783-374f58df7a8b"/>
+  </producedTypes>
+  <name>ПрохождениеМедосмотров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прохождение медосмотров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПрохождениеМедосмотров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="1f81cc1c-1571-489e-8aca-95f1c0c24f27">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

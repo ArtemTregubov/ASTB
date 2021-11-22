@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комплект</dataPath>
+			<field>Комплект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерКомплектующего</dataPath>
+			<field>РазмерКомплектующего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер комплектующего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерКомплекта</dataPath>
+			<field>РазмерКомплекта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер комплекта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комплектующее</dataPath>
+			<field>Комплектующее</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплектующее</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МетрикаКомплекта</dataPath>
+			<field>МетрикаКомплекта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метрика комплекта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МетрикаКомплектующего</dataPath>
+			<field>МетрикаКомплектующего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метрика комплектующего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентИзноса</dataPath>
+			<field>ПроцентИзноса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОстатокКомплекта</dataPath>
+			<field>ОстатокКомплекта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток комплекта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОстатокКомплектующего</dataPath>
+			<field>ОстатокКомплектующего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток комплектующего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	НоменклатураКомплектующие.Ссылка КАК Комплект,
+	НоменклатураКомплектующие.Номенклатура КАК Комплектующее
+ПОМЕСТИТЬ ВТ_Комплекты_Комплектующие
+ИЗ
+	Справочник.Номенклатура.Комплектующие КАК НоменклатураКомплектующие
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиНоменклатурыОстатки.Номенклатура КАК Номенклатура,
+	ОстаткиНоменклатурыОстатки.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	СУММА(ОстаткиНоменклатурыОстатки.КоличествоОстаток) КАК КоличествоОстаток
+ПОМЕСТИТЬ ВТ_Остатки
+ИЗ
+	РегистрНакопления.ОстаткиНоменклатуры.Остатки КАК ОстаткиНоменклатурыОстатки
+
+СГРУППИРОВАТЬ ПО
+	ОстаткиНоменклатурыОстатки.Номенклатура,
+	ОстаткиНоменклатурыОстатки.ХарактеристикаНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_Комплекты_Комплектующие.Комплект КАК Комплект,
+	ВТ_Комплекты_Комплектующие.Комплектующее КАК Комплектующее,
+	ЕСТЬNULL(ХарактеристикиНоменклатуры.Ссылка, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК ХарактеристикаКомплекта,
+	ЕСТЬNULL(ХарактеристикиНоменклатуры.Метрика, ЗНАЧЕНИЕ(Справочник.Метрики.ПустаяСсылка)) КАК МетрикаКомплекта
+ПОМЕСТИТЬ ВТ_КомплектыСРазмерами
+ИЗ
+	ВТ_Комплекты_Комплектующие КАК ВТ_Комплекты_Комплектующие
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО ВТ_Комплекты_Комплектующие.Комплект = ХарактеристикиНоменклатуры.Владелец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_Комплекты_Комплектующие.Комплектующее КАК Комплектующее,
+	ВТ_Комплекты_Комплектующие.Комплект КАК Комплект,
+	ЕСТЬNULL(ХарактеристикиНоменклатуры.Ссылка, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК ХарактеристикаКомплектующего,
+	ЕСТЬNULL(ХарактеристикиНоменклатуры.Метрика, ЗНАЧЕНИЕ(Справочник.Метрики.ПустаяСсылка)) КАК МетрикаКомплектующего
+ПОМЕСТИТЬ ВТ_КомплектующиеСРазмерами
+ИЗ
+	ВТ_Комплекты_Комплектующие КАК ВТ_Комплекты_Комплектующие
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО ВТ_Комплекты_Комплектующие.Комплектующее = ХарактеристикиНоменклатуры.Владелец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_КомплектыСРазмерами.Комплект КАК Комплект,
+	ВТ_КомплектыСРазмерами.Комплектующее КАК Комплектующее,
+	ВТ_КомплектыСРазмерами.ХарактеристикаКомплекта КАК ХарактеристикаКомплекта,
+	ВТ_КомплектыСРазмерами.МетрикаКомплекта КАК МетрикаКомплекта
+ПОМЕСТИТЬ ВТ_ПроверкаРазмеровКомплектующих
+ИЗ
+	ВТ_КомплектыСРазмерами КАК ВТ_КомплектыСРазмерами
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_КомплектующиеСРазмерами КАК ВТ_КомплектующиеСРазмерами
+		ПО ВТ_КомплектыСРазмерами.Комплект = ВТ_КомплектующиеСРазмерами.Комплект
+			И ВТ_КомплектыСРазмерами.Комплектующее = ВТ_КомплектующиеСРазмерами.Комплектующее
+			И ВТ_КомплектыСРазмерами.МетрикаКомплекта = ВТ_КомплектующиеСРазмерами.МетрикаКомплектующего
+ГДЕ
+	ВТ_КомплектующиеСРазмерами.МетрикаКомплектующего ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_КомплектующиеСРазмерами.Комплектующее КАК Комплектующее,
+	ВТ_КомплектующиеСРазмерами.Комплект КАК Комплект,
+	ВТ_КомплектующиеСРазмерами.ХарактеристикаКомплектующего КАК ХарактеристикаКомплектующего,
+	ВТ_КомплектующиеСРазмерами.МетрикаКомплектующего КАК МетрикаКомплектующего
+ПОМЕСТИТЬ ВТ_ПроверкаРазмеровКомплектов
+ИЗ
+	ВТ_КомплектующиеСРазмерами КАК ВТ_КомплектующиеСРазмерами
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_КомплектыСРазмерами КАК ВТ_КомплектыСРазмерами
+		ПО ВТ_КомплектующиеСРазмерами.Комплект = ВТ_КомплектыСРазмерами.Комплект
+			И ВТ_КомплектующиеСРазмерами.Комплектующее = ВТ_КомплектыСРазмерами.Комплектующее
+			И ВТ_КомплектующиеСРазмерами.МетрикаКомплектующего = ВТ_КомплектыСРазмерами.МетрикаКомплекта
+ГДЕ
+	ВТ_КомплектыСРазмерами.МетрикаКомплекта ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПроверкаРазмеровКомплектующих.Комплект КАК Комплект,
+	ВТ_ПроверкаРазмеровКомплектующих.Комплектующее КАК Комплектующее,
+	ВТ_ПроверкаРазмеровКомплектующих.ХарактеристикаКомплекта КАК РазмерКомплекта,
+	ВТ_ПроверкаРазмеровКомплектующих.МетрикаКомплекта КАК МетрикаКомплекта,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка) КАК РазмерКомплектующего,
+	ЗНАЧЕНИЕ(Справочник.Метрики.ПустаяСсылка) КАК МетрикаКомплектующего,
+	ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0) КАК ОстатокКомплекта,
+	0 КАК ОстатокКомплектующего
+ИЗ
+	ВТ_ПроверкаРазмеровКомплектующих КАК ВТ_ПроверкаРазмеровКомплектующих
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Остатки КАК ВТ_Остатки
+		ПО ВТ_ПроверкаРазмеровКомплектующих.Комплект = ВТ_Остатки.Номенклатура
+			И ВТ_ПроверкаРазмеровКомплектующих.ХарактеристикаКомплекта = ВТ_Остатки.ХарактеристикаНоменклатуры
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПроверкаРазмеровКомплектов.Комплект,
+	ВТ_ПроверкаРазмеровКомплектов.Комплектующее,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.Метрики.ПустаяСсылка),
+	ВТ_ПроверкаРазмеровКомплектов.ХарактеристикаКомплектующего,
+	ВТ_ПроверкаРазмеровКомплектов.МетрикаКомплектующего,
+	0,
+	ЕСТЬNULL(ВТ_Остатки.КоличествоОстаток, 0)
+ИЗ
+	ВТ_ПроверкаРазмеровКомплектов КАК ВТ_ПроверкаРазмеровКомплектов
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Остатки КАК ВТ_Остатки
+		ПО ВТ_ПроверкаРазмеровКомплектов.Комплектующее = ВТ_Остатки.Номенклатура
+			И ВТ_ПроверкаРазмеровКомплектов.ХарактеристикаКомплектующего = ВТ_Остатки.ХарактеристикаНоменклатуры</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ДиагностикаСоответствияРазмеровКомплектовИКомплектующих</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Диагностика: соответствие размеров комплектов и комплектующих</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазмерКомплекта</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Размер</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОстатокКомплекта</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплектующее</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазмерКомплектующего</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Размер</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОстатокКомплектующего</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemGroup">
+					<dcsset:groupType>OrGroup</dcsset:groupType>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазмерКомплекта</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазмерКомплектующего</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					</dcsset:item>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Комплект.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Комплектующее.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>РазмерКомплекта.КодSAP</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>РазмерКомплектующего.КодSAP</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Комплект</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Комплектующее</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

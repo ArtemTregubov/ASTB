@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМесто</dataPath>
+			<field>РабочееМесто</field>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+							<dcscor:value>Организация</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Движение</dataPath>
+			<field>Движение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеСтарое</dataPath>
+			<field>ПодразделениеСтарое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение старое</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжностьСтарая</dataPath>
+			<field>ДолжностьСтарая</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность старая</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМестоСтарое</dataPath>
+			<field>РабочееМестоСтарое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место старое</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеНовое</dataPath>
+			<field>ПодразделениеНовое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение новое</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжностьНовая</dataPath>
+			<field>ДолжностьНовая</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность новая</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочееМестоНовое</dataPath>
+			<field>РабочееМестоНовое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочее место новое</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗанятыеРабочиеМестаОбороты.Организация КАК Организация,
+	ЗанятыеРабочиеМестаОбороты.Сотрудник КАК Сотрудник,
+	ЗанятыеРабочиеМестаОбороты.Подразделение КАК Подразделение,
+	ЗанятыеРабочиеМестаОбороты.Должность КАК Должность,
+	ЗанятыеРабочиеМестаОбороты.РабочееМесто КАК РабочееМесто,
+	СУММА(ЗанятыеРабочиеМестаОбороты.КоличествоПриход) КАК КоличествоПриход,
+	СУММА(ЗанятыеРабочиеМестаОбороты.КоличествоРасход) КАК КоличествоРасход,
+	ЗанятыеРабочиеМестаОбороты.Регистратор КАК Регистратор,
+	ЗанятыеРабочиеМестаОбороты.Период КАК Период
+ПОМЕСТИТЬ ВТ_ОборотыПоЗРМ
+ИЗ
+	РегистрНакопления.ЗанятыеРабочиеМеста.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ЗанятыеРабочиеМестаОбороты
+
+СГРУППИРОВАТЬ ПО
+	ЗанятыеРабочиеМестаОбороты.Организация,
+	ЗанятыеРабочиеМестаОбороты.Сотрудник,
+	ЗанятыеРабочиеМестаОбороты.Подразделение,
+	ЗанятыеРабочиеМестаОбороты.Должность,
+	ЗанятыеРабочиеМестаОбороты.РабочееМесто,
+	ЗанятыеРабочиеМестаОбороты.Регистратор,
+	ЗанятыеРабочиеМестаОбороты.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ОборотыПоЗРМ.Период КАК Период,
+	ВТ_ОборотыПоЗРМ.Регистратор КАК Регистратор,
+	ВЫБОР
+		КОГДА ВТ_ОборотыПоЗРМ.Регистратор ССЫЛКА Документ.КадровоеПеремещение
+			ТОГДА "Перемещение"
+		КОГДА ВТ_ОборотыПоЗРМ.Регистратор ССЫЛКА Документ.Увольнение
+			ТОГДА "Увольнение"
+		ИНАЧЕ "Корректировка"
+	КОНЕЦ КАК Движение,
+	ВТ_ОборотыПоЗРМ.Организация КАК Организация,
+	ВТ_ОборотыПоЗРМ.Сотрудник КАК Сотрудник,
+	ВТ_ОборотыПоЗРМ.Подразделение КАК ПодразделениеСтарое,
+	ВТ_ОборотыПоЗРМ.Должность КАК ДолжностьСтарая,
+	ВТ_ОборотыПоЗРМ.РабочееМесто КАК РабочееМестоСтарое
+ПОМЕСТИТЬ ВТ_РасходПоЗРМ
+ИЗ
+	ВТ_ОборотыПоЗРМ КАК ВТ_ОборотыПоЗРМ
+ГДЕ
+	НЕ ВТ_ОборотыПоЗРМ.КоличествоРасход = 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ОборотыПоЗРМ.Период КАК Период,
+	ВТ_ОборотыПоЗРМ.Регистратор КАК Регистратор,
+	ВЫБОР
+		КОГДА ВТ_ОборотыПоЗРМ.Регистратор ССЫЛКА Документ.КадровоеПеремещение
+			ТОГДА "Перемещение"
+		КОГДА ВТ_ОборотыПоЗРМ.Регистратор ССЫЛКА Документ.ПриемНаРаботу
+			ТОГДА "Прием"
+		ИНАЧЕ "Корректировка"
+	КОНЕЦ КАК Движение,
+	ВТ_ОборотыПоЗРМ.Организация КАК Организация,
+	ВТ_ОборотыПоЗРМ.Сотрудник КАК Сотрудник,
+	ВТ_ОборотыПоЗРМ.Подразделение КАК ПодразделениеНовое,
+	ВТ_ОборотыПоЗРМ.Должность КАК ДолжностьНовая,
+	ВТ_ОборотыПоЗРМ.РабочееМесто КАК РабочееМестоНовое
+ПОМЕСТИТЬ ВТ_ПриходПоЗРМ
+ИЗ
+	ВТ_ОборотыПоЗРМ КАК ВТ_ОборотыПоЗРМ
+ГДЕ
+	НЕ ВТ_ОборотыПоЗРМ.КоличествоПриход = 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_РасходПоЗРМ.Период КАК Период,
+	ВТ_РасходПоЗРМ.Регистратор КАК Регистратор,
+	ВТ_РасходПоЗРМ.Движение КАК Движение,
+	ВТ_РасходПоЗРМ.Организация КАК Организация,
+	ВТ_РасходПоЗРМ.Сотрудник КАК Сотрудник,
+	ВТ_РасходПоЗРМ.ПодразделениеСтарое КАК ПодразделениеСтарое,
+	ВТ_РасходПоЗРМ.ДолжностьСтарая КАК ДолжностьСтарая,
+	ВТ_РасходПоЗРМ.РабочееМестоСтарое КАК РабочееМестоСтарое,
+	ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка) КАК ПодразделениеНовое,
+	ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка) КАК ДолжностьНовая,
+	ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка) КАК РабочееМестоНовое
+ПОМЕСТИТЬ ВТ_Результат
+ИЗ
+	ВТ_РасходПоЗРМ КАК ВТ_РасходПоЗРМ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПриходПоЗРМ.Период,
+	ВТ_ПриходПоЗРМ.Регистратор,
+	ВТ_ПриходПоЗРМ.Движение,
+	ВТ_ПриходПоЗРМ.Организация,
+	ВТ_ПриходПоЗРМ.Сотрудник,
+	ЗНАЧЕНИЕ(Справочник.Подразделения.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.ДолжностиИПрофессии.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.РабочиеМестаАСТБ.ПустаяСсылка),
+	ВТ_ПриходПоЗРМ.ПодразделениеНовое,
+	ВТ_ПриходПоЗРМ.ДолжностьНовая,
+	ВТ_ПриходПоЗРМ.РабочееМестоНовое
+ИЗ
+	ВТ_ПриходПоЗРМ КАК ВТ_ПриходПоЗРМ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Результат.Период КАК Период,
+	ВТ_Результат.Регистратор КАК Регистратор,
+	ВТ_Результат.Движение КАК Движение,
+	ВТ_Результат.Организация КАК Организация,
+	ВТ_Результат.Сотрудник КАК Сотрудник,
+	МАКСИМУМ(ВТ_Результат.ПодразделениеСтарое) КАК ПодразделениеСтарое,
+	МАКСИМУМ(ВТ_Результат.ДолжностьСтарая) КАК ДолжностьСтарая,
+	МАКСИМУМ(ВТ_Результат.РабочееМестоСтарое) КАК РабочееМестоСтарое,
+	МАКСИМУМ(ВТ_Результат.ПодразделениеНовое) КАК ПодразделениеНовое,
+	МАКСИМУМ(ВТ_Результат.ДолжностьНовая) КАК ДолжностьНовая,
+	МАКСИМУМ(ВТ_Результат.РабочееМестоНовое) КАК РабочееМестоНовое
+ИЗ
+	ВТ_Результат КАК ВТ_Результат
+ГДЕ
+	ВТ_Результат.Движение В (&amp;Движение)
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Результат.Период,
+	ВТ_Результат.Регистратор,
+	ВТ_Результат.Организация,
+	ВТ_Результат.Сотрудник,
+	ВТ_Результат.Движение</query>
+	</dataSet>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Движение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Движение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>13</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:string">Перемещение</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">Прием</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">Увольнение</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">Корректировка</value>
+		</availableValue>
+		<valueListAllowed>true</valueListAllowed>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоКадровымДвижениям</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по кадровым движениям</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Движение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПодразделениеСтарое</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Старое</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПодразделениеНовое</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новое</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Vertically</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДолжностьСтарая</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Старая</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДолжностьНовая</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новая</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Vertically</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочее место</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РабочееМестоСтарое</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Старое</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РабочееМестоНовое</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новое</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Vertically</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регистратор</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>f5a74064-b549-41bd-9cab-ab7a1bea4d74</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>a9cf9418-17d3-47f4-96f5-9fe485e45a94</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>8c7aa10e-be4c-41d4-a2f1-2d85ec7ff8dd</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>9a455dea-8946-461a-9e2c-9116173d976f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">РабочееМесто</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>4c1dcaad-1fb4-4343-80d2-e71edadc23a3</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>2737c148-b084-44e0-8473-d55db7455194</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Движение</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>27f747bb-b58a-4669-a98d-4f2978a311c1</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет по кадровым движениям</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

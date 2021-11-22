@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеПолное</dataPath>
+			<field>НаименованиеПолное</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоГруппа</dataPath>
+			<field>ЭтоГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРазмеровМеньше</dataPath>
+			<field>КоличествоРазмеровМеньше</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Артикул</dataPath>
+			<field>Артикул</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозможнаАвтоматизированнаяВыдача</dataPath>
+			<field>ВозможнаАвтоматизированнаяВыдача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пол</dataPath>
+			<field>Пол</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодСинхронизации</dataPath>
+			<field>КодСинхронизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вес</dataPath>
+			<field>Вес</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объем</dataPath>
+			<field>Объем</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАнтропометрическогоСвойства</dataPath>
+			<field>ВидАнтропометрическогоСвойства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеИспользоватьВидАнтропометрическогоСвойстваПриАнализе</dataPath>
+			<field>НеИспользоватьВидАнтропометрическогоСвойстваПриАнализе</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комплект</dataPath>
+			<field>Комплект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользоватьРост</dataPath>
+			<field>ИспользоватьРост</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поставщик</dataPath>
+			<field>Поставщик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСИЗ</dataPath>
+			<field>ВидСИЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФайлКартинки</dataPath>
+			<field>ФайлКартинки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесДляУчетаЧистки</dataPath>
+			<field>ВесДляУчетаЧистки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчитыватьКакКомплектВЗаказеПоставщикуИОтчетеДляСАП</dataPath>
+			<field>УчитыватьКакКомплектВЗаказеПоставщикуИОтчетеДляСАП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользоватьШтрихкод</dataPath>
+			<field>ИспользоватьШтрихкод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопустимоеКоличествоЦикловЧистки</dataPath>
+			<field>ДопустимоеКоличествоЦикловЧистки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРазмеровБольше</dataPath>
+			<field>КоличествоРазмеровБольше</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Номенклатура.Ссылка КАК Ссылка,
+	Номенклатура.ВерсияДанных КАК ВерсияДанных,
+	Номенклатура.ПометкаУдаления КАК ПометкаУдаления,
+	Номенклатура.Родитель КАК Родитель,
+	Номенклатура.ЭтоГруппа КАК ЭтоГруппа,
+	Номенклатура.Код КАК Код,
+	Номенклатура.Наименование КАК Наименование,
+	Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	Номенклатура.Артикул КАК Артикул,
+	Номенклатура.Пол КАК Пол,
+	Номенклатура.КодСинхронизации КАК КодСинхронизации,
+	Номенклатура.Вес КАК Вес,
+	Номенклатура.Объем КАК Объем,
+	Номенклатура.ВидАнтропометрическогоСвойства КАК ВидАнтропометрическогоСвойства,
+	Номенклатура.НеИспользоватьВидАнтропометрическогоСвойстваПриАнализе КАК НеИспользоватьВидАнтропометрическогоСвойстваПриАнализе,
+	Номенклатура.ИспользоватьРост КАК ИспользоватьРост,
+	Номенклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	Номенклатура.Описание КАК Описание,
+	Номенклатура.Поставщик КАК Поставщик,
+	Номенклатура.ВидСИЗ КАК ВидСИЗ,
+	Номенклатура.ФайлКартинки КАК ФайлКартинки,
+	Номенклатура.ВесДляУчетаЧистки КАК ВесДляУчетаЧистки,
+	Номенклатура.Комплект КАК Комплект,
+	Номенклатура.УчитыватьКакКомплектВЗаказеПоставщикуИОтчетеДляСАП КАК УчитыватьКакКомплектВЗаказеПоставщикуИОтчетеДляСАП,
+	Номенклатура.ИспользоватьШтрихкод КАК ИспользоватьШтрихкод,
+	Номенклатура.ДопустимоеКоличествоЦикловЧистки КАК ДопустимоеКоличествоЦикловЧистки,
+	Номенклатура.КоличествоРазмеровМеньше КАК КоличествоРазмеровМеньше,
+	Номенклатура.КоличествоРазмеровБольше КАК КоличествоРазмеровБольше,
+	Номенклатура.ВозможнаАвтоматизированнаяВыдача КАК ВозможнаАвтоматизированнаяВыдача
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+ГДЕ
+	НЕ Номенклатура.ЭтоГруппа</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+					<dcsset:comparisonType>InHierarchy</dcsset:comparisonType>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

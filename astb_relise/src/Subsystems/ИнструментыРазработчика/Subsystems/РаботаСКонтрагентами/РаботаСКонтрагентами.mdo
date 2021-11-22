@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65c7b4df-8cb4-42a9-9391-745a16f75630">
+  <name>РаботаСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с контрагентами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>0e3c6508-caa3-43ef-9647-0e3b96955898</content>
+  <parentSubsystem>Subsystem.ИнструментыРазработчика</parentSubsystem>
+</mdclass:Subsystem>

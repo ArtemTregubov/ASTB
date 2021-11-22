@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72a3f295-5895-47b4-b6d5-744d13f863a6">
+  <producedTypes>
+    <refType typeId="cf240884-6f2f-4d8b-b1d6-bbe23e6a0fe4" valueTypeId="d74844fa-243f-4ee9-bd5a-97f29d7518aa"/>
+    <listType typeId="1d6c2d0b-1b39-4aac-a253-a9003c41db39" valueTypeId="9d0becc5-d744-45e3-9c43-1c2dfa7ac724"/>
+    <managerType typeId="c9c48eb8-a0f8-4a70-8e80-441b2c8dab3c" valueTypeId="3a7fd331-a260-4437-bd25-3a0443dc94ef"/>
+  </producedTypes>
+  <name>ИсточникиДляПроверкиКодовМаркировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Источники для проверки кодов маркировки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fb2e83b0-7c00-4940-b413-6fda29364ac8">
+    <name>SAPВостокСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>SAP (Восток-Сервис)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7140a62-f9be-4e48-b5d0-5d78683ed194">
+    <name>ЕИСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕИСФ (Восток-Сервис)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

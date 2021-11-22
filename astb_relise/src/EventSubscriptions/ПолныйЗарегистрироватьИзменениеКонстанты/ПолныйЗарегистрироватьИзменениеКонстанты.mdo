@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aab66122-a50c-4209-a5df-12f854bfb142">
+  <name>ПолныйЗарегистрироватьИзменениеКонстанты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полный зарегистрировать изменение константы</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.УдалитьАлгоритмПодписи</types>
+    <types>ConstantValueManager.ПараметрыВариантовОтчетов</types>
+    <types>ConstantValueManager.ПараметрыСлужебныхСобытий</types>
+    <types>ConstantValueManager.УдалитьПровайдерЭП</types>
+    <types>ConstantValueManager.НастройкиПодчиненногоУзлаРИБ</types>
+    <types>ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</types>
+    <types>ConstantValueManager.ИспользоватьАнкетирование</types>
+    <types>ConstantValueManager.ИспользоватьЭлектронныеПодписи</types>
+    <types>ConstantValueManager.ИспользоватьВнешнихПользователей</types>
+    <types>ConstantValueManager.ИспользоватьДополнительныеОтчетыИОбработки</types>
+    <types>ConstantValueManager.ИспользоватьДополнительныеРеквизитыИСведения</types>
+    <types>ConstantValueManager.УдалитьТипПровайдераЭП</types>
+    <types>ConstantValueManager.УдалитьАлгоритмХеширования</types>
+    <types>ConstantValueManager.ИспользоватьГруппыПользователей</types>
+    <types>ConstantValueManager.УдалитьАлгоритмШифрования</types>
+    <types>ConstantValueManager.НеВестиУчетОстатковНоменклатурыПоОрганизации</types>
+    <types>ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</types>
+    <types>ConstantValueManager.ИспользоватьВерсионированиеОбъектов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиРИБСобытия.ПолныйЗарегистрироватьИзменениеКонстантыПередЗаписью</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceeeb8a3-288b-4693-a864-76818b93c57c">
+  <producedTypes>
+    <objectType typeId="7e5483e1-b4b6-41e2-b9b0-6b94cf62f5ca" valueTypeId="5e592ff9-b1d2-40eb-b816-f696449432cc"/>
+    <managerType typeId="1f324e33-9a69-4c00-b7f7-afd71279457c" valueTypeId="a53f4509-ee11-4da0-b6ad-ac6631d972a4"/>
+  </producedTypes>
+  <name>ОтчетВыгруженныеППСвСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгруженные ППС в САП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетВыгруженныеППСвСАП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="a28fb198-2adb-4653-9c78-bc4ed28917e9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

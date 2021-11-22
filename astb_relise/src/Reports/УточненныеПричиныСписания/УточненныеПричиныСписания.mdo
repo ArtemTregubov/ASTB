@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94f78ad8-853e-4f13-bd67-f3d37336a28b">
+  <producedTypes>
+    <objectType typeId="658801eb-9f5b-492d-b257-33478674ff2c" valueTypeId="e96e6172-2206-4d17-b8a2-97445c453c58"/>
+    <managerType typeId="66d38f9f-547a-4f32-bab5-2ee44fbe2751" valueTypeId="eb80415f-fe03-4344-8773-fd54df593e51"/>
+  </producedTypes>
+  <name>УточненныеПричиныСписания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уточненные причины списания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УточненныеПричиныСписания.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="1d706d87-1794-4104-b1a7-b9c078531029">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

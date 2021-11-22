@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d7afe4f-0c31-4705-b273-6a5fe371926f">
+  <name>ОбеспечениеОбменаСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обеспечение обмена САП</value>
+  </synonym>
+  <content>CommonModule.Интеграция_САП_Клиент</content>
+  <content>CommonModule.Интеграция_САП_Сервер</content>
+  <content>ScheduledJob.СинхронизацияДанныхСАП</content>
+  <content>FunctionalOption.ИспользоватьСинхронизациюДанныхСАП</content>
+  <content>Constant.ЛогинПользователяСАП</content>
+  <content>Constant.ИспользоватьСинхронизациюДанныхСАП</content>
+  <content>Catalog.Склады</content>
+  <content>InformationRegister.СообщенияПользователей</content>
+  <content>InformationRegister.ОбменДаннымиСАП</content>
+  <content>InformationRegister.НастройкаТиповОповещенияОбОбмене</content>
+  <content>InformationRegister.НастройкиПараметровОбменаСАП</content>
+  <content>InformationRegister.ВыгруженныеДокументыППСвСАП</content>
+  <content>InformationRegister.ВыгруженныеКомплектыППСвСАП</content>
+  <content>DataProcessor.ЗагрузкаПоступленийИзСАП</content>
+  <content>ScheduledJob.ЗагрузкаИзСАП</content>
+  <parentSubsystem>Subsystem.АсТБ</parentSubsystem>
+</mdclass:Subsystem>

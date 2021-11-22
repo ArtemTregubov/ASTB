@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f268135-2118-4025-af75-a0ce27eae371">
+  <producedTypes>
+    <objectType typeId="43ae22cd-44b5-4e5e-aea4-45b7280b9898" valueTypeId="41c11c69-d528-4819-ba2b-d592984c44ee"/>
+    <managerType typeId="62b5a610-7bd2-4f80-9722-1926b9cab1d7" valueTypeId="ba5f3ff1-a1e5-4d0c-9fd1-cdaca269d3a6"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураВыдачиБезДвижений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура выдачи без движений</value>
+  </synonym>
+  <comment>Диагностика: номенклатура выдачи без движений</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураВыдачиБезДвижений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Выводит информацию по номенклатуре выдачи, по которой не было движений по регистрам.</value>
+  </explanation>
+  <templates uuid="0edee740-9b88-4f95-a4b1-ba2ec551780d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

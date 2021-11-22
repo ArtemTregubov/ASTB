@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f34b0b3-6849-4e25-beab-0232ea09596d">
+  <name>ЗачетУпрощеннойВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачет упрощенной выдачи</value>
+  </synonym>
+  <methodName>CommonModule.ПроцедурыРаботыСНормамиСервер.ЗачетУпрощеннойВыдачи</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

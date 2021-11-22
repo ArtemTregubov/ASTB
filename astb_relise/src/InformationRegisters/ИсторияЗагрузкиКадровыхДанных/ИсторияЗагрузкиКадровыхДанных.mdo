@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3811938-4f63-40c7-9727-0617d6377903">
+  <producedTypes>
+    <selectionType typeId="0f04449d-a1c5-43ba-a1a9-ed5e3e5919bc" valueTypeId="1502926b-aa13-48e8-9714-6d1dcc56471a"/>
+    <listType typeId="57da091f-c2fb-468a-8800-320327ac85d2" valueTypeId="3839da85-5e4f-40f3-bfbd-a89f70e9b12e"/>
+    <managerType typeId="aaa50de8-cbc8-4ce3-b097-222b53b554fd" valueTypeId="881d799a-677b-46b8-b173-dd35b8e9df1c"/>
+    <recordSetType typeId="1d8202b0-6c18-42b2-8678-a232e4fb3181" valueTypeId="c835b292-7f83-47c7-a727-ef1ca9349dd1"/>
+    <recordKeyType typeId="09f9e4b3-45ba-4e8f-a045-0cd245c3277a" valueTypeId="0713d638-a1e8-408a-99ca-7f47822e487c"/>
+    <recordType typeId="29afe11c-c3a3-46c1-b212-77dacada78e4" valueTypeId="025afbad-4486-40b8-87b8-abd27eef63bc"/>
+    <recordManagerType typeId="37cf705d-31e3-4d32-b893-2d07db17c0e3" valueTypeId="c30a31e7-f702-4566-8311-f0827d3e747e"/>
+  </producedTypes>
+  <name>ИсторияЗагрузкиКадровыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>История загрузки кадровых данных через сервис</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ИсторияЗагрузкиКадровыхДанных.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a43c2b1b-4aca-4463-bddc-37e5dfb2cbe1">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0b8d9daa-488b-40ab-b474-484004e44909">
+    <name>Лог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лог</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b52680ab-02b6-47b3-8e9e-482178129123">
+    <name>ХранилищеТелаФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище тела файла</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="536ec81f-8b8d-4e64-ae9a-df72c8fed562">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d2f209cf-a184-4410-ab7e-24268ec5c7be">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="fb9e9dff-d2ff-49b1-961f-92d6737d703f">
+    <name>ИсторияЗагрузкиКадровыхДанныхЧерезСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>История загрузки кадровых данных через сервис</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc6b21ee-86cd-4488-b22c-28591ebc9191">
+  <producedTypes>
+    <selectionType typeId="12045ec8-bffd-42eb-b995-13a0dcb85d4c" valueTypeId="713a6f29-c51c-40d0-880f-6c213309b4b7"/>
+    <listType typeId="cf1a623d-6d5f-4124-a6cd-f8158f4340cf" valueTypeId="b8e96bcc-d88a-4031-a674-b1ffa0953c34"/>
+    <managerType typeId="1da3914e-aa35-4e57-ac83-63d204f95247" valueTypeId="631ce4d8-1ffb-4d38-b880-89c829ac036b"/>
+    <recordSetType typeId="17314ca8-6928-4ae4-bd4b-fe4cfa0a3a1d" valueTypeId="ba4f74dd-75cd-476f-a981-b2d942536631"/>
+    <recordKeyType typeId="89aa404e-ad83-45ef-8be9-5dc366a77146" valueTypeId="e1eed901-b77d-4821-bd2c-95b89679ca60"/>
+    <recordType typeId="95921024-57c8-4209-a06f-1d3f83cbe0ba" valueTypeId="fcbaa0ea-c38a-47ac-be0a-9c0c65beb201"/>
+    <recordManagerType typeId="892776e4-b130-42c8-9e63-c4a127a73d7e" valueTypeId="a2c1876e-e076-4fc6-a16c-0b2d1a36d2fa"/>
+  </producedTypes>
+  <name>ВыгруженныеКомплектыППСвСАП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгруженные комплекты из ППС в САП</value>
+  </synonym>
+  <comment>Выгруженные комплекты из документов перехода прав собственности в САП</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВыгруженныеКомплектыППСвСАП.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВыгруженныеКомплектыППСвСАП.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Выгруженные комплекты из документов перехода прав собственности в САП</value>
+  </explanation>
+  <resources uuid="c07aa68b-085d-4b5d-b61f-0dcbe9d29251">
+    <name>message_type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Message type</value>
+    </synonym>
+    <comment>статус сообщения</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>200 - ОК, 300 - не ОК</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="112f5228-a8fe-499a-8d39-b29c2232f726">
+    <name>doc_num</name>
+    <synonym>
+      <key>ru</key>
+      <value>Doc num</value>
+    </synonym>
+    <comment>номер документа в SAP</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="fb333e27-e243-4b2e-8755-9e90c0f9c3f0">
+    <name>message_text</name>
+    <synonym>
+      <key>ru</key>
+      <value>Message text</value>
+    </synonym>
+    <comment>текст ошибки</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="411f9d13-e5fb-41c6-b363-04951f565f33">
+    <name>XML_text</name>
+    <synonym>
+      <key>ru</key>
+      <value>XML text</value>
+    </synonym>
+    <comment>отправленный XML- пакет</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отправленный в SAP XML-пакет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="43113c94-70cb-40b5-b6dd-be64f04dacb1">
+    <name>ДокументППС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ППС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПереходПраваСобственности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="86b45d72-9adb-4898-888e-a10a4cd78e13">
+    <name>КодЗавода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код завода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1fac663f-76dc-4ddb-bf58-77a33ec60312">
+    <name>Комплект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="eb265b81-b1bd-4321-bee4-1bc1273f22fb">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2688b1b3-8f68-4d67-a311-ddd97cfb8432">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

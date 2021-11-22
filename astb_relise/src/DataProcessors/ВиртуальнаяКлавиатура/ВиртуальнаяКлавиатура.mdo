@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3db68344-8f1e-4132-b3db-208238abe262">
+  <producedTypes>
+    <objectType typeId="69690511-94ed-4e90-a6d9-96ecdfc8ad13" valueTypeId="9f52b428-3d8b-4e2a-982d-b4ddae9cc9eb"/>
+    <managerType typeId="9d59d158-f6a0-4cf0-acbf-4fb6977a9eee" valueTypeId="b768252f-909d-4572-986b-09913d222c3b"/>
+  </producedTypes>
+  <name>ВиртуальнаяКлавиатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виртуальная клавиатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВиртуальнаяКлавиатура.Form.ВиртуальнаяКлавиатура</defaultForm>
+  <forms uuid="dd1cdff7-3cac-4a36-985c-eb521d17fea1">
+    <name>ВиртуальнаяКлавиатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальная клавиатура</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

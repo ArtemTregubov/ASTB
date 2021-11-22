@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46ffc95f-5fab-4214-bc04-284d4705d835">
+  <producedTypes>
+    <refType typeId="1bc6f546-df63-46b5-9287-33ef3509a14b" valueTypeId="e824eb3e-dd65-4a5b-b1d3-c004acbcc7ed"/>
+    <listType typeId="41a62c61-5a25-4628-bc50-41607471c971" valueTypeId="927466aa-327e-46cc-b15c-66b3b092b240"/>
+    <managerType typeId="ecb5151c-9f34-4983-b84b-7fded8e41d3e" valueTypeId="7045c60b-bb71-459d-ad17-f48bd3f8993b"/>
+  </producedTypes>
+  <name>КатагорииВидовСИЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Катагории видов СИЗ</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="52dc2cd7-0772-49ac-8ca7-d25a9b9cc393">
+    <name>Аккумулятор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аккумулятор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a6b3140d-1b03-4dba-90f0-43ff15efbbd9">
+    <name>Бахилы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бахилы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70eb618e-489a-4dc7-add0-6b41b3def4de">
+    <name>Белье</name>
+    <synonym>
+      <key>ru</key>
+      <value>Белье</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0230d41b-ff73-4f09-aa50-a3ea25bc49e3">
+    <name>Ботинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ботинки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8d5a098a-ee78-42aa-9144-f94d0bf65170">
+    <name>Брюки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Брюки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c822074-7bff-4fe8-b5cd-aeec91012cd6">
+    <name>Валенки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валенки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1e5ee04c-0e6b-4739-a7b0-2e69d86c3d4c">
+    <name>Вкладыши</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вкладыши</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="05916c54-8e82-4276-adc1-6d324118baa7">
+    <name>ГоловнойУбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Головной убор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="85e65e98-b3c6-4291-b778-bb6a0bff054c">
+    <name>ДСИЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ДСИЗ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d267c8e-8378-4dc7-bba9-beef4dcc6ace">
+    <name>Жилет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Жилет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="634a00b0-433c-4a18-97ed-d4afb4835c00">
+    <name>ЗащитаГоловы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Защита головы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4a98de8f-33e7-4b03-bbcc-5a53ba1d5417">
+    <name>ЗащитаРук</name>
+    <synonym>
+      <key>ru</key>
+      <value>Защита рук</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6efbe863-c50c-4358-914d-325332ec7964">
+    <name>Каска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каска</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ab3f05d-caf3-43c5-a1a8-4ea521b1505f">
+    <name>Коврик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коврик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fea53ad9-0d03-426c-8d1e-7a7c820eeef5">
+    <name>Комбинезон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комбинезон</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="170342bd-5e40-4112-ae8e-ffa0bd84f843">
+    <name>Костюм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Костюм</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d10e66e5-97d0-4876-aabc-7b361c87e7f4">
+    <name>Крем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крем</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="590071b5-a357-4d7f-8a2a-e40093233a1d">
+    <name>Куртка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куртка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="62437477-99a3-4f04-b2c8-53bdecc04317">
+    <name>Майка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Майка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="222ac59e-1811-4776-b01d-f2d2a40cc048">
+    <name>Мыло</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мыло</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b01d9f5-e929-4299-902e-c5604a0f580b">
+    <name>Наколенники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наколенники</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="617a5b3c-d3ba-4de3-a097-0da53828f1f0">
+    <name>Наплечники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наплечники</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4951f4c9-0fba-4b20-98e6-e7018ae111c0">
+    <name>Нарукавники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нарукавники</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="09dfecaa-4715-4903-b5f3-e2fa23b628d4">
+    <name>Наушники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наушники</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="98d55028-0526-44bd-b2e0-566fdde801f9">
+    <name>Носки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Носки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ccc85993-8ace-4e34-b976-09959be32ba9">
+    <name>Очки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="61e7f1fa-8918-4cd9-b555-8372097d581d">
+    <name>Паста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паста</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="99c109d9-06e9-41a1-9e1a-0e7344c6cee7">
+    <name>Перчатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перчатки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6cd694be-cd00-48f5-a3a1-99ac20817383">
+    <name>Плащ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плащ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b576d334-1278-4040-945c-b13cb629a02b">
+    <name>Подставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подставки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f9dc8bd1-4c0d-401b-b2a7-28dba4dfeb50">
+    <name>Полотенце</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полотенце</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="14f87f45-cb1b-43e6-b38b-90ba90910674">
+    <name>Полукомбинезон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полукомбинезон</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="52ae8ec2-cf1f-4083-bf17-a5d3f5f48a6a">
+    <name>Портянки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Портянки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="550a0bb9-3f9d-4500-87bd-0feaf7447675">
+    <name>Пояс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояс</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc3b7ef1-fd96-4643-9832-ad379bd59f8e">
+    <name>Привязь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Привязь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70e821bb-01a0-4a0a-9c95-25602ce82202">
+    <name>Противогаз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Противогаз</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e58f2f98-29cc-49fa-84e6-ae991d7a2309">
+    <name>Рейтузы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтузы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="850df05a-478e-4169-b421-c9f02da8a1b6">
+    <name>Рубашка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рубашка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dbed575c-457a-4b56-9387-6e59d6a1037f">
+    <name>Сандали</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сандали</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fd699a0-711f-4573-8eb9-586c542c7790">
+    <name>Свитер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свитер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="04da1466-0298-4090-bd37-e2de7ad5d7f6">
+    <name>СИЗОД</name>
+    <synonym>
+      <key>ru</key>
+      <value>СИЗОД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="689d050c-f269-4e76-96eb-1bd4ba01d8ff">
+    <name>Спецобувь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецобувь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="53c4a4a0-6038-4d9d-952c-f84e01694d89">
+    <name>Спецодежда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецодежда</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c2db1346-3099-4e73-8258-36eb82e24607">
+    <name>Спрей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спрей</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fd5fe0a7-fc03-4729-9996-b0c2c2f70450">
+    <name>Стельки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стельки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5baf715a-ff28-4e9c-bfff-580daac78f6a">
+    <name>Тапочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тапочки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ff24f85c-97d5-44f3-9127-b75dddd03625">
+    <name>Трусы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трусы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3388346b-0d43-4c08-9b38-5b3bdffd2ced">
+    <name>Фартук</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фартук</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e90ed1a4-775d-4d9e-ab30-c704d3a4604d">
+    <name>Футболка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Футболка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f88ea08-256d-42ae-af99-fd531266c547">
+    <name>Фуфайка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фуфайка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="da847dff-4d31-42db-99ee-556fa0bd24cd">
+    <name>Халат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Халат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eca395a5-2306-462a-aaa7-f959629da7f7">
+    <name>Щиток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Щиток</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e2d0d8ac-3a5c-494f-8332-7cb9caf0a9de">
+    <name>Прочее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

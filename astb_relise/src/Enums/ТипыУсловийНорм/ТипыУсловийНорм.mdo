@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a39365f-94b4-4dc3-9761-06dc754edf76">
+  <producedTypes>
+    <refType typeId="b40ad6c7-0c77-40aa-80ce-580234363262" valueTypeId="7c546b45-2a27-447a-89f0-5b287dc14987"/>
+    <listType typeId="a6753a3f-c4dc-4d68-bdde-6cebd976c236" valueTypeId="1bc8b37f-55c2-4de6-bc38-8e3b81e48583"/>
+    <managerType typeId="30ad7392-7a9f-44de-b821-d43b25e7cd1a" valueTypeId="cef7629a-5227-4456-82fa-a0c2bc5ee7aa"/>
+  </producedTypes>
+  <name>ТипыУсловийНорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы условий норм</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="111e564c-2a47-4408-b6b9-40127704f9cc">
+    <name>Всегда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдается всегда</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cec4e4e2-d322-4564-aa0b-6fcab85876b2">
+    <name>ЗимойДополнительно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдается всегда в зимнее время</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b89cfb3-dc21-44b1-b045-251deff36d5a">
+    <name>ПриУсловии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдается при выполнении условия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9b0d6ae-0e7f-434b-8d94-1722448a5626">
+    <name>ПриУсловииЗимойДополнительно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдается при выполнении условия в зимнее время</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

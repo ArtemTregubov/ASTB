@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee571aca-7436-4849-8880-e06b27aa475c">
+  <producedTypes>
+    <objectType typeId="22a86312-d683-4998-a338-877979a12cc4" valueTypeId="03702835-69ea-47c3-b4b0-f4d4197c6db3"/>
+    <managerType typeId="559e70c3-6f60-4cca-8d0c-0cc9ca1cfffe" valueTypeId="af97da95-2bfb-405d-8b78-bd7cb9558545"/>
+  </producedTypes>
+  <name>ДиагностикаМВЗДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: МВЗ (дубли)</value>
+  </synonym>
+  <comment>МВЗ (дубли по коду синхронизации и наименованию).</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаМВЗДубли.Template.МВЗДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>МВЗ (дубли по коду синхронизации и наименованию).</value>
+  </explanation>
+  <templates uuid="11a1f771-27de-4946-add9-2eeefdab0729">
+    <name>МВЗДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>МВЗ (дубли)</value>
+    </synonym>
+    <comment>МВЗ (дубли по коду синхронизации и наименованию). Отбор по организации.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

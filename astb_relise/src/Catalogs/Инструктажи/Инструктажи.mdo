@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebeb29df-3eb6-4753-9738-0c247decb1e5">
+  <producedTypes>
+    <objectType typeId="5fa9b45b-45e8-4f5a-bb4b-30e51db025c5" valueTypeId="899a2148-7961-4101-83bf-2a50db4af47f"/>
+    <refType typeId="dbfde9a4-e413-4ff2-8c08-e855c5f418ff" valueTypeId="5b8115e3-84ae-4d6f-89ca-987bf5ae06ba"/>
+    <selectionType typeId="720326d9-6706-4370-9408-f24f619d83e0" valueTypeId="ba4894af-c9f6-457a-ae44-c20fe87ebe6f"/>
+    <listType typeId="03cde029-471a-4884-bc43-420ea737697f" valueTypeId="2877b761-f077-4af6-ab92-b92bf962ccd3"/>
+    <managerType typeId="cf3aeeba-cc3f-4bc2-9684-42ade5029fab" valueTypeId="c7b3a375-a440-4758-9652-049ed9602b1a"/>
+  </producedTypes>
+  <name>Инструктажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инструктажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Инструктажи.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Инструктажи.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Инструктажи.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.Инструктажи.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.Инструктажи.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Инструктажи.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="50c955b3-f8bf-487c-8a0e-71fd61e68674">
+    <name>ВидИнструктажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид инструктажа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыИнструктажей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыИнструктажей.EnumValue.Вводный</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="37a2a384-8d42-4285-bd14-7ae23dddb2f5">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="97ae0e18-58b7-4928-99f9-0b15573736a7">
+    <name>ПервичныйИнструктаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичный инструктаж</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Инструктажи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для привязки к первичному инструктажу. Пока первичный не проведен, повторный не проводится. Если не задан, тогда контроль первичного инструктажа не производится.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42bf1de6-4793-4b9b-bad9-eb09b0c451be">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <comment>Периодичность по-умолчанию</comment>
+    <type>
+      <types>CatalogRef.ПериодичностьВыдачиСИЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="15f35346-a45e-4dc6-b166-e83bd573e3a3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e2c6600d-3c98-4ed5-b3bd-7a8f91a96059">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="db98e5fa-5a7b-4e96-bede-1f31d40e57c6">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b0f4fdb-2f75-4def-9b8d-bf7d90011300">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="488666a6-6882-40d5-9e2e-c3a162a48786">
+    <name>РекомендуемыеПрограммыОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рекомендуемые программы обучения</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

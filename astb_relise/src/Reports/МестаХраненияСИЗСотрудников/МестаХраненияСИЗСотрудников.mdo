@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fea39417-5794-4e25-b358-122e1946a2c3">
+  <producedTypes>
+    <objectType typeId="5e1ed51e-853e-435d-98be-087904b4c5d6" valueTypeId="dc020f3f-0e07-4985-a61f-732b6ed56909"/>
+    <managerType typeId="54fb9ad5-921f-45e8-bb8c-e61bc4e5960c" valueTypeId="9eda5f5c-a4bc-47dc-83f8-16ee7f95d7fc"/>
+  </producedTypes>
+  <name>МестаХраненияСИЗСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места хранения СИЗ сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.МестаХраненияСИЗСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e5f9ec0f-91d0-4bfe-848f-8398aebe4bf1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

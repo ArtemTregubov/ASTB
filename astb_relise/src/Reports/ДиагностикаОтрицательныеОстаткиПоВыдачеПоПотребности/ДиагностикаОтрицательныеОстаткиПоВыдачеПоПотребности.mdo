@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0cb7bfe0-017c-48db-8176-5ca39ff26d1c">
+  <producedTypes>
+    <objectType typeId="ae126876-e037-4d08-9af3-bdeaa0a219c4" valueTypeId="a7bd3347-31a4-44a8-8bbe-8265de86cbb8"/>
+    <managerType typeId="b087775a-60f3-4ef9-9717-2072a677c658" valueTypeId="ccb57c3b-81be-4a88-aba4-167cfe48eaad"/>
+  </producedTypes>
+  <name>ДиагностикаОтрицательныеОстаткиПоВыдачеПоПотребности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: отрицательные остатки по выдаче по потребности</value>
+  </synonym>
+  <comment>Диагностика: отрицательные остатки по выдаче по потребности</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаОтрицательныеОстаткиПоВыдачеПоПотребности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Выводит отрицательные остатки по регистру &quot;Выдача по потребности&quot;</value>
+  </explanation>
+  <templates uuid="b09f290d-9531-45d2-b0c4-869a135d4d0d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

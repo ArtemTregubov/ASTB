@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b846eac0-ec07-4ddf-a208-b164d560e74d">
+  <producedTypes>
+    <selectionType typeId="03894cf8-b6d2-4d9d-a425-e24f3299b831" valueTypeId="2f7d3f4c-21d0-4638-ae8b-543f87d224b9"/>
+    <listType typeId="09f9e853-2a33-42fe-afa9-ffcd7e552abb" valueTypeId="28929a06-1d12-4b41-ba4f-0c369713ff6a"/>
+    <managerType typeId="3522fd7c-0863-4446-9667-0b56bef0ea6f" valueTypeId="dc6230ef-3ba3-48bc-86dc-0df39a7af22a"/>
+    <recordSetType typeId="5f81b539-d732-4e48-83fd-445541a811f6" valueTypeId="e9790ea4-0158-4c01-8355-376c9f3a87de"/>
+    <recordKeyType typeId="a51ed420-34d0-43af-8a37-9789e6117387" valueTypeId="13a5d452-03c7-40b8-8492-a235f690a099"/>
+    <recordType typeId="44167bd6-83f0-4ed9-a151-160975779903" valueTypeId="474e478e-1e79-46ca-b362-3ff50bb36a5f"/>
+    <recordManagerType typeId="52e106cc-28ec-4597-bee7-e81bd03d8fef" valueTypeId="3c53a6b5-a779-47ec-8d89-731d6db3e082"/>
+  </producedTypes>
+  <name>ФККОНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>ФККОНоменклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ФККОНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9fea146f-52df-4d0c-8d33-0ca487ee1fa7">
+    <name>Использовать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2abbe087-2fed-4cfe-9027-ff19a8c151f4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="13eda0f5-ebe9-4ae3-af9b-6ae32961d45c">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9713ea39-74e3-4492-b531-f88eac3d2f7b">
+    <name>ФККО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФККО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФККО</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dcbb2149-d396-4986-bba4-251bad190245">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f3a7335-c61d-4a97-9bcc-5c5022fb61dc">
+  <name>НеВестиУчетОстатковНоменклатурыПоОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не вести учет остатков номенклатуры по организации</value>
+  </synonym>
+  <comment>Не вести учет остатков номенклатуры по организации</comment>
+  <location>Constant.НеВестиУчетОстатковНоменклатурыПоОрганизации</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

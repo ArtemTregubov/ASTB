@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8754be1-770b-4f69-9f2b-f33bb508aced">
+  <name>СообщениеВТехподдержку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщение в техподдержку</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

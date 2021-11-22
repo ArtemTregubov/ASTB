@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1eb743bc-5be0-4178-9cc5-17e91f338069">
+  <producedTypes>
+    <refType typeId="b064b385-e9c3-4734-8876-c9ead5f8d07c" valueTypeId="05f9c568-503f-4937-ae59-293d2be52138"/>
+    <listType typeId="464f1010-64ec-4a13-8421-b9c16e4b70f6" valueTypeId="53edc135-da62-4adc-ad02-54ccfb895b5a"/>
+    <managerType typeId="98c259cf-be85-44a7-9488-0c30127b33ce" valueTypeId="f094c299-4d15-4cea-ae2e-df8d15387c9b"/>
+  </producedTypes>
+  <name>ВидыМедосмотров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды медосмотров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="187ffd2c-ad65-4037-8d6c-d9cb7fc0c709">
+    <name>Предварительный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предварительный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6732e665-a2b3-4c0f-aa5a-61848ade27d0">
+    <name>Периодический</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодический</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="225e3604-aae0-477d-ab8d-efd0081c056c">
+    <name>Внеочередной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внеочередной</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca23190c-c897-4951-b7c9-95291078c8f1">
+    <name>Постоянный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Постоянный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

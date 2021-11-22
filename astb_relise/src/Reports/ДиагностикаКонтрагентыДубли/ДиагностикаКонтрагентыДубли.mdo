@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="600d5b73-063b-436c-918a-b9231d128391">
+  <producedTypes>
+    <objectType typeId="d19f2e65-b28b-4bb3-8fd7-39f27be07cdc" valueTypeId="9612e447-ba8f-4368-a846-96e325551d27"/>
+    <managerType typeId="1a4af4ac-a4e6-41ab-9c90-a0316f057029" valueTypeId="49223044-a134-4c91-a232-4c3b28fa1ac8"/>
+  </producedTypes>
+  <name>ДиагностикаКонтрагентыДубли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: контрагенты (дубли)</value>
+  </synonym>
+  <comment>Контрагенты (дубли по ИНН/КПП)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаКонтрагентыДубли.Template.КонтрагентыДубли</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Контрагенты (дубли по ИНН/КПП)</value>
+  </explanation>
+  <templates uuid="fa3fce7b-de8a-4d45-93ec-6c774e7becf4">
+    <name>КонтрагентыДубли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты (дубли)</value>
+    </synonym>
+    <comment>Контрагенты (дубли по ИНН/КПП).</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

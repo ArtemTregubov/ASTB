@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e566b00-7c4b-49ef-bdaf-6bc0b0e0eb8d">
+  <producedTypes>
+    <objectType typeId="2886965f-cffe-4057-81df-8a7639b34fb9" valueTypeId="b54f9071-fc17-4439-ac39-0b8f89b6f7b9"/>
+    <managerType typeId="d830deaf-1c09-49fc-a955-15a2d1574da4" valueTypeId="55782dd4-7411-4a97-a46b-19bcee1bd565"/>
+  </producedTypes>
+  <name>ДиагностикаСотрудникиМВЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: сотрудники (МВЗ)</value>
+  </synonym>
+  <comment>Сотрудники (незаполненные МВЗ работающих сотрудников)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаСотрудникиМВЗ.Template.СотрудникиМВЗ</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сотрудники (незаполненные МВЗ работающих сотрудников)</value>
+  </explanation>
+  <templates uuid="6b16785b-1420-40b4-8add-2becdd33cdcc">
+    <name>СотрудникиМВЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники (МВЗ)</value>
+    </synonym>
+    <comment>Сотрудники (незаполненные МВЗ работающих сотрудников)</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

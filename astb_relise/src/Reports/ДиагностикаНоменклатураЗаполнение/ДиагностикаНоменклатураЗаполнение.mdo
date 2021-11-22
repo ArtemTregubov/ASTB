@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5fe54ca7-c7ee-4688-9c65-0362552b1153">
+  <producedTypes>
+    <objectType typeId="70620675-52dc-4284-ba41-1693df411bbb" valueTypeId="753b444c-ba0d-4649-8667-57256147dff3"/>
+    <managerType typeId="bf663fba-b581-44e2-a7bf-581ef2af38ff" valueTypeId="6e347860-5163-4f32-be95-c818147ff07a"/>
+  </producedTypes>
+  <name>ДиагностикаНоменклатураЗаполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диагностика: номенклатура (заполнение)</value>
+  </synonym>
+  <comment>Проверка заполнения номенклатуры выдачи: вид СИЗ, сертификаты, изображения, ГОСТы и комплектующие</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДиагностикаНоменклатураЗаполнение.Template.НоменклатураЗаполнение</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Проверка заполнения номенклатуры выдачи: вид СИЗ, сертификаты, изображения, ГОСТы и комплектующие</value>
+  </explanation>
+  <templates uuid="19bff6f7-e8eb-444e-bde9-dd05a546c878">
+    <name>НоменклатураЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (заполнение)</value>
+    </synonym>
+    <comment>Проверка заполнения номенклатуры выдачи: вид СИЗ, сертификаты, изображения, ГОСТы и комплектующие.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

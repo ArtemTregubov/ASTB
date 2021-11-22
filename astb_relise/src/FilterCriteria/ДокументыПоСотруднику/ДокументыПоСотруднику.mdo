@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="530071d8-f9db-4c95-b42c-887998ea56ba">
+  <producedTypes>
+    <listType typeId="2dd0331b-756a-4772-8680-d39b318bcaac" valueTypeId="d5d022c5-fd1e-4cd4-b15a-a9630ca1789d"/>
+    <managerType typeId="bdfb993d-06c0-42d2-953d-0d59f7d8b0cf" valueTypeId="3c793282-d592-4914-93da-d427f1cded79"/>
+  </producedTypes>
+  <name>ДокументыПоСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по сотруднику</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Сотрудники</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ВозвратИзЧистки.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ВозвратСредствЗащитыОтСотрудника.Attribute.Сотрудник</content>
+  <content>Document.ВозвратСредствЗащитыСХранения.Attribute.Сотрудник</content>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.Attribute.Сотрудник</content>
+  <content>Document.ВыдачаСредствЗащитыПоВедомости.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ЗаписьНаСклад.Attribute.Сотрудник</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ЗачетУпрощеннойВыдачи.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ЗаявкаНаВыдачу.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ЗаявкаНаПроизвольнуюВыдачуСИЗ.Attribute.Сотрудник</content>
+  <content>Document.ИнструктажСотрудников.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.КадровоеПеремещение.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.МедицинскийОсмотр.Attribute.Сотрудник</content>
+  <content>Document.НаправлениеНаМедицинскийОсмотр.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.ОбращениеНаСклад.Attribute.Сотрудник</content>
+  <content>Document.ОтсутствиеНаРабочемМесте.Attribute.Сотрудник</content>
+  <content>Document.ПередачаВЧистку.TabularSection.Товары.Attribute.Сотрудник</content>
+  <content>Document.ПеремещениеСредствЗащитыНаХранении.Attribute.Сотрудник</content>
+  <content>Document.ПриемНаРаботу.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.ПриемСредствЗащитыНаХранение.Attribute.Сотрудник</content>
+  <content>Document.ПриказНаПроведениеПроверкиЗнаний.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.ПроверкаЗнанийСотрудника.TabularSection.Ответы.Attribute.Сотрудник</content>
+  <content>Document.ПроверкаЗнанийСотрудника.TabularSection.Результаты.Attribute.Сотрудник</content>
+  <content>Document.ПродлениеСрокаЭксплуатации.Attribute.Сотрудник</content>
+  <content>Document.СогласиеНаИнформирование.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.Attribute.Сотрудник</content>
+  <content>Document.Уведомление.Attribute.Сотрудник</content>
+  <content>Document.Увольнение.TabularSection.Работники.Attribute.Сотрудник</content>
+  <content>Document.УстановкаОсновногоМестаРаботыСотрудника.Attribute.Сотрудник</content>
+  <content>Document.УстановкаСоответствийНоменклатурыВыдачи.TabularSection.Соответствия.Attribute.Сотрудник</content>
+  <content>Document.УстановкаУсловийРаботыСотрудника.Attribute.Сотрудник</content>
+  <content>Document.УстановкаШтрихкодовНоменклатуры.Attribute.Сотрудник</content>
+  <defaultForm>FilterCriterion.ДокументыПоСотруднику.Form.ФормаСписка</defaultForm>
+  <forms uuid="b77ecb59-988d-45c2-89e1-ae785a2b52a5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:FilterCriterion>

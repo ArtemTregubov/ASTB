@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ef9d491-0254-4346-a838-95a333f57a32">
+  <producedTypes>
+    <objectType typeId="aaec68f0-f75d-4a79-9915-1c119afe0962" valueTypeId="dc0d32ea-7aba-4e84-912b-a9b39cdfa6cb"/>
+    <managerType typeId="2d0077a4-94f7-4f49-b0a5-dab96194d97a" valueTypeId="83c8d6bd-1c98-4036-b996-ebd9464d3d7b"/>
+  </producedTypes>
+  <name>ПроцентнаяОбеспеченность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процентная обеспеченность</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПроцентнаяОбеспеченность.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="980c6b68-5eb0-45f3-9be4-0a44efb2daea">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

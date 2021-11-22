@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d498e68c-d663-476e-a93d-c2c987fba7bc">
+  <name>ИспользоватьПроцентИзноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать процент износа</value>
+  </synonym>
+  <location>Catalog.Организации.Attribute.ИспользоватьПроцентИзноса</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ПроцентыИзноса</content>
+  <content>AccumulationRegister.ОстаткиНоменклатуры.Dimension.ПроцентИзноса</content>
+  <content>Document.ВозвратСредствЗащитыОтСотрудника.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ВыдачаСредствЗащитыСотруднику.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ИнвентаризацияНоменклатуры.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ОприходованиеНоменклатуры.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ПеремещениеНоменклатуры.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.СписаниеНоменклатуры.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ПродлениеСрокаЭксплуатации</content>
+  <content>Report.ОстаткиНоменклатурыОрганизацииСУчетомИзноса.Command.ОстаткиНоменклатурыСИзносом</content>
+  <content>Report.ВедомостьПоОстаткамНоменклатурыОрганизацииСУчетомИзноса.Command.ВедомостьПоОстаткамНоменклатурыСИзносом</content>
+  <content>Report.ОстаткиПоВыдачеСУчетомИзноса.Command.ОстаткиПоВыдачеСИзносом</content>
+  <content>Report.ВедомостьПоВыдачеСУчетомИзноса.Command.ВедомостьПоВыдачеСИзносом</content>
+  <content>Document.ПередачаСИЗвУтилизацию.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.СписаниеСредствЗащитыСотрудника.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ВыдачаДежурныхСредствЗащиты.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+  <content>Document.ЗачетВыданныхСредствЗащиты.TabularSection.Товары.Attribute.ПроцентИзноса</content>
+</mdclass:FunctionalOption>

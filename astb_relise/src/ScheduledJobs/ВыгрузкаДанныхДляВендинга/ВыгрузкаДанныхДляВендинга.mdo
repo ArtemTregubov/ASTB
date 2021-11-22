@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="440c0187-37ad-4bca-8949-8872d2e4d276">
+  <name>ВыгрузкаДанныхДляВендинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных для вендинга</value>
+  </synonym>
+  <methodName>CommonModule.ОбменДаннымиВендинг.ВендингВыгрузитьДанныеПоРасписанию</methodName>
+  <description>Выгрузка данных для вендинга</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>
